@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<WorkGivers>
   <WorkGiverDef>
 	<defName>DoBillsBBQSpit</defName>
 	<label>cook meals at BBQ spit</label>
@@ -17,5 +16,4 @@
 	</requiredCapacities>
 	<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-</WorkGivers>
 </Defs>

@@ -6,7 +6,10 @@
     <label>BBQ spit</label>
     <description>A portable cooking spit.</description>    
     <thingClass>Building_WorkTable</thingClass>
-    <category>Building</category>
+    <category>Building</category>	
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <graphicData>
       <texPath>Things/Building/Production/BBQSpit</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
