@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+           <!-- ============================================================ -->
+  
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>KushalaDaora</defName>
+    <label>kushala daora</label>
+    <description>Eldеr Dragon clad in mеtal plating. Gеnеratеs storms whеrеvеr it goеs. Gеtting closе to it is no mеan fеat.</description>
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <MarketValue>110900</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>2.8</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>1.0, -0.1, 0.0</westOffset>
+			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
+			<northOffset>0.0, -1.0, 0.0</northOffset>
+			<southOffset>0.0, -1.0, 0.0</southOffset>
+			<westSize>2.8, 1.5</westSize>
+			<northSize>1.7, 2.5</northSize>
+			<eastSize>2.8, 1.5</eastSize>
+			<southSize>1.7, 2.5</southSize>
+		</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>153</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>95</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHElder</body>
+      <baseHungerRate>4.0</baseHungerRate>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>8.6</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Kushala</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>1.0</wildness>
+      <trainability>Simple</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <manhunterOnTameFailChance>0.99</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.003</TemperateForest>
+		<TemperateSwamp>0.001</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.003</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>KushalaDaora</defName>
+    <label>kushala daora</label>
+    <race>KushalaDaora</race>
+    <combatPower>4670</combatPower>
+    <ecoSystemWeight>6.3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KushalaDaora/KushalaDaora</texPath>
+          <drawSize>7.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KushalaDaora/KushalaDaora</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KushalaDaora/KushalaDaora</texPath>
+          <drawSize>14.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+   <!-- ============================================================ -->
+    
+      <ThingDef ParentName="AnimalThingBase">
+    <defName>Tesuka</defName>
+    <label>tesuka</label>
+    <description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements.</description>
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <MarketValue>120900</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>780</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>2.8</ArmorRating_Sharp>
+	  <ArmorRating_Heat>10.8</ArmorRating_Heat>
+	  <Flammability>0.0</Flammability>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>1.0, -0.1, 0.0</westOffset>
+			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
+			<northOffset>0.0, -1.0, 0.0</northOffset>
+			<southOffset>0.0, -1.0, 0.0</southOffset>
+			<westSize>2.8, 1.5</westSize>
+			<northSize>1.7, 2.5</northSize>
+			<eastSize>2.8, 1.5</eastSize>
+			<southSize>1.7, 2.5</southSize>
+		</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>153</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>95</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHElder</body>
+      <baseHungerRate>4.0</baseHungerRate>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>8.6</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Teostra</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>1.0</wildness>
+      <trainability>Simple</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.003</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.002</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0.003</AridShrubland>
+		<Desert>0.003</Desert>
+		<ExtremeDesert>0.003</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Tesuka</defName>
+    <label>tesuka</label>
+    <race>Tesuka</race>
+    <combatPower>4670</combatPower>
+    <ecoSystemWeight>6.3</ecoSystemWeight>
+    <lifeStages>
+	<li>
+        <labelMale>Teostra</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Teostra/Teostra</texPath>
+          <drawSize>5.0</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Lunastra</labelFemale>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Lunastra/Lunastra</texPath>
+          <drawSize>5.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <labelMale>Teostra</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Teostra/Teostra</texPath>
+          <drawSize>8.0</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Lunastra</labelFemale>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Lunastra/Lunastra</texPath>
+          <drawSize>8.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <labelMale>Teostra</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Teostra/Teostra</texPath>
+          <drawSize>14.0</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Lunastra</labelFemale>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Lunastra/Lunastra</texPath>
+          <drawSize>14.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>4.0</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	
+  </PawnKindDef>
+  
+    
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>Nergigante</defName>
+    <label>nergigante</label>
+    <description>A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well documented.</description>
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <MarketValue>310900</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>180</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>2.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>2.8</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>1.0, -0.1, 0.0</westOffset>
+			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
+			<northOffset>0.0, -1.0, 0.0</northOffset>
+			<southOffset>0.0, -1.0, 0.0</southOffset>
+			<westSize>2.8, 1.5</westSize>
+			<northSize>1.7, 2.5</northSize>
+			<eastSize>2.8, 1.5</eastSize>
+			<southSize>1.7, 2.5</southSize>
+		</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>120</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right front claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>120</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>185</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>125</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHElder</body>
+      <baseHungerRate>4.0</baseHungerRate>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>8.6</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Nergigante</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>1.0</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.002</TemperateForest>
+		<TemperateSwamp>0.001</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.002</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0.001</AridShrubland>
+		<Desert>0.001</Desert>
+		<ExtremeDesert>0.001</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nergigante</defName>
+    <label>nergigante</label>
+    <race>Nergigante</race>
+    <combatPower>4670</combatPower>
+    <ecoSystemWeight>6.3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Nergigante/Nergigante</texPath>
+          <drawSize>7.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Nergigante/Nergigante</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Nergigante/Nergigante</texPath>
+          <drawSize>15.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  
+  </Defs>
