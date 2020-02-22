@@ -28,6 +28,9 @@
 			<southSize>1.7, 2.5</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_KushalaDaora"/>
+    </comps>
     <tools>
       <li>
         <label>left front claw</label>
@@ -200,7 +203,10 @@
 			<eastSize>2.8, 1.5</eastSize>
 			<southSize>1.7, 2.5</southSize>
 		</li>
-	</modExtensions>
+	</modExtensions>	
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_LunastraTeostra"/>
+    </comps>
     <tools>
       <li>
         <label>left front claw</label>
