@@ -56,7 +56,7 @@
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <recipes>
       <li>CookMealSimple</li>
-      <li>Make_Pemmican</li>
+      <li>CookMeat</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealBase">
+    <defName>CookMeat</defName>
+    <label>cook meat</label>
+    <description>Cook a piece of meat.</description>
+    <jobString>Cooking meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+		<products>
+			<MealCookedMeat>1</MealCookedMeat>
+		</products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<RecipeDef ParentName="CookMealBase">
+		<defName>CookMealHunter</defName>
+		<label>cook hunter meal</label>
+		<description>Cook an absurdly large hunter meal that temporarilly increases colonist stats.</description>
+		<jobString>Cooking hunter meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealHunter>1</MealHunter>
+    </products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+  </RecipeDef>
+
+</Defs>
