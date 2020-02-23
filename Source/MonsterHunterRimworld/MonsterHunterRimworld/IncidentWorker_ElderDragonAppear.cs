@@ -39,10 +39,9 @@ namespace MonsterHunterRimworld
                 {
                     if (!WyvernUtility.IsSameSpecies(newElderDragon, wildlifeAnimal))
                     {
-                        newElderDragon.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, wildlifeAnimal)); // newly arriving elder dragon attacks currently present elder dragon
-                        if (wildlifeAnimal.jobs.curJob.def == JobDefOf.AttackMelee) continue; // currently present elder dragon does not fight new elder dragon if already fighting
-                        wildlifeAnimal.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, newElderDragon));
-                        Messages.Message("TurfWarLabel".Translate().CapitalizeFirst(), wildlifeAnimal, MessageTypeDefOf.NeutralEvent);
+                        if (wildlifeAnimal.IsFighting()) continue;
+                        if (newElderDragon.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, wildlifeAnimal))) Messages.Message("TurfWarLabel".Translate().CapitalizeFirst(), newElderDragon, MessageTypeDefOf.NeutralEvent);
+                        if (wildlifeAnimal.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, newElderDragon))) Messages.Message("TurfWarLabel".Translate().CapitalizeFirst(), wildlifeAnimal, MessageTypeDefOf.NeutralEvent);
                     }
                     continue;
                 }

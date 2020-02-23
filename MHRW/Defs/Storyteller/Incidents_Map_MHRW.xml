@@ -21,7 +21,6 @@
 		</targetTags>
 		<workerClass>MonsterHunterRimworld.IncidentWorker_LargeMonsterAppear</workerClass>
 		<baseChance>10</baseChance>
-		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
 
 	<IncidentDef>
@@ -33,7 +32,6 @@
 		</targetTags>
 		<workerClass>MonsterHunterRimworld.IncidentWorker_ElderDragonAppear</workerClass>
 		<baseChance>5</baseChance>
-		<minRefireDays>30</minRefireDays>
 	</IncidentDef>
 
 </Defs>

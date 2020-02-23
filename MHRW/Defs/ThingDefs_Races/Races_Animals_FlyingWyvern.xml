@@ -27,6 +27,11 @@
         <southSize>1.7, 2.5</southSize>
     </li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -224,6 +229,11 @@
         <southSize>1.7, 2.5</southSize>
     </li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -403,6 +413,11 @@
 			<southSize>1.7, 2.5</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -583,6 +598,11 @@
 			<southSize>1.7, 2.5</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -764,6 +784,11 @@
 			<southSize>1.7, 2.5</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>

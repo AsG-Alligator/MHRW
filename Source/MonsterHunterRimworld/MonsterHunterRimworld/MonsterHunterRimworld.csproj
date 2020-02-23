@@ -47,6 +47,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompProperties_TurfWar.cs" />
+    <Compile Include="CompTurfWar.cs" />
     <Compile Include="CompKushalaDaora.cs" />
     <Compile Include="CompLunastraTeostra.cs" />
     <Compile Include="CompProperties_KushalaDaora.cs" />
