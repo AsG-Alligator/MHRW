@@ -262,17 +262,17 @@
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.003</TemperateForest>
+		<TemperateForest>0</TemperateForest>
 		<TemperateSwamp>0</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.002</TropicalRainforest>
+		<TropicalRainforest>0</TropicalRainforest>
 		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0.003</AridShrubland>
-		<Desert>0.003</Desert>
-		<ExtremeDesert>0.003</ExtremeDesert>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
         <li>
@@ -450,17 +450,17 @@
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.002</TemperateForest>
-		<TemperateSwamp>0.001</TemperateSwamp>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.002</TropicalRainforest>
+		<TropicalRainforest>0</TropicalRainforest>
 		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0.001</AridShrubland>
-		<Desert>0.001</Desert>
-		<ExtremeDesert>0.001</ExtremeDesert>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
         <li>
