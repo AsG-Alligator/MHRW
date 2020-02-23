@@ -34,14 +34,15 @@ namespace MonsterHunterRimworld
             List<Pawn> wildlifeAnimals = map.mapPawns.AllPawnsSpawned.FindAll(p => p != newElderDragon && p.Faction == null && p.RaceProps.Animal && !p.health.Dead);
             foreach (Pawn wildlifeAnimal in wildlifeAnimals)
             {
-                if (Rand.Chance(0.2f)) continue;
+                if (Rand.Chance(0.2f)) continue; // animals will flee with a 80% chance
                 if (WyvernUtility.IsElderDragon(wildlifeAnimal))
                 {
-                    if (newElderDragon.RaceProps.AnyPawnKind != wildlifeAnimal.RaceProps.AnyPawnKind)
+                    if (!WyvernUtility.IsSameSpecies(newElderDragon, wildlifeAnimal))
                     {
                         newElderDragon.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, wildlifeAnimal)); // newly arriving elder dragon attacks currently present elder dragon
                         if (wildlifeAnimal.jobs.curJob.def == JobDefOf.AttackMelee) continue; // currently present elder dragon does not fight new elder dragon if already fighting
                         wildlifeAnimal.jobs.TryTakeOrderedJob(new Job(JobDefOf.AttackMelee, newElderDragon));
+                        Messages.Message("TurfWarLabel".Translate().CapitalizeFirst(), wildlifeAnimal, MessageTypeDefOf.NeutralEvent);
                     }
                     continue;
                 }

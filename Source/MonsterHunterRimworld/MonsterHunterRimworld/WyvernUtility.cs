@@ -28,6 +28,11 @@ namespace MonsterHunterRimworld
             return IsElderDragon(pawn.RaceProps.AnyPawnKind);
         }
 
+        public static bool IsSameSpecies(Pawn pawn1, Pawn pawn2)
+        {
+            return pawn1.RaceProps.AnyPawnKind == pawn2.RaceProps.AnyPawnKind;
+        }
+
         public static PawnKindDef GetRandomPawnKindForWyvernType(string wyvernType)
         {
             wyvernType = wyvernType.Replace(" ", "").ToUpper();

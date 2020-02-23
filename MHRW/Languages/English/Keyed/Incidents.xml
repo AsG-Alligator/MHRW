@@ -9,5 +9,6 @@
 	<LetterTextLargeMonsterAppearWithGroup>A wild {0} has wandered into the area. It is accompanied by a group of {1}.</LetterTextLargeMonsterAppearWithGroup>
 	<LetterLabelElderDragonAppear>Elder dragon</LetterLabelElderDragonAppear>
 	<LetterTextElderDragonAppear>{0}, an elder dragon, has wandered into the area. It scared away most of the other wildlife.</LetterTextElderDragonAppear>
+	<TurfWarLabel>Turf war</TurfWarLabel>
 
 </LanguageData>
