@@ -1,7 +1,6 @@
-﻿using System;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Verse;
 
 namespace MonsterHunterRimworld
@@ -31,6 +30,39 @@ namespace MonsterHunterRimworld
         public static bool IsSameSpecies(Pawn pawn1, Pawn pawn2)
         {
             return pawn1.RaceProps.AnyPawnKind == pawn2.RaceProps.AnyPawnKind;
+        }
+
+        public static PawnKindDef GetRandomLargeMonsterForCurrentMapTemperature(float temperature)
+        {
+            List<PawnKindDef> possibleLargeMonster = GetLargeWyvernDefList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < temperature && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > temperature);
+            if (possibleLargeMonster.Count > 0) return possibleLargeMonster.RandomElement();
+            return null;
+        }
+
+        public static IEnumerable<PawnKindDef> GetLargeWyvernDefList()
+        {
+            yield return MHRWDefOf.KuluYaKu;
+            yield return MHRWDefOf.Genprey;
+            yield return MHRWDefOf.Giaprey;
+            yield return MHRWDefOf.TzitziYaKu;
+            yield return MHRWDefOf.PukeiPukei;
+            yield return MHRWDefOf.Barroth;
+            yield return MHRWDefOf.Deviljho;
+            yield return MHRWDefOf.Jyuratodus;
+            yield return MHRWDefOf.Lavasioth;
+            yield return MHRWDefOf.Anjanath;
+            yield return MHRWDefOf.TobiKadachi;
+            yield return MHRWDefOf.GreatJagras;
+            yield return MHRWDefOf.GreatGirros;
+            yield return MHRWDefOf.Dodogama;
+            yield return MHRWDefOf.Odogaron;
+            yield return MHRWDefOf.Rath;
+            yield return MHRWDefOf.Rath; // 2 times because different gender is relevant
+            yield return MHRWDefOf.Bazelgeuse;
+            yield return MHRWDefOf.Legiana;
+            yield return MHRWDefOf.Diablos;
+            yield return MHRWDefOf.Paolumu;
+            yield break;
         }
 
         public static PawnKindDef GetRandomPawnKindForWyvernType(string wyvernType)
