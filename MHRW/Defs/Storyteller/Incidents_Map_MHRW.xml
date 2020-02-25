@@ -20,7 +20,7 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>MonsterHunterRimworld.IncidentWorker_LargeMonsterAppear</workerClass>
-		<baseChance>10</baseChance>
+		<baseChance>8</baseChance>
 	</IncidentDef>
 
 	<IncidentDef>
@@ -31,7 +31,7 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>MonsterHunterRimworld.IncidentWorker_ElderDragonAppear</workerClass>
-		<baseChance>5</baseChance>
+		<baseChance>1</baseChance>
 	</IncidentDef>
 
 </Defs>
