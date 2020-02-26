@@ -31,6 +31,7 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
     <recipeMaker>
+		  <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -161,7 +162,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -212,7 +213,7 @@
 	  <li>
         <label>thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>80</power>
         <cooldownTime>3.2</cooldownTime>
@@ -227,7 +228,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -327,7 +328,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+    	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -386,7 +387,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+     	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -487,7 +488,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -557,7 +558,7 @@
       <li>
         <label>thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>80</power>
         <cooldownTime>1.4</cooldownTime>
@@ -565,7 +566,7 @@
 	  <li>
         <label>high thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>80</power>
         <cooldownTime>1.4</cooldownTime>
@@ -573,7 +574,7 @@
 	  <li>
         <label>counter-thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>80</power>
         <cooldownTime>1.4</cooldownTime>
@@ -596,7 +597,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -680,7 +681,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      	<researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -733,7 +734,7 @@
 	  <li>
         <label>thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>60</power>
         <cooldownTime>1.4</cooldownTime>
@@ -772,7 +773,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+      	 <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -810,6 +811,7 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
     <recipeMaker>
+	  <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -960,7 +962,7 @@
 		</comps>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	  <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -1094,7 +1096,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>Greatbow</researchPrerequisite>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -1204,7 +1206,7 @@
       <li>
         <label>lateral thrust</label>
         <capacities>
-          <li>Cut</li>
+          <li>Stab</li>
         </capacities>
         <power>90</power>
         <cooldownTime>1.2</cooldownTime>
