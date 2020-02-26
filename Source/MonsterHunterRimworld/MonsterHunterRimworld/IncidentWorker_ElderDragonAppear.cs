@@ -13,6 +13,7 @@ namespace MonsterHunterRimworld
             {
                 return false;
             }
+            if (GenTicks.TicksGame < GenDate.TicksPerDay * LoadedModManager.GetMod<MonsterHunterRimworldMod>().GetSettings<MonsterHunterRimworldModSettings>().minElderDragonEventDelay) return false;
             Map map = (Map)parms.target;
             IntVec3 intVec;
             return RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null);

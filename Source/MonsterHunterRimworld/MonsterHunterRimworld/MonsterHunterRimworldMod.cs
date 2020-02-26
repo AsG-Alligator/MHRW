@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using Verse;
+
+namespace MonsterHunterRimworld
+{
+    public class MonsterHunterRimworldMod : Mod
+    {
+        MonsterHunterRimworldModSettings monsterHunterRimworldModSettings;
+
+        public MonsterHunterRimworldMod(ModContentPack content) : base(content)
+        {
+            this.monsterHunterRimworldModSettings = GetSettings<MonsterHunterRimworldModSettings>();
+        }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Listing_Standard listingStandard = new Listing_Standard();
+            listingStandard.Begin(inRect);
+
+            listingStandard.Label("Days until the first elder dragons can appear:");
+            listingStandard.Gap(listingStandard.verticalSpacing);
+            Rect rect1 = listingStandard.GetRect(22f);
+            monsterHunterRimworldModSettings.minElderDragonEventDelay = Widgets.HorizontalSlider(rect1, monsterHunterRimworldModSettings.minElderDragonEventDelay, 0f, 120f, false, (monsterHunterRimworldModSettings.minElderDragonEventDelay).ToString("") + "", "0", "120", 1f);
+
+            listingStandard.End();
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Monster Hunter Rimworld";
+        }
+    }
+}
