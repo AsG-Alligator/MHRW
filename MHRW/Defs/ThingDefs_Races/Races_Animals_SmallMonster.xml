@@ -200,6 +200,7 @@
       <MarketValue>450</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <ToxicSensitivity>0</ToxicSensitivity>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">

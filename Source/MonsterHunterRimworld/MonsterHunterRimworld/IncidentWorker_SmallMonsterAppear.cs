@@ -13,6 +13,7 @@ namespace MonsterHunterRimworld
                 return false;
             }
             Map map = (Map)parms.target;
+            if (WyvernUtility.GetRandomSmallMonsterForEvent(map) == null) return false;
             IntVec3 intVec;
             return RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null);
         }
@@ -20,7 +21,8 @@ namespace MonsterHunterRimworld
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            PawnKindDef smallMonster = WyvernUtility.GetRandomPawnKindForWyvernType("SMALLMONSTER");
+            PawnKindDef smallMonster = WyvernUtility.GetRandomSmallMonsterForEvent(map);
+            if (smallMonster == null) return false;
             IntVec3 intVec;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null))
             {

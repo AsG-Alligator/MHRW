@@ -15,6 +15,7 @@ namespace MonsterHunterRimworld
             }
             if (GenTicks.TicksGame < GenDate.TicksPerDay * LoadedModManager.GetMod<MonsterHunterRimworldMod>().GetSettings<MonsterHunterRimworldModSettings>().minElderDragonEventDelay) return false;
             Map map = (Map)parms.target;
+            if (WyvernUtility.GetRandomElderDragonForEvent(map) == null) return false;
             IntVec3 intVec;
             return RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null);
         }
@@ -22,7 +23,8 @@ namespace MonsterHunterRimworld
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            PawnKindDef elderDragon = WyvernUtility.GetRandomPawnKindForWyvernType("ELDERDRAGON");
+            PawnKindDef elderDragon = WyvernUtility.GetRandomElderDragonForEvent(map);
+            if (elderDragon == null) return false;
             IntVec3 intVec;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null))
             {

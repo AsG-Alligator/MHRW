@@ -32,9 +32,13 @@ namespace MonsterHunterRimworld
             return pawn1.RaceProps.AnyPawnKind == pawn2.RaceProps.AnyPawnKind;
         }
 
-        public static PawnKindDef GetRandomLargeMonsterForCurrentMapTemperature(float temperature)
+        public static PawnKindDef GetRandomLargeMonsterForEvent(Map map)
         {
-            List<PawnKindDef> possibleLargeMonster = GetLargeWyvernDefList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < temperature && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > temperature);
+            List<PawnKindDef> possibleLargeMonster = GetLargeWyvernDefList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < map.mapTemperature.OutdoorTemp && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > map.mapTemperature.OutdoorTemp);
+            if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
+            {
+                possibleLargeMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+            }
             if (possibleLargeMonster.Count > 0) return possibleLargeMonster.RandomElement();
             return null;
         }
@@ -62,6 +66,45 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Legiana;
             yield return MHRWDefOf.Diablos;
             yield return MHRWDefOf.Paolumu;
+            yield break;
+        }
+
+        public static PawnKindDef GetRandomSmallMonsterForEvent(Map map)
+        {
+            List<PawnKindDef> possibleSmallMonster = GetSmallMonsterList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < map.mapTemperature.OutdoorTemp && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > map.mapTemperature.OutdoorTemp);
+            if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
+            {
+                possibleSmallMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+            }
+            if (possibleSmallMonster.Count > 0) return possibleSmallMonster.RandomElement();
+            return null;
+        }
+
+        public static IEnumerable<PawnKindDef> GetSmallMonsterList()
+        {
+            yield return MHRWDefOf.Jagras;
+            yield return MHRWDefOf.Girros;
+            yield return MHRWDefOf.Aptonoth;
+            yield break;
+        }
+
+        public static PawnKindDef GetRandomElderDragonForEvent(Map map)
+        {
+            List<PawnKindDef> possibleElderDragon = GetElderDragonList().ToList();
+            if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
+            {
+                possibleElderDragon.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+            }
+            if (possibleElderDragon.Count > 0) return possibleElderDragon.RandomElement();
+            return null;
+        }
+
+        public static IEnumerable<PawnKindDef> GetElderDragonList()
+        {
+            yield return MHRWDefOf.KushalaDaora;
+            yield return MHRWDefOf.Tesuka;
+            yield return MHRWDefOf.Tesuka; // 2 times because different gender is relevant
+            yield return MHRWDefOf.Nergigante;
             yield break;
         }
 

@@ -327,6 +327,7 @@
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>6400</MarketValue>
       <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
@@ -646,6 +647,7 @@
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>10900</MarketValue>
       <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
     </statBases>

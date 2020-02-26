@@ -13,7 +13,7 @@ namespace MonsterHunterRimworld
                 return false;
             }
             Map map = (Map)parms.target;
-            if (WyvernUtility.GetRandomLargeMonsterForCurrentMapTemperature(map.mapTemperature.OutdoorTemp) == null) return false;
+            if (WyvernUtility.GetRandomLargeMonsterForEvent(map) == null) return false;
             IntVec3 intVec;
             return RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null);
         }
@@ -21,7 +21,7 @@ namespace MonsterHunterRimworld
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            PawnKindDef largeMonster = WyvernUtility.GetRandomLargeMonsterForCurrentMapTemperature(map.mapTemperature.OutdoorTemp);
+            PawnKindDef largeMonster = WyvernUtility.GetRandomLargeMonsterForEvent(map);
             if (largeMonster == null) return false;
             IntVec3 intVec;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null))
