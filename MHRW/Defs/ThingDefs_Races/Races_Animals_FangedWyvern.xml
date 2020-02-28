@@ -7,7 +7,8 @@
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>6800</MarketValue>
-      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>35</ComfyTemperatureMin>
 	  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
     </statBases>
@@ -23,9 +24,13 @@
 		</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggTobiFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>60</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -166,7 +171,8 @@
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>5900</MarketValue>
-      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
     </statBases>
@@ -182,9 +188,13 @@
 		</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGJagrasFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -326,8 +336,9 @@
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>6400</MarketValue>
-      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
-      <ToxicSensitivity>0</ToxicSensitivity>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
+	  <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
@@ -343,9 +354,13 @@
 		</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGGirrosFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -487,7 +502,8 @@
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
       <MarketValue>7800</MarketValue>
-      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>85</ComfyTemperatureMin>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
@@ -503,9 +519,13 @@
 		</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggDodogamaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>		
     </comps>
     <tools>
       <li>
@@ -646,8 +666,9 @@
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>10900</MarketValue>
-      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
-      <ToxicSensitivity>0</ToxicSensitivity>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
+	  <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
     </statBases>
@@ -666,6 +687,13 @@
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
 	  </li>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggOdogaronFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>

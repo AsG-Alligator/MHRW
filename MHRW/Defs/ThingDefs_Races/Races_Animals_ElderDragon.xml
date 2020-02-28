@@ -30,6 +30,13 @@
 	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_KushalaDaora"/>
+		<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggKushalaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -206,7 +213,15 @@
 	</modExtensions>	
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_LunastraTeostra"/>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggTesukaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>60</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
+	
     <tools>
       <li>
         <label>left front claw</label>
@@ -395,6 +410,15 @@
 			<southSize>1.7, 2.5</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggNergiganteFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>60</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left front claw</label>

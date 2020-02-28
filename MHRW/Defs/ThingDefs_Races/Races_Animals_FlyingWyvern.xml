@@ -31,6 +31,13 @@
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
 	  </li>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggRathFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -233,6 +240,13 @@
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
 	  </li>
+		<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggBazelFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -417,6 +431,13 @@
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
 	  </li>
+	  <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggLegianaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -602,6 +623,13 @@
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
 	  </li>
+		<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggDiablosFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>
@@ -785,9 +813,13 @@
 		</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggPaolumuFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
     </comps>
     <tools>
       <li>

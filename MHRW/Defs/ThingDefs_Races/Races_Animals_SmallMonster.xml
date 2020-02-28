@@ -21,6 +21,15 @@
 			<southSize>1.0, 2.0</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggJagrasFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -200,7 +209,6 @@
       <MarketValue>450</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
-      <ToxicSensitivity>0</ToxicSensitivity>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -213,6 +221,15 @@
 			<southSize>1.0, 2.0</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGirrosFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>
@@ -391,6 +408,15 @@
 			<southSize>1.0, 2.0</southSize>
 		</li>
 	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggAptonothFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
     <tools>
       <li>
         <capacities>
