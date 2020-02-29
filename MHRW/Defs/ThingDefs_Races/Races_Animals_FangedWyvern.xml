@@ -8,7 +8,7 @@
       <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>6800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMin>35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
     </statBases>
@@ -172,7 +172,7 @@
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>5900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
     </statBases>
@@ -337,7 +337,7 @@
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>6400</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -503,7 +503,7 @@
       <MoveSpeed>3.6</MoveSpeed>
       <MarketValue>7800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMin>85</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>85</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
@@ -667,7 +667,7 @@
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>10900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMin>45</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ToxicSensitivity>0</ToxicSensitivity>
 	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
