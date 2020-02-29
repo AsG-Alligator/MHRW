@@ -2,6 +2,7 @@
 <ModMetaData>
 	<name>Monster Hunter RimWorld</name>
 	<author>AsG_Alligator</author>
+	<packageId>AsGAlligator.MonsterHunterRimWorld</packageId>
 	<url>n/a</url>
 	<description>Beta release of the Monster Hunter mod.</description>
 	<supportedVersions>
