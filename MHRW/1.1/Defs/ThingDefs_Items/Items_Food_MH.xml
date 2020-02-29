@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="MealRottable">
+  <ThingDef ParentName="MealCooked">
     <defName>MealCookedMeat</defName>
     <label>cooked meat</label>
     <description>A simple hunter meal - a well-done piece of juicy meat. So tasty!</description>
@@ -21,7 +21,7 @@
     </ingestible>
   </ThingDef>
   
-    <ThingDef ParentName="MealRottable">
+    <ThingDef ParentName="MealCooked">
     <defName>MealHunter</defName>
     <label>hunter meal</label>
     <description>An absurdly large portion of food. Does marvels to your body.</description>

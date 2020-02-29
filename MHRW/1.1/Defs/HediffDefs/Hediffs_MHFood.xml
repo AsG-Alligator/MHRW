@@ -6,6 +6,7 @@
     <defName>AteHunterMeal</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>buffed with a hunter meal</label>
+	<description>A buff provided by eating a hunter meal. Increases ones abilities in various ways.</description>
     <labelNoun>hunter meal buff</labelNoun>
     <defaultLabelColor>(0.8,1,0.8)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
