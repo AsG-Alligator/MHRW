@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Monster Hunter RimWorld</name>
-  <author>AsG_Alligator</author>
-  <url>n/a</url>
-  <description>Beta release of the Monster Hunter mod.</description>
-  <supportedVersions><li>1.0</li></supportedVersions>
+	<name>Monster Hunter RimWorld</name>
+	<author>AsG_Alligator</author>
+	<url>n/a</url>
+	<description>Beta release of the Monster Hunter mod.</description>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+        <packageId>jecrell.jecstools</packageId>
+        <displayName>JecsTools</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+    </li>
+</modDependencies>
 </ModMetaData>

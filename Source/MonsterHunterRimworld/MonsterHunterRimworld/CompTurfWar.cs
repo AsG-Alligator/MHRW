@@ -21,11 +21,12 @@ namespace MonsterHunterRimworld
 
             
             if (!(parent is Pawn largeMonster)) return;
+            if (largeMonster.Faction != null) return;
             Map map = largeMonster.Map;
             if (map == null) return;
             if (largeMonster.IsFighting() || largeMonster.Downed || largeMonster.Dead) return;
 
-            List<Pawn> possibleTargetsToFight = map.mapPawns.AllPawnsSpawned.FindAll(p => p.RaceProps.Animal && !p.IsFighting() && !p.Downed && !p.Dead && !WyvernUtility.IsSameSpecies(p, largeMonster) && p.Position.DistanceTo(largeMonster.Position) < Props.maxFightRange && p.TryGetComp<CompTurfWar>() != null);
+            List<Pawn> possibleTargetsToFight = map.mapPawns.AllPawnsSpawned.FindAll(p => p.RaceProps.Animal && p.Faction == null && !p.IsFighting() && !p.Downed && !p.Dead && !WyvernUtility.IsSameSpecies(p, largeMonster) && p.Position.DistanceTo(largeMonster.Position) < Props.maxFightRange && p.TryGetComp<CompTurfWar>() != null);
             if (possibleTargetsToFight.Count == 0) return;
             Pawn targetToFight = possibleTargetsToFight.RandomElement();
 

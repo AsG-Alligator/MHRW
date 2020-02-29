@@ -18,7 +18,7 @@ namespace MonsterHunterRimworld
             GameConditionManager gameConditionManager = map.GameConditionManager;
             if (gameConditionManager.ConditionIsActive(GameConditionDefOf.HeatWave)) return;
             int duration = Mathf.RoundToInt(0.5f * 60000f); // lasts half a day after elder dragon dies
-            GameCondition cond = GameConditionMaker.MakeCondition(GameConditionDefOf.HeatWave, duration, 0);
+            GameCondition cond = GameConditionMaker.MakeCondition(GameConditionDefOf.HeatWave, duration);
             gameConditionManager.RegisterCondition(cond);
         }
     }
