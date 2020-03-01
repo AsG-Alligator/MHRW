@@ -172,7 +172,7 @@
   		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MH_Longsword</defName>
     <label>Longsword</label>
-    <description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the weared down.</description>
+    <description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/MHLongsword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -268,8 +268,8 @@
 		</renderProperties>
 		<canBlockRanged>true</canBlockRanged>
 		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>10.0</rangedBlockChanceFactor>
+		<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
+		<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
 		<shieldTakeDamage>false</shieldTakeDamage>
 		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
 		<canBeAutoDiscarded>false</canBeAutoDiscarded>
@@ -427,8 +427,8 @@
 		</renderProperties>
 		<canBlockRanged>true</canBlockRanged>
 		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>10.0</rangedBlockChanceFactor>
+		<meleeBlockChanceFactor>50.0</meleeBlockChanceFactor>
+		<rangedBlockChanceFactor>50.0</rangedBlockChanceFactor>
 		<shieldTakeDamage>false</shieldTakeDamage>
 		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
 		<canBeAutoDiscarded>false</canBeAutoDiscarded>
@@ -528,8 +528,8 @@
 		</renderProperties>
 		<canBlockRanged>true</canBlockRanged>
 		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>10.0</rangedBlockChanceFactor>
+		<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
+		<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
 		<shieldTakeDamage>false</shieldTakeDamage>
 		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
 		<canBeAutoDiscarded>false</canBeAutoDiscarded>
@@ -687,7 +687,81 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  
+
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MH_Switchsword</defName>
+    <label>Switch Axe</label>
+    <description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MHSwitchsword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+			<eastOffset>(0.5,0,0.2)</eastOffset>
+			<westOffset>(-0.5,0,0.2)</westOffset>
+			<southOffset>(0.4,0,0.2)</southOffset>
+			<northOffset>(0.4,0,0.2)</northOffset>
+		</li>
+		</comps>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <costList>
+			<Steel>280</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+	</costList>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2.6</Mass>
+    </statBases>
+	<equippedStatOffsets>
+			<MoveSpeed>-1.9</MoveSpeed>
+	</equippedStatOffsets>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>side slash</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>90</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+	  <li>
+        <label>rising slash</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>90</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+	  <li>
+        <label>overhead slash</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>90</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+	  <li>
+        <label>double slash</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>3.1</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      	<researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
     
   		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MH_Insectglaive</defName>
@@ -895,7 +969,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <defaultProjectile>Bullet_MHLBGNormalOre</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30.9</range>
         <burstShotCount>3</burstShotCount>
@@ -928,20 +1002,7 @@
       </li>
     </tools>
   </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_AssaultRifle</defName>
-    <label>assault rifle bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>90</damageAmountBase>
-	  <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
+
   
   	<ThingDef ParentName="BaseHumanMakeableGun">
     <defName>MH_Heavybowgun</defName>
@@ -988,7 +1049,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <defaultProjectile>Bullet_MHHBGNormalOre</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>40.9</range>
         <burstShotCount>1</burstShotCount>
@@ -1021,21 +1082,7 @@
       </li>
     </tools>
   </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_AssaultRifle</defName>
-    <label>assault rifle bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-	  <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-  
+
    <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>MH_Bow</defName>
     <label>Bow</label>
@@ -1078,7 +1125,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Arrow_Great</defaultProjectile>
+        <defaultProjectile>Arrow_MHBowNormalOre</defaultProjectile>
         <warmupTime>2.0</warmupTime>
         <range>29.9</range>
         <soundCast>Bow_Large</soundCast>
@@ -1102,23 +1149,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  <ThingDef ParentName="BaseProjectileNeolithic">
-    <defName>Arrow_Great</defName>
-    <label>greatbow arrow</label>
-    <graphicData>
-      <texPath>Things/Projectile/Arrow_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <flyOverhead>false</flyOverhead>
-      <damageDef>Arrow</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-      <stoppingPower>3.5</stoppingPower>
-      <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>49</speed>
-    </projectile>
-  </ThingDef>
-  
+
     	<ThingDef ParentName="BaseHumanMakeableGun">
     <defName>MH_Gunlance</defName>
     <label>Gunlance</label>
@@ -1151,8 +1182,8 @@
 		</renderProperties>
 		<canBlockRanged>true</canBlockRanged>
 		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>10.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>10.0</rangedBlockChanceFactor>
+		<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
+		<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
 		<shieldTakeDamage>false</shieldTakeDamage>
 		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
 		<canBeAutoDiscarded>false</canBeAutoDiscarded>
@@ -1189,7 +1220,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <defaultProjectile>Bullet_MHGunlanceShellOre</defaultProjectile>
         <warmupTime>0.1</warmupTime>
         <range>5</range>
         <burstShotCount>3</burstShotCount>
@@ -1238,8 +1269,8 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_AssaultRifle</defName>
-    <label>assault rifle bullet</label>
+    <defName>Bullet_MHGunlanceShellOre</defName>
+    <label>gunlance shell</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1251,6 +1282,54 @@
       <speed>70</speed>
     </projectile>
   </ThingDef>
-
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MHLBGNormalOre</defName>
+    <label>light bowgun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>90</damageAmountBase>
+	  <armorPenetrationBase>1.1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MHHBGNormalOre</defName>
+    <label>heavy bowgun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>1.1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_MHBowNormalOre</defName>
+    <label>hunter bow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <armorPenetrationBase>1.1</armorPenetrationBase>
+      <speed>49</speed>
+    </projectile>
+  </ThingDef>
+  
+  
 	
 	</Defs>
