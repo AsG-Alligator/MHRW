@@ -6,7 +6,7 @@
     <description>A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.</description>
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
-      <MarketValue>6800</MarketValue>
+      <MarketValue>4800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
@@ -78,6 +78,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_TobiKadachi</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>
@@ -170,7 +171,7 @@
     <description>The pack leader of the Jagras. When hungry, Great Jagras are known to attack monsters even stronger than themselves. It balloons to unbelievable proportions after swallowing prey.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>5900</MarketValue>
+      <MarketValue>4500</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -242,6 +243,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_GreatJagras</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.90</wildness>
@@ -335,7 +337,7 @@
     <description>A monster that scavenges for meals dropped from the Coral Highlands. It acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>6400</MarketValue>
+      <MarketValue>4800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ToxicSensitivity>0</ToxicSensitivity>
@@ -408,6 +410,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_GreatGirros</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.90</wildness>
@@ -501,7 +504,7 @@
     <description>A monster that devours rock as its primary diet. The Crystals it devours mix with its saliva to produce explosive minerals that it can spit at its enemies.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
-      <MarketValue>7800</MarketValue>
+      <MarketValue>5100</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>85</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -665,7 +668,7 @@
     <description>A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>10900</MarketValue>
+      <MarketValue>7900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ToxicSensitivity>0</ToxicSensitivity>
@@ -741,6 +744,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Odogaron</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.90</wildness>

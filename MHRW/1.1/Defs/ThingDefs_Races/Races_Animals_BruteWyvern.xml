@@ -9,7 +9,7 @@
     <description>Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>8900</MarketValue>
+      <MarketValue>6000</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
@@ -191,7 +191,7 @@
     <description>Due to its enhanced metabolism, Deviljho must constantly seek out prey. It is extremely violent, and known to snatch up large monsters in its powerful maw and flail them around.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>66900</MarketValue>
+      <MarketValue>12900</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
@@ -268,6 +268,7 @@
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Deviljho</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>1.0</wildness>
@@ -373,7 +374,7 @@
     <description>A large piscine wyvern that inhabits swamps. It uses mud to capture prey, and it's known to battle other monsters over territory.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>8400</MarketValue>
+      <MarketValue>4400</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -450,6 +451,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Jyuratodus</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.97</wildness>
@@ -555,7 +557,7 @@
     <description>Lavasioths utilize molten lava as armor. They are extremely aggressive and will attack without prejudice until the threat has been eliminated.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>8100</MarketValue>
+      <MarketValue>5100</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>680</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
@@ -634,6 +636,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Lavasioth</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.97</wildness>
@@ -739,7 +742,7 @@
     <description>The Anjanath patrols the forest looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without the slightest provocation.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>20200</MarketValue>
+      <MarketValue>8200</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
@@ -816,6 +819,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Anjanath</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>

@@ -7,7 +7,7 @@
     <description>An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests of other animals.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>3950</MarketValue>
+      <MarketValue>2950</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -188,7 +188,7 @@
     <description>An orange and green-striped species of small carnivores found mainly in desert zones. Traveling in packs, their large fangs and claws contain a neurotoxin that is used to paralyze prey.</description>
     <statBases>
       <MoveSpeed>4.6</MoveSpeed>
-      <MarketValue>3800</MarketValue>
+      <MarketValue>1000</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -260,6 +260,7 @@
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Gendrome</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.7</wildness>
@@ -376,7 +377,7 @@
     <description>A species of small bird-like carnivores known to inhabit the snowy mountains. Their white skin is beautiful, but their temperament is not. They are known to spit ice at hunters, and attack in deadly packs.</description>
     <statBases>
       <MoveSpeed>4.6</MoveSpeed>
-      <MarketValue>4900</MarketValue>
+      <MarketValue>1100</MarketValue>
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>15</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
@@ -448,6 +449,7 @@
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Giadrome</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.7</wildness>
@@ -562,7 +564,7 @@
     <description>This odd monster blinds both prey and enemies with a special pulsing organ near its head. It then uses its strong legs to deliver finishing blows.</description>
     <statBases>
       <MoveSpeed>4.6</MoveSpeed>
-      <MarketValue>6900</MarketValue>
+      <MarketValue>2800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -634,6 +636,7 @@
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_TzitziYaKu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.98</wildness>
@@ -743,7 +746,7 @@
     <description>A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>7000</MarketValue>
+      <MarketValue>4400</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.5</ArmorRating_Blunt>

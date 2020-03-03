@@ -9,7 +9,7 @@
     <description>Eldеr Dragon clad in mеtal plating. Gеnеratеs storms whеrеvеr it goеs. Gеtting closе to it is no mеan fеat.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>110900</MarketValue>
+      <MarketValue>20900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
@@ -84,6 +84,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Kushala</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>1.0</wildness>
@@ -190,7 +191,7 @@
     <description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>120900</MarketValue>
+      <MarketValue>20900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>780</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
@@ -268,6 +269,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Teostra</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>1.0</wildness>
@@ -391,7 +393,7 @@
     <description>A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well documented.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>310900</MarketValue>
+      <MarketValue>30900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>180</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>2.2</ArmorRating_Blunt>
@@ -465,6 +467,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Nergigante</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>1.0</wildness>

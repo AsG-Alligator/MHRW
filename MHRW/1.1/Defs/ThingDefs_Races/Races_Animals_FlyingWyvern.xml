@@ -10,7 +10,7 @@
     <description>A large fire-breathing flying wyvern and poison talons.</description>
     <statBases>
       <MoveSpeed>4.9</MoveSpeed>
-      <MarketValue>15900</MarketValue>
+      <MarketValue>10900</MarketValue>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -96,6 +96,7 @@
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Rathalos</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>
@@ -219,7 +220,7 @@
     <description>A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>23900</MarketValue>
+      <MarketValue>15900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
@@ -305,6 +306,7 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Bazel</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>
@@ -410,7 +412,7 @@
     <description>The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>22900</MarketValue>
+      <MarketValue>13900</MarketValue>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>30</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
@@ -496,6 +498,7 @@
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Legiana</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>
@@ -602,7 +605,7 @@
     <description>Wyverns feared as desert tyrants. Extremely territorial, Diablos attack invaders with blind aggression. Highly sensitive to sound, perhaps because they frequently travel beneath the sand. Known to feed on cacti.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>24900</MarketValue>
+      <MarketValue>17900</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
@@ -795,7 +798,7 @@
     <description>Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
-      <MarketValue>12200</MarketValue>
+      <MarketValue>6200</MarketValue>
       <ComfyTemperatureMin>-70</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
@@ -877,7 +880,8 @@
       <baseHungerRate>4.0</baseHungerRate>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
       <leatherDef>Leather_Paolumu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>

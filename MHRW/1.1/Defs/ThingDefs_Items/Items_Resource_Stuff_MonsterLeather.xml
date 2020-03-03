@@ -40,8 +40,8 @@
     </graphicData>
     <statBases>
       <MarketValue>50.4</MarketValue>
-      <StuffPower_Armor_Sharp>2.12</StuffPower_Armor_Sharp>
-      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
@@ -59,8 +59,8 @@
     </graphicData>
     <statBases>
       <MarketValue>2.4</MarketValue>
-      <StuffPower_Armor_Sharp>0.52</StuffPower_Armor_Sharp>
-      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      <StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
@@ -78,9 +78,9 @@
     </graphicData>
     <statBases>
       <MarketValue>60.4</MarketValue>
-      <StuffPower_Armor_Sharp>2.12</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
       <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
       <color>(130, 117, 94)</color>
@@ -97,9 +97,9 @@
     </graphicData>
     <statBases>
       <MarketValue>90.4</MarketValue>
-      <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
-      <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
+      <StuffPower_Armor_Sharp>1.85</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.92</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>70</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
@@ -118,10 +118,10 @@
     </graphicData>
     <statBases>
       <MarketValue>90.4</MarketValue>
-      <StuffPower_Armor_Sharp>4.8</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>2.12</StuffPower_Armor_Blunt>
-      <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>70</StuffPower_Insulation_Heat>
+      <StuffPower_Armor_Sharp>3.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.92</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>50</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
       <color>(181, 163, 139)</color>
@@ -138,8 +138,8 @@
     </graphicData>
     <statBases>
       <MarketValue>70.4</MarketValue>
-      <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>2.12</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>70</StuffPower_Insulation_Heat>
     </statBases>
