@@ -12,8 +12,8 @@
       <MarketValue>6000</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -46,7 +46,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>40</power>
+        <power>25</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -55,7 +55,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>40</power>
+        <power>25</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -63,37 +63,37 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>53</power>
+        <power>23</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.4</chanceFactor>
+        <chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>65</power>
-        <cooldownTime>2</cooldownTime>
+        <power>55</power>
+        <cooldownTime>3</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.7</chanceFactor>
+        <chanceFactor>0.5</chanceFactor>
       </li>
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.5</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Barroth</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.95</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>300</lifeExpectancy>
-      <manhunterOnTameFailChance>0.99</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
 		<TemperateSwamp>0</TemperateSwamp>
@@ -194,8 +194,8 @@
       <MarketValue>12900</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -228,7 +228,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>60</power>
+        <power>40</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -237,7 +237,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>60</power>
+        <power>40</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -245,7 +245,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>113</power>
+        <power>93</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.4</chanceFactor>
@@ -255,7 +255,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>65</power>
+        <power>55</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -264,7 +264,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>8.0</baseHungerRate>
+      <baseHungerRate>3.0</baseHungerRate>
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -377,8 +377,8 @@
       <MarketValue>4400</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -428,7 +428,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>53</power>
+        <power>45</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.4</chanceFactor>
@@ -438,7 +438,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>45</power>
+        <power>25</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -447,7 +447,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -556,12 +556,12 @@
     <label>lavasioth</label>
     <description>Lavasioths utilize molten lava as armor. They are extremely aggressive and will attack without prejudice until the threat has been eliminated.</description>
     <statBases>
-      <MoveSpeed>4.0</MoveSpeed>
+      <MoveSpeed>1.3</MoveSpeed>
       <MarketValue>5100</MarketValue>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>680</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 	  <ArmorRating_Heat>10.8</ArmorRating_Heat>
 	  <Flammability>0.0</Flammability>
     </statBases>
@@ -596,7 +596,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>40</power>
+        <power>30</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -605,7 +605,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>40</power>
+        <power>30</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -623,7 +623,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>55</power>
+        <power>45</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -643,7 +643,7 @@
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>300</lifeExpectancy>
-      <manhunterOnTameFailChance>0.99</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -745,8 +745,8 @@
       <MarketValue>8200</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -779,7 +779,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>40</power>
+        <power>30</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -788,7 +788,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>40</power>
+        <power>30</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -815,7 +815,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>2.0</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>

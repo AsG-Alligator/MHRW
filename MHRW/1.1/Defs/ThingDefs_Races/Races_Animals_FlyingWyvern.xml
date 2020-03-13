@@ -13,8 +13,8 @@
       <MarketValue>10900</MarketValue>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
     <li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -92,7 +92,7 @@
     </tools>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.4</baseHungerRate>
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -224,7 +224,7 @@
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+	  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
     <li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -272,7 +272,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>25</power>
+        <power>45</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -415,8 +415,8 @@
       <MarketValue>13900</MarketValue>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>30</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -464,7 +464,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>25</power>
+        <power>45</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -494,7 +494,7 @@
     </tools>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>2.0</baseHungerRate>
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -608,8 +608,8 @@
       <MarketValue>17900</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -640,7 +640,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>70</power>
+        <power>40</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
 		<chanceFactor>0.1</chanceFactor>
@@ -650,7 +650,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>70</power>
+        <power>40</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
 		<chanceFactor>0.1</chanceFactor>
@@ -659,7 +659,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>50</power>
+        <power>40</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.1</chanceFactor>
@@ -669,7 +669,7 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>110</power>
+        <power>90</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -680,7 +680,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>100</power>
+        <power>90</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -689,18 +689,18 @@
     </tools>
     <race>
       <body>MHWyvernWithHorns</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Diablos</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.95</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>400</lifeExpectancy>
-      <manhunterOnTameFailChance>0.99</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
 		<TemperateSwamp>0</TemperateSwamp>
@@ -801,8 +801,8 @@
       <MarketValue>6200</MarketValue>
       <ComfyTemperatureMin>-70</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
@@ -830,7 +830,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>30</power>
+        <power>20</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -839,7 +839,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>30</power>
+        <power>20</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
       </li>
@@ -872,7 +872,7 @@
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.6</chanceFactor>
+        <chanceFactor>0.5</chanceFactor>
       </li>
     </tools>
     <race>
@@ -885,7 +885,7 @@
       <leatherDef>Leather_Paolumu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.99</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>250</lifeExpectancy>
       <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
