@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer</defName>
 		<label>Hammer</label>
 		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped.</description>
@@ -11,17 +11,17 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.3,0,0)</eastOffset>
-			<westOffset>(-0.3,0,0)</westOffset>
-			<southOffset>(0.3,0,0)</southOffset>
-			<northOffset>(0.3,0,0)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-	<costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>290</Steel>
-	</costList>
+		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.25</Mass>
@@ -30,815 +30,835 @@
 			<MoveSpeed>-1.0</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
-    <recipeMaker>
-		  <researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <tools>
-      <li>
-        <label>overhead smash</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>3</cooldownTime>
-      </li>
-	  <li>
-        <label>upswing</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>3</cooldownTime>
-      </li>
-	  <li>
-        <label>big bang smash</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>5</cooldownTime>
-      </li>
-	  <li>
-        <label>charged smash</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>4</cooldownTime>
-      </li>
-    </tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
-	
-		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Greatsword</defName>
-    <label>Greatsword</label>
-    <description>An absurdly large blade of the greatsword was designed for hunting monsters. The sheer size of this weapon will slow whoever equips it considerably. Due to it's massive size it can be used to block some incoming attacks.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHGreatsword</texPath>
-      	<drawSize>1.8</drawSize>
-		<graphicClass>Graphic_Single</graphicClass>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Greatsword</defName>
+		<label>Greatsword</label>
+		<description>An absurdly large blade of the greatsword was designed for hunting monsters. The sheer size of this weapon will slow whoever equips it considerably. Due to it's massive size it can be used to block some incoming attacks.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHGreatsword</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.3,0,0.4)</eastOffset>
-			<westOffset>(-0.3,0,0.4)</westOffset>
-			<southOffset>(0.3,0,0.4)</southOffset>
-			<northOffset>(0.3,0,0.4)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-	<costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>290</Steel>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-1.2</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>overhead slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>charged slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>80</power>
-        <cooldownTime>3.6</cooldownTime>
-      </li>
-	  <li>
-        <label>true charged slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>90</power>
-        <cooldownTime>5.6</cooldownTime>
-      </li>
-	  <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>wide slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>tackle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>1.6</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Longsword</defName>
-    <label>Longsword</label>
-    <description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHLongsword</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2.0</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>80</power>
+				<cooldownTime>3.6</cooldownTime>
+			</li>
+			<li>
+				<label>true charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>90</power>
+				<cooldownTime>5.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>tackle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Longsword</defName>
+		<label>Longsword</label>
+		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHLongsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.3,0,0.4)</eastOffset>
-			<westOffset>(-0.3,0,0.4)</westOffset>
-			<southOffset>(0.3,0,0.4)</southOffset>
-			<northOffset>(0.3,0,0.4)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-	<costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>260</Steel>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.9</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>vertical slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>3.2</cooldownTime>
-      </li>
-	  <li>
-        <label>thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>3.2</cooldownTime>
-      </li>
-	  <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>3.2</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      <researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_SwordandShield</defName>
-    <label>Sword and Shield</label>
-    <description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter!</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHSword</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.3</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>vertical slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield</defName>
+		<label>Sword and Shield</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter!</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.1,0.2,0.1)</eastOffset>
-			<westOffset>(-0.1,-0.2,0.1)</westOffset>
-			<southOffset>(0,0.3,0.1)</southOffset>
-			<northOffset>(0,0,0.1)</northOffset>
-		</li>
-		<li Class="PawnShields.CompProperties_Shield">
-		<wieldedGraphic>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS</texPath>
-		<drawSize>(2.2, 2.2)</drawSize>
-		</wieldedGraphic>
-		<renderProperties>
-		<northOffset>(0, -0.017, -0.1)</northOffset>
-		<southOffset>(0, 0.3, -0.1)</southOffset>
-		<westOffset>(0, 0.017, 0)</westOffset>
-		<eastOffset>(0, -0.017, 0)</eastOffset>
-		<flipRotation>false</flipRotation>
-		<renderWhenPeaceful>false</renderWhenPeaceful>
-		</renderProperties>
-		<canBlockRanged>true</canBlockRanged>
-		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
-		<shieldTakeDamage>false</shieldTakeDamage>
-		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-		<canBeAutoDiscarded>false</canBeAutoDiscarded>
-		<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-		<useFatigue>false</useFatigue>
-		<damageToFatigueFactor>0</damageToFatigueFactor>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.3,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="PawnShields.CompProperties_Shield">
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS</texPath>
+					<drawSize>(2.2, 2.2)</drawSize>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0, -0.017, -0.1)</northOffset>
+					<southOffset>(0, 0.3, -0.1)</southOffset>
+					<westOffset>(0, 0.017, 0)</westOffset>
+					<eastOffset>(0, -0.017, 0)</eastOffset>
+					<flipRotation>false</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
+				<shieldTakeDamage>false</shieldTakeDamage>
+				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
+				<canBeAutoDiscarded>false</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+				<useFatigue>false</useFatigue>
+				<damageToFatigueFactor>0</damageToFatigueFactor>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-	<costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>190</Steel>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>1.9</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.7</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>lateral slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.0</cooldownTime>
-      </li>
-	  <li>
-        <label>chop</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.0</cooldownTime>
-      </li>
-	  <li>
-        <label>side slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.0</cooldownTime>
-      </li>
-	  <li>
-        <label>shield bash</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.0</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-    	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Dualblades</defName>
-    <label>Dual Blades</label>
-    <description>A pair of large blades that allow for fast, albeit weaker, attacks.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHDualblades</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.3</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades</defName>
+		<label>Dual Blades</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHDualblades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.25,0,0.1)</eastOffset>
-			<westOffset>(-0.25,0,0.1)</westOffset>
-			<southOffset>(0.2,0,0)</southOffset>
-			<northOffset>(0.2,0,0)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-    <costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>190</Steel>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.7</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>double slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1.0</cooldownTime>
-      </li>
-	  <li>
-        <label>rotation slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1.0</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-     	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Chargeblade</defName>
-    <label>Charge Blade</label>
-    <description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHChargeblade</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.5</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade</defName>
+		<label>Charge Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHChargeblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.1,0,0.1)</eastOffset>
-			<westOffset>(-0.1,0,0.1)</westOffset>
-			<southOffset>(0.1,0,0.1)</southOffset>
-			<northOffset>(0.1,0,0.1)</northOffset>
-		</li>
-		<li Class="PawnShields.CompProperties_Shield">
-		<wieldedGraphic>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Chargeblade</texPath>
-		<drawSize>(2.2, 2.2)</drawSize>
-		</wieldedGraphic>
-		<renderProperties>
-		<northOffset>(0, -0.017, -0.1)</northOffset>
-		<southOffset>(0, 0.3, -0.1)</southOffset>
-		<westOffset>(0, 0.017, 0)</westOffset>
-		<eastOffset>(0, -0.017, 0)</eastOffset>
-		<flipRotation>false</flipRotation>
-		<renderWhenPeaceful>false</renderWhenPeaceful>
-		</renderProperties>
-		<canBlockRanged>true</canBlockRanged>
-		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>50.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>50.0</rangedBlockChanceFactor>
-		<shieldTakeDamage>false</shieldTakeDamage>
-		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-		<canBeAutoDiscarded>false</canBeAutoDiscarded>
-		<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-		<useFatigue>false</useFatigue>
-		<damageToFatigueFactor>0</damageToFatigueFactor>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,0,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<li Class="PawnShields.CompProperties_Shield">
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Chargeblade</texPath>
+					<drawSize>(2.2, 2.2)</drawSize>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0, -0.017, -0.1)</northOffset>
+					<southOffset>(0, 0.3, -0.1)</southOffset>
+					<westOffset>(0, 0.017, 0)</westOffset>
+					<eastOffset>(0, -0.017, 0)</eastOffset>
+					<flipRotation>false</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>50.0</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>50.0</rangedBlockChanceFactor>
+				<shieldTakeDamage>false</shieldTakeDamage>
+				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
+				<canBeAutoDiscarded>false</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+				<useFatigue>false</useFatigue>
+				<damageToFatigueFactor>0</damageToFatigueFactor>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-    <costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>300</Steel>
 			<ComponentIndustrial>9</ComponentIndustrial>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-1.1</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>2.8</cooldownTime>
-      </li>
-	  <li>
-        <label>roundslash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>2.8</cooldownTime>
-      </li>
-	  <li>
-        <label>shield thrust</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>2.8</cooldownTime>
-      </li>
-	  <li>
-        <label>charged double slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>2.8</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Lance</defName>
-    <label>Lance</label>
-    <description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down to a crawl.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHLance</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2.0</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance</defName>
+		<label>Lance</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down to a crawl.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.3,0,0)</eastOffset>
-			<westOffset>(-0.3,0,0)</westOffset>
-			<southOffset>(0.3,0,0)</southOffset>
-			<northOffset>(0.3,0,0)</northOffset>
-		</li>
-		<li Class="PawnShields.CompProperties_Shield">
-		<wieldedGraphic>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Lance</texPath>
-		<drawSize>(2.2, 2.2)</drawSize>
-		</wieldedGraphic>
-		<renderProperties>
-		<northOffset>(0, -0.017, -0.1)</northOffset>
-		<southOffset>(0, 0.3, -0.1)</southOffset>
-		<westOffset>(0, 0.017, 0)</westOffset>
-		<eastOffset>(0, -0.017, 0)</eastOffset>
-		<flipRotation>false</flipRotation>
-		<renderWhenPeaceful>false</renderWhenPeaceful>
-		</renderProperties>
-		<canBlockRanged>true</canBlockRanged>
-		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-		<shieldTakeDamage>false</shieldTakeDamage>
-		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-		<canBeAutoDiscarded>false</canBeAutoDiscarded>
-		<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-		<useFatigue>false</useFatigue>
-		<damageToFatigueFactor>0</damageToFatigueFactor>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="PawnShields.CompProperties_Shield">
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Lance</texPath>
+					<drawSize>(2.2, 2.2)</drawSize>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0, -0.017, -0.1)</northOffset>
+					<southOffset>(0, 0.3, -0.1)</southOffset>
+					<westOffset>(0, 0.017, 0)</westOffset>
+					<eastOffset>(0, -0.017, 0)</eastOffset>
+					<flipRotation>false</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
+				<shieldTakeDamage>false</shieldTakeDamage>
+				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
+				<canBeAutoDiscarded>false</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+				<useFatigue>false</useFatigue>
+				<damageToFatigueFactor>0</damageToFatigueFactor>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-    <costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>300</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-2.0</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>high thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>counter-thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>shield bash</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>50</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>wide sweep</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Switchaxe</defName>
-    <label>Switch Axe</label>
-    <description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHSwitchaxe</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.8</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe</defName>
+		<label>Switch Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSwitchaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.5,0,0.2)</eastOffset>
-			<westOffset>(-0.5,0,0.2)</westOffset>
-			<southOffset>(0.4,0,0.2)</southOffset>
-			<northOffset>(0.4,0,0.2)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHSwitchsword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-    <costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>280</Steel>
 			<ComponentIndustrial>9</ComponentIndustrial>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-1.1</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>side slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>overhead slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>wild swing</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>1.6</cooldownTime>
-      </li>
-	  <li>
-        <label>fade slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>60</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
 
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Switchsword</defName>
-    <label>Switch Axe</label>
-    <description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHSwitchsword</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.8</drawSize>
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword</defName>
+		<label>Switch Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSwitchsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.5,0,0.2)</eastOffset>
-			<westOffset>(-0.5,0,0.2)</westOffset>
-			<southOffset>(0.4,0,0.2)</southOffset>
-			<northOffset>(0.4,0,0.2)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHSwitchaxe</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-	<tradeability>None</tradeability>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>280</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-1.9</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>side slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.9</cooldownTime>
-      </li>
-	  <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.9</cooldownTime>
-      </li>
-	  <li>
-        <label>overhead slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>double slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>80</power>
-        <cooldownTime>3.1</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	<researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-    
-  		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MH_Insectglaive</defName>
-    <label>Insect Glaive</label>
-    <description>A long staff with blades on both ends. Curiously it comes with a friendly bug, a Kinsect, that will attack enemies independently.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/MHInsectglaive</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2.0</drawSize>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>80</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Insectglaive</defName>
+		<label>Insect Glaive</label>
+		<description>A long staff with blades on both ends. Curiously it comes with a friendly bug, a Kinsect, that will attack enemies independently.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHInsectglaive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.2,0,0.2)</eastOffset>
-			<westOffset>(-0.2,0,0.2)</westOffset>
-			<southOffset>(0,0,0.1)</southOffset>
-			<northOffset>(0,0,0.1)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.2,0,0.2)</eastOffset>
+				<westOffset>(-0.2,0,0.2)</westOffset>
+				<southOffset>(0,0,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
-    <costList>
+		<techLevel>Medieval</techLevel>
+		<costList>
 			<Steel>200</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
-	</costList>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>2.6</Mass>
-    </statBases>
-	<equippedStatOffsets>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.8</MoveSpeed>
-	</equippedStatOffsets>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>rising slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>backwards sweep</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>double slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>overhead smash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-	  <li>
-        <label>sweep</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1.4</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      	 <researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
-  
-    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>backwards sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Huntinghorn</defName>
 		<label>Hunting Horn</label>
 		<description>A massive blunt weapon AND a huge musical instrument at the same time! The hunting horn can play a variety of songs to provide your fellow colonists with buffs.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MHHuntinghorn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.8</drawSize>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.25,0,0.2)</eastOffset>
-			<westOffset>(-0.25,0,0.2)</westOffset>
-			<southOffset>(0.25,0,0.2)</southOffset>
-			<northOffset>(0.25,0,0.2)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.2)</eastOffset>
+				<westOffset>(-0.25,0,0.2)</westOffset>
+				<southOffset>(0.25,0,0.2)</southOffset>
+				<northOffset>(0.25,0,0.2)</northOffset>
+			</li>
 		</comps>
-    <techLevel>Medieval</techLevel>
+		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>260</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
@@ -851,439 +871,439 @@
 			<MoveSpeed>-1.1</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
-    <recipeMaker>
-	  <researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <tools>
-      <li>
-        <label>forward slam</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>4</cooldownTime>
-      </li>
-	  <li>
-        <label>right slam</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>4</cooldownTime>
-      </li>
-	  <li>
-        <label>overhead slam</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>4</cooldownTime>
-      </li>
-    </tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>forward slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>right slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>MH_Lightbowgun</defName>
-    <label>Light Bowgun</label>
-    <description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/MHLightbowgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.8</drawSize>
+		<defName>MH_Lightbowgun</defName>
+		<label>Light Bowgun</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHLightbowgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.1,0,0)</eastOffset>
-			<westOffset>(-0.1,0,0)</westOffset>
-			<southOffset>(0,0,0)</southOffset>
-			<northOffset>(0,0,0)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
 		</comps>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>3.5</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.65</AccuracyMedium>
-      <AccuracyLong>0.55</AccuracyLong>
-      <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
-    </statBases>
-	<equippedStatOffsets>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.7</MoveSpeed>
-	</equippedStatOffsets>
-	<equippedAngleOffset>0</equippedAngleOffset>
-    <costList>
-      <Steel>160</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MHLBGNormalOre</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>25.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-        <soundCast>Shot_AssaultRifle</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHLBGNormalOre</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-  
-  	<ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>MH_Heavybowgun</defName>
-    <label>Heavy Bowgun</label>
-    <description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/MHHeavybowgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.8</drawSize>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun</defName>
+		<label>Heavy Bowgun</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHHeavybowgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.1,0,0)</eastOffset>
-			<westOffset>(-0.1,0,0)</westOffset>
-			<southOffset>(0,0,0)</southOffset>
-			<northOffset>(0,0,0)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
 		</comps>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <recipeMaker>
-	  <researchPrerequisite>PrecisionRifling</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>3.5</Mass>
-      <AccuracyTouch>0.40</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.65</AccuracyLong>
-      <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
-    </statBases>
-	<equippedStatOffsets>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.9</MoveSpeed>
-	</equippedStatOffsets>
-	<equippedAngleOffset>0</equippedAngleOffset>
-    <costList>
-      <Steel>160</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MHHBGNormalOre</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>40.9</range>
-        <burstShotCount>1</burstShotCount>
-        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-        <soundCast>Shot_AssaultRifle</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGNormalOre</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-   <ThingDef ParentName="BaseWeaponNeolithic">
-    <defName>MH_Bow</defName>
-    <label>Bow</label>
-    <description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/MHBow</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.5</drawSize>
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow</defName>
+		<label>Bow</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.1,0,0)</eastOffset>
-			<westOffset>(-0.1,0,0)</westOffset>
-			<southOffset>(0,0,0)</southOffset>
-			<northOffset>(0,0,0)</northOffset>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
 		</comps>
-    <soundInteract>Bow_Large</soundInteract>
-    <costList>
-      <Steel>200</Steel>
-	  <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <statBases>
-      <WorkToMake>9000</WorkToMake>
-      <Mass>3.0</Mass>
-      <AccuracyTouch>0.65</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.60</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-    </statBases>
-	<equippedStatOffsets>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-0.9</MoveSpeed>
-	</equippedStatOffsets>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Arrow_MHBowNormalOre</defaultProjectile>
-        <warmupTime>2.0</warmupTime>
-        <range>29.9</range>
-        <soundCast>Bow_Large</soundCast>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>limb</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      <researchPrerequisite>Fabrication</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-  </ThingDef>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowNormalOre</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
 
-    	<ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>MH_Gunlance</defName>
-    <label>Gunlance</label>
-    <description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down tremendously.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/MHGunlance</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-		<drawSize>2.4</drawSize>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance</defName>
+		<label>Gunlance</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down tremendously.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHGunlance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
 		</graphicData>
 		<comps>
-		<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-			<eastOffset>(0.3,0,0)</eastOffset>
-			<westOffset>(-0.3,-0.1,0)</westOffset>
-			<southOffset>(0.3,0,0)</southOffset>
-			<northOffset>(0.3,0,0)</northOffset>
-		</li>
-		<li Class="PawnShields.CompProperties_Shield">
-		<wieldedGraphic>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Gunlance</texPath>
-		<drawSize>(2.2, 2.2)</drawSize>
-		</wieldedGraphic>
-		<renderProperties>
-		<northOffset>(0, -0.017, -0.1)</northOffset>
-		<southOffset>(0, 0.3, -0.1)</southOffset>
-		<westOffset>(0, 0.017, 0)</westOffset>
-		<eastOffset>(0, -0.017, 0)</eastOffset>
-		<flipRotation>false</flipRotation>
-		<renderWhenPeaceful>false</renderWhenPeaceful>
-		</renderProperties>
-		<canBlockRanged>true</canBlockRanged>
-		<canBlockMelee>true</canBlockMelee>
-		<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-		<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-		<shieldTakeDamage>false</shieldTakeDamage>
-		<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-		<canBeAutoDiscarded>false</canBeAutoDiscarded>
-		<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-		<useFatigue>false</useFatigue>
-		<damageToFatigueFactor>0</damageToFatigueFactor>
-		</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="PawnShields.CompProperties_Shield">
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Gunlance</texPath>
+					<drawSize>(2.2, 2.2)</drawSize>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0, -0.017, -0.1)</northOffset>
+					<southOffset>(0, 0.3, -0.1)</southOffset>
+					<westOffset>(0, 0.017, 0)</westOffset>
+					<eastOffset>(0, -0.017, 0)</eastOffset>
+					<flipRotation>false</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
+				<shieldTakeDamage>false</shieldTakeDamage>
+				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
+				<canBeAutoDiscarded>false</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+				<useFatigue>false</useFatigue>
+				<damageToFatigueFactor>0</damageToFatigueFactor>
+			</li>
 		</comps>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>3.5</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>0.8</AccuracyMedium>
-      <AccuracyLong>0.5</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-    </statBases>
-	<equippedStatOffsets>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
 			<MoveSpeed>-2.0</MoveSpeed>
-	</equippedStatOffsets>
-	<equippedAngleOffset>0</equippedAngleOffset>
-    <costList>
-      <Steel>260</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MHGunlanceShellOre</defaultProjectile>
-        <warmupTime>0.1</warmupTime>
-        <range>5</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
-        <soundCast>Shot_SniperRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>260</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellOre</defaultProjectile>
+				<warmupTime>0.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
-    <tools>
-      <li>
-        <label>lateral thrust</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>1.2</cooldownTime>
-      </li>
-      <li>
-        <label>risng slash</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>overlead smash</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-	  <li>
-        <label>wide sweep</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>70</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MHGunlanceShellOre</defName>
-    <label>gunlance shell</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-	  <armorPenetrationBase>1.6</armorPenetrationBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-  
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MHLBGNormalOre</defName>
-    <label>light bowgun bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-	  <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-  
-    <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MHHBGNormalOre</defName>
-    <label>heavy bowgun bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>30</damageAmountBase>
-	  <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-  
-    <ThingDef ParentName="BaseProjectileNeolithic">
-    <defName>Arrow_MHBowNormalOre</defName>
-    <label>hunter bow arrow</label>
-    <graphicData>
-      <texPath>Things/Projectile/Arrow_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <flyOverhead>false</flyOverhead>
-      <damageDef>Arrow</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <stoppingPower>3.5</stoppingPower>
-      <armorPenetrationBase>1.1</armorPenetrationBase>
-      <speed>49</speed>
-    </projectile>
-  </ThingDef>
-  
-  
-	
-	</Defs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overlead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>70</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellOre</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>1.6</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHLBGNormalOre</defName>
+		<label>light bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGNormalOre</defName>
+		<label>heavy bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowNormalOre</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+
+
+
+</Defs>

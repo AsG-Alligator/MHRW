@@ -34,12 +34,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.0.8\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>D:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -55,19 +60,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompProperties_TurfWar.cs" />
+    <Compile Include="CompProperties_WeaponTransform.cs" />
     <Compile Include="CompTurfWar.cs" />
     <Compile Include="CompKushalaDaora.cs" />
     <Compile Include="CompLunastraTeostra.cs" />
     <Compile Include="CompProperties_KushalaDaora.cs" />
     <Compile Include="CompProperties_LunastraTeostra.cs" />
+    <Compile Include="CompWeaponTransform.cs" />
     <Compile Include="DefOfs.cs" />
+    <Compile Include="HarmonyPatch.cs" />
     <Compile Include="IncidentWorker_ElderDragonAppear.cs" />
     <Compile Include="IncidentWorker_LargeMonsterAppear.cs" />
     <Compile Include="IncidentWorker_SmallMonsterAppear.cs" />
+    <Compile Include="JobDriverTransformWeapon.cs" />
     <Compile Include="MonsterHunterRimworldMod.cs" />
     <Compile Include="MonsterHunterRimworldModSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WyvernUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

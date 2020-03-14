@@ -6,6 +6,10 @@ namespace MonsterHunterRimworld
     [DefOf]
     public static class MHRWDefOf
     {
+        #region "Basics"
+        public static JobDef MHRW_TransformWeapon;
+        #endregion
+
         #region "Bird Wyvern"
         public static PawnKindDef KuluYaKu;
         public static PawnKindDef Genprey;

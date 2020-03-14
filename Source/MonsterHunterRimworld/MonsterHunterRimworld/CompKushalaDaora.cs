@@ -7,6 +7,7 @@ namespace MonsterHunterRimworld
         public override void CompTickRare()
         {
             base.CompTickRare();
+            if (!LoadedModManager.GetMod<MonsterHunterRimworldMod>().GetSettings<MonsterHunterRimworldModSettings>().elderDragonWeatherEffects) return;
             if (!(parent is Pawn elderDragon)) return;
             if (!WyvernUtility.IsElderDragon(elderDragon)) return;
             if (elderDragon.Dead) return;
