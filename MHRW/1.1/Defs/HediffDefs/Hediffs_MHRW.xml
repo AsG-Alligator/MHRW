@@ -42,6 +42,28 @@
         </li>
       </stages>
   </HediffDef>
+  
+    <HediffDef ParentName="DiseaseBase">
+    <defName>Paralisis</defName>
+    <label>paralisis</label>
+    <labelNoun>paralisis</labelNoun>
+    <description>Paralisis caused by venom.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
   <ThoughtDef>
     <defName>AteHunterMeal</defName>
@@ -52,7 +74,7 @@
       <li>
         <label>ate hunter meal</label>
         <description>Man, that food was so good! I feel like I could move mountains!</description>
-        <baseMoodEffect>35</baseMoodEffect>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
