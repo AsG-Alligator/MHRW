@@ -1204,9 +1204,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-		</weaponTags>
 		<tools>
 			<li>
 				<label>lateral thrust</label>
