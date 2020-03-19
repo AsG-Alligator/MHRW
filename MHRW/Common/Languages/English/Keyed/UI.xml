@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Mod settings -->
+	<ModSettingFirstElderDragonLabel>Days until the first elder dragons can appear:</ModSettingFirstElderDragonLabel>
+	<ModSettingElderDragonWeatherEffectsLabel>Elder Dragon weather effects</ModSettingElderDragonWeatherEffectsLabel>
+	<ModSettingElderDragonWeatherEffectsTooltip>Elder Dragon do constant weather effects</ModSettingElderDragonWeatherEffectsTooltip>
+	
+	<!-- Weapon gizmos -->
+	<TransformLabel>Transform</TransformLabel>
+
+</LanguageData>

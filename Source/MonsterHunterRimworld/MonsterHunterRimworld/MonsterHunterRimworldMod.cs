@@ -17,10 +17,13 @@ namespace MonsterHunterRimworld
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
 
-            listingStandard.Label("Days until the first elder dragons can appear:");
+            listingStandard.Label("ModSettingFirstElderDragonLabel".Translate());
             listingStandard.Gap(listingStandard.verticalSpacing);
             Rect rect1 = listingStandard.GetRect(22f);
             monsterHunterRimworldModSettings.minElderDragonEventDelay = Widgets.HorizontalSlider(rect1, monsterHunterRimworldModSettings.minElderDragonEventDelay, 0f, 120f, false, (monsterHunterRimworldModSettings.minElderDragonEventDelay).ToString("") + "", "0", "120", 1f);
+
+            listingStandard.Gap(listingStandard.verticalSpacing);
+            listingStandard.CheckboxLabeled("ModSettingElderDragonWeatherEffectsLabel".Translate(), ref monsterHunterRimworldModSettings.elderDragonWeatherEffects, "ModSettingElderDragonWeatherEffectsTooltip".Translate());
 
             listingStandard.End();
         }
