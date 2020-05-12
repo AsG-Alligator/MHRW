@@ -20,14 +20,14 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>290</Steel>
+			<Steel>160</Steel>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.25</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.0</MoveSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<recipeMaker>
@@ -43,7 +43,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>3</cooldownTime>
 			</li>
 			<li>
@@ -52,7 +52,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>3</cooldownTime>
 			</li>
 			<li>
@@ -61,7 +61,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>70</power>
+				<power>22</power>
 				<cooldownTime>5</cooldownTime>
 			</li>
 			<li>
@@ -70,7 +70,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>60</power>
+				<power>30</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 		</tools>
@@ -95,14 +95,14 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>290</Steel>
+			<Steel>190</Steel>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.2</MoveSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -111,7 +111,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>24</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -119,7 +119,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>80</power>
+				<power>30</power>
 				<cooldownTime>3.6</cooldownTime>
 			</li>
 			<li>
@@ -127,7 +127,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>90</power>
+				<power>35</power>
 				<cooldownTime>5.6</cooldownTime>
 			</li>
 			<li>
@@ -135,7 +135,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>24</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -143,7 +143,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>22</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -151,7 +151,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
+				<power>5</power>
 				<cooldownTime>1.6</cooldownTime>
 			</li>
 		</tools>
@@ -189,7 +189,7 @@
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.9</MoveSpeed>
+			<MoveSpeed>-0.4</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -198,7 +198,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>20</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 			<li>
@@ -206,7 +206,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>60</power>
+				<power>20</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 			<li>
@@ -214,7 +214,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 		</tools>
@@ -271,14 +271,14 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>190</Steel>
+			<Steel>100</Steel>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>1.9</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.7</MoveSpeed>
+			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -287,7 +287,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
+				<power>15</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -295,7 +295,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
+				<power>15</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -303,7 +303,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
+				<power>15</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -311,7 +311,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>30</power>
+				<power>10</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 		</tools>
@@ -350,7 +350,7 @@
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.7</MoveSpeed>
+			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -359,7 +359,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.0</cooldownTime>
 			</li>
 			<li>
@@ -367,7 +367,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.0</cooldownTime>
 			</li>
 		</tools>
@@ -421,18 +421,29 @@
 				<useFatigue>false</useFatigue>
 				<damageToFatigueFactor>0</damageToFatigueFactor>
 			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>300</Steel>
-			<ComponentIndustrial>9</ComponentIndustrial>
+			<Steel>200</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.1</MoveSpeed>
+			<MoveSpeed>-0.4</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -441,7 +452,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -449,7 +460,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -457,7 +468,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>50</power>
+				<power>20</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -465,7 +476,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>50</power>
+				<power>25</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 		</tools>
@@ -476,12 +487,82 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe</defName>
+		<label>Charge Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.9</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Lance</defName>
 		<label>Lance</label>
-		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down to a crawl.</description>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MHLance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -522,7 +603,7 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>300</Steel>
+			<Steel>200</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -530,7 +611,7 @@
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-2.0</MoveSpeed>
+			<MoveSpeed>-0.9</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -539,7 +620,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>60</power>
+				<power>24</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -547,7 +628,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>60</power>
+				<power>25</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -555,7 +636,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>60</power>
+				<power>27</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -563,7 +644,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>50</power>
+				<power>24</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -571,7 +652,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>60</power>
+				<power>25</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 		</tools>
@@ -614,15 +695,15 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>280</Steel>
-			<ComponentIndustrial>9</ComponentIndustrial>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.1</MoveSpeed>
+			<MoveSpeed>-0.3</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -631,7 +712,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>25</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -639,7 +720,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>25</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -647,7 +728,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>25</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -655,7 +736,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>22</power>
 				<cooldownTime>1.6</cooldownTime>
 			</li>
 			<li>
@@ -663,7 +744,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>60</power>
+				<power>22</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
@@ -705,8 +786,8 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>280</Steel>
-			<ComponentIndustrial>9</ComponentIndustrial>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<tradeability>None</tradeability>
 		<statBases>
@@ -714,7 +795,7 @@
 			<Mass>2.6</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.9</MoveSpeed>
+			<MoveSpeed>-0.6</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<tools>
@@ -723,7 +804,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>28</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -731,7 +812,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>26</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -739,7 +820,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>28</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -747,7 +828,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>80</power>
+				<power>30</power>
 				<cooldownTime>3.1</cooldownTime>
 			</li>
 		</tools>
@@ -772,7 +853,7 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>100</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -789,7 +870,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -797,7 +878,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -805,7 +886,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -813,7 +894,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -821,7 +902,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -829,7 +910,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>40</power>
+				<power>20</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 		</tools>
@@ -844,7 +925,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Huntinghorn</defName>
 		<label>Hunting Horn</label>
-		<description>A massive blunt weapon AND a huge musical instrument at the same time! The hunting horn can play a variety of songs to provide your fellow colonists with buffs.</description>
+		<description>A massive blunt weapon AND a huge musical instrument at the same time! The hunting horn can play songs to provide your fellow colonists with buffs.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MHHuntinghorn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -860,15 +941,15 @@
 		</comps>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>260</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>160</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.25</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.1</MoveSpeed>
+			<MoveSpeed>-0.4</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<recipeMaker>
@@ -884,7 +965,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>70</power>
+				<power>30</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 			<li>
@@ -893,7 +974,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>70</power>
+				<power>25</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 			<li>
@@ -902,7 +983,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>70</power>
+				<power>30</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 		</tools>
@@ -942,12 +1023,12 @@
 			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.7</MoveSpeed>
+			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<Steel>160</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>90</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -969,7 +1050,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>15</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -978,7 +1059,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>15</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -1023,8 +1104,8 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<Steel>160</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -1046,7 +1127,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>20</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -1055,7 +1136,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>20</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -1080,7 +1161,7 @@
 		</comps>
 		<soundInteract>Bow_Large</soundInteract>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>100</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -1127,7 +1208,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Gunlance</defName>
 		<label>Gunlance</label>
-		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down tremendously.</description>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MHGunlance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1187,8 +1268,8 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<Steel>260</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -1210,7 +1291,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>70</power>
+				<power>25</power>
 				<cooldownTime>1.2</cooldownTime>
 			</li>
 			<li>
@@ -1218,15 +1299,15 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>25</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
-				<label>overlead smash</label>
+				<label>overhead smash</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>70</power>
+				<power>27</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -1234,7 +1315,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>70</power>
+				<power>29</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
@@ -1248,8 +1329,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>40</damageAmountBase>
-			<armorPenetrationBase>1.6</armorPenetrationBase>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -1263,8 +1345,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -1278,8 +1361,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
-			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -1294,9 +1378,9 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Arrow</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>3.5</stoppingPower>
-			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<speed>49</speed>
 		</projectile>
 	</ThingDef>
