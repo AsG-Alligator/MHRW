@@ -31,10 +31,13 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHBluntTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 		<tools>
 			<li>
@@ -156,10 +159,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -219,10 +225,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -316,10 +325,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -372,11 +384,15 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
+		
 	</ThingDef>
 
 
@@ -481,10 +497,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -657,10 +676,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -749,10 +771,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -915,10 +940,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSpecialTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -953,10 +981,13 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHBluntTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 		<tools>
 			<li>
@@ -1008,10 +1039,13 @@
 		</comps>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>MHBowgunTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -1085,10 +1119,13 @@
 		</comps>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>MHBowgunTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -1198,10 +1235,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<researchPrerequisite>MHSpecialTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 
@@ -1249,10 +1289,13 @@
 		</comps>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
