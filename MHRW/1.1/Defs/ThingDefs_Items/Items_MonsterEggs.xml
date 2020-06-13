@@ -25,7 +25,7 @@
 	<ThingDef ParentName="EggFertBase">
     <defName>EggAptonothFertilized</defName>
     <label>aptonoth egg</label>
-    <description>A aptonoth aptonoth egg. If all goes well, it should hatch into a baby aptonoth. It can be eaten raw, but it's much better cooked.</description>
+    <description>A aptonoth egg. If all goes well, it should hatch into a baby aptonoth. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
 	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
       <color>(230,230,230)</color>
@@ -41,6 +41,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
 	
 	<ThingDef ParentName="EggFertBase">
     <defName>EggBarrothFertilized</defName>
@@ -489,6 +490,46 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>40</hatcherDaystoHatch>
 				<hatcherPawn>Rath</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggRhenoplosFertilized</defName>
+    <label>rhenoplos egg</label>
+    <description>A Rhenoplos egg. If all goes well, it should hatch into a baby Rhenoplos. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Rhenoplos</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggSlagtothFertilized</defName>
+    <label>slagtoth egg</label>
+    <description>A Slagtoth egg. If all goes well, it should hatch into a baby Slagtoth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Slagtoth</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
