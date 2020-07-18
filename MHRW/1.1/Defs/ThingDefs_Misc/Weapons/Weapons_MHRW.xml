@@ -1073,7 +1073,7 @@
 				<range>25.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCast>Shot_BowgunNormal</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -1153,7 +1153,7 @@
 				<range>40.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCast>Shot_BowgunNormal</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -1385,6 +1385,7 @@
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -1415,7 +1416,7 @@
 		<defName>Arrow_MHBowNormalOre</defName>
 		<label>hunter bow arrow</label>
 		<graphicData>
-			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

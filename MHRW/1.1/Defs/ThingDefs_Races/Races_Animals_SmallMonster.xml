@@ -83,7 +83,7 @@
       <wildness>0.7</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>120</lifeExpectancy>
+      <lifeExpectancy>40</lifeExpectancy>
       <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -284,7 +284,7 @@
       <wildness>0.7</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>120</lifeExpectancy>
+      <lifeExpectancy>40</lifeExpectancy>
       <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -453,7 +453,7 @@
       <wildness>0.6</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>120</lifeExpectancy>
+      <lifeExpectancy>35</lifeExpectancy>
       <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -622,7 +622,7 @@
       <wildness>0.6</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>120</lifeExpectancy>
+      <lifeExpectancy>60</lifeExpectancy>
       <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -790,7 +790,7 @@
       <wildness>0.6</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>120</lifeExpectancy>
+      <lifeExpectancy>60</lifeExpectancy>
       <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -884,6 +884,366 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Slagtoth/Dessicated_Slagtoth</texPath>
           <drawSize>5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Kelbi</defName>
+    <label>kelbi</label>
+    <description>A medium-sized herding herbivore which prefers to live in mixed forests and plains. Deer are very quick.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MarketValue>250</MarketValue>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+    </statBases>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>0.9</baseHealthScale>
+      <baseHungerRate>0.40</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <meatLabel>venison</meatLabel>
+      <wildness>0.75</wildness>
+      <nuzzleMtbHours>60</nuzzleMtbHours>
+      <gestationPeriodDays>24</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Deer_Wounded</soundWounded>
+          <soundDeath>Pawn_Deer_Death</soundDeath>
+          <soundCall>Pawn_Deer_Call</soundCall>
+          <soundAngry>Pawn_Deer_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Kelbi</defName>
+    <label>kelbi</label>
+    <labelPlural>kelbi</labelPlural>
+    <race>Kelbi</race>
+    <combatPower>50</combatPower>
+    <ecoSystemWeight>0.50</ecoSystemWeight>
+    <wildGroupSize>3~9</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiMale</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiFemale</texPath>
+          <drawSize>1.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Deer/Dessicated_DeerBaby</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiMale</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(140,74,41)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiFemale</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Deer/Dessicated_DeerBaby</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiMale</texPath>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kelbi/KelbiFemale</texPath>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Deer/Dessicated_DeerFemale</texPath>
+          <drawSize>2.6</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Deer/Dessicated_DeerFemale</texPath>
+          <drawSize>2.6</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+  
+  
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>Jaggi</defName>
+    <label>jaggi</label>
+    <description>Highly social, carnivorous bird wyverns that live in large packs. Young Jaggi males hunt in groups when attacking larger animals, and have been known to steal wyvern eggs. Research suggest they operate under orders from a single alpha male.</description>
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>0.0, 0.0, 0.0</westOffset>
+			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
+			<westSize>2.0, 1.0</westSize>
+			<northSize>1.0, 2.0</northSize>
+			<eastSize>2.0, 1.0</eastSize>
+			<southSize>1.0, 2.0</southSize>
+		</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggJaggiFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>5</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>5</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <herdAnimal>true</herdAnimal>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>2.0</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Jaggi</leatherDef>
+      <gestationPeriodDays>25</gestationPeriodDays>
+      <wildness>0.7</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>30</lifeExpectancy>
+      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.5</TemperateForest>
+		<TemperateSwamp>0.1</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.5</TropicalRainforest>
+		<TropicalSwamp>0.5</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Jaggi</defName>
+    <label>jaggi</label>
+    <race>Jaggi</race>
+    <combatPower>450</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggi</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Jaggia</labelFemale>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggia</texPath>
+          <drawSize>1.5</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggi</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Jaggia</labelFemale>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggia</texPath>
+          <drawSize>2.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggi</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+		<labelFemale>Jaggia</labelFemale>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Jaggi/Jaggia</texPath>
+          <drawSize>3</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
