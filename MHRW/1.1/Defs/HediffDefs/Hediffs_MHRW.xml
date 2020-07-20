@@ -64,6 +64,29 @@
       </li>
     </stages>
   </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Waterblight</defName>
+    <label>waterblight</label>
+    <labelNoun>waterblight</labelNoun>
+	<defaultLabelColor>(0.55,0.3,0.5)</defaultLabelColor>
+    <description>Waterblight slowing the target down.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
   <ThoughtDef>
     <defName>AteHunterMeal</defName>
