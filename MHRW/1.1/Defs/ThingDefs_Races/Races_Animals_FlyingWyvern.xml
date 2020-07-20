@@ -90,6 +90,22 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+      </li>
+    </verbs>
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.4</baseHungerRate>
