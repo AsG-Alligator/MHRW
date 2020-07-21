@@ -44,21 +44,27 @@
   </HediffDef>
   
     <HediffDef ParentName="DiseaseBase">
-    <defName>Paralisis</defName>
+    <defName>MHParalisis</defName>
     <label>paralisis</label>
     <labelNoun>paralisis</labelNoun>
     <description>Paralisis caused by venom.</description>
+	<maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1000</disappearsAfterTicks>
+        <disappearsAfterTicks>1000~1500</disappearsAfterTicks>
       </li>
     </comps>
     <stages>
+	   <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
       <li>
+		<minSeverity>0.9</minSeverity>
         <capMods>
           <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
+            <capacity>Moving</capacity>
+            <setMax>0.05</setMax>
           </li>
         </capMods>
       </li>

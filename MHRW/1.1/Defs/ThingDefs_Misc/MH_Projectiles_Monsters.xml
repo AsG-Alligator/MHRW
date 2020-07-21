@@ -36,9 +36,6 @@
       <speed>40</speed>
       <damageDef>Flame</damageDef>
       <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
 </ThingDef>
 
@@ -57,9 +54,6 @@
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
 </ThingDef>
 
@@ -75,12 +69,11 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>40</speed>
-      <damageDef>Flame</damageDef>
+      <damageDef>MHPoisonBurst</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+	  <preExplosionSpawnThingDef>Filth_MHPoison</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
 </ThingDef>
 
@@ -99,9 +92,8 @@
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+	  <preExplosionSpawnThingDef>Filth_MHMud</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
 </ThingDef>
 

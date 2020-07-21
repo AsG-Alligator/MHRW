@@ -152,5 +152,72 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Egg</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MHRW/Weapons/Egg</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 
+  <SoundDef>
+    <defName>Shot_MHSpit</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MHRW/Monsters/Spit</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_MHFireball</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MHRW/Monsters/Fireball</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Explosion_PoisonBurst</defName>
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MHRW/Monsters/Splat</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>50~50</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
 </Defs>

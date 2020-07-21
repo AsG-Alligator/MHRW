@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BaseFilth">
-    <defName>Filth_Mud</defName>
+    <defName>Filth_MHMud</defName>
     <label>mud</label>
     <statBases>
       <Beauty>-10</Beauty>
@@ -22,7 +22,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseFilth">
-    <defName>Filth_Poison</defName>
+    <defName>Filth_MHPoison</defName>
     <label>poison puddles</label>
     <statBases>
       <Beauty>-15</Beauty>

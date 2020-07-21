@@ -252,7 +252,7 @@
       </li>
       <li>
         <capacities>
-          <li>Bite</li>
+          <li>MHParalisisBite</li>
         </capacities>
         <power>6</power>
         <cooldownTime>1.6</cooldownTime>

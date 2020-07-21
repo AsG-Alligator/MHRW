@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DamageDef ParentName="Scratch">
+    <defName>MHParalisisBite</defName>
+    <label>paralisis bite</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.08</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisBite</defName>
+    <label>paralisis bite</label>
+  </ToolCapacityDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisBite</defName>
+    <requiredCapacity>MHParalisisBite</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisBite</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <DamageDef>
+    <defName>MHPoisonBurst</defName>
+    <label>poison burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <hediff>ToxicBuildup</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>0.5</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastExtinguisher</explosionCellMote>
+    <explosionColorCenter>(0.67, 0.61, 0.84)</explosionColorCenter>
+    <explosionColorEdge>(0.8, 0.77, 0.9)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+<!--
+  <DamageDef ParentName="StunBase">
+    <defName>MHPoisonBurst</defName>
+    <label>poison burst</label>
+	<externalViolence>true</externalViolence>
+    <harmsHealth>false</harmsHealth>
+    <impactSoundType>Electric</impactSoundType>
+    <defaultDamage>50</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCellMote>Mote_BlastEMP</explosionCellMote>
+    <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+    <explosionInteriorMote>Mote_ElectricalSpark</explosionInteriorMote>
+    <soundExplosion>Explosion_EMP</soundExplosion>
+    <combatLogRules>Damage_EMP</combatLogRules>
+  </DamageDef>
+ --> 
+</Defs>
