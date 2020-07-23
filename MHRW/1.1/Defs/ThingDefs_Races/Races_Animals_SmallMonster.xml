@@ -73,18 +73,18 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
       <leatherDef>Leather_Jagras</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.7</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>40</lifeExpectancy>
-      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.4</TemperateForest>
@@ -274,18 +274,18 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
       <leatherDef>Leather_Girros</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.7</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>40</lifeExpectancy>
-      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.2</TemperateForest>
@@ -444,17 +444,17 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Aptonoth</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.6</wildness>
+      <wildness>0.4</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>35</lifeExpectancy>
-      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.7</TemperateForest>
@@ -613,17 +613,17 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Heavy</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.6</wildness>
+      <wildness>0.4</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>60</lifeExpectancy>
-      <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.1</TemperateForest>
@@ -781,17 +781,17 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Heavy</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.6</wildness>
+      <wildness>0.4</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>60</lifeExpectancy>
-      <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.5</TemperateForest>
@@ -951,11 +951,11 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
       <meatLabel>venison</meatLabel>
-      <wildness>0.75</wildness>
+      <wildness>0.6</wildness>
       <nuzzleMtbHours>60</nuzzleMtbHours>
       <gestationPeriodDays>24</gestationPeriodDays>
       <lifeExpectancy>15</lifeExpectancy>
-      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.03</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
       <lifeStageAges>
         <li>
@@ -1136,18 +1136,18 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>MHBruteDrome</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
       <leatherDef>Leather_Jaggi</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
-      <wildness>0.7</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>30</lifeExpectancy>
-      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.5</TemperateForest>

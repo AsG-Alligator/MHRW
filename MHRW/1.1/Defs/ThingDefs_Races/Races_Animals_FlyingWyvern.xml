@@ -100,7 +100,7 @@
         <forcedMissRadius>5</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCast>Shot_MHFireball</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
 		<defaultCooldownTime>5</defaultCooldownTime>
@@ -115,11 +115,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Rathalos</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.85</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>500</lifeExpectancy>
-      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -316,6 +316,22 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_Bazelbomb</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>13.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>ThrowGrenade</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+      </li>
+    </verbs>
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>4.0</baseHungerRate>
@@ -325,11 +341,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Bazel</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.85</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>350</lifeExpectancy>
-      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -517,11 +533,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Legiana</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.85</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>300</lifeExpectancy>
-      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -711,11 +727,11 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Diablos</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.95</wildness>
+      <wildness>0.90</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>400</lifeExpectancy>
-      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.90</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -900,11 +916,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Paolumu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.60</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>250</lifeExpectancy>
-      <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.01</TemperateForest>

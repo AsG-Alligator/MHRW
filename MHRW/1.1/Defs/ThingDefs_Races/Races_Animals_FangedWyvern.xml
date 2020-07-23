@@ -81,7 +81,7 @@
 	  <predator>true</predator>
       <leatherDef>Leather_TobiKadachi</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.99</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
@@ -246,11 +246,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_GreatJagras</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.90</wildness>
+      <wildness>0.45</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
       <lifeStageAges>
         <li>
@@ -413,7 +413,7 @@
 	  <predator>true</predator>
       <leatherDef>Leather_GreatGirros</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.90</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
@@ -570,6 +570,22 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHFireball</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+      </li>
+    </verbs>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>2.0</baseHungerRate>
@@ -578,7 +594,7 @@
       <foodType>CarnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Dodogama</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.95</wildness>
+      <wildness>0.75</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
@@ -747,11 +763,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Odogaron</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.90</wildness>
+      <wildness>0.80</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.90</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
       <lifeStageAges>
         <li>

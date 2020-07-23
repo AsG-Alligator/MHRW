@@ -263,6 +263,22 @@
         <chanceFactor>0.7</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_MHFireball</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+      </li>
+    </verbs>
     <race>
       <body>MHElder</body>
       <baseHungerRate>1.0</baseHungerRate>

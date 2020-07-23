@@ -81,11 +81,11 @@
       <foodType>VegetarianRoughAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_KuluYaKu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.8</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.01</TemperateForest>
@@ -263,11 +263,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Gendrome</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.7</wildness>
+      <wildness>0.3</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -452,11 +452,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_Giadrome</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.7</wildness>
+      <wildness>0.4</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0</TemperateForest>
@@ -639,11 +639,11 @@
 	  <predator>true</predator>
       <leatherDef>Leather_TzitziYaKu</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.98</wildness>
+      <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>120</lifeExpectancy>
-      <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.12</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.08</TemperateForest>
@@ -831,11 +831,11 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Pukei</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.98</wildness>
+      <wildness>0.5</wildness>
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>200</lifeExpectancy>
-      <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  <wildBiomes>
 		<TemperateForest>0.1</TemperateForest>
