@@ -80,7 +80,7 @@
     </tools>
     <race>
       <body>MHElder</body>
-      <baseHungerRate>1.5</baseHungerRate>
+      <baseHungerRate>1.1</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -281,7 +281,7 @@
     </verbs>
     <race>
       <body>MHElder</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.9</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -479,7 +479,7 @@
     </tools>
     <race>
       <body>MHElder</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.2</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>

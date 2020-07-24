@@ -27,7 +27,7 @@
 			<Mass>2.25</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<MoveSpeed>-0.4</MoveSpeed>
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<recipeMaker>

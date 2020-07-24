@@ -82,7 +82,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.5</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -264,7 +264,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>3.0</baseHungerRate>
+      <baseHungerRate>2.0</baseHungerRate>
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -447,7 +447,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.7</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -648,7 +648,7 @@
     </verbs>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -847,7 +847,7 @@
     </verbs>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.1</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>

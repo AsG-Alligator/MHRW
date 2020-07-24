@@ -74,7 +74,7 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.85</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -239,7 +239,7 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.1</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -406,7 +406,7 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.7</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -588,7 +588,7 @@
     </verbs>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>7.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
@@ -756,7 +756,7 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.5</baseHungerRate>
+      <baseHungerRate>1.1</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>

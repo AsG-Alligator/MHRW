@@ -108,7 +108,7 @@
     </verbs>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>1.4</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -334,7 +334,7 @@
     </verbs>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -526,7 +526,7 @@
     </tools>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>2.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -909,7 +909,7 @@
     </tools>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>4.0</baseHungerRate>
+      <baseHungerRate>1.0</baseHungerRate>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>

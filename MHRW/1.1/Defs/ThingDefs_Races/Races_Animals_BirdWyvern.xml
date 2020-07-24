@@ -75,7 +75,7 @@
     </tools>
     <race>
       <body>MHBruteDromeWithBeak</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal, OvivoreAnimal</foodType>
@@ -235,7 +235,7 @@
       </li>
       <li>
         <capacities>
-          <li>Bite</li>
+          <li>MHParalisisBite</li>
         </capacities>
         <power>13</power>
         <cooldownTime>2.6</cooldownTime>
@@ -256,7 +256,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -445,7 +445,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -632,7 +632,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -825,7 +825,7 @@
     </tools>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.6</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>

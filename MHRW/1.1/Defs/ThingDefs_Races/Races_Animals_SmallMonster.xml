@@ -73,7 +73,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -274,7 +274,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -444,7 +444,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -454,6 +454,7 @@
       <trainability>Simple</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>35</lifeExpectancy>
+	  <packAnimal>true</packAnimal>
       <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <wildBiomes>
@@ -613,7 +614,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -781,7 +782,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.6</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -1136,7 +1137,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>MHBruteDrome</body>
-      <baseHungerRate>1.0</baseHungerRate>
+      <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
