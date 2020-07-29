@@ -9,7 +9,7 @@
     <label>rath</label>
     <description>A large fire-breathing flying wyvern and poison talons.</description>
     <statBases>
-      <MoveSpeed>4.9</MoveSpeed>
+      <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>10900</MarketValue>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
@@ -109,7 +109,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4.0</baseBodySize>
+      <baseBodySize>4.6</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -235,7 +235,7 @@
     <label>bazelgeuse</label>
     <description>A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>15900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
@@ -321,7 +321,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Bazelbomb</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>4.6</warmupTime>
         <range>13.9</range>
         <forcedMissRadius>5</forcedMissRadius>
         <burstShotCount>5</burstShotCount>
@@ -335,7 +335,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>3.7</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -443,7 +443,7 @@
     <label>legiana</label>
     <description>The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>13900</MarketValue>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>30</ComfyTemperatureMax>
@@ -527,7 +527,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>2.0</baseBodySize>
+      <baseBodySize>4.4</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -636,7 +636,7 @@
     <label>diablos</label>
     <description>Wyverns feared as desert tyrants. Extremely territorial, Diablos attack invaders with blind aggression. Highly sensitive to sound, perhaps because they frequently travel beneath the sand. Known to feed on cacti.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5</MoveSpeed>
       <MarketValue>17900</MarketValue>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
@@ -722,7 +722,7 @@
     <race>
       <body>MHWyvernWithHorns</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>2.0</baseBodySize>
+      <baseBodySize>4.8</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Diablos</leatherDef>
@@ -829,7 +829,7 @@
     <label>paolumu</label>
     <description>Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>6200</MarketValue>
       <ComfyTemperatureMin>-70</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
@@ -910,7 +910,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>1.5</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>

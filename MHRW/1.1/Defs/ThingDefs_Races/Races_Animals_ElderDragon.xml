@@ -8,7 +8,7 @@
     <label>kushala daora</label>
     <description>Eldеr Dragon clad in mеtal plating. Gеnеratеs storms whеrеvеr it goеs. Gеtting closе to it is no mеan fеat.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5</MoveSpeed>
       <MarketValue>20900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
@@ -81,7 +81,7 @@
     <race>
       <body>MHElder</body>
       <baseHungerRate>1.1</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -190,7 +190,7 @@
     <label>tesuka</label>
     <description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5</MoveSpeed>
       <MarketValue>20900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>780</ComfyTemperatureMax>
@@ -282,7 +282,7 @@
     <race>
       <body>MHElder</body>
       <baseHungerRate>0.9</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -408,7 +408,7 @@
     <label>nergigante</label>
     <description>A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well documented.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5</MoveSpeed>
       <MarketValue>30900</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>180</ComfyTemperatureMax>
@@ -480,7 +480,7 @@
     <race>
       <body>MHElder</body>
       <baseHungerRate>1.2</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>

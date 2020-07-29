@@ -5,7 +5,7 @@
     <label>tobi-kadachi</label>
     <description>A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.</description>
     <statBases>
-      <MoveSpeed>5.0</MoveSpeed>
+      <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>4800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
@@ -75,7 +75,7 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>0.85</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -170,7 +170,7 @@
     <label>great jagras</label>
     <description>The pack leader of the Jagras. When hungry, Great Jagras are known to attack monsters even stronger than themselves. It balloons to unbelievable proportions after swallowing prey.</description>
     <statBases>
-      <MoveSpeed>3.8</MoveSpeed>
+      <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>4500</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -240,7 +240,7 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>1.1</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -336,7 +336,7 @@
     <label>great girros</label>
     <description>A monster that scavenges for meals dropped from the Coral Highlands. It acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.</description>
     <statBases>
-      <MoveSpeed>4.0</MoveSpeed>
+      <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>4800</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -407,7 +407,7 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>0.7</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -589,7 +589,7 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>2.0</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>7.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Dodogama</leatherDef>
@@ -683,7 +683,7 @@
     <label>odogaron</label>
     <description>A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.</description>
     <statBases>
-      <MoveSpeed>4.0</MoveSpeed>
+      <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>7900</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -757,7 +757,7 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>1.1</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>

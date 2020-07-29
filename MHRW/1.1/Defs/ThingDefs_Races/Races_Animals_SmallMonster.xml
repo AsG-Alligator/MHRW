@@ -87,14 +87,14 @@
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.4</TemperateForest>
+		<TemperateForest>0.1</TemperateForest>
 		<TemperateSwamp>0.1</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.4</TropicalRainforest>
-		<TropicalSwamp>0.4</TropicalSwamp>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0</AridShrubland>
 		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
@@ -288,14 +288,14 @@
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.2</TemperateForest>
-		<TemperateSwamp>0.4</TemperateSwamp>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.1</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
 		<TropicalRainforest>0.1</TropicalRainforest>
-		<TropicalSwamp>0.4</TropicalSwamp>
+		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0</AridShrubland>
 		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
@@ -445,7 +445,7 @@
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>0.6</baseHungerRate>
-      <baseBodySize>1.0</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Aptonoth</leatherDef>
@@ -458,16 +458,16 @@
       <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.7</TemperateForest>
-		<TemperateSwamp>0.3</TemperateSwamp>
+		<TemperateForest>0.4</TemperateForest>
+		<TemperateSwamp>0.2</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.8</TropicalRainforest>
-		<TropicalSwamp>0.6</TropicalSwamp>
-		<AridShrubland>0.3</AridShrubland>
-		<Desert>0.1</Desert>
+		<TropicalRainforest>0.5</TropicalRainforest>
+		<TropicalSwamp>0.3</TropicalSwamp>
+		<AridShrubland>0.1</AridShrubland>
+		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
@@ -615,7 +615,7 @@
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>0.6</baseHungerRate>
-      <baseBodySize>1.0</baseBodySize>
+      <baseBodySize>2.2</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Heavy</leatherDef>
@@ -627,16 +627,16 @@
       <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.1</TemperateForest>
-		<TemperateSwamp>0.2</TemperateSwamp>
+		<TemperateForest>0.05</TemperateForest>
+		<TemperateSwamp>0.09</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.2</TropicalRainforest>
+		<TropicalRainforest>0.1</TropicalRainforest>
 		<TropicalSwamp>0.1</TropicalSwamp>
-		<AridShrubland>0.8</AridShrubland>
-		<Desert>0.5</Desert>
+		<AridShrubland>0.4</AridShrubland>
+		<Desert>0.2</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
@@ -783,7 +783,7 @@
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <baseHungerRate>0.6</baseHungerRate>
-      <baseBodySize>1.0</baseBodySize>
+      <baseBodySize>2.2</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Heavy</leatherDef>
@@ -795,14 +795,14 @@
       <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.5</TemperateForest>
-		<TemperateSwamp>0.5</TemperateSwamp>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.1</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.6</TropicalRainforest>
-		<TropicalSwamp>0.6</TropicalSwamp>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0.1</AridShrubland>
 		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
@@ -958,6 +958,19 @@
       <lifeExpectancy>15</lifeExpectancy>
       <manhunterOnDamageChance>0.03</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+	  <wildBiomes>
+		<TemperateForest>0.4</TemperateForest>
+		<TemperateSwamp>0.2</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.5</TropicalRainforest>
+		<TropicalSwamp>0.3</TropicalSwamp>
+		<AridShrubland>0.1</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -1151,14 +1164,14 @@
       <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0.5</TemperateForest>
+		<TemperateForest>0.1</TemperateForest>
 		<TemperateSwamp>0.1</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0.5</TropicalRainforest>
-		<TropicalSwamp>0.5</TropicalSwamp>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0</AridShrubland>
 		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
@@ -1249,5 +1262,189 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+  
+<ThingDef ParentName="AnimalThingBase">
+    <defName>Kestodon</defName>
+    <label>kestodon</label>
+    <description>Kestodon has an appearance similar to a Pachycephalosaurus. The male Kestodon are bright orange in color and have a large head crest, which is used for headbutting rivals. Female Kestodon are bronze in color though lack the head crest found in males.</description>
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>0.0, 0.0, 0.0</westOffset>
+			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
+			<westSize>2.0, 1.0</westSize>
+			<northSize>1.0, 2.0</northSize>
+			<eastSize>2.0, 1.0</eastSize>
+			<southSize>1.0, 2.0</southSize>
+		</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggKestodonFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>5</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>5</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <herdAnimal>true</herdAnimal>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <foodType>HerbivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Jaggi</leatherDef>
+      <gestationPeriodDays>25</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>30</lifeExpectancy>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.08</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.1</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
+		<AridShrubland>0.1</AridShrubland>
+		<Desert>0.1</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Kestodon</defName>
+    <label>kestodon</label>
+    <race>Kestodon</race>
+    <combatPower>150</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonMale</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonFemale</texPath>
+          <drawSize>1.5</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonMale</texPath>
+          <drawSize>2.6</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonFemale</texPath>
+          <drawSize>1.8</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonMale</texPath>
+          <drawSize>4</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestodon/KestodonFemale</texPath>
+          <drawSize>3.4</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
 </Defs>
 
