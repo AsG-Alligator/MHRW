@@ -76,6 +76,7 @@
     <Compile Include="IncidentWorker_ElderDragonAppear.cs" />
     <Compile Include="IncidentWorker_LargeMonsterAppear.cs" />
     <Compile Include="IncidentWorker_SmallMonsterAppear.cs" />
+    <Compile Include="JobDriverEatRocks.cs" />
     <Compile Include="JobDriverTransformWeapon.cs" />
     <Compile Include="MonsterHunterRimworldMod.cs" />
     <Compile Include="MonsterHunterRimworldModSettings.cs" />

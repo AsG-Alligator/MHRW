@@ -8,5 +8,13 @@
 		<casualInterruptible>false</casualInterruptible>
 		<suspendable>false</suspendable>
 	</JobDef>
+	
+	<JobDef>
+		<defName>MHRW_EatRocks</defName>
+		<driverClass>MonsterHunterRimworld.JobDriverEatRocks</driverClass>
+		<reportString>eating rocks.</reportString>
+		<casualInterruptible>true</casualInterruptible>
+		<suspendable>true</suspendable>
+	</JobDef>
 
 </Defs>

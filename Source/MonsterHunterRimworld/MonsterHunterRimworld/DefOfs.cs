@@ -8,6 +8,7 @@ namespace MonsterHunterRimworld
     {
         #region "Basics"
         public static JobDef MHRW_TransformWeapon;
+        public static JobDef MHRW_EatRocks;
         #endregion
 
         #region "Bird Wyvern"

@@ -10,7 +10,7 @@ namespace MonsterHunterRimworld
             this.compClass = typeof(CompDodogama);
         }
 
-        public float maxNutritionPercent = 0.5f;
-        public ThingCategoryDef foodThingCategoryDef = ThingCategoryDefOf.StoneChunks;
+        public float maxNutritionFromRock = 0.5f;
+        public float timeToEatInSeconds = 2f;
     }
 }
