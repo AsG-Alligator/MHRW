@@ -5,6 +5,8 @@
 	<ModSettingFirstElderDragonLabel>Days until the first elder dragons can appear:</ModSettingFirstElderDragonLabel>
 	<ModSettingElderDragonWeatherEffectsLabel>Elder Dragon weather effects</ModSettingElderDragonWeatherEffectsLabel>
 	<ModSettingElderDragonWeatherEffectsTooltip>Elder Dragon do constant weather effects</ModSettingElderDragonWeatherEffectsTooltip>
+	<ModSettingElderDragonScareAnimalsLabel>Elder Dragon scare animals</ModSettingElderDragonScareAnimalsLabel>
+	<ModSettingElderDragonScareAnimalsTooltip>Elder Dragon scare animals when entering the map</ModSettingElderDragonScareAnimalsTooltip>
 	
 	<!-- Weapon gizmos -->
 	<TransformLabel>Transform</TransformLabel>

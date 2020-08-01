@@ -30,6 +30,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef KushalaDaora;
         public static PawnKindDef Tesuka;
         public static PawnKindDef Nergigante;
+        public static PawnKindDef Kirin;
         #endregion
 
         #region "Fanged Wyvern"

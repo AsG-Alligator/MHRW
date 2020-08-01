@@ -36,8 +36,7 @@ namespace MonsterHunterRimworld
             newElderDragon.needs.food.CurLevelPercentage = 1f;
             List<Pawn> wildlifeAnimals = map.mapPawns.AllPawnsSpawned.FindAll(p => p != newElderDragon && p.Faction == null && p.RaceProps.Animal && !p.health.Dead);
             foreach (Pawn wildlifeAnimal in wildlifeAnimals)
-            {
-                if (Rand.Chance(0.2f)) continue; // animals will flee with a 80% chance
+            {                
                 if (WyvernUtility.IsElderDragon(wildlifeAnimal))
                 {
                     if (!WyvernUtility.IsSameSpecies(newElderDragon, wildlifeAnimal))
@@ -48,6 +47,7 @@ namespace MonsterHunterRimworld
                     }
                     continue;
                 }
+                if (Rand.Chance(0.2f) || LoadedModManager.GetMod<MonsterHunterRimworldMod>().GetSettings<MonsterHunterRimworldModSettings>().elderDragonScareAnimals) continue; // animals will flee with a 80% chance
                 JobGiver_ExitMapPanic jobFlee = new JobGiver_ExitMapPanic();
                 ThinkResult thinkResult = jobFlee.TryIssueJobPackage(wildlifeAnimal, new JobIssueParams() { maxDistToSquadFlag = 500});
                 wildlifeAnimal.jobs.TryTakeOrderedJob(thinkResult.Job);

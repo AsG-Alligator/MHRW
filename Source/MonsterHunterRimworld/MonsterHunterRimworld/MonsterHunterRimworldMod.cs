@@ -25,6 +25,9 @@ namespace MonsterHunterRimworld
             listingStandard.Gap(listingStandard.verticalSpacing);
             listingStandard.CheckboxLabeled("ModSettingElderDragonWeatherEffectsLabel".Translate(), ref monsterHunterRimworldModSettings.elderDragonWeatherEffects, "ModSettingElderDragonWeatherEffectsTooltip".Translate());
 
+            listingStandard.Gap(listingStandard.verticalSpacing);
+            listingStandard.CheckboxLabeled("ModSettingElderDragonScareAnimalsLabel".Translate(), ref monsterHunterRimworldModSettings.elderDragonScareAnimals, "ModSettingElderDragonScareAnimalsTooltip".Translate());
+
             listingStandard.End();
         }
 

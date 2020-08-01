@@ -59,6 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompKirin.cs" />
+    <Compile Include="CompDodogama.cs" />
+    <Compile Include="CompProperties_Kirin.cs" />
+    <Compile Include="CompProperties_Dodogama.cs" />
     <Compile Include="CompProperties_TurfWar.cs" />
     <Compile Include="CompProperties_WeaponTransform.cs" />
     <Compile Include="CompTurfWar.cs" />

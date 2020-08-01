@@ -105,6 +105,7 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Tesuka;
             yield return MHRWDefOf.Tesuka; // 2 times because different gender is relevant
             yield return MHRWDefOf.Nergigante;
+            yield return MHRWDefOf.Kirin;
             yield break;
         }
 
@@ -145,7 +146,7 @@ namespace MonsterHunterRimworld
             }
             else if (wyvernType.Equals("ELDERDRAGON"))
             {
-                switch (Rand.RangeInclusive(1, 4))
+                switch (Rand.RangeInclusive(1, 5))
                 {
                     case 1:
                         return MHRWDefOf.KushalaDaora;
@@ -155,6 +156,8 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Tesuka; // 2 times because different gender is relevant
                     case 4:
                         return MHRWDefOf.Nergigante;
+                    case 5:
+                        return MHRWDefOf.Kirin;
                 }
             }
             else if (wyvernType.Equals("FANGEDWYVERN"))
