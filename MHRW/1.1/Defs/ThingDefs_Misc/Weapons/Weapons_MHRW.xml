@@ -1326,6 +1326,7 @@
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+				<cooldownTime>3</cooldownTime>
 			</li>
 		</verbs>
 		<tools>

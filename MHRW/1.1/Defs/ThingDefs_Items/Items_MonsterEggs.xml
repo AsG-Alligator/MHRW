@@ -42,6 +42,26 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggApcerosFertilized</defName>
+    <label>apceros egg</label>
+    <description>An apceros egg. If all goes well, it should hatch into a baby apceros. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Apceros</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>	
+	
 <ThingDef ParentName="EggFertBase">
     <defName>EggKestodonFertilized</defName>
     <label>kestodon egg</label>
