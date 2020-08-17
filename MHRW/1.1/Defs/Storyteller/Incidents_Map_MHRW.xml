@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<IncidentDef>
+	<!--<IncidentDef>
 		<defName>SmallMonsterAppear</defName>
 		<label>small monster appear</label>
 		<category>Misc</category>
@@ -10,7 +10,7 @@
 		</targetTags>
 		<workerClass>MonsterHunterRimworld.IncidentWorker_SmallMonsterAppear</workerClass>
 		<baseChance>3</baseChance>
-	</IncidentDef>
+	</IncidentDef>-->
 
 	<IncidentDef>
 		<defName>LargeMonsterAppear</defName>

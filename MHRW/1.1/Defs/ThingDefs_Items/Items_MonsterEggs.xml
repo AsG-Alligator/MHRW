@@ -65,7 +65,7 @@
 <ThingDef ParentName="EggFertBase">
     <defName>EggKestodonFertilized</defName>
     <label>kestodon egg</label>
-    <description>A kestodon egg. If all goes well, it should hatch into a baby aptonoth. It can be eaten raw, but it's much better cooked.</description>
+    <description>A kestodon egg. If all goes well, it should hatch into a baby kestodon. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
 	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
       <color>(230,230,230)</color>
@@ -78,6 +78,26 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>10</hatcherDaystoHatch>
 				<hatcherPawn>Kestodon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGastodonFertilized</defName>
+    <label>gastodon egg</label>
+    <description>A gastodon egg. If all goes well, it should hatch into a baby gastodon. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Gastodon</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
@@ -471,6 +491,29 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggKulveFertilized</defName>
+    <label>Kulve Taroth egg</label>
+    <description>A fertilized Kulve Taroth egg. If all goes well, it should hatch into a baby Kulve Taroth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>13550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>KulveTaroth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	
 	<ThingDef ParentName="EggFertBase">
     <defName>EggOdogaronFertilized</defName>

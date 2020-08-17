@@ -250,7 +250,7 @@
     </comps>
     <stages>
       <li>
-	  	  <!-- TODO rest recovery-->
+	  	  <!-- TODO stun negation-->
         <capMods>
           <li>
             <capacity>Moving</capacity>

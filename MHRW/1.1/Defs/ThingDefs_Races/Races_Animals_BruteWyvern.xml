@@ -5,7 +5,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Barroth</defName>
-    <label>barroth</label>
+    <label>Barroth</label>
     <description>Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
@@ -133,10 +133,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Barroth</defName>
-    <label>barroth</label>
+    <label>Barroth</label>
     <race>Barroth</race>
     <combatPower>1670</combatPower>
-    <ecoSystemWeight>3.3</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -187,7 +187,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Deviljho</defName>
-    <label>deviljho</label>
+    <label>Deviljho</label>
     <description>Due to its enhanced metabolism, Deviljho must constantly seek out prey. It is extremely violent, and known to snatch up large monsters in its powerful maw and flail them around.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
@@ -316,10 +316,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Deviljho</defName>
-    <label>deviljho</label>
+    <label>Deviljho</label>
     <race>Deviljho</race>
     <combatPower>1670</combatPower>
-    <ecoSystemWeight>3.3</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -370,7 +370,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Jyuratodus</defName>
-    <label>jyuratodus</label>
+    <label>Jyuratodus</label>
     <description>A large piscine wyvern that inhabits swamps. It uses mud to capture prey, and it's known to battle other monsters over territory.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
@@ -499,10 +499,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Jyuratodus</defName>
-    <label>jyuratodus</label>
+    <label>Jyuratodus</label>
     <race>Jyuratodus</race>
     <combatPower>1670</combatPower>
-    <ecoSystemWeight>3.3</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -553,7 +553,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Lavasioth</defName>
-    <label>lavasioth</label>
+    <label>Lavasioth</label>
     <description>Lavasioths utilize molten lava as armor. They are extremely aggressive and will attack without prejudice until the threat has been eliminated.</description>
     <statBases>
       <MoveSpeed>1.3</MoveSpeed>
@@ -700,10 +700,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Lavasioth</defName>
-    <label>lavasioth</label>
+    <label>Lavasioth</label>
     <race>Lavasioth</race>
     <combatPower>1670</combatPower>
-    <ecoSystemWeight>3.3</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -754,7 +754,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Anjanath</defName>
-    <label>anjanath</label>
+    <label>Anjanath</label>
     <description>The Anjanath patrols the forest looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without the slightest provocation.</description>
     <statBases>
       <MoveSpeed>5.4</MoveSpeed>
@@ -899,10 +899,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Anjanath</defName>
-    <label>anjanath</label>
+    <label>Anjanath</label>
     <race>Anjanath</race>
     <combatPower>1670</combatPower>
-    <ecoSystemWeight>4.3</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

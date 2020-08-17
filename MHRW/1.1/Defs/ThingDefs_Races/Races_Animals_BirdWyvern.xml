@@ -75,7 +75,7 @@
     </tools>
     <race>
       <body>MHBruteDromeWithBeak</body>
-      <baseHungerRate>0.6</baseHungerRate>
+      <baseHungerRate>0.3</baseHungerRate>
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal, OvivoreAnimal</foodType>
@@ -96,9 +96,9 @@
 		<IceSheet>0</IceSheet>
 		<TropicalRainforest>0.2</TropicalRainforest>
 		<TropicalSwamp>0.2</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
+		<AridShrubland>0.2</AridShrubland>
+		<Desert>0.2</Desert>
+		<ExtremeDesert>0.05</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
         <li>
@@ -133,7 +133,7 @@
     <label>kulu ya-ku</label>
     <race>KuluYaKu</race>
     <combatPower>250</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -256,7 +256,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>0.5</baseHungerRate>
+      <baseHungerRate>0.15</baseHungerRate>
       <baseBodySize>1.9</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -315,7 +315,7 @@
     <label>genprey</label>
     <race>Genprey</race>
     <combatPower>470</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
 	<wildGroupSize>
         <min>2</min>
         <max>4</max>
@@ -445,7 +445,7 @@
     </tools>
     <race>
       <body>MHBruteDrome</body>
-      <baseHungerRate>0.5</baseHungerRate>
+      <baseHungerRate>0.3</baseHungerRate>
       <baseBodySize>1.9</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -504,7 +504,7 @@
     <label>giaprey</label>
     <race>Giaprey</race>
     <combatPower>670</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
 	<wildGroupSize>
         <min>2</min>
         <max>4</max>
@@ -879,7 +879,7 @@
     <label>pukei-pukei</label>
     <race>PukeiPukei</race>
     <combatPower>270</combatPower>
-    <ecoSystemWeight>3</ecoSystemWeight>
+    <ecoSystemWeight>2</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

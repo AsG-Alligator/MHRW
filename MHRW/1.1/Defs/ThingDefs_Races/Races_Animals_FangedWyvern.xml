@@ -2,7 +2,7 @@
 <Defs>  
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>TobiKadachi</defName>
-		<label>tobi-kadachi</label>
+		<label>Tobi-Kadachi</label>
 		<description>A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.</description>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
@@ -113,10 +113,10 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>TobiKadachi</defName>
-		<label>tobi-kadachi</label>
+		<label>Tobi-Kadachi</label>
 		<race>TobiKadachi</race>
 		<combatPower>400</combatPower>
-		<ecoSystemWeight>4</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -167,7 +167,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GreatJagras</defName>
-		<label>great jagras</label>
+		<label>Great Jagras</label>
 		<description>The pack leader of the Jagras. When hungry, Great Jagras are known to attack monsters even stronger than themselves. It balloons to unbelievable proportions after swallowing prey.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
@@ -278,10 +278,10 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GreatJagras</defName>
-		<label>great jagras</label>
+		<label>Great Jagras</label>
 		<race>GreatJagras</race>
 		<combatPower>400</combatPower>
-		<ecoSystemWeight>3</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -333,7 +333,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GreatGirros</defName>
-		<label>great girros</label>
+		<label>Great Girros</label>
 		<description>A monster that scavenges for meals dropped from the Coral Highlands. It acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
@@ -445,10 +445,10 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GreatGirros</defName>
-		<label>great girros</label>
+		<label>Great Girros</label>
 		<race>GreatGirros</race>
 		<combatPower>400</combatPower>
-		<ecoSystemWeight>3</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -500,7 +500,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Dodogama</defName>
-		<label>dodogama</label>
+		<label>Dodogama</label>
 		<description>A monster that devours rock as its primary diet. The Crystals it devours mix with its saliva to produce explosive minerals that it can spit at its enemies.</description>
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
@@ -630,10 +630,10 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Dodogama</defName>
-		<label>dodogama</label>
+		<label>Dodogama</label>
 		<race>Dodogama</race>
 		<combatPower>600</combatPower>
-		<ecoSystemWeight>4</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -684,7 +684,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Odogaron</defName>
-		<label>odogaron</label>
+		<label>Odogaron</label>
 		<description>A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.</description>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
@@ -806,7 +806,7 @@
 		<label>odogaron</label>
 		<race>Odogaron</race>
 		<combatPower>400</combatPower>
-		<ecoSystemWeight>5</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

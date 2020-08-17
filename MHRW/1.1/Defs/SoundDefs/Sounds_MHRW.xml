@@ -60,7 +60,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Normal</clipFolderPath>
+            <clipFolderPath>MHRW/Weapons/Bowguns/Normal/shot1</clipFolderPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>

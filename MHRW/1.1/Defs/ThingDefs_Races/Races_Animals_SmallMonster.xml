@@ -2,7 +2,7 @@
 <Defs>  
   <ThingDef ParentName="AnimalThingBase">
     <defName>Jagras</defName>
-    <label>jagras</label>
+    <label>Jagras</label>
     <description>A dog-sized iguana thing. Sticks in packs and worships dreadlocks.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -129,7 +129,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Jagras</defName>
-    <label>jagras</label>
+    <label>Jagras</label>
     <race>Jagras</race>
     <combatPower>450</combatPower>
     <ecoSystemWeight>1</ecoSystemWeight>
@@ -203,7 +203,7 @@
   
   <ThingDef ParentName="AnimalThingBase">
     <defName>Girros</defName>
-    <label>girros</label>
+    <label>Girros</label>
     <description>Monsters that are known to attack in packs, using the deadly vapor of the Rotten Vale to their advantage. They're known to crippling targets with their paralyzing fangs.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -330,7 +330,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Girros</defName>
-    <label>girros</label>
+    <label>Girros</label>
     <race>Girros</race>
     <combatPower>400</combatPower>
     <ecoSystemWeight>1</ecoSystemWeight>
@@ -391,7 +391,7 @@
   
   <ThingDef ParentName="AnimalThingBase">
     <defName>Aptonoth</defName>
-    <label>aptonoth</label>
+    <label>Aptonoth</label>
     <description>A docile herbivore dinosaur. It's meat is quite a delicacy, enjoyed by both humans and carnivore animals alike.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
@@ -444,7 +444,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>0.6</baseHungerRate>
+      <baseHungerRate>0.3</baseHungerRate>
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -499,10 +499,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Aptonoth</defName>
-    <label>aptonoth</label>
+    <label>Aptonoth</label>
     <race>Aptonoth</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.34</ecoSystemWeight>
 	<wildGroupSize>
         <min>3</min>
         <max>7</max>
@@ -559,7 +559,7 @@
   
   <ThingDef ParentName="AnimalThingBase">
     <defName>Rhenoplos</defName>
-    <label>rhenoplos</label>
+    <label>Rhenoplos</label>
     <description>Rhenoplos is a quadrupedal, Ceratopsian-like monster with an armored body. Its face features a small nose horn and is surrounded by a frill.</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
@@ -614,7 +614,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>0.6</baseHungerRate>
+      <baseHungerRate>0.2</baseHungerRate>
       <baseBodySize>2.2</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -668,13 +668,13 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Rhenoplos</defName>
-    <label>rhenoplos</label>
+    <label>Rhenoplos</label>
     <race>Rhenoplos</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
 	<wildGroupSize>
         <min>3</min>
-        <max>7</max>
+        <max>5</max>
 	</wildGroupSize>
     <lifeStages>
       <li>
@@ -727,7 +727,7 @@
   
   <ThingDef ParentName="AnimalThingBase">
     <defName>Slagtoth</defName>
-    <label>slagtoth</label>
+    <label>Slagtoth</label>
     <description>Slagtoth have green, saggy hides covering most of their body, most notably drooping near the sides of the head and along their flanks. They have pale yellow underbellies and black crests and noses.</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
@@ -782,7 +782,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseHungerRate>0.6</baseHungerRate>
+      <baseHungerRate>0.2</baseHungerRate>
       <baseBodySize>2.2</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -836,13 +836,13 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Slagtoth</defName>
-    <label>slagtoth</label>
+    <label>Slagtoth</label>
     <race>Slagtoth</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
 	<wildGroupSize>
         <min>3</min>
-        <max>7</max>
+        <max>5</max>
 	</wildGroupSize>
     <lifeStages>
       <li>
@@ -893,7 +893,7 @@
   
   <ThingDef ParentName="AnimalThingBase">
     <defName>Kelbi</defName>
-    <label>kelbi</label>
+    <label>Kelbi</label>
     <description>A medium-sized herding herbivore which prefers to live in mixed forests and plains. Deer are very quick.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
@@ -948,7 +948,7 @@
       <herdAnimal>true</herdAnimal>
       <baseBodySize>0.9</baseBodySize>
       <baseHealthScale>0.9</baseHealthScale>
-      <baseHungerRate>0.40</baseHungerRate>
+      <baseHungerRate>0.20</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
       <meatLabel>venison</meatLabel>
@@ -968,7 +968,7 @@
 		<TropicalRainforest>0.5</TropicalRainforest>
 		<TropicalSwamp>0.3</TropicalSwamp>
 		<AridShrubland>0.1</AridShrubland>
-		<Desert>0</Desert>
+		<Desert>0.05</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
@@ -1000,11 +1000,11 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Kelbi</defName>
-    <label>kelbi</label>
-    <labelPlural>kelbi</labelPlural>
+    <label>Kelbi</label>
+    <labelPlural>Kelbi</labelPlural>
     <race>Kelbi</race>
     <combatPower>50</combatPower>
-    <ecoSystemWeight>0.50</ecoSystemWeight>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
     <wildGroupSize>3~9</wildGroupSize>
     <lifeStages>
       <li>
@@ -1079,7 +1079,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Jaggi</defName>
-    <label>jaggi</label>
+    <label>Jaggi</label>
     <description>Highly social, carnivorous bird wyverns that live in large packs. Young Jaggi males hunt in groups when attacking larger animals, and have been known to steal wyvern eggs. Research suggest they operate under orders from a single alpha male.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -1150,7 +1150,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>MHBruteDrome</body>
-      <baseHungerRate>0.35</baseHungerRate>
+      <baseHungerRate>0.2</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -1173,7 +1173,7 @@
 		<TropicalRainforest>0.1</TropicalRainforest>
 		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
+		<Desert>0.05</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
 	  </wildBiomes>
       <lifeStageAges>
@@ -1206,7 +1206,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Jaggi</defName>
-    <label>jaggi</label>
+    <label>Jaggi</label>
     <race>Jaggi</race>
     <combatPower>450</combatPower>
     <ecoSystemWeight>1</ecoSystemWeight>
@@ -1266,7 +1266,7 @@
   
 <ThingDef ParentName="AnimalThingBase">
     <defName>Kestodon</defName>
-    <label>kestodon</label>
+    <label>Kestodon</label>
     <description>Kestodon has an appearance similar to a Pachycephalosaurus. The male Kestodon are bright orange in color and have a large head crest, which is used for headbutting rivals. Female Kestodon are bronze in color though lack the head crest found in males.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -1337,11 +1337,11 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>MHBruteDrome</body>
-      <baseHungerRate>0.35</baseHungerRate>
+      <baseHungerRate>0.1</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Jaggi</leatherDef>
+      <leatherDef>Leather_Kestodon</leatherDef>
       <gestationPeriodDays>25</gestationPeriodDays>
       <wildness>0.5</wildness>
       <trainability>Advanced</trainability>
@@ -1391,10 +1391,10 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Kestodon</defName>
-    <label>kestodon</label>
+    <label>Kestodon</label>
     <race>Kestodon</race>
     <combatPower>150</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
 	<wildGroupSize>
         <min>2</min>
         <max>4</max>
@@ -1445,6 +1445,175 @@
     </lifeStages>
   </PawnKindDef>
   
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Gastodon</defName>
+    <label>Gastodon</label>
+    <description>Gastodon resembles a cross between a theropod and a bison. It is covered in scales but has a large furry mane and horns reminiscent of a bison.</description>
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>69</ComfyTemperatureMax>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>0.0, 0.0, 0.0</westOffset>
+			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
+			<westSize>2.0, 1.0</westSize>
+			<northSize>1.0, 2.0</northSize>
+			<eastSize>2.0, 1.0</eastSize>
+			<southSize>1.0, 2.0</southSize>
+		</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGastodonFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>5</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>5</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>horns</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <herdAnimal>true</herdAnimal>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.1</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Gastodon</leatherDef>
+      <gestationPeriodDays>25</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>30</lifeExpectancy>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.08</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.0</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
+		<AridShrubland>0.1</AridShrubland>
+		<Desert>0.1</Desert>
+		<ExtremeDesert>0.1</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Gastodon</defName>
+    <label>Gastodon</label>
+    <race>Gastodon</race>
+    <combatPower>150</combatPower>
+    <ecoSystemWeight>0.1</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gastodon/Gastodon</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gastodon/Gastodon</texPath>
+          <drawSize>2.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gastodon/Gastodon</texPath>
+          <drawSize>4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
     <ThingDef ParentName="AnimalThingBase">
     <defName>Apceros</defName>
     <label>apceros</label>
@@ -1511,7 +1680,7 @@
     <race>
 	  <herdAnimal>true</herdAnimal>
       <body>MHQuadrupedWithTail</body>
-      <baseHungerRate>0.4</baseHungerRate>
+      <baseHungerRate>0.1</baseHungerRate>
       <baseBodySize>2.2</baseBodySize>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -1568,7 +1737,7 @@
     <label>apceros</label>
     <race>Apceros</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
 	<wildGroupSize>
         <min>3</min>
         <max>4</max>

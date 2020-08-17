@@ -6,7 +6,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Rath</defName>
-    <label>rath</label>
+    <label>Rath</label>
     <description>A large fire-breathing flying wyvern and poison talons.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
@@ -160,7 +160,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Rath</defName>
-    <label>rath</label>
+    <label>Rath</label>
     <race>Rath</race>
     <combatPower>1000</combatPower>
     <ecoSystemWeight>3</ecoSystemWeight>
@@ -232,7 +232,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Bazelgeuse</defName>
-    <label>bazelgeuse</label>
+    <label>Bazelgeuse</label>
     <description>A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
@@ -386,7 +386,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bazelgeuse</defName>
-    <label>bazelgeuse</label>
+    <label>Bazelgeuse</label>
     <race>Bazelgeuse</race>
     <combatPower>1270</combatPower>
     <ecoSystemWeight>4</ecoSystemWeight>
@@ -440,7 +440,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Legiana</defName>
-    <label>legiana</label>
+    <label>Legiana</label>
     <description>The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
@@ -578,7 +578,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Legiana</defName>
-    <label>legiana</label>
+    <label>Legiana</label>
     <race>Legiana</race>
     <combatPower>1170</combatPower>
     <ecoSystemWeight>3</ecoSystemWeight>
@@ -633,7 +633,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Diablos</defName>
-    <label>diablos</label>
+    <label>Diablos</label>
     <description>Wyverns feared as desert tyrants. Extremely territorial, Diablos attack invaders with blind aggression. Highly sensitive to sound, perhaps because they frequently travel beneath the sand. Known to feed on cacti.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
@@ -772,7 +772,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Diablos</defName>
-    <label>diablos</label>
+    <label>Diablos</label>
     <race>Diablos</race>
     <combatPower>2070</combatPower>
     <ecoSystemWeight>3.6</ecoSystemWeight>
@@ -826,7 +826,7 @@
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>Paolumu</defName>
-    <label>paolumu</label>
+    <label>Paolumu</label>
     <description>Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -961,7 +961,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Paolumu</defName>
-    <label>paolumu</label>
+    <label>Paolumu</label>
     <race>Paolumu</race>
     <combatPower>1000</combatPower>
     <ecoSystemWeight>2</ecoSystemWeight>
