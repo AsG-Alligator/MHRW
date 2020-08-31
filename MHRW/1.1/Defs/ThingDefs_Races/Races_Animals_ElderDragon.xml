@@ -641,6 +641,24 @@
 				<chanceFactor>0.5</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>MH_Projectile_Thunderspawn</defaultProjectile>
+			<warmupTime>3.5</warmupTime>
+			<range>23.9</range>
+			<forcedMissRadius>5</forcedMissRadius>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			<soundCast>Explosion_Silent</soundCast>
+			<soundCastTail>Explosion_Silent</soundCastTail>
+			<muzzleFlashScale>0</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+		</verbs>
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>2.0</baseBodySize>

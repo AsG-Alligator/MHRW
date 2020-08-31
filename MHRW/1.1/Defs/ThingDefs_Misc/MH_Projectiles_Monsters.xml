@@ -133,7 +133,7 @@
     </projectile>
   </ThingDef>
   
-   <ThingDef ParentName="BaseBullet">
+   <ThingDef Class="MonsterHunterRimworld.ThingDef_LightningBullet" ParentName="BaseBullet">
     <defName>MH_Projectile_Thunderspawn</defName>
     <label>thunder</label>
 	 <!-- Kirin thunder projectile (spawn thunderstrike on impact point) -->
@@ -146,6 +146,7 @@
       <damageAmountBase>6</damageAmountBase>
       <speed>55</speed>
     </projectile>
+	<thingClass>MonsterHunterRimworld.Projectile_LightningBullet</thingClass>
   </ThingDef>
   
   
