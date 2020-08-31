@@ -52,6 +52,27 @@
     <soundExplosion>Explosion_PoisonBurst</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
+  
+  <DamageDef>
+    <defName>MHSilentExplosion</defName>
+    <label>puff</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>0</defaultDamage>
+    <defaultStoppingPower>0</defaultStoppingPower>
+    <plantDamageFactor>0</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastExtinguisher</explosionCellMote>
+    <explosionColorCenter>(0.1, 0.1, 0.1)</explosionColorCenter>
+    <explosionColorEdge>(0.1, 0.1, 0.1)</explosionColorEdge>
+    <soundExplosion>Explosion_Silent</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
 <!--
   <DamageDef ParentName="StunBase">
     <defName>MHPoisonBurst</defName>

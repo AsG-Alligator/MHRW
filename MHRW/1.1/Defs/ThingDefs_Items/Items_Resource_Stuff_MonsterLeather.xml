@@ -46,7 +46,7 @@
     </statBases>
     <stuffProps>
       <color>(194, 134, 147)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -65,7 +65,7 @@
     </statBases>
     <stuffProps>
       <color>(132, 143, 117)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.04</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -84,7 +84,7 @@
     </statBases>
     <stuffProps>
       <color>(92, 44, 30)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -103,7 +103,7 @@
     </statBases>
     <stuffProps>
       <color>(122, 60, 42)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -122,7 +122,7 @@
     </statBases>
     <stuffProps>
       <color>(130, 117, 94)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -163,7 +163,7 @@
     </statBases>
     <stuffProps>
       <color>(181, 163, 139)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -183,7 +183,7 @@
     </statBases>
     <stuffProps>
       <color>(88, 114, 138)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -203,7 +203,7 @@
     </statBases>
     <stuffProps>
       <color>(143, 173, 106)</color>
-      <commonality>0.005</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -223,7 +223,7 @@
     </statBases>
     <stuffProps>
       <color>(143, 173, 106)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -243,7 +243,7 @@
     </statBases>
     <stuffProps>
       <color>(186, 221, 232)</color>
-      <commonality>0.005</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -263,7 +263,7 @@
     </statBases>
     <stuffProps>
       <color>(186, 221, 232)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -283,7 +283,7 @@
     </statBases>
     <stuffProps>
       <color>(59, 61, 61)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -323,7 +323,7 @@
     </statBases>
     <stuffProps>
       <color>(230, 218, 131)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -343,9 +343,31 @@
     </statBases>
     <stuffProps>
       <color>(230, 218, 131)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
+  
+  
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Shamos</defName>
+    <label>Shamos leather</label>
+    <description>An assortment of leather, scales etc. carved from a Shamos.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_shamos</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(214, 182, 201)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
   
    <ThingDef ParentName="MonsterPartsBase">
     <defName>Leather_Jaggi</defName>
@@ -363,7 +385,7 @@
     </statBases>
     <stuffProps>
       <color>(155, 136, 186)</color>
-      <commonality>0.01</commonality>
+      <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -425,7 +447,7 @@
     </statBases>
     <stuffProps>
       <color>(174, 181, 147)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -505,7 +527,7 @@
     </statBases>
     <stuffProps>
       <color>(173, 193, 224)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -526,7 +548,7 @@
     </statBases>
     <stuffProps>
       <color>(255, 240, 252)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
  
@@ -607,7 +629,7 @@
     </statBases>
     <stuffProps>
       <color>(163, 50, 46)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -647,7 +669,7 @@
     </statBases>
     <stuffProps>
       <color>(166, 58, 55)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
 
@@ -667,7 +689,7 @@
     </statBases>
     <stuffProps>
       <color>(142, 161, 127)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
@@ -707,11 +729,11 @@
     </statBases>
     <stuffProps>
       <color>(159, 193, 209)</color>
-      <commonality>0.001</commonality>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
   
-               <ThingDef ParentName="MonsterPartsBase">
+<ThingDef ParentName="MonsterPartsBase">
     <defName>Leather_TzitziYaKu</defName>
     <label>Tzitzi Ya-Ku leather</label>
     <description>An assortment of leather, scales etc. carved from a Tzitzi Ya-Ku.</description>
@@ -728,6 +750,27 @@
     <stuffProps>
       <color>(97, 85, 120)</color>
       <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+ <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Yian</defName>
+    <label>Yian-Kut-Ku leather</label>
+    <description>An assortment of leather, scales etc. carved from a Yian-Kut-Ku.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_yian</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(237, 83, 86)</color>
+      <commonality>0.01</commonality>
     </stuffProps>
   </ThingDef>
  </Defs>

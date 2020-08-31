@@ -151,16 +151,20 @@
   
 <ThingDef ParentName="BaseBullet">
     <defName>MH_Projectile_Tornadospawn</defName>
-    <label>tornado</label>
+    <label>tornado blast</label>
 	 <!-- Kushala tornado projectile (spawn tornado on impact point), needs particle effect along path -->
     <graphicData>
       <texPath>Things/Projectile/InvisibleProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>6</damageAmountBase>
       <speed>55</speed>
+	  <explosionRadius>0.8</explosionRadius>
+      <preExplosionSpawnThingDef>Tornado</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
     </projectile>
   </ThingDef>
   

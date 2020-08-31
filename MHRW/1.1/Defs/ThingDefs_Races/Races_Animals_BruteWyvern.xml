@@ -129,6 +129,10 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -312,6 +316,10 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -495,6 +503,10 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -696,6 +708,10 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -895,6 +911,10 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

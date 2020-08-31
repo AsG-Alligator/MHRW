@@ -59,8 +59,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Normal/shot1</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/Normal/shotNormal</clipPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>
@@ -93,8 +93,25 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Pierce</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/PierceLBG/shotPierce</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_BowgunPierceHBG</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/PierceHBG/shotPierceHBG</clipPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>
@@ -110,8 +127,25 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Sticky</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/Sticky/shotSticky</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_BowgunStickyLBG</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/StickyLBG/shotStickyLBG</clipPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>
@@ -127,8 +161,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Spread</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/Spread/shotSpread</clipPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>
@@ -144,8 +178,25 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MHRW/Weapons/Bowguns/Elemental</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/Bowguns/Elemental/shotElemental</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>Shot_Gunlance</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MHRW/Weapons/GL/shotGunlance</clipPath>
           </li>
         </grains>      
         <volumeRange>33.52942~33.52942</volumeRange>
@@ -216,6 +267,24 @@
           </li>
         </grains>
         <volumeRange>50~50</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+  
+    
+  <SoundDef>
+    <defName>Explosion_Silent</defName>
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MHRW/Monsters/Splat</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>1~1</volumeRange>
         <pitchRange>1.6516304~1.954348</pitchRange>
       </li>
     </subSounds>

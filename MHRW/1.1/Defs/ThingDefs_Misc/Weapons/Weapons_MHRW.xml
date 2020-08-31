@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+<!--> HAMMERS <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer</defName>
 		<label>Hammer</label>
@@ -46,6 +48,164 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Bone</defName>
+		<label>Bone Bludgeon</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Bone</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Diablos</defName>
+		<label>Diablos Shatterer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. Made from Diablos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Diablos</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Diablos>50</Leather_Diablos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
 				<power>20</power>
 				<cooldownTime>3</cooldownTime>
 			</li>
@@ -64,7 +224,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>22</power>
+				<power>25</power>
 				<cooldownTime>5</cooldownTime>
 			</li>
 			<li>
@@ -78,7 +238,8 @@
 			</li>
 		</tools>
 	</ThingDef>
-
+	
+<!--> GREATSWORDS <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Greatsword</defName>
 		<label>Greatsword</label>
@@ -114,7 +275,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>24</power>
+				<power>16</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -122,7 +283,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
+				<power>16</power>
 				<cooldownTime>3.6</cooldownTime>
 			</li>
 			<li>
@@ -130,7 +291,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>35</power>
+				<power>20</power>
 				<cooldownTime>5.6</cooldownTime>
 			</li>
 			<li>
@@ -138,7 +299,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>24</power>
+				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -146,7 +307,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>22</power>
+				<power>17</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -168,7 +329,9 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+	
 
+<!--> LONGSWORDS <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Longsword</defName>
 		<label>Longsword</label>
@@ -204,7 +367,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 			<li>
@@ -212,7 +375,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 			<li>
@@ -220,7 +383,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 		</tools>
@@ -235,6 +398,7 @@
 		</recipeMaker>
 	</ThingDef>
 
+<!--> SWORD AND SHIELDS <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_SwordandShield</defName>
@@ -296,7 +460,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>15</power>
+				<power>9</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -304,7 +468,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>15</power>
+				<power>9</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -312,7 +476,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>15</power>
+				<power>9</power>
 				<cooldownTime>2.0</cooldownTime>
 			</li>
 			<li>
@@ -335,6 +499,7 @@
 		</recipeMaker>
 	</ThingDef>
 
+<!--> DUALBLADES <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Dualblades</defName>
@@ -371,7 +536,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>10</power>
+				<power>6</power>
 				<cooldownTime>1.0</cooldownTime>
 			</li>
 			<li>
@@ -379,7 +544,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>10</power>
+				<power>6</power>
 				<cooldownTime>1.0</cooldownTime>
 			</li>
 		</tools>
@@ -395,7 +560,7 @@
 		
 	</ThingDef>
 
-
+<!--> CHARGEBLADES <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Chargeblade</defName>
 		<label>Charge Blade</label>
@@ -468,7 +633,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>9</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -476,7 +641,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>9</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -484,7 +649,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>9</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 			<li>
@@ -492,7 +657,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
+				<power>12</power>
 				<cooldownTime>2.8</cooldownTime>
 			</li>
 		</tools>
@@ -555,7 +720,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
+				<power>15</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -563,7 +728,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
+				<power>15</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -571,12 +736,13 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
+				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
 
+<!--> LANCES <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Lance</defName>
@@ -639,7 +805,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>24</power>
+				<power>9</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -655,7 +821,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>27</power>
+				<power>9</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -663,7 +829,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>24</power>
+				<power>9</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -671,7 +837,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>25</power>
+				<power>9</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 		</tools>
@@ -686,6 +852,7 @@
 		</recipeMaker>
 	</ThingDef>
 
+<!--> SWITCHAXES <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Switchaxe</defName>
@@ -734,7 +901,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
+				<power>11</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -742,7 +909,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
+				<power>11</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -750,7 +917,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
+				<power>11</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -758,7 +925,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>22</power>
+				<power>10</power>
 				<cooldownTime>1.6</cooldownTime>
 			</li>
 			<li>
@@ -766,7 +933,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>22</power>
+				<power>10</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
@@ -829,7 +996,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
+				<power>15</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -837,7 +1004,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>26</power>
+				<power>15</power>
 				<cooldownTime>2.9</cooldownTime>
 			</li>
 			<li>
@@ -845,7 +1012,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
+				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -853,12 +1020,13 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
+				<power>18</power>
 				<cooldownTime>3.1</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
 
+<!--> INSECT GLAIVES <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Insectglaive</defName>
 		<label>Insect Glaive</label>
@@ -895,7 +1063,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -903,7 +1071,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -911,7 +1079,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -919,7 +1087,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -927,7 +1095,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 			<li>
@@ -935,7 +1103,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>20</power>
+				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 			</li>
 		</tools>
@@ -949,6 +1117,8 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+
+<!--> HUNTING HORNS <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Huntinghorn</defName>
@@ -996,7 +1166,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>30</power>
+				<power>13</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 			<li>
@@ -1005,7 +1175,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>25</power>
+				<power>12</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 			<li>
@@ -1014,11 +1184,13 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>30</power>
+				<power>14</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
+
+<!--> LIGHT BOWGUNS <-->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Lightbowgun</defName>
@@ -1069,7 +1241,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MHLBGNormalOre</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
+				<warmupTime>2.0</warmupTime>
 				<range>25.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -1098,16 +1270,227 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHLBGNormalOre</defName>
+		<label>light bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Lightbowgun_Jagras</defName>
+		<label>Jagras Blitz</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.  \n\n This one has been forged with Great Jagras parts. \n ================== \n Ammo type: Normal</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/LBG/LBGJagras</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.52</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.58</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHLBGNormalJagras</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunNormal</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHLBGNormalJagras</defName>
+		<label>light bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Lightbowgun_Bazel</defName>
+		<label>Bazel Typhoon</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.  \n\n This one has been forged with Bazelgeuse parts. \n ================== \n Ammo type: Sticky</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/LBG/LBGBazel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.52</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.58</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Bazel>50</Leather_Bazel>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHLBGBazel</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>25.9</range>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>25</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunStickyLBG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MHLBGBazel</defName>
+    <label>bowgun round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionRadius>0.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+	
+
+<!--> HEAVY BOWGUNS <-->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun</defName>
 		<label>Heavy Bowgun</label>
-		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.</description>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range. \n\n This one is a basic steel version. \n ================== \n Ammo type: Normal</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MHHeavybowgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.8</drawSize>
+			<drawSize>2.2</drawSize>
 		</graphicData>
 		<comps>
 			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
@@ -1149,7 +1532,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MHHBGNormalOre</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
+				<warmupTime>3.0</warmupTime>
 				<range>40.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -1178,6 +1561,318 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGNormalOre</defName>
+		<label>bowgun round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun_Dodo</defName>
+		<label>Gama Cannon</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range. \n\n This one has been forged with Dodogama parts. \n ================== \n Ammo type: Sticky</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HBG/HBGDodo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Dodogama>50</Leather_Dodogama>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGDodo</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunSticky</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<forcedMissRadius>0.1</forcedMissRadius>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MHHBGDodo</defName>
+    <label>bowgun round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>0.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+	
+	
+
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun_Jagras</defName>
+		<label>Jagras Cannon</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n This one has been forged with Great Jagras parts. \n ================== \n Ammo type: Normal</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HBG/HBGJagras</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_GreatJagras>50</Leather_GreatJagras>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGNormalJagras</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunNormal</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGNormalJagras</defName>
+		<label>bowgun round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun_Legiana</defName>
+		<label>Legia Shattercryst</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n This one has been forged with Legiana parts. \n ================== \n Ammo type: Pierce</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HBG/HBGLegiana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Legiana>50</Leather_Legiana>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGNormalLegiana</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunPierce</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGNormalLegiana</defName>
+		<label>bowgun round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+
+<!--> BOWS <-->
 
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>MH_Bow</defName>
@@ -1244,6 +1939,26 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowNormalOre</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
+<!--> GUNLANCES <-->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Gunlance</defName>
@@ -1301,9 +2016,9 @@
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>1</AccuracyShort>
-			<AccuracyMedium>0.8</AccuracyMedium>
-			<AccuracyLong>0.5</AccuracyLong>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
 			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -1321,9 +2036,9 @@
 				<defaultProjectile>Bullet_MHGunlanceShellOre</defaultProjectile>
 				<warmupTime>0.1</warmupTime>
 				<range>5</range>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
-				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCast>Shot_Gunlance</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -1334,7 +2049,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>25</power>
+				<power>10</power>
 				<cooldownTime>1.2</cooldownTime>
 			</li>
 			<li>
@@ -1342,7 +2057,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
+				<power>10</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -1350,7 +2065,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>27</power>
+				<power>12</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 			<li>
@@ -1358,11 +2073,12 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>29</power>
+				<power>12</power>
 				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>
+	</ThingDef>	
+	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_MHGunlanceShellOre</defName>
 		<label>gunlance shell</label>
@@ -1372,63 +2088,18 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>1.2</armorPenetrationBase>
 			<stoppingPower>3.0</stoppingPower>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MHLBGNormalOre</defName>
-		<label>light bowgun bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.6</armorPenetrationBase>
-			<stoppingPower>1.0</stoppingPower>
-			<speed>70</speed>
-		</projectile>
-	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MHHBGNormalOre</defName>
-		<label>heavy bowgun bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.7</armorPenetrationBase>
-			<stoppingPower>1.0</stoppingPower>
-			<speed>70</speed>
-		</projectile>
-	</ThingDef>
 
-	<ThingDef ParentName="BaseProjectileNeolithic">
-		<defName>Arrow_MHBowNormalOre</defName>
-		<label>hunter bow arrow</label>
-		<graphicData>
-			<texPath>Things/Projectile/MH_Arrow</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>Arrow</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<stoppingPower>3.5</stoppingPower>
-			<armorPenetrationBase>0.7</armorPenetrationBase>
-			<speed>49</speed>
-		</projectile>
-	</ThingDef>
-	
+
+
+
 	  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_MHDebugLauncher</defName>
     <label>debug launcher</label>

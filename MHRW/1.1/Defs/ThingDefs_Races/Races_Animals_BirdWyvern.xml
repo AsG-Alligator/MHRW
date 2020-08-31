@@ -927,5 +927,184 @@
   </PawnKindDef>
   
   
+  
+<ThingDef ParentName="AnimalThingBase">
+    <defName>YianKutKu</defName>
+    <label>Yian-Kut-Ku</label>
+    <description>A bird wyvern with a huge beak and large ears that splay open when it is angered. Quick on its feet, and known to be territorial. It's known for its love of Konchu, and has been observed digging them up out of the ground to swallow them whole.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>4400</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
+			<directionBased>True</directionBased>
+			<westOffset>1.0, 0.0, 0.0</westOffset>
+			<eastOffset>-1.0, 0.0, 0.0</eastOffset>
+			<westSize>2.5, 1.3</westSize>
+			<northSize>1.3, 2.5</northSize>
+			<eastSize>2.5, 1.3</eastSize>
+			<southSize>1.3, 2.5</southSize>
+		</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+	  <li>
+        <label>tail</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHWyvern</body>
+      <baseHungerRate>0.6</baseHungerRate>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>5.6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Yian</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Simple</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>200</lifeExpectancy>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.08</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>YianKutKu</defName>
+    <label>Yian-Kut-Ku</label>
+    <race>YianKutKu</race>
+    <combatPower>270</combatPower>
+    <ecoSystemWeight>2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
 </Defs>
   
