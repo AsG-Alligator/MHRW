@@ -3,7 +3,7 @@ using Verse;
 
 namespace MonsterHunterRimworld
 {
-    class Projectile_LightningBullet: Bullet
+    public class Projectile_LightningBullet: Bullet
     {
         public ThingDef_LightningBullet Def
         {
