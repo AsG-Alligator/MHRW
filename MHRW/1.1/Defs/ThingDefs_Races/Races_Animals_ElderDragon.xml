@@ -647,12 +647,12 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>MH_Projectile_Thunderspawn</defaultProjectile>
 			<warmupTime>3.5</warmupTime>
-			<range>23.9</range>
+			<range>35</range>
 			<forcedMissRadius>5</forcedMissRadius>
 			<burstShotCount>5</burstShotCount>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 			<soundCast>Explosion_Silent</soundCast>
-			<soundCastTail>Explosion_Silent</soundCastTail>
+			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>0</muzzleFlashScale>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>

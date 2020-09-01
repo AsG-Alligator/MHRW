@@ -163,7 +163,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer_Diablos</defName>
 		<label>Diablos Shatterer</label>
-		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. Made from Diablos materials.</description>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n Made from Diablos materials.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Diablos</texPath>
 			<drawSize>1.8</drawSize>
@@ -234,6 +234,86 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>30</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Pukei</defName>
+		<label>Blooming Hammer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n Made from Pukei-Pukei materials. Applies poison on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Pukei</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Pukei>50</Leather_Pukei>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>20</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 		</tools>
@@ -499,6 +579,108 @@
 		</recipeMaker>
 	</ThingDef>
 
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Rathian</defName>
+		<label>Princess Rapier</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n This one has been made with Rathian materials. Applies poison on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSRathian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="PawnShields.CompProperties_Shield">
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Item/Equipment/WeaponMelee/SnS/Shields/Rathian</texPath>
+					<drawSize>(2.2, 2.2)</drawSize>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0, -0.017, -0.1)</northOffset>
+					<southOffset>(0, 0.3, -0.1)</southOffset>
+					<westOffset>(0, 0.017, 0)</westOffset>
+					<eastOffset>(0, -0.017, 0)</eastOffset>
+					<flipRotation>false</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
+				<shieldTakeDamage>false</shieldTakeDamage>
+				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
+				<canBeAutoDiscarded>false</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
+				<useFatigue>false</useFatigue>
+				<damageToFatigueFactor>0</damageToFatigueFactor>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Rathian>50</Leather_Rathian>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	
 <!--> DUALBLADES <-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -559,6 +741,188 @@
 		</recipeMaker>
 		
 	</ThingDef>
+
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades_Diablos</defName>
+		<label>Diablos Hatchets</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n These have been made with Diablos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBDiablos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Diablos>40</Leather_Diablos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades_Tzitzi</defName>
+		<label>Dual Destroyers</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n These have been made with Tzitzi Ya-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBTzitzi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Diablos>40</Leather_Diablos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades_Gendrome</defName>
+		<label>Gendrome Blades</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n These have been made with Gendrome materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBGendrome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Gendrome>40</Leather_Gendrome>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+
+
 
 <!--> CHARGEBLADES <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">

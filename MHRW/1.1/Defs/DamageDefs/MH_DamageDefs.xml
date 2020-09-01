@@ -32,6 +32,143 @@
     <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
+ <!--> Weapon damage defs <--> 
+  
+   <DamageDef ParentName="CutBase">
+    <defName>MHPoisonCut</defName>
+    <label>poison cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ToolCapacityDef>
+    <defName>MHPoisonCut</defName>
+    <label>poison cut</label>
+  </ToolCapacityDef>
+  
+   <ManeuverDef>
+    <defName>MHPoisonSlash</defName>
+    <requiredCapacity>MHPoisonCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHPoisonCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+   <DamageDef ParentName="BluntBase">
+    <defName>MHPoisonBlunt</defName>
+    <label>poison bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+   <ManeuverDef>
+    <defName>MHPoisonSmash</defName>
+    <requiredCapacity>MHPoisonBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHPoisonBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHPoisonBlunt</defName>
+    <label>poison smash</label>
+  </ToolCapacityDef>
+  
+  
+  
+  
+  
+  <DamageDef ParentName="CutBase">
+    <defName>MHParalisisCut</defName>
+    <label>paralizing cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisSlash</defName>
+    <requiredCapacity>MHParalisisCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisCut</defName>
+    <label>paralizing cut</label>
+  </ToolCapacityDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>MHParalisisBlunt</defName>
+    <label>paralizing bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisSmash</defName>
+    <requiredCapacity>MHParalisisBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisBlunt</defName>
+    <label>paralizing smash</label>
+  </ToolCapacityDef>
+  
+  
+  
+  
+  
+  
+  
+  
   <DamageDef>
     <defName>MHPoisonBurst</defName>
     <label>poison burst</label>
