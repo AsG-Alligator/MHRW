@@ -155,7 +155,7 @@
 	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_diablos</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>90.4</MarketValue>
+      <MarketValue>10.4</MarketValue>
       <StuffPower_Armor_Sharp>3.8</StuffPower_Armor_Sharp>
 	  <StuffPower_Armor_Blunt>1.92</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
@@ -398,7 +398,7 @@
 	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jho</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>20.4</MarketValue>
+      <MarketValue>16.4</MarketValue>
       <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
 	  <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
@@ -418,7 +418,7 @@
 	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kulve</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>20.4</MarketValue>
+      <MarketValue>16.4</MarketValue>
       <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
 	  <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
