@@ -1,5 +1,10 @@
 Hunting Horn (most hediffs already present)
+-Button to play a song
+-Some sort of cooldown
+-Hediffs defined via XML
 Insect Glaive
-Implement Alpha Animals ranged
+-Ranged weapon 100% accurate, slow and low-ish damage, projectile returns visually to user
+-OR Spawns a bug pawn with limited lifespan, on "death" visually returns to user
 Check 1.2 compatibility
 *Potential special attacks for Charge Blade, Switchaxe and Gunlance
+Wait for VEF for ranged implementation
