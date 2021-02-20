@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Abstract="True" Name="MonsterPartsBase" ParentName="ResourceBase">
+    <description>An assortment of leather, scales, feathers, talons etc. carved from a monster.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>1</Flammability>
+      <MarketValue>2.1</MarketValue>
+      <StuffPower_Armor_Sharp>0.81</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>1.3</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+ <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Anjanath</defName>
+    <label>Anjanath leather</label>
+    <description>An assortment of leather, scales etc. carved from an Anjanath.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_anja</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(194, 134, 147)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+   <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Aptonoth</defName>
+    <label>Aptonoth leather</label>
+    <description>An assortment of leather, scales etc. carved from an Aptonoth.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_apto</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(132, 143, 117)</color>
+      <commonality>0.04</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+<ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Gastodon</defName>
+    <label>Gastodon leather</label>
+    <description>An assortment of leather, scales etc. carved from a gastodon.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_gastodon</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(92, 44, 30)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Kestodon</defName>
+    <label>Kestodon leather</label>
+    <description>An assortment of leather, scales etc. carved from a kestodon.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kestodon</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(122, 60, 42)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+   <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Barroth</defName>
+    <label>Barroth leather</label>
+    <description>An assortment of leather, scales etc. carved from a Barroth.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_barroth</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(130, 117, 94)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Bazel</defName>
+    <label>Bazelgeuse leather</label>
+    <description>An assortment of leather, scales etc. carved from a Bazelgeuse.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_bazel</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.85</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.92</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(110, 107, 103)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Diablos</defName>
+    <label>Diablos leather</label>
+    <description>An assortment of leather, scales etc. carved from a Diablos.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_diablos</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.4</MarketValue>
+      <StuffPower_Armor_Sharp>3.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.92</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(181, 163, 139)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Dodogama</defName>
+    <label>Dodogama leather</label>
+    <description>An assortment of leather, scales etc. carved from a Dodogama.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_dodogama</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(88, 114, 138)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+        <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Gendrome</defName>
+    <label>Gendrome leather</label>
+    <description>An assortment of leather, scales etc. carved from a Gendrome.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_gendrome</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(143, 173, 106)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+          <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Genprey</defName>
+    <label>Genprey leather</label>
+    <description>An assortment of leather, scales etc. carved from a Genprey.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_gendrome</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(143, 173, 106)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+          <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Giadrome</defName>
+    <label>Giadrome leather</label>
+    <description>An assortment of leather, scales etc. carved from a Gendrome.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_giadrome</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(186, 221, 232)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+          <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Giaprey</defName>
+    <label>Giaprey leather</label>
+    <description>An assortment of leather, scales etc. carved from a Giaprey.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_giadrome</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(186, 221, 232)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+            <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_GreatGirros</defName>
+    <label>Great girros leather</label>
+    <description>An assortment of leather, scales etc. carved from a Great Girros.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_girros</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(59, 61, 61)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+              <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Girros</defName>
+    <label>Girros leather</label>
+    <description>An assortment of leather, scales etc. carved from a Girros.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_girros</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(59, 61, 61)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+              <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_GreatJagras</defName>
+    <label>Great jagras leather</label>
+    <description>An assortment of leather, scales etc. carved from a Great Jagras.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jagras</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(230, 218, 131)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Jagras</defName>
+    <label>Jagras leather</label>
+    <description>An assortment of leather, scales etc. carved from a Jagras.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jagras</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(230, 218, 131)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Shamos</defName>
+    <label>Shamos leather</label>
+    <description>An assortment of leather, scales etc. carved from a Shamos.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_shamos</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(214, 182, 201)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Jaggi</defName>
+    <label>Jaggi leather</label>
+    <description>An assortment of leather, scales etc. carved from a Jaggi.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jaggi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(155, 136, 186)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Deviljho</defName>
+    <label>Deviljho leather</label>
+    <description>An assortment of leather, scales etc. carved from a Deviljho.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jho</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>16.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(98, 107, 60)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+<ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Kulve</defName>
+    <label>Kulve Taroth leather</label>
+    <description>An assortment of leather, scales etc. carved from a Kulve Taroth.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kulve</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>16.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(237, 204, 74)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+   
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Jyuratodus</defName>
+    <label>Jyuratodus leather</label>
+    <description>An assortment of leather, scales etc. carved from a Jyuratodus.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_jyura</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.3</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(174, 181, 147)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_KuluYaKu</defName>
+    <label>Kulu Ya-Ku leather</label>
+    <description>An assortment of leather, scales etc. carved from a Kulu Ya-Ku.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kulu</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(232, 235, 192)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+     <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Kushala</defName>
+    <label>Kushala Daora leather</label>
+    <description>An assortment of leather, scales etc. carved from a Kushala Daora.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kush</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.4</MarketValue>
+      <StuffPower_Armor_Sharp>4.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>3.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(102, 96, 78)</color>
+      <commonality>0.0005</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Lavasioth</defName>
+    <label>Lavasioth leather</label>
+    <description>An assortment of leather, scales etc. carved from a Lavasioth.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_lavasioth</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>80</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(54, 53, 51)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Legiana</defName>
+    <label>Legiana leather</label>
+    <description>An assortment of leather, scales etc. carved from a Legiana.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_legiana</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>80</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(173, 193, 224)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Paolumu</defName>
+    <label>Paolumu leather</label>
+    <description>An assortment of leather, scales etc. carved from a Paolumu.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_lumu</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>-10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(255, 240, 252)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Lunastra</defName>
+    <label>Lunastra leather</label>
+    <description>An assortment of leather, scales etc. carved from a Lunastra.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_lunastra</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>2.0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>80</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(118, 157, 179)</color>
+      <commonality>0.0005</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+      <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Nergigante</defName>
+    <label>Nergigante leather</label>
+    <description>An assortment of leather, scales etc. carved from a Nergigante.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_nergi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.4</MarketValue>
+      <StuffPower_Armor_Sharp>3.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>3.0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(100, 92, 110)</color>
+      <commonality>0.0005</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+        <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Kirin</defName>
+    <label>Kirin leather</label>
+    <description>An assortment of leather, scales etc. carved from a Kirin.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kirin</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(218, 237, 235)</color>
+      <commonality>0.0005</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+       <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Odogaron</defName>
+    <label>Odogaron leather</label>
+    <description>An assortment of leather, scales etc. carved from a Odogaron.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_odo</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>8.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(163, 50, 46)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+       <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Pukei</defName>
+    <label>Pukei-Pukei leather</label>
+    <description>An assortment of leather, scales etc. carved from a Pukei-Pukei.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_pukei</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(109, 140, 124)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+         <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Rathalos</defName>
+    <label>Rathalos leather</label>
+    <description>An assortment of leather, scales etc. carved from a Rathalos.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_rathalos</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.1</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(166, 58, 55)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+
+         <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Rathian</defName>
+    <label>Rathian leather</label>
+    <description>An assortment of leather, scales etc. carved from a Rathian.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_rathian</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(142, 161, 127)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+           <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Teostra</defName>
+    <label>Teostra leather</label>
+    <description>An assortment of leather, scales etc. carved from a Teostra.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_teostra</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.4</MarketValue>
+      <StuffPower_Armor_Sharp>2.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>2.6</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>80</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(145, 61, 48)</color>
+      <commonality>0.0005</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+             <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_TobiKadachi</defName>
+    <label>Tobi-Kadachi leather</label>
+    <description>An assortment of leather, scales etc. carved from a Tobi-Kadachi.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_tobi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(159, 193, 209)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+<ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_TzitziYaKu</defName>
+    <label>Tzitzi Ya-Ku leather</label>
+    <description>An assortment of leather, scales etc. carved from a Tzitzi Ya-Ku.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_tzitzi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(97, 85, 120)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+ <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Yian</defName>
+    <label>Yian-Kut-Ku leather</label>
+    <description>An assortment of leather, scales etc. carved from a Yian-Kut-Ku.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_yian</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(237, 83, 86)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+ </Defs>
+ 

@@ -7,6 +7,7 @@
 	<description>Beta release of the Monster Hunter mod.</description>
 	<supportedVersions>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<modDependencies>
     <li>
@@ -19,6 +20,11 @@
         <packageId>jecrell.jecstools</packageId>
         <displayName>JecsTools</displayName>
         <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+    </li>
+	<li>
+        <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+        <displayName>Vanilla Expanded Framework</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
     </li>
 </modDependencies>
 </ModMetaData>

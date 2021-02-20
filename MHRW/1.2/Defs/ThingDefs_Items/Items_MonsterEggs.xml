@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="EggFertBase">
+    <defName>EggAnjanathFertilized</defName>
+    <label>anjanath egg</label>
+    <description>A fertilized anjanath egg. If all goes well, it should hatch into a baby anjanath. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>423.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>Anjanath</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggAptonothFertilized</defName>
+    <label>aptonoth egg</label>
+    <description>An aptonoth egg. If all goes well, it should hatch into a baby aptonoth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Aptonoth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggApcerosFertilized</defName>
+    <label>apceros egg</label>
+    <description>An apceros egg. If all goes well, it should hatch into a baby apceros. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Apceros</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>	
+	
+<ThingDef ParentName="EggFertBase">
+    <defName>EggKestodonFertilized</defName>
+    <label>kestodon egg</label>
+    <description>A kestodon egg. If all goes well, it should hatch into a baby kestodon. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Kestodon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGastodonFertilized</defName>
+    <label>gastodon egg</label>
+    <description>A gastodon egg. If all goes well, it should hatch into a baby gastodon. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Gastodon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggBarrothFertilized</defName>
+    <label>barroth egg</label>
+    <description>A fertilized barroth egg. If all goes well, it should hatch into a baby barroth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>430.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>Barroth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggBazelFertilized</defName>
+    <label>bazelgeuse egg</label>
+    <description>A fertilized bazelgeuse egg. If all goes well, it should hatch into a baby bazelgeuse. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>800.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Bazelgeuse</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggDeviljhoFertilized</defName>
+    <label>deviljho egg</label>
+    <description>A fertilized deviljho egg. If all goes well, it should hatch into a baby deviljho. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>1800.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>80</hatcherDaystoHatch>
+				<hatcherPawn>Deviljho</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggDiablosFertilized</defName>
+    <label>diablos egg</label>
+    <description>A fertilized diablos egg. If all goes well, it should hatch into a baby diablos. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Diablos</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggDodogamaFertilized</defName>
+    <label>dodogama egg</label>
+    <description>A fertilized dodogama egg. If all goes well, it should hatch into a baby dodogama. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Dodogama</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGenpreyFertilized</defName>
+    <label>genprey egg</label>
+    <description>A fertilized genprey egg. If all goes well, it should hatch into a baby genprey or gendrome. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>100.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Genprey</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGiapreyFertilized</defName>
+    <label>giaprey egg</label>
+    <description>A fertilized giaprey egg. If all goes well, it should hatch into a baby giaprey or giadrome. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>100.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Giaprey</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggGirrosFertilized</defName>
+    <label>girros egg</label>
+    <description>A fertilized girros egg. If all goes well, it should hatch into a baby girros. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Girros</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGGirrosFertilized</defName>
+    <label>girros egg</label>
+    <description>A fertilized girros egg. If all goes well, it should hatch into a baby girros. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>GreatGirros</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+			<ThingDef ParentName="EggFertBase">
+    <defName>EggJagrasFertilized</defName>
+    <label>jagras egg</label>
+    <description>A fertilized jagras egg. If all goes well, it should hatch into a baby jagras. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Jagras</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggJaggiFertilized</defName>
+    <label>jaggi egg</label>
+    <description>A fertilized jaggi egg. If all goes well, it should hatch into a baby jaggi. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Jaggi</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggShamosFertilized</defName>
+    <label>Shamos egg</label>
+    <description>A fertilized Shamos egg. If all goes well, it should hatch into a baby Shamos. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Shamos</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggGJagrasFertilized</defName>
+    <label>jagras egg</label>
+    <description>A fertilized jagras egg. If all goes well, it should hatch into a baby jagras. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>GreatJagras</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggJyuraFertilized</defName>
+    <label>Jyuratodus egg</label>
+    <description>A fertilized jyuratodus egg. If all goes well, it should hatch into a baby jyuratodus. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>Jyuratodus</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggKuluFertilized</defName>
+    <label>Kulu Ya-Ku egg</label>
+    <description>A fertilized Kulu Ya-Ku egg. If all goes well, it should hatch into a baby Kulu Ya-Ku. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>KuluYaKu</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggKushalaFertilized</defName>
+    <label>Kushala Daora egg</label>
+    <description>A fertilized Kushala Daora egg. If all goes well, it should hatch into a baby Kushala Daora. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>2050.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>KushalaDaora</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggLavasiothFertilized</defName>
+    <label>Lavasioth egg</label>
+    <description>A fertilized Lavasioth egg. If all goes well, it should hatch into a baby Lavasioth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>Lavasioth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggLegianaFertilized</defName>
+    <label>Legiana egg</label>
+    <description>A fertilized Legiana egg. If all goes well, it should hatch into a baby Legiana. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Legiana</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggTesukaFertilized</defName>
+    <label>Lunastra egg</label>
+    <description>A fertilized Lunastra egg. If all goes well, it should hatch into a baby Lunastra or Teostra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>2050.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>Tesuka</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggNergiganteFertilized</defName>
+    <label>Nergigante egg</label>
+    <description>A fertilized Nergigante egg. If all goes well, it should hatch into a baby Nergigante. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>3550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>Nergigante</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggKulveFertilized</defName>
+    <label>Kulve Taroth egg</label>
+    <description>A fertilized Kulve Taroth egg. If all goes well, it should hatch into a baby Kulve Taroth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>13550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>KulveTaroth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggOdogaronFertilized</defName>
+    <label>Odogaron egg</label>
+    <description>A fertilized Odogaron egg. If all goes well, it should hatch into a baby Odogaron. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Odogaron</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggPaolumuFertilized</defName>
+    <label>Paolumu egg</label>
+    <description>A fertilized Paolumu egg. If all goes well, it should hatch into a baby Paolumu. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Paolumu</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggPukeiFertilized</defName>
+    <label>Pukei-Pukei egg</label>
+    <description>A fertilized Pukei-Pukei egg. If all goes well, it should hatch into a baby Pukei-Pukei. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>250.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30</hatcherDaystoHatch>
+				<hatcherPawn>PukeiPukei</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggRathFertilized</defName>
+    <label>Rathian egg</label>
+    <description>A fertilized Rathian egg. If all goes well, it should hatch into a baby Rathian or Rathalos. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1250.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Rath</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+    <defName>EggRhenoplosFertilized</defName>
+    <label>rhenoplos egg</label>
+    <description>A Rhenoplos egg. If all goes well, it should hatch into a baby Rhenoplos. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Rhenoplos</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggSlagtothFertilized</defName>
+    <label>slagtoth egg</label>
+    <description>A Slagtoth egg. If all goes well, it should hatch into a baby Slagtoth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>Slagtoth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+<ThingDef ParentName="EggFertBase">
+    <defName>EggTobiFertilized</defName>
+    <label>Tobi-Kadachi egg</label>
+    <description>A fertilized Tobi-Kadachi egg. If all goes well, it should hatch into a baby Tobi-Kadachi. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>250.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>TobiKadachi</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+<ThingDef ParentName="EggFertBase">
+    <defName>EggTzitziFertilized</defName>
+    <label>Tzitzi Ya-Ku egg</label>
+    <description>A fertilized Tzitzi Ya-Ku egg. If all goes well, it should hatch into a baby Tzitzi Ya-Ku. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>TzitziYaKu</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

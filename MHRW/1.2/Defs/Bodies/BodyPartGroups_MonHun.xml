@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>Tail</defName>
+    <label>tail</label>
+    <listOrder>200</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RearLeftClaws</defName>
+    <label>rear left leg claws</label>
+	<labelShort>rear claws</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RearRightClaws</defName>
+    <label>rear right leg claws</label>
+	<labelShort>rear claws</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontLeftClaws</defName>
+    <label>front left arm claws</label>
+	<labelShort>front claws</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontRightClaws</defName>
+    <label>front right arm claws</label>
+	<labelShort>front claws</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>Horns</defName>
+    <label>horns</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>Beak</defName>
+    <label>beak</label>
+  </BodyPartGroupDef>
+ </Defs>
+  

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--===================== Misc =====================-->
+
+  <BodyPartDef>
+    <defName>WyvernWing</defName>
+    <label>wing</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+  </BodyPartDef>  
+  
+  <BodyPartDef>
+    <defName>WyvernHorns</defName>
+    <label>horns</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+	<solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>WyvernBeak</defName>
+    <label>beak</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+	<solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+</Defs>
