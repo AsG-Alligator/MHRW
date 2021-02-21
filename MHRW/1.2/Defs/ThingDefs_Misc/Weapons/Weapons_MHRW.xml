@@ -4285,12 +4285,10 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>70</speed>
-      <damageDef>Bomb</damageDef>
+      <damageDef>Flame</damageDef>
       <damageAmountBase>30</damageAmountBase>
-      <explosionRadius>0.9</explosionRadius>
     </projectile>
   </ThingDef>
 
