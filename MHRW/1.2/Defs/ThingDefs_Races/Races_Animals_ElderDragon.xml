@@ -277,6 +277,7 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<defaultCooldownTime>5</defaultCooldownTime>
+				<commonality>0.5</commonality>
 			</li>
 		</verbs>
 		<race>
@@ -649,7 +650,7 @@
 			<warmupTime>3.5</warmupTime>
 			<range>35</range>
 			<forcedMissRadius>5</forcedMissRadius>
-			<burstShotCount>5</burstShotCount>
+			<burstShotCount>1</burstShotCount>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 			<soundCast>Explosion_Silent</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
@@ -657,6 +658,7 @@
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
+			<commonality>0.5</commonality>
 		</li>
 		</verbs>
 		<race>

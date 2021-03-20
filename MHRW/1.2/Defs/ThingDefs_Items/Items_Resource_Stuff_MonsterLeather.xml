@@ -51,6 +51,44 @@
   </ThingDef>
   
    <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Zinogre</defName>
+    <label>Zinogre leather</label>
+    <description>An assortment of leather, scales etc. carved from a Zinogre.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_zinogre</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(194, 134, 147)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+   <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Glavenus</defName>
+    <label>Glavenus leather</label>
+    <description>An assortment of leather, scales etc. carved from a Glavenus.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_glavenus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(194, 134, 147)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+   <ThingDef ParentName="MonsterPartsBase">
     <defName>Leather_Aptonoth</defName>
     <label>Aptonoth leather</label>
     <description>An assortment of leather, scales etc. carved from an Aptonoth.</description>
@@ -523,6 +561,26 @@
       <StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
 	  <StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>80</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(173, 193, 224)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Mizutsune</defName>
+    <label>Mizutsune leather</label>
+    <description>An assortment of leather, scales etc. carved from a Mizutsune.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_lumu</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>

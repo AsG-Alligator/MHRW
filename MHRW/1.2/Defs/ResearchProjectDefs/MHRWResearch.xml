@@ -388,5 +388,22 @@
     </prerequisites>
 	<tab>MHRWTab</tab>
   </ResearchProjectDef>
+  
+  <!--====== bowguns ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHSiegeTier1</defName>
+    <label>Light Siege Weapons</label>
+    <description>Research how to build light siege weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>7</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
 
   </Defs>

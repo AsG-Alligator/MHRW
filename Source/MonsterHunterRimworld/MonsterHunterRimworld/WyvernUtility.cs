@@ -45,10 +45,6 @@ namespace MonsterHunterRimworld
 
         public static IEnumerable<PawnKindDef> GetLargeWyvernDefList()
         {
-            yield return MHRWDefOf.KuluYaKu;
-            yield return MHRWDefOf.Genprey;
-            yield return MHRWDefOf.Giaprey;
-            yield return MHRWDefOf.TzitziYaKu;
             yield return MHRWDefOf.PukeiPukei;
             yield return MHRWDefOf.Barroth;
             yield return MHRWDefOf.Deviljho;
@@ -66,6 +62,9 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Legiana;
             yield return MHRWDefOf.Diablos;
             yield return MHRWDefOf.Paolumu;
+            yield return MHRWDefOf.Zinogre;
+            yield return MHRWDefOf.Mizutsune;
+            yield return MHRWDefOf.Glavenus;
             yield break;
         }
 

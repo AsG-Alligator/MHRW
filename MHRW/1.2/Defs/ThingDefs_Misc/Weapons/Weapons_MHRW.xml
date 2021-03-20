@@ -81,7 +81,6 @@
 		</tools>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer_Bone</defName>
 		<label>Bone Bludgeon</label>
@@ -238,8 +237,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
-	
+		
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer_Pukei</defName>
 		<label>Blooming Hammer</label>
@@ -318,7 +316,6 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer_Legia</defName>
@@ -569,7 +566,6 @@
 		</recipeMaker>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Greatsword_Deviljho</defName>
 		<label>Berserker Sword</label>
@@ -660,7 +656,6 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
-	
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Greatsword_Wyvern</defName>
@@ -753,7 +748,6 @@
 		</recipeMaker>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Greatsword_Thorn</defName>
 		<label>Ogre's Jaw</label>
@@ -844,7 +838,6 @@
 		</recipeMaker>
 	</ThingDef>
 	
-
 <!--> LONGSWORDS <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Longsword</defName>
@@ -983,8 +976,8 @@
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_SwordandShield</defName>
-		<label>Sword and Shield</label>
-		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter!</description>
+		<label>Hunter Sword</label>
+		<description>A more reasonably-sized hunter weapon. The bread and butter of a beginner hunter!</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MHSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -997,35 +990,15 @@
 				<southOffset>(0,0.8,0.1)</southOffset>
 				<northOffset>(0,0,0.1)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>100</Steel>
+			<Steel>60</Steel>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -1097,36 +1070,16 @@
 				<southOffset>(0,0.8,0.1)</southOffset>
 				<northOffset>(0,0,0.1)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/SnS/Shields/Rathian</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>30.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>30.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>100</Steel>
-			<Leather_Rathian>50</Leather_Rathian>
+			<Leather_Rathian>30</Leather_Rathian>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -1174,6 +1127,166 @@
 			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Girros</defName>
+		<label>Malady's Tabar</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n\n This one has been made with Girros materials. Applies paralisis on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSGirros</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_GreatGirros>30</Leather_GreatGirros>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Nergi</defName>
+		<label>Eradication Vanguard</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n\n This one has been made with Nergigante materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSNergi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_GreatGirros>30</Leather_GreatGirros>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
                 <li>MHSmithy</li>
@@ -1243,7 +1356,7 @@
 		
 	</ThingDef>
 
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Dualblades_Diablos</defName>
 		<label>Diablos Hatchets</label>
 		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n\n These have been made with Diablos materials.</description>
@@ -1421,7 +1534,6 @@
 		
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Dualblades_Rath</defName>
 		<label>Twin Flames</label>
@@ -1559,8 +1671,6 @@
 		
 	</ThingDef>
 
-
-
 <!--> CHARGEBLADES <-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Chargeblade</defName>
@@ -1578,31 +1688,6 @@
 				<southOffset>(0.1,1,0.1)</southOffset>
 				<northOffset>(0.1,0,0.1)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Chargeblade</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>50.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>50.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
 				<!--TransformLabel></TransformLabel-->
 				<TransformDesc>Transforms into axe form</TransformDesc>
@@ -1615,9 +1700,14 @@
 				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
 			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>120</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -1742,6 +1832,331 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade_Rathalos</defName>
+		<label>Axelion Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down. This one was forged with Rathalos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBRathalos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,1,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBRathalos_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe_Rathalos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Rathalos>40</Leather_Rathalos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe_Rathalos</defName>
+		<label>Axelion Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBRathalos_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,1,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBRathalos</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade_Rathalos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade_Diablos</defName>
+		<label>Diablos Tyrannis</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down. This one was forged with Diablos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBDiablos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,1,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBDiablos_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe_Diablos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Rathalos>40</Leather_Rathalos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe_Diablos</defName>
+		<label>Diablos Tyrannis</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBDiablos_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,1,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBDiablos</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade_Diablos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 
 <!--> LANCES <-->
 
@@ -1761,36 +2176,16 @@
 				<southOffset>(0.3,1,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Lance</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>200</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<Steel>180</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -1855,7 +2250,7 @@
 	
 	
 	
-		<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Lance_Pukei</defName>
 		<label>Datura Pike</label>
 		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Pukei-Pukei materials. Applies poison on hit.</description>
@@ -1871,35 +2266,15 @@
 				<southOffset>(0.3,1,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/Lance/Shields/Pukei</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>180</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<Leather_Pukei>50</Leather_Pukei>
 		</costList>
@@ -1932,6 +2307,95 @@
 				<label>counter-thrust</label>
 				<capacities>
 					<li>MHPoisonStab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance_Barroth</defName>
+		<label>Barroth Stinger</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Barroth materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Lance/Barroth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Barroth>50</Leather_Barroth>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
 				</capacities>
 				<power>7</power>
 				<cooldownTime>1.4</cooldownTime>
@@ -2138,9 +2602,7 @@
 		</tools>
 	</ThingDef>
 
-
-
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Switchaxe_TierTwo</defName>
 		<label>Improved Steel Axe</label>
 		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
@@ -2311,11 +2773,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
-	
-	
-	
-	
+		
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Switchaxe_TierThree</defName>
 		<label>Chrome Machina</label>
@@ -2487,10 +2945,8 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
-	
-	
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Switchaxe_Rathian</defName>
 		<label>Dragonmaiden Axe</label>
 		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Rathain parts.</description>
@@ -2926,7 +3382,7 @@
 		</projectile>
 	</ThingDef>
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Lightbowgun_Jagras</defName>
 		<label>Jagras Blitz</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.  \n\n\n\n This one has been forged with Great Jagras parts. \n\n ================== \n\n Ammo type: Normal</description>
@@ -3118,7 +3574,7 @@
 		</projectile>
 	</ThingDef>
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Lightbowgun_Bazel</defName>
 		<label>Bazel Typhoon</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts.  \n\n This one has been forged with Bazelgeuse parts. \n\n ================== \n\n Ammo type: Sticky</description>
@@ -3312,8 +3768,7 @@
 		</projectile>
 	</ThingDef>
 	
-	
-		<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Lightbowgun_Nergi</defName>
 		<label>Cataclysm's Trigger</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts. \n\n This one has been forged with Nergigante parts. \n\n ================== \n\n Ammo type: Normal</description>
@@ -3408,10 +3863,7 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
-	
-	
-	
-	
+
 
 <!--> HEAVY BOWGUNS <-->
 
@@ -3510,7 +3962,6 @@
 		</projectile>
 	</ThingDef>
 
-
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Dodo</defName>
 		<label>Gama Cannon</label>
@@ -3592,7 +4043,7 @@
 		</tools>
 	</ThingDef>
 	
-<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBullet">
     <defName>Bullet_MHHBGDodo</defName>
     <label>bowgun round</label>
     <graphicData>
@@ -3608,9 +4059,7 @@
       <explosionRadius>0.9</explosionRadius>
     </projectile>
   </ThingDef>
-	
-	
-	
+		
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Deviljho</defName>
 		<label>Dark Devourer</label>
@@ -3695,7 +4144,7 @@
 		</tools>
 	</ThingDef>
 	
-<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBullet">
     <defName>Bullet_MHHBGJho</defName>
     <label>bowgun round</label>
     <graphicData>
@@ -3713,8 +4162,7 @@
     </projectile>
   </ThingDef>
 	
-
-<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Jagras</defName>
 		<label>Jagras Cannon</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n\n\n This one has been forged with Great Jagras parts. \n\n ================== \n\n Ammo type: Normal</description>
@@ -3810,7 +4258,7 @@
 		</projectile>
 	</ThingDef>
 
-<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Legiana</defName>
 		<label>Legia Shattercryst</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n\n\n This one has been forged with Legiana parts. \n\n ================== \n\n Ammo type: Pierce</description>
@@ -4002,8 +4450,7 @@
 		</projectile>
 	</ThingDef>
 
-
-<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Pukei</defName>
 		<label>Datura Blaster</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n\n\n This one has been forged with Pukei-Pukei parts. \n\n ================== \n\n Ammo type: Poison</description>
@@ -4098,7 +4545,6 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
-	
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Anja</defName>
@@ -4196,7 +4642,6 @@
 		</projectile>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Teostra</defName>
 		<label>Teostra's Artillery</label>
@@ -4277,7 +4722,7 @@
 		</tools>
 	</ThingDef>
 	
-<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBullet">
     <defName>Bullet_MHHBGTeo</defName>
     <label>bowgun round</label>
     <graphicData>
@@ -4285,10 +4730,12 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>70</speed>
-      <damageDef>Flame</damageDef>
+      <damageDef>Bomb</damageDef>
       <damageAmountBase>30</damageAmountBase>
+      <explosionRadius>0.9</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -4377,10 +4824,7 @@
 			<speed>49</speed>
 		</projectile>
 	</ThingDef>
-	
-	
-	
-	
+		
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>MH_Bow_Rathian</defName>
 		<label>Princess Arrow</label>
@@ -4484,32 +4928,12 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_Gunlance</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
@@ -4534,7 +4958,7 @@
 		</equippedStatOffsets>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<Steel>160</Steel>
+			<Steel>140</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -4620,32 +5044,12 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/GL/Shields/GLRathian</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
@@ -4757,32 +5161,12 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
-			<li Class="PawnShields.CompProperties_Shield">
-				<wieldedGraphic>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<texPath>Things/Item/Equipment/WeaponMelee/GL/Shields/GLBazel</texPath>
-					<drawSize>(2.2, 2.2)</drawSize>
-				</wieldedGraphic>
-				<renderProperties>
-					<northOffset>(0, -0.017, -0.1)</northOffset>
-					<southOffset>(0, 0.3, -0.1)</southOffset>
-					<westOffset>(0, 0.017, 0)</westOffset>
-					<eastOffset>(0, -0.017, 0)</eastOffset>
-					<flipRotation>false</flipRotation>
-					<renderWhenPeaceful>false</renderWhenPeaceful>
-				</renderProperties>
-				<canBlockRanged>true</canBlockRanged>
-				<canBlockMelee>true</canBlockMelee>
-				<meleeBlockChanceFactor>90.0</meleeBlockChanceFactor>
-				<rangedBlockChanceFactor>90.0</rangedBlockChanceFactor>
-				<shieldTakeDamage>false</shieldTakeDamage>
-				<shieldTakeDamageFactor>0</shieldTakeDamageFactor>
-				<canBeAutoDiscarded>false</canBeAutoDiscarded>
-				<healthAutoDiscardThreshold>0</healthAutoDiscardThreshold>
-				<useFatigue>false</useFatigue>
-				<damageToFatigueFactor>0</damageToFatigueFactor>
-			</li>
 		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
@@ -4878,6 +5262,123 @@
       <explosionRadius>1.2</explosionRadius>
     </projectile>
   </ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Zinogre</defName>
+		<label>Usurper's Roar</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Zinogre materials. \n\n Shelling type: Normal</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLZinogre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Bazel>50</Leather_Bazel>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellZinogre</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<forcedMissRadius>0.1</forcedMissRadius>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellZinogre</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
 
 

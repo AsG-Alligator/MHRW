@@ -17,6 +17,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Giaprey;
         public static PawnKindDef TzitziYaKu;
         public static PawnKindDef PukeiPukei;
+        public static PawnKindDef YianKutKu;
         #endregion
 
         #region "Brute Wyvern"
@@ -25,6 +26,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Jyuratodus;
         public static PawnKindDef Lavasioth;
         public static PawnKindDef Anjanath;
+        public static PawnKindDef Glavenus;
         #endregion
 
         #region "Elder Dragon"
@@ -40,7 +42,10 @@ namespace MonsterHunterRimworld
         public static PawnKindDef GreatGirros;
         public static PawnKindDef Dodogama;
         public static PawnKindDef Odogaron;
+        public static PawnKindDef Zinogre;
+        public static PawnKindDef Mizutsune;
         #endregion
+
 
         #region "Flying Wyvern
         public static PawnKindDef Rath;

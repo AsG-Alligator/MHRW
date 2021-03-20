@@ -142,10 +142,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bomb</damageDef>
+      <damageDef>Bullet</damageDef>
       <damageAmountBase>6</damageAmountBase>
       <speed>55</speed>
-	  <explosionRadius>0.9</explosionRadius>
     </projectile>
 	<thingClass>MonsterHunterRimworld.Projectile_LightningBullet</thingClass>
   </ThingDef>
