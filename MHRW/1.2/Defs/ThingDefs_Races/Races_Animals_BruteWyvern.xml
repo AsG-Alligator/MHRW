@@ -83,7 +83,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4.6</baseBodySize>
+      <baseBodySize>7</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Barroth</leatherDef>
@@ -269,7 +269,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>2.0</baseHungerRate>
-      <baseBodySize>5</baseBodySize>
+      <baseBodySize>8</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -456,7 +456,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.7</baseHungerRate>
-      <baseBodySize>4</baseBodySize>
+      <baseBodySize>6.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -661,7 +661,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.5</baseHungerRate>
-      <baseBodySize>4</baseBodySize>
+      <baseBodySize>6.5</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -865,7 +865,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>1.1</baseHungerRate>
-      <baseBodySize>4.5</baseBodySize>
+      <baseBodySize>7</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -1065,7 +1065,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>7</warmupTime>
         <range>23.9</range>
         <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>1</burstShotCount>

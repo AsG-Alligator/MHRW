@@ -318,6 +318,85 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_KutKu</defName>
+		<label>Kut-Ku Jaw</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Yian Kut-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/KutKu</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_KutKu>50</Leather_KutKu>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>MH_Hammer_Legia</defName>
 		<label>Cocytus</label>
 		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Legiana materials. Ice element - applies hypothermia on hit..</description>
@@ -565,6 +644,190 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Greatsword_KutKu</defName>
+		<label>Chicken Decapitator</label>
+		<description>An absurdly large blade of the greatsword was designed for hunting monsters. The sheer size of this weapon will slow whoever equips it considerably. Due to it's massive size it can be used to block some incoming attacks. This one was forged with Yian Kut-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/GS/KutKu</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_KutKu>50</Leather_KutKu>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.6</cooldownTime>
+			</li>
+			<li>
+				<label>true charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>5.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>tackle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Greatsword_Mizutsune</defName>
+		<label>Akanesasu</label>
+		<description>An absurdly large blade of the greatsword was designed for hunting monsters. The sheer size of this weapon will slow whoever equips it considerably. \n\n This one has been made with Mizutsune materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/GS/GSMizutsune</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Mizutsune>50</Leather_Mizutsune>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>3.6</cooldownTime>
+			</li>
+			<li>
+				<label>true charged slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>5.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>tackle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Greatsword_Deviljho</defName>
@@ -2427,6 +2690,96 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance_KutKu</defName>
+		<label>Kut-Ku Stabber</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Yian Kut-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Lance/KutKu</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_KutKu>50</Leather_KutKu>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
 
 <!--> SWITCHAXES <-->
 
@@ -3769,6 +4122,102 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Lightbowgun_Zinogre</defName>
+		<label>Usurper's Crime</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts. \n\n This one has been forged with Zinogre parts. \n\n ================== \n\n Ammo type: Pierce</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/LBG/LBGZinogre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Zinogre>50</Leather_Zinogre>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHLBGZinogre</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunElemental</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHLBGZinogre</defName>
+		<label>light bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>1.6</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Lightbowgun_Nergi</defName>
 		<label>Cataclysm's Trigger</label>
 		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts. \n\n This one has been forged with Nergigante parts. \n\n ================== \n\n Ammo type: Normal</description>
@@ -4828,7 +5277,7 @@
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>MH_Bow_Rathian</defName>
 		<label>Princess Arrow</label>
-		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Rathain materials. Fires poison-tipped arrows.</description>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Rathian materials. Fires poison-tipped arrows.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Rathian</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -4909,6 +5358,92 @@
 			<speed>49</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow_Kushala</defName>
+		<label>Daora's Sagittarii</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Kushala Daora materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Kushala</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Rathian>50</Leather_Rathian>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowKushala</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowKushala</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
 	
 <!--> GUNLANCES <-->
 

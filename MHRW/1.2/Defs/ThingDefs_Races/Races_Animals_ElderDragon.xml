@@ -81,7 +81,7 @@
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>1.1</baseHungerRate>
-			<baseBodySize>5</baseBodySize>
+			<baseBodySize>9</baseBodySize>
 			<baseHealthScale>8.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
@@ -283,7 +283,7 @@
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>0.9</baseHungerRate>
-			<baseBodySize>5</baseBodySize>
+			<baseBodySize>9</baseBodySize>
 			<baseHealthScale>8.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
@@ -481,7 +481,7 @@
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>1.2</baseHungerRate>
-			<baseBodySize>5</baseBodySize>
+			<baseBodySize>9</baseBodySize>
 			<baseHealthScale>8.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
@@ -663,7 +663,7 @@
 		</verbs>
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
-			<baseBodySize>2.0</baseBodySize>
+			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>2.75</baseHealthScale>
 			<baseHungerRate>0.85</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -846,7 +846,7 @@
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>0.6</baseHungerRate>
-			<baseBodySize>10</baseBodySize>
+			<baseBodySize>14</baseBodySize>
 			<baseHealthScale>10.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
@@ -1044,7 +1044,7 @@
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>0.6</baseHungerRate>
-			<baseBodySize>10</baseBodySize>
+			<baseBodySize>14</baseBodySize>
 			<baseHealthScale>10.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>

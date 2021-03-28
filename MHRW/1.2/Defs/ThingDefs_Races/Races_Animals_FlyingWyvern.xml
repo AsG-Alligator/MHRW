@@ -110,7 +110,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4.6</baseBodySize>
+      <baseBodySize>6</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -341,7 +341,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>3.7</baseBodySize>
+      <baseBodySize>8</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -537,7 +537,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4.4</baseBodySize>
+      <baseBodySize>5.5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -736,7 +736,7 @@
     <race>
       <body>MHWyvernWithHorns</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4.8</baseBodySize>
+      <baseBodySize>8</baseBodySize>
       <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Diablos</leatherDef>
@@ -928,7 +928,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>4</baseBodySize>
+      <baseBodySize>5</baseBodySize>
       <baseHealthScale>6.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>

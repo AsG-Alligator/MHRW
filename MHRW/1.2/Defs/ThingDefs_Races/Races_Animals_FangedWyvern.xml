@@ -75,7 +75,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>0.85</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>5.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>
@@ -247,7 +247,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>1.1</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>5.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>
@@ -421,7 +421,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>0.7</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>5.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>
@@ -612,7 +612,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>1.0</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>5.5</baseBodySize>
 			<baseHealthScale>7.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Dodogama</leatherDef>
@@ -784,7 +784,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>1.1</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>6.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>
@@ -955,7 +955,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>1.1</baseHungerRate>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>6</baseBodySize>
 			<baseHealthScale>6.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>
@@ -1140,7 +1140,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>0.85</baseHungerRate>
-			<baseBodySize>5</baseBodySize>
+			<baseBodySize>6</baseBodySize>
 			<baseHealthScale>5.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<predator>true</predator>

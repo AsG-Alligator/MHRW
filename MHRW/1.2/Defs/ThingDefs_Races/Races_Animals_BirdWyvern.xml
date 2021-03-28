@@ -89,7 +89,7 @@
     <race>
       <body>MHBruteDromeWithBeak</body>
       <baseHungerRate>0.3</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>3.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_KuluYaKu</leatherDef>
@@ -270,7 +270,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.15</baseHungerRate>
-      <baseBodySize>1.9</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -459,7 +459,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.3</baseHungerRate>
-      <baseBodySize>1.9</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -646,7 +646,7 @@
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.5</baseHungerRate>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>3.0</baseBodySize>
       <baseHealthScale>4.6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <predator>true</predator>
@@ -1018,7 +1018,7 @@
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>0.6</baseHungerRate>
-      <baseBodySize>3</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Yian</leatherDef>
