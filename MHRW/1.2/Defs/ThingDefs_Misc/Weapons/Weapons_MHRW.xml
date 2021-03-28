@@ -337,7 +337,7 @@
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>160</Steel>
-			<Leather_KutKu>50</Leather_KutKu>
+			<Leather_Yian>50</Leather_Yian>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -665,7 +665,7 @@
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>190</Steel>
-			<Leather_KutKu>50</Leather_KutKu>
+			<Leather_Yian>50</Leather_Yian>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
@@ -2717,7 +2717,7 @@
 		<costList>
 			<Steel>180</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-			<Leather_KutKu>50</Leather_KutKu>
+			<Leather_Yian>50</Leather_Yian>
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
