@@ -1173,7 +1173,7 @@
 		<label>Wyvern Blade</label>
 		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down. \n\n This one was made with Rathalos materials. Deals fire damage.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/MHLongsword</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/LS/LSRathalos</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2.0</drawSize>
 		</graphicData>
@@ -1225,6 +1225,73 @@
 			</li>
 		</tools>
 		<recipeMaker>
+			<researchPrerequisite>MHSwordTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Longsword_Tobi</defName>
+		<label>Pulsar Shotel</label>
+		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down. \n\n This one was made with Tobi-Kadachi materials. Deals thunder damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LS/LSTobi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>260</Steel>
+			<Leather_TobiKadachi>50</Leather_TobiKadachi>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>vertical slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
 			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
@@ -1234,6 +1301,7 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+
 
 <!--> SWORD AND SHIELDS <-->
 
@@ -1877,7 +1945,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>MH_Dualblades_Gendrome</defName>
 		<label>Gendrome Blades</label>
-		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n\n These have been made with Gendrome materials.</description>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n\n These have been made with Gendrome materials. Applies paralisis on hit.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBGendrome</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1924,6 +1992,126 @@
 		</tools>
 		<recipeMaker>
 			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades_Giadrome</defName>
+		<label>Giadrome Blades</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n\n These have been made with Giadrome materials. Deals frostbite damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBGiadrome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Giadrome>40</Leather_Giadrome>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>MHIceCut</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>MHIceCut</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Dualblades_Kirin</defName>
+		<label>Kirin Bolts</label>
+		<description>A pair of large blades that allow for fast, albeit weaker, attacks. \n\n These have been made with Kirin materials. Deals thunder damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DB/DBKirin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.1)</eastOffset>
+				<westOffset>(-0.25,0,0.1)</westOffset>
+				<southOffset>(0.2,0,0)</southOffset>
+				<northOffset>(0.2,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>190</Steel>
+			<Leather_Kirin>40</Leather_Kirin>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+			<li>
+				<label>rotation slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier4</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -3415,7 +3603,7 @@
 				<TransformDesc>Transforms into axe form</TransformDesc>
 				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SARathian</TransformIcon>
 				<transformSound>saxe_switch1</transformSound>
-				<transformInto>MH_Switchaxe_TierTwo</transformInto>
+				<transformInto>MH_Switchaxe_Rathian</transformInto>
 				<!--transformSecondaryProduct></transformSecondaryProduct-->
 				<transformTime>0.5</transformTime>
 				<!--usesAmmunition></usesAmmunition-->
@@ -3467,6 +3655,179 @@
 					<li>MHPoisonCut</li>
 				</capacities>
 				<power>11</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe_Barroth</defName>
+		<label>Barroth Grinder</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Barroth parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SABarroth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SABarroth_sword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword_Barroth</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>220</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Barroth>50</Leather_Barroth>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword_Barroth</defName>
+		<label>Barroth Grinder</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Barroth parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SABarroth_sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SABarroth</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe_Barroth</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>16</power>
 				<cooldownTime>3.1</cooldownTime>
 			</li>
 		</tools>
@@ -4312,6 +4673,102 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Lightbowgun_Kirin</defName>
+		<label>Mythical Horn</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. This lighter version can fire in three round bursts. \n\n This one has been forged with Nergigante parts. \n\n ================== \n\n Ammo type: Thunder</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/LBG/LBGKirin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Kirin>50</Leather_Kirin>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHLBGKirin</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunNormal</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHLBGKirin</defName>
+		<label>light bowgun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationBase>1.3</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
 
 <!--> HEAVY BOWGUNS <-->
@@ -4706,6 +5163,102 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun_Tobi</defName>
+		<label>Pulsar Shooter</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n\n\n This one has been forged with Tobi-Kadachi parts. \n\n ================== \n\n Ammo type: Normal</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HBG/HBGTobi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_TobiKadachi>50</Leather_TobiKadachi>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGNormalTobi</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunNormal</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGNormalTobi</defName>
+		<label>bowgun round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>MH_Heavybowgun_Legiana</defName>
@@ -4796,7 +5349,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>13</damageAmountBase>
+			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>1.1</armorPenetrationBase>
 			<stoppingPower>1.0</stoppingPower>
 			<speed>70</speed>
@@ -5084,7 +5637,103 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Flame</damageDef>
-			<damageAmountBase>14</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Heavybowgun_Kirin</defName>
+		<label>Quickcaster</label>
+		<description>A firearm designed to fire large-calliber shells capable of penetrating the thick hides of monsters. The heavier variant has increased range.  \n\n\n\n This one has been forged with Kirin parts. \n\n ================== \n\n Ammo type: Thunder</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HBG/HBGKirin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHBowgunTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Leather_Kirin>50</Leather_Kirin>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHHBGKirin</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Shot_BowgunElemental</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHHBGKirin</defName>
+		<label>bowgun round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.7</armorPenetrationBase>
 			<stoppingPower>1.0</stoppingPower>
 			<speed>70</speed>
@@ -5352,6 +6001,91 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>MHPoisonArrow</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow_Tobi</defName>
+		<label>Kadachi Strikebow</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Tobi-Kadachi materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Tobi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_TobiKadachi>50</Leather_TobiKadachi>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowTobiKadachi</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowTobiKadachi</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>3.5</stoppingPower>
 			<armorPenetrationBase>0.9</armorPenetrationBase>
@@ -5631,6 +6365,123 @@
 			<li>
 				<label>lateral thrust</label>
 				<capacities>
+					<li>MHPoisonStab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellRathian</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Jyura</defName>
+		<label>Jyura Buster</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Jyuratodus materials. \n\n Shelling type: Wide 2</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLJyura</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<modExtensions>
+                <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+				</li>
+        </modExtensions>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Jyuratodus>50</Leather_Jyuratodus>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellJyura</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
 					<li>Stab</li>
 				</capacities>
 				<power>12</power>
@@ -5664,18 +6515,19 @@
 	</ThingDef>	
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MHGunlanceShellRathian</defName>
+		<defName>Bullet_MHGunlanceShellJyura</defName>
 		<label>gunlance shell</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>1.2</armorPenetrationBase>
-			<stoppingPower>3.0</stoppingPower>
 			<speed>70</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<explosionRadius>1.2</explosionRadius>
 		</projectile>
 	</ThingDef>
 
@@ -5846,7 +6698,7 @@
 		<costList>
 			<Steel>160</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-			<Leather_Bazel>50</Leather_Bazel>
+			<Leather_Zinogre>50</Leather_Zinogre>
 		</costList>
 		<verbs>
 			<li>

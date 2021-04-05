@@ -15,19 +15,6 @@
 	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.5</northSize>
-			<eastSize>2.8, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -201,19 +188,6 @@
 	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.5</northSize>
-			<eastSize>2.8, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -388,19 +362,6 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.0</northSize>
-			<eastSize>2.0, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -577,19 +538,6 @@
 	  <ArmorRating_Heat>10.8</ArmorRating_Heat>
 	  <Flammability>0.0</Flammability>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.0</northSize>
-			<eastSize>2.0, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -780,19 +728,6 @@
 	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.5</northSize>
-			<eastSize>2.8, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -984,19 +919,6 @@
 	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, -0.1, 0.0</westOffset>
-			<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-			<northOffset>0.0, -1.0, 0.0</northOffset>
-			<southOffset>0.0, -1.0, 0.0</southOffset>
-			<westSize>2.8, 1.5</westSize>
-			<northSize>1.7, 2.5</northSize>
-			<eastSize>2.8, 1.5</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>

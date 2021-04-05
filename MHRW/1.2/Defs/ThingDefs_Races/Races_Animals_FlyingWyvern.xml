@@ -854,17 +854,6 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, 0.0, 0.0</westOffset>
-			<eastOffset>-1.0, 0.0, 0.0</eastOffset>
-			<westSize>2.5, 1.7</westSize>
-			<northSize>1.7, 2.5</northSize>
-			<eastSize>2.5, 1.7</eastSize>
-			<southSize>1.7, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPaolumuFertilized</eggFertilizedDef>

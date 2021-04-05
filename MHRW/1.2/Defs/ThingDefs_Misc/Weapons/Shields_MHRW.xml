@@ -985,6 +985,78 @@
     </ThingDef>
 	
 	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_JyuraGL</defName>
+        <label>Jyuratodus gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance. This one was forged with Jyuratodus parts.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Bazel>40</Leather_Bazel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
         <defName>MH_Shield_RathianGL</defName>
         <label>Rathian gunlance shield</label>
         <description>A large steel shield made for use with the gunlance. This one was forged with Rathian parts.</description>

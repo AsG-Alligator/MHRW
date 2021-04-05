@@ -15,19 +15,6 @@
 			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1.0, -0.1, 0.0</westOffset>
-				<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-				<northOffset>0.0, -1.0, 0.0</northOffset>
-				<southOffset>0.0, -1.0, 0.0</southOffset>
-				<westSize>2.8, 1.5</westSize>
-				<northSize>1.7, 2.5</northSize>
-				<eastSize>2.8, 1.5</eastSize>
-				<southSize>1.7, 2.5</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_KushalaDaora"/>
 			<li Class="CompProperties_EggLayer">
@@ -198,20 +185,7 @@
 			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>10.8</ArmorRating_Heat>
 			<Flammability>0.0</Flammability>
-		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1.0, -0.1, 0.0</westOffset>
-				<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-				<northOffset>0.0, -1.0, 0.0</northOffset>
-				<southOffset>0.0, -1.0, 0.0</southOffset>
-				<westSize>2.8, 1.5</westSize>
-				<northSize>1.7, 2.5</northSize>
-				<eastSize>2.8, 1.5</eastSize>
-				<southSize>1.7, 2.5</southSize>
-			</li>
-		</modExtensions>	
+		</statBases>	
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_LunastraTeostra"/>
 			<li Class="CompProperties_EggLayer">
@@ -416,19 +390,6 @@
 			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1.0, -0.1, 0.0</westOffset>
-				<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-				<northOffset>0.0, -1.0, 0.0</northOffset>
-				<southOffset>0.0, -1.0, 0.0</southOffset>
-				<westSize>2.8, 1.5</westSize>
-				<northSize>1.7, 2.5</northSize>
-				<eastSize>2.8, 1.5</eastSize>
-				<southSize>1.7, 2.5</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggNergiganteFertilized</eggFertilizedDef>
@@ -762,19 +723,6 @@
 			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1.0, -0.1, 0.0</westOffset>
-				<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-				<northOffset>0.0, -1.0, 0.0</northOffset>
-				<southOffset>0.0, -1.0, 0.0</southOffset>
-				<westSize>2.8, 1.5</westSize>
-				<northSize>1.7, 2.5</northSize>
-				<eastSize>2.8, 1.5</eastSize>
-				<southSize>1.7, 2.5</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>
@@ -960,19 +908,6 @@
 			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1.0, -0.1, 0.0</westOffset>
-				<eastOffset>-1.0, -0.1, 0.0</eastOffset>
-				<northOffset>0.0, -1.0, 0.0</northOffset>
-				<southOffset>0.0, -1.0, 0.0</southOffset>
-				<westSize>2.8, 1.5</westSize>
-				<northSize>1.7, 2.5</northSize>
-				<eastSize>2.8, 1.5</eastSize>
-				<southSize>1.7, 2.5</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>

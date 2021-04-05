@@ -10,17 +10,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggJagrasFertilized</eggFertilizedDef>
@@ -211,17 +200,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGirrosFertilized</eggFertilizedDef>
@@ -399,17 +377,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggAptonothFertilized</eggFertilizedDef>
@@ -567,19 +534,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<northOffset>0.0, 0.02, 0.0</northOffset>
-			<southOffset>0.0, 0.02, 0.0</southOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggRhenoplosFertilized</eggFertilizedDef>
@@ -735,19 +689,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<northOffset>0.0, 0.02, 0.0</northOffset>
-			<southOffset>0.0, 0.02, 0.0</southOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggSlagtothFertilized</eggFertilizedDef>
@@ -1274,17 +1215,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggKestodonFertilized</eggFertilizedDef>
@@ -1456,17 +1386,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>69</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGastodonFertilized</eggFertilizedDef>
@@ -1624,19 +1543,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<northOffset>0.0, 0.02, 0.0</northOffset>
-			<southOffset>0.0, 0.02, 0.0</southOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggApcerosFertilized</eggFertilizedDef>
@@ -1801,17 +1707,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggShamosFertilized</eggFertilizedDef>

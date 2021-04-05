@@ -12,17 +12,6 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1, 0.0, 0.0</westOffset>
-				<eastOffset>-1, 0.0, 0.0</eastOffset>
-				<westSize>3.0, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>3.0, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggTobiFertilized</eggFertilizedDef>
@@ -181,17 +170,6 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1, 0.1, 0.0</westOffset>
-				<eastOffset>-1, 0.1, 0.0</eastOffset>
-				<westSize>3.0, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>3.0, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGJagrasFertilized</eggFertilizedDef>
@@ -355,17 +333,6 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>0.8, 0.0, 0.0</westOffset>
-				<eastOffset>-0.8, 0.0, 0.0</eastOffset>
-				<westSize>3.0, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>3.0, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGGirrosFertilized</eggFertilizedDef>
@@ -524,17 +491,6 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>1, 0.2, 0.0</westOffset>
-				<eastOffset>-1, 0.2, 0.0</eastOffset>
-				<westSize>3.0, 1.6</westSize>
-				<northSize>1.4, 2.0</northSize>
-				<eastSize>3.0, 1.6</eastSize>
-				<southSize>1.4, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_Dodogama">
 				<maxNutritionFromRock>0.5</maxNutritionFromRock>
@@ -718,17 +674,6 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>0.8, 0.0, 0.0</westOffset>
-				<eastOffset>-0.8, 0.0, 0.0</eastOffset>
-				<westSize>3.3, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>3.3, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 				<maxFightRange>20</maxFightRange>
@@ -889,17 +834,6 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>0.8, 0.0, 0.0</westOffset>
-				<eastOffset>-0.8, 0.0, 0.0</eastOffset>
-				<westSize>3.3, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>3.3, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 				<maxFightRange>20</maxFightRange>
@@ -1059,17 +993,6 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
-		<modExtensions>
-			<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-				<directionBased>True</directionBased>
-				<westOffset>-0.3, 0.0, 0.0</westOffset>
-				<eastOffset>0.3, 0.0, 0.0</eastOffset>
-				<westSize>2.0, 1.2</westSize>
-				<northSize>1.2, 2.0</northSize>
-				<eastSize>2.0, 1.2</eastSize>
-				<southSize>1.2, 2.0</southSize>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggZinogreFertilized</eggFertilizedDef>

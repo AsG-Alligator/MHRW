@@ -26,17 +26,6 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggKuluFertilized</eggFertilizedDef>
@@ -207,17 +196,6 @@
 	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGenpreyFertilized</eggFertilizedDef>
@@ -396,17 +374,6 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGiapreyFertilized</eggFertilizedDef>
@@ -583,17 +550,6 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.5, 0.0, 0.0</westOffset>
-			<eastOffset>-0.5, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggTzitziFertilized</eggFertilizedDef>
@@ -765,17 +721,6 @@
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, 0.0, 0.0</westOffset>
-			<eastOffset>-1.0, 0.0, 0.0</eastOffset>
-			<westSize>2.5, 1.3</westSize>
-			<northSize>1.3, 2.5</northSize>
-			<eastSize>2.5, 1.3</eastSize>
-			<southSize>1.3, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
@@ -953,17 +898,6 @@
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>1.0, 0.0, 0.0</westOffset>
-			<eastOffset>-1.0, 0.0, 0.0</eastOffset>
-			<westSize>2.5, 1.3</westSize>
-			<northSize>1.3, 2.5</northSize>
-			<eastSize>2.5, 1.3</eastSize>
-			<southSize>1.3, 2.5</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
