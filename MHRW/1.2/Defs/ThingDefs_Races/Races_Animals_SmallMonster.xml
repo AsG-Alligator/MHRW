@@ -1028,17 +1028,6 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
-	<modExtensions>
-		<li Class="DefModExtension_BigBox.DefModExtension_BigBox">
-			<directionBased>True</directionBased>
-			<westOffset>0.0, 0.0, 0.0</westOffset>
-			<eastOffset>-0.0, 0.0, 0.0</eastOffset>
-			<westSize>2.0, 1.0</westSize>
-			<northSize>1.0, 2.0</northSize>
-			<eastSize>2.0, 1.0</eastSize>
-			<southSize>1.0, 2.0</southSize>
-		</li>
-	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggJaggiFertilized</eggFertilizedDef>
