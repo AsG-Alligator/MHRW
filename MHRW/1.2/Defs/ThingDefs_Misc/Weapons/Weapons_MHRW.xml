@@ -6712,7 +6712,6 @@
 				<soundCast>Shot_Gunlance</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<forcedMissRadius>0.1</forcedMissRadius>
 			</li>
 		</verbs>
 		<tools>
