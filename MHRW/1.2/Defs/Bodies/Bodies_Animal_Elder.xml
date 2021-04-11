@@ -12,6 +12,9 @@
 				<li>
 					<def>Tail</def>
 					<coverage>0.05</coverage>
+					<groups>
+						<li>Tail</li>
+					</groups>
 				</li>
 				<li>
 					<def>WyvernWing</def>

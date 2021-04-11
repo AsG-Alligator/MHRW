@@ -14,8 +14,7 @@
           <coverage>0.10</coverage>
 		  <groups>
 				<li>Tail</li>
-		  </groups>
-		  
+		  </groups>		  
         </li>
 		<li>
           <def>WyvernWing</def>
@@ -185,7 +184,6 @@
 		  <groups>
 				<li>Tail</li>
 		  </groups>
-		  
         </li>
 		<li>
           <def>WyvernWing</def>
