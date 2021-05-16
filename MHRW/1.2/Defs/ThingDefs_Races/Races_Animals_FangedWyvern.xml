@@ -552,7 +552,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
+				<defaultProjectile>MH_DodogamaBomb</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<range>23.9</range>
 				<forcedMissRadius>5</forcedMissRadius>
@@ -658,6 +658,21 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
+<ThingDef ParentName="BaseGrenadeProjectile">
+	<defName>MH_DodogamaBomb</defName>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MH_Bazelbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
 
 	<!-- ============================================================ -->
 

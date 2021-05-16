@@ -891,7 +891,7 @@
       <baseHealthScale>0.9</baseHealthScale>
       <baseHungerRate>0.20</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Plain</leatherDef>
+      <leatherDef>Leather_Kelbi</leatherDef>
       <meatLabel>venison</meatLabel>
       <wildness>0.6</wildness>
       <nuzzleMtbHours>60</nuzzleMtbHours>

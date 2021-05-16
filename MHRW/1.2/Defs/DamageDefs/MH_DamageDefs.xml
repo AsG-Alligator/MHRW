@@ -531,7 +531,7 @@
     <hediff>ToxicBuildup</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Blunt</impactSoundType>
-    <defaultDamage>0.5</defaultDamage>
+    <defaultDamage>5</defaultDamage>
     <defaultStoppingPower>0.1</defaultStoppingPower>
     <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>

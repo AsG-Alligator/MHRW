@@ -723,6 +723,12 @@
 			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 		</statBases>
+		<damageMultipliers>
+        <li>
+            <damageDef>TornadoScratch</damageDef>
+            <multiplier>0</multiplier>
+        </li>
+		</damageMultipliers>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>
@@ -779,7 +785,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Fireball_Big</defaultProjectile>
+        <defaultProjectile>MH_Projectile_Tornadospawn</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>23.9</range>
         <forcedMissRadius>5</forcedMissRadius>
