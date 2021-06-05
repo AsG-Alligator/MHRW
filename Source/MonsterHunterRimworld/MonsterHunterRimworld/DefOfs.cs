@@ -34,6 +34,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Tesuka;
         public static PawnKindDef Nergigante;
         public static PawnKindDef Kirin;
+        public static PawnKindDef Velkhana;
         #endregion
 
         #region "Fanged Wyvern"
@@ -59,6 +60,10 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Jagras;
         public static PawnKindDef Girros;
         public static PawnKindDef Aptonoth;
+        #endregion
+
+        #region "Motes"
+        public static ThingDef MH_SmokeFast;
         #endregion
     }
 }

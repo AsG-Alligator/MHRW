@@ -19,6 +19,8 @@ namespace MonsterHunterRimworld
             if (pawnKindDef == MHRWDefOf.KushalaDaora) return true;
             if (pawnKindDef == MHRWDefOf.Tesuka) return true;
             if (pawnKindDef == MHRWDefOf.Nergigante) return true;
+            if (pawnKindDef == MHRWDefOf.Kirin) return true;
+            if (pawnKindDef == MHRWDefOf.Velkhana) return true;
             return false;
         }
 
@@ -105,6 +107,7 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Tesuka; // 2 times because different gender is relevant
             yield return MHRWDefOf.Nergigante;
             yield return MHRWDefOf.Kirin;
+            yield return MHRWDefOf.Velkhana;
             yield break;
         }
 
@@ -157,6 +160,8 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Nergigante;
                     case 5:
                         return MHRWDefOf.Kirin;
+                    case 6:
+                        return MHRWDefOf.Velkhana;
                 }
             }
             else if (wyvernType.Equals("FANGEDWYVERN"))
