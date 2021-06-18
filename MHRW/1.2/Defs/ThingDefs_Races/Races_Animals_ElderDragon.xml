@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<!-- ============================================================ -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>KushalaDaora</defName>
 		<label>Kushala Daora</label>
@@ -15,6 +13,20 @@
 			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKush</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+		<damageMultipliers>
+			<li>
+				<damageDef>TornadoScratch</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_KushalaDaora"/>
 			<li Class="CompProperties_EggLayer">
@@ -65,6 +77,22 @@
 				<chanceFactor>0.7</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MH_Projectile_Tornadospawn</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>23.9</range>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Shot_MHFireball</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<defaultCooldownTime>5</defaultCooldownTime>
+			</li>
+		</verbs>
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>1.1</baseHungerRate>
@@ -116,7 +144,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
-
+	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>KushalaDaora</defName>
 		<label>Kushala Daora</label>
@@ -168,14 +196,12 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-
 	<!-- ============================================================ -->
-
+	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Tesuka</defName>
 		<label>Tesuka</label>
-		<description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements.</description>
+		<description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements. Brings immense heat with its presence.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>20900</MarketValue>
@@ -185,7 +211,15 @@
 			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>10.8</ArmorRating_Heat>
 			<Flammability>0.0</Flammability>
-		</statBases>	
+		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtToaster</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_LunastraTeostra"/>
 			<li Class="CompProperties_EggLayer">
@@ -196,7 +230,6 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
-
 		<tools>
 			<li>
 				<label>left front claw</label>
@@ -305,7 +338,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
-
+	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Tesuka</defName>
 		<label>Tesuka</label>
@@ -374,10 +407,8 @@
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
 	</PawnKindDef>
-
-
+	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Nergigante</defName>
 		<label>Nergigante</label>
@@ -390,6 +421,14 @@
 			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtNergi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggNergiganteFertilized</eggFertilizedDef>
@@ -490,7 +529,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
-
+	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Nergigante</defName>
 		<label>Nergigante</label>
@@ -542,7 +581,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Kirin</defName>
 		<label>Kirin</label>
@@ -555,6 +594,14 @@
 			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKirin</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<uiIconScale>1.1</uiIconScale>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_Kirin">
@@ -604,23 +651,23 @@
 			</li>
 		</tools>
 		<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>MH_Projectile_Thunderspawn</defaultProjectile>
-			<warmupTime>3.5</warmupTime>
-			<range>35</range>
-			<forcedMissRadius>5</forcedMissRadius>
-			<burstShotCount>1</burstShotCount>
-			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-			<soundCast>Explosion_Silent</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>0</muzzleFlashScale>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-			<commonality>0.5</commonality>
-		</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MH_Projectile_Thunderspawn</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>35</range>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<soundCast>Explosion_Silent</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<commonality>0.5</commonality>
+			</li>
 		</verbs>
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
@@ -657,7 +704,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
-
+	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Kirin</defName>
 		<label>kirin</label>
@@ -709,8 +756,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-
+	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>KulveTaroth</defName>
 		<label>Kulve Taroth</label>
@@ -723,197 +769,14 @@
 			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 		</statBases>
-		<damageMultipliers>
-        <li>
-            <damageDef>TornadoScratch</damageDef>
-            <multiplier>0</multiplier>
-        </li>
-		</damageMultipliers>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>140</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.1</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			<li Class="AnimalBehaviours.CompProperties_FixedGender">
-				<gender>Female</gender>
-			</li>
-		</comps>
-		<tools>
-			<li>
-				<label>left front claw</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>30</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right front claw</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>30</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>45</power>
-				<cooldownTime>2.6</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.4</chanceFactor>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>30</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.7</chanceFactor>
-			</li>
-		</tools>
-			<verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Tornadospawn</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
-        <soundCast>Shot_MHFireball</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
-      </li>
-    </verbs>
-		<race>
-			<body>MHElder</body>
-			<baseHungerRate>0.6</baseHungerRate>
-			<baseBodySize>14</baseBodySize>
-			<baseHealthScale>10.6</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<predator>true</predator>
-			<leatherDef>Leather_Kushala</leatherDef>
-			<gestationPeriodDays>55</gestationPeriodDays>
-			<wildness>1.0</wildness>
-			<trainability>Advanced</trainability>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
-			<lifeExpectancy>1000</lifeExpectancy>
-			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.4</manhunterOnDamageChance>
-			<wildBiomes>
-				<TemperateForest>0</TemperateForest>
-				<TemperateSwamp>0</TemperateSwamp>
-				<BorealForest>0</BorealForest>
-				<Tundra>0</Tundra>
-				<ColdBog>0</ColdBog>
-				<IceSheet>0</IceSheet>
-				<TropicalRainforest>0</TropicalRainforest>
-				<TropicalSwamp>0</TropicalSwamp>
-				<AridShrubland>0</AridShrubland>
-				<Desert>0</Desert>
-				<ExtremeDesert>0</ExtremeDesert>
-			</wildBiomes>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>1.0</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>3.0</minAge>
-					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
-					<soundCall>Pawn_Thrumbo_Call</soundCall>
-					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-	</ThingDef>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
 
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>KulveTaroth</defName>
-		<label>Kulve Taroth</label>
-		<race>KulveTaroth</race>
-		<combatPower>4670</combatPower>
-		<ecoSystemWeight>6.3</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
-					<drawSize>8.0</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKulve</ImageToShowInInfoCard>
+
 			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
-					<drawSize>9.0</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.45, 0.45)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
-					<drawSize>18.0</drawSize>
-					<shadowData>
-						<volume>(0.8, 0.6, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
-					<drawSize>4.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
-	
-	
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>KulveTarothNaked</defName>
-		<label>Kulve Taroth</label>
-		<description>Kulve Taroth is a very large lizard-like dragon covered in a beautiful golden mantle. This mantle covers her entire body, with large blocky scales on her back and a long trailing section down the length of her massive tail. Kulve Taroth's main feature is her massive spiraling horns. These horns resemble lapis lazuli when the gold plating is removed. Without the mantle, Kulve Taroth's scales are gold and black with emerald-like patches. This one has dropped its mantle already.</description>
-		<statBases>
-			<MoveSpeed>8</MoveSpeed>
-			<MarketValue>100000</MarketValue>
-			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
-			<ComfyTemperatureMax>280</ComfyTemperatureMax>
-			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
-		</statBases>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>
@@ -966,22 +829,6 @@
 				<chanceFactor>0.7</chanceFactor>
 			</li>
 		</tools>
-<verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Fireball_Big</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
-        <soundCast>Shot_MHFireball</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
-      </li>
-</verbs>
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>0.6</baseHungerRate>
@@ -1033,7 +880,198 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>KulveTaroth</defName>
+		<label>Kulve Taroth</label>
+		<race>KulveTaroth</race>
+		<combatPower>4670</combatPower>
+		<ecoSystemWeight>6.3</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
+					<drawSize>8.0</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
+					<drawSize>9.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
+					<drawSize>18.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>KulveTarothNaked</defName>
+		<label>Kulve Taroth</label>
+		<description>Kulve Taroth is a very large lizard-like dragon covered in a beautiful golden mantle. This mantle covers her entire body, with large blocky scales on her back and a long trailing section down the length of her massive tail. Kulve Taroth's main feature is her massive spiraling horns. These horns resemble lapis lazuli when the gold plating is removed. Without the mantle, Kulve Taroth's scales are gold and black with emerald-like patches. This one has dropped its mantle already.</description>
+		<statBases>
+			<MoveSpeed>8</MoveSpeed>
+			<MarketValue>100000</MarketValue>
+			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+			<ComfyTemperatureMax>280</ComfyTemperatureMax>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
 
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKulveNaked</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>EggKulveFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>140</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.1</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>left front claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right front claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.4</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MH_Projectile_Fireball_Big</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>23.9</range>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Shot_MHFireball</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<defaultCooldownTime>5</defaultCooldownTime>
+			</li>
+		</verbs>
+		<race>
+			<body>MHElder</body>
+			<baseHungerRate>0.6</baseHungerRate>
+			<baseBodySize>14</baseBodySize>
+			<baseHealthScale>10.6</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
+			<leatherDef>Leather_Kulve</leatherDef>
+			<gestationPeriodDays>55</gestationPeriodDays>
+			<wildness>1.0</wildness>
+			<trainability>Advanced</trainability>
+			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.4</manhunterOnDamageChance>
+			<wildBiomes>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<BorealForest>0</BorealForest>
+				<Tundra>0</Tundra>
+				<ColdBog>0</ColdBog>
+				<IceSheet>0</IceSheet>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<AridShrubland>0</AridShrubland>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1.0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>3.0</minAge>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>KulveTarothNaked</defName>
 		<label>Kulve Taroth</label>
@@ -1085,5 +1123,178 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Velkhana</defName>
+		<label>Velkhana</label>
+		<description>An elder dragon said to freeze all in its path. According to legend, it can control the cold, and use its freezing breath to conjure massive spires of ice out of nowhere.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>30900</MarketValue>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
 
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtVelkhana</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>EggVelkhanaFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>60</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_Velkhana"/>
+		</comps>
+		<tools>
+			<li>
+				<label>left front claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right front claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.4</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>MHElder</body>
+			<baseHungerRate>1.2</baseHungerRate>
+			<baseBodySize>9</baseBodySize>
+			<baseHealthScale>8.6</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
+			<leatherDef>Leather_Velkhana</leatherDef>
+			<gestationPeriodDays>55</gestationPeriodDays>
+			<wildness>1.0</wildness>
+			<trainability>Advanced</trainability>
+			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<wildBiomes>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<BorealForest>0</BorealForest>
+				<Tundra>0</Tundra>
+				<ColdBog>0</ColdBog>
+				<IceSheet>0</IceSheet>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<AridShrubland>0</AridShrubland>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1.0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>3.0</minAge>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Velkhana</defName>
+		<label>Velkhana</label>
+		<race>Velkhana</race>
+		<combatPower>4070</combatPower>
+		<ecoSystemWeight>6.3</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Velkhana/Velkhana</texPath>
+					<drawSize>7.0</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Velkhana/Velkhana</texPath>
+					<drawSize>8.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Velkhana/Velkhana</texPath>
+					<drawSize>15.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>

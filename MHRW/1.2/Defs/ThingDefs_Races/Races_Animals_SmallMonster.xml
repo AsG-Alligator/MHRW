@@ -10,6 +10,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtJagras</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggJagrasFertilized</eggFertilizedDef>
@@ -200,6 +208,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGirros</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGirrosFertilized</eggFertilizedDef>
@@ -377,6 +393,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtAptonoth</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggAptonothFertilized</eggFertilizedDef>
@@ -534,6 +558,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtRheno</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggRhenoplosFertilized</eggFertilizedDef>
@@ -689,6 +721,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtSlagt</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggSlagtothFertilized</eggFertilizedDef>
@@ -841,6 +881,14 @@
       <MarketValue>250</MarketValue>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKelbi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <tools>
       <li>
         <label>left hoof</label>
@@ -1028,6 +1076,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtJaggi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggJaggiFertilized</eggFertilizedDef>
@@ -1204,6 +1260,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKestodon</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggKestodonFertilized</eggFertilizedDef>
@@ -1375,6 +1439,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>69</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGastodon</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGastodonFertilized</eggFertilizedDef>
@@ -1532,6 +1604,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtApceros</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggApcerosFertilized</eggFertilizedDef>
@@ -1696,6 +1776,14 @@
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtShamos</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggShamosFertilized</eggFertilizedDef>

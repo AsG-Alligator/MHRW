@@ -16,6 +16,14 @@
 	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtRath</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -236,6 +244,14 @@
 	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtBazel</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -438,6 +454,14 @@
 	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtLegiana</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -624,6 +648,14 @@
 	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtDiablos</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -810,6 +842,14 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtPaolumu</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPaolumuFertilized</eggFertilizedDef>

@@ -26,6 +26,14 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKulu</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggKuluFertilized</eggFertilizedDef>
@@ -196,6 +204,14 @@
 	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGendrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggGenpreyFertilized</eggFertilizedDef>
@@ -360,6 +376,190 @@
     </lifeStages>
   </PawnKindDef>
   
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Velociprey</defName>
+    <label>Velociprey</label>
+    <description>These monsters resemble dromaeosaurid dinosaurs. They have blue scales with black stripes, a dull red crest on their heads, yellow eyes, and a white belly. These carnivorous monsters travel in packs and inhabit many different environments.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggVelocidromeFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtVelocidrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Velocidrome</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.3</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.3</TemperateForest>
+		<TemperateSwamp>0.3</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.2</TropicalRainforest>
+		<TropicalSwamp>0.2</TropicalSwamp>
+		<AridShrubland>0.05</AridShrubland>
+		<Desert>0.3</Desert>
+		<ExtremeDesert>0.01</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Velociprey</defName>
+    <label>Velociprey</label>
+    <race>Velociprey</race>
+    <combatPower>470</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+		<labelMale>Velocidrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>4.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+		<labelMale>Velocidrome</labelMale>
+       <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>6.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>5.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+	  <labelMale>Velocidrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>7.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>6.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
     
  
     <ThingDef ParentName="AnimalThingBase">
@@ -383,6 +583,14 @@
         <eggCountRange>1</eggCountRange>
       </li>
     </comps>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGiadrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
     <tools>
       <li>
         <label>left claw</label>
@@ -550,6 +758,14 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtTzitzi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggTzitziFertilized</eggFertilizedDef>
@@ -721,6 +937,14 @@
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtPukei</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
@@ -915,6 +1139,14 @@
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKutku</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>

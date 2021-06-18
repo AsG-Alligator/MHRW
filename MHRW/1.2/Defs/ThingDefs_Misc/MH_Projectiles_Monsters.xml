@@ -49,12 +49,12 @@
       <texPath>Things/Projectile/MH_Icespit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>0.5</drawSize>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>40</speed>
-      <damageDef>Flame</damageDef>
-      <explosionRadius>1.1</explosionRadius>
+      <damageDef>Frostbite</damageDef>
+	  <damageAmountBase>10</damageAmountBase>
     </projectile>
 </ThingDef>
 
@@ -67,17 +67,16 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>40</speed>
-      <damageDef>Flame</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>1.1</explosionRadius>
+      <damageDef>MHParalisisBlunt</damageDef>
+	  <damageAmountBase>10</damageAmountBase>
     </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBullet">
+<ThingDef Class="MonsterHunterRimworld.ThingDef_PoisonBurst" ParentName="BaseBullet">
     <defName>MH_Projectile_Poisonspit</defName>
+	<thingClass>MonsterHunterRimworld.Projectile_PoisonBurst</thingClass>
     <label>poison spit</label>
 	<!-- Poison spit (pukei),poison explosion, toxic buildup on hit -->
     <graphicData>
@@ -85,7 +84,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>40</speed>
       <damageDef>MHPoisonBurst</damageDef>
@@ -142,7 +140,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>Bomb</damageDef>
       <damageAmountBase>6</damageAmountBase>
       <speed>55</speed>
     </projectile>
@@ -150,7 +148,8 @@
   </ThingDef>
   
   
-<ThingDef ParentName="BaseBullet">
+<ThingDef Class="MonsterHunterRimworld.ThingDef_TornadoSpawner" ParentName="BaseBullet">
+	<thingClass>MonsterHunterRimworld.Projectile_TornadoSpawner</thingClass>
     <defName>MH_Projectile_Tornadospawn</defName>
     <label>tornado blast</label>
 	 <!-- Kushala tornado projectile (spawn tornado on impact point), needs particle effect along path -->
@@ -158,14 +157,10 @@
       <texPath>Things/Projectile/InvisibleProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>6</damageAmountBase>
+      <damageAmountBase>10</damageAmountBase>
       <speed>55</speed>
-	  <explosionRadius>0.8</explosionRadius>
-      <preExplosionSpawnThingDef>Tornado</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>1</preExplosionSpawnChance>
     </projectile>
   </ThingDef>
   

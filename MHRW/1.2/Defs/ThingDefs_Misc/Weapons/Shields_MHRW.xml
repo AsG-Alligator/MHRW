@@ -275,7 +275,7 @@
         <costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>60</Steel>
-			<Leather_GreatGirros>30</Leather_GreatGirros>
+			<Leather_Nergigante>30</Leather_Nergigante>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>MHSwordTier4</researchPrerequisite>
@@ -707,7 +707,7 @@
         <costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>100</Steel>
-			<Leather_Pukei>30</Leather_Pukei>
+			<Leather_Barroth>30</Leather_Barroth>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
@@ -996,7 +996,7 @@
         <costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>100</Steel>
-			<Leather_Bazel>40</Leather_Bazel>
+			<Leather_Jyuratodus>40</Leather_Jyuratodus>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
@@ -1068,7 +1068,7 @@
         <costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>100</Steel>
-			<Leather_Zinogre>40</Leather_Zinogre>
+			<Leather_Rathian>40</Leather_Rathian>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier3</researchPrerequisite>

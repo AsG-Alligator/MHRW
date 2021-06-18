@@ -8,7 +8,7 @@ using Verse;
 
 namespace MonsterHunterRimworld
 {
-    public class MH_VerbCooldown : Verb_
+    public class MH_VerbCooldown : Verb_Shoot
     {
         protected override void 
     }

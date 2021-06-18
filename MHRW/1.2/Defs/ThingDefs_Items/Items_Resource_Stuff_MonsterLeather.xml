@@ -107,6 +107,22 @@
     </stuffProps>
   </ThingDef>
   
+  <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Kelbi</defName>
+    <label>Kelbi pelt</label>
+    <description>Pelts carved from a kelbi. Nice, soft and blue.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_kelbi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(119, 164, 209)</color>
+      <commonality>0.05</commonality>
+    </stuffProps>
+  </ThingDef>
+  
 <ThingDef ParentName="MonsterPartsBase">
     <defName>Leather_Gastodon</defName>
     <label>Gastodon leather</label>
@@ -141,6 +157,25 @@
     </statBases>
     <stuffProps>
       <color>(122, 60, 42)</color>
+      <commonality>0.03</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Velocidrome</defName>
+    <label>Velocidrome leather</label>
+    <description>An assortment of leather, scales etc. carved from a Velocidrome.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_velocidrome</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(70, 142, 224)</color>
       <commonality>0.03</commonality>
     </stuffProps>
   </ThingDef>
@@ -549,7 +584,7 @@
     </stuffProps>
   </ThingDef>
   
-    <ThingDef ParentName="MonsterPartsBase">
+  <ThingDef ParentName="MonsterPartsBase">
     <defName>Leather_Legiana</defName>
     <label>Legiana leather</label>
     <description>An assortment of leather, scales etc. carved from a Legiana.</description>
@@ -562,6 +597,26 @@
 	  <StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>80</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(173, 193, 224)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MonsterPartsBase">
+    <defName>Leather_Velkhana</defName>
+    <label>Velkhana leather</label>
+    <description>An assortment of leather, scales etc. carved from a Velkhana.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/MonsterParts/MonsterParts_velkhana</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>100</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>-25</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
       <color>(173, 193, 224)</color>

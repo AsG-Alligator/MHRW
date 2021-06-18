@@ -12,6 +12,14 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtTobi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggTobiFertilized</eggFertilizedDef>
@@ -170,6 +178,14 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGreatJagras</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGJagrasFertilized</eggFertilizedDef>
@@ -333,6 +349,14 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGreatGirros</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGGirrosFertilized</eggFertilizedDef>
@@ -491,6 +515,14 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtDodo</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_Dodogama">
 				<maxNutritionFromRock>0.5</maxNutritionFromRock>
@@ -689,6 +721,14 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtOdogaron</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 				<maxFightRange>20</maxFightRange>
@@ -849,6 +889,14 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtMizu</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 				<maxFightRange>20</maxFightRange>
@@ -1008,6 +1056,14 @@
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtZinogre</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggZinogreFertilized</eggFertilizedDef>
@@ -1059,21 +1115,23 @@
 		</tools>
 		<verbs>
 		<li>
+			<label>Cast lightning</label>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>MH_Projectile_Thunderspawn</defaultProjectile>
-			<warmupTime>2.2</warmupTime>
+			<warmupTime>2.0</warmupTime>
 			<range>20</range>
 			<burstShotCount>1</burstShotCount>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 			<soundCast>Explosion_Silent</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>0</muzzleFlashScale>
+			<forcedMissRadius>4.1</forcedMissRadius>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
 			<commonality>0.5</commonality>
-		</li>
+		</li>	
 		</verbs>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>

@@ -15,6 +15,14 @@
 	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtBarroth</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -188,6 +196,14 @@
 	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtDeviljho</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -362,6 +378,14 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtJyura</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -538,6 +562,14 @@
 	  <ArmorRating_Heat>10.8</ArmorRating_Heat>
 	  <Flammability>0.0</Flammability>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtLava</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -728,6 +760,14 @@
 	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtAnjanath</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>
@@ -910,7 +950,7 @@
     <ThingDef ParentName="AnimalThingBase">
     <defName>Glavenus</defName>
     <label>Glavenus</label>
-    <description>The Anjanath patrols the forest looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without the slightest provocation.</description>
+    <description>Glavenus is a large Brute Wyvern with dark red scales covering its body. Two rows of blue, bony plates run along its back, going from the eyes to the tail. Its underside is more of a cream color. The main feature of Glavenus's physiology is its huge, sword-like tail.</description>
     <statBases>
       <MoveSpeed>5.4</MoveSpeed>
       <MarketValue>8200</MarketValue>
@@ -919,6 +959,14 @@
 	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
     </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGlavenus</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
 	<comps>
       <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
 		<maxFightRange>20</maxFightRange>

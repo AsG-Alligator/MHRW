@@ -32,6 +32,7 @@
     <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
+  
  <!--> Weapon damage defs <--> 
   <!-- POISON -->
   
@@ -528,7 +529,6 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
-    <hediff>ToxicBuildup</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Blunt</impactSoundType>
     <defaultDamage>5</defaultDamage>
