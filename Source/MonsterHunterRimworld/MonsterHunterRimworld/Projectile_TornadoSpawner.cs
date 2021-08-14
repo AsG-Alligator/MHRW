@@ -23,7 +23,7 @@ namespace MonsterHunterRimworld
         public override void Tick()
         {
             base.Tick();
-            MoteMaker.ThrowDustPuff(base.Position, base.Map, 1.0f);
+            FleckMaker.ThrowDustPuff(base.Position, base.Map, 1.0f);
         }
 
 

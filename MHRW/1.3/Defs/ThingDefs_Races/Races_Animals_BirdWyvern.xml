@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>  
 
-<!-- ============================================================ -->
-  
-    <ThingDef ParentName="AnimalThingBase">
-    <defName>Rath</defName>
-    <label>Rath</label>
-    <description>A large fire-breathing flying wyvern and poison talons.</description>
+	<MVCF.ModDef>
+	<defName>MHRW_MonsterHunterRimworld</defName>
+	<label>Monster Hunter Rimworld</label>
+	<description>Adding animal ranged attacks for Monster Hunter Rimworld creatures</description>
+	<Features>
+		<RangedAnimals>true</RangedAnimals>
+		<HediffVerbs>true</HediffVerbs>
+		<IntegratedToggle>true</IntegratedToggle>
+	</Features>
+	</MVCF.ModDef>
+	
+	
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>KuluYaKu</defName>
+    <label>kulu ya-ku</label>
+    <description>An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests of other animals.</description>
     <statBases>
-      <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>10900</MarketValue>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>2950</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
 	<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
 
 				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtRath</ImageToShowInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKulu</ImageToShowInInfoCard>
 
 			</li>
 	</modExtensions>
 	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
-	<li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggRathFertilized</eggFertilizedDef>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggKuluFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>1</eggCountRange>
       </li>
@@ -42,7 +49,918 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>18</power>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDromeWithBeak</body>
+      <baseHungerRate>0.3</baseHungerRate>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_KuluYaKu</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.01</TemperateForest>
+		<TemperateSwamp>0.04</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.2</TropicalRainforest>
+		<TropicalSwamp>0.2</TropicalSwamp>
+		<AridShrubland>0.2</AridShrubland>
+		<Desert>0.2</Desert>
+		<ExtremeDesert>0.05</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>KuluYaKu</defName>
+    <label>kulu ya-ku</label>
+    <race>KuluYaKu</race>
+    <combatPower>250</combatPower>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KuluYaKu/KuluYaKu</texPath>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KuluYaKu/KuluYaKu</texPath>
+          <drawSize>4.6</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/KuluYaKu/KuluYaKu</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- ============================================================ -->
+  
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>Genprey</defName>
+    <label>genprey</label>
+    <description>An orange and green-striped species of small carnivores found mainly in desert zones. Traveling in packs, their large fangs and claws contain a neurotoxin that is used to paralyze prey.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGendrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGenpreyFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>MHParalisisBite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Gendrome</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.3</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0.3</AridShrubland>
+		<Desert>0.3</Desert>
+		<ExtremeDesert>0.2</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Genprey</defName>
+    <label>genprey</label>
+    <race>Genprey</race>
+    <combatPower>470</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+		<labelMale>Gendrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gendrome/Gendrome</texPath>
+          <drawSize>4.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Genprey/Genprey</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+		<labelMale>Gendrome</labelMale>
+       <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gendrome/Gendrome</texPath>
+          <drawSize>6.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Genprey/Genprey</texPath>
+          <drawSize>5.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+	  <labelMale>Gendrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gendrome/Gendrome</texPath>
+          <drawSize>7.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Genprey/Genprey</texPath>
+          <drawSize>6.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Velociprey</defName>
+    <label>Velociprey</label>
+    <description>These monsters resemble dromaeosaurid dinosaurs. They have blue scales with black stripes, a dull red crest on their heads, yellow eyes, and a white belly. These carnivorous monsters travel in packs and inhabit many different environments.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggVelocidromeFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtVelocidrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Velocidrome</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.3</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.3</TemperateForest>
+		<TemperateSwamp>0.3</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.2</TropicalRainforest>
+		<TropicalSwamp>0.2</TropicalSwamp>
+		<AridShrubland>0.05</AridShrubland>
+		<Desert>0.3</Desert>
+		<ExtremeDesert>0.01</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Velociprey</defName>
+    <label>Velociprey</label>
+    <race>Velociprey</race>
+    <combatPower>470</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+		<labelMale>Velocidrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>4.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+		<labelMale>Velocidrome</labelMale>
+       <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>6.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>5.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+	  <labelMale>Velocidrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velocidrome</texPath>
+          <drawSize>7.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Velocidrome/Velociprey</texPath>
+          <drawSize>6.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+    
+ 
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>Giaprey</defName>
+    <label>giaprey</label>
+    <description>A species of small bird-like carnivores known to inhabit the snowy mountains. Their white skin is beautiful, but their temperament is not. They are known to spit ice at hunters, and attack in deadly packs.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>1100</MarketValue>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>15</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggGiapreyFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtGiadrome</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.3</baseHungerRate>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Giadrome</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.4</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0.2</BorealForest>
+		<Tundra>0.3</Tundra>
+		<ColdBog>0.2</ColdBog>
+		<IceSheet>0.05</IceSheet>
+		<TropicalRainforest>0</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Giaprey</defName>
+    <label>giaprey</label>
+    <race>Giaprey</race>
+    <combatPower>670</combatPower>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
+	<wildGroupSize>
+        <min>2</min>
+        <max>4</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <labelMale>Giadrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Giadrome/Giadrome</texPath>
+          <drawSize>4.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Giaprey/Giaprey</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <labelMale>Giadrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Giadrome/Giadrome</texPath>
+          <drawSize>6.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Giaprey/Giaprey</texPath>
+          <drawSize>5.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <labelMale>Giadrome</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Giadrome/Giadrome</texPath>
+          <drawSize>7.0</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Giaprey/Giaprey</texPath>
+          <drawSize>6.0</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>TzitziYaKu</defName>
+    <label>tzitzi ya-ku</label>
+    <description>This odd monster blinds both prey and enemies with a special pulsing organ near its head. It then uses its strong legs to deliver finishing blows.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>2800</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtTzitzi</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggTzitziFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>0.5</baseHungerRate>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_TzitziYaKu</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>120</lifeExpectancy>
+      <manhunterOnTameFailChance>0.12</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.08</TemperateForest>
+		<TemperateSwamp>0.05</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.09</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>TzitziYaKu</defName>
+    <label>tzitzi ya-ku</label>
+    <race>TzitziYaKu</race>
+    <combatPower>270</combatPower>
+    <ecoSystemWeight>3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/TzitziYaKu/TzitziYaKu</texPath>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/TzitziYaKu/TzitziYaKu</texPath>
+          <drawSize>6.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/TzitziYaKu/TzitziYaKu</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+      <!-- ============================================================ -->
+  
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>PukeiPukei</defName>
+    <label>pukei-pukei</label>
+    <description>A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>4400</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtPukei</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -51,15 +969,15 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>18</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
       </li>
       <li>
         <capacities>
-          <li>Bite</li>
+          <li>ToxicBite</li>
         </capacities>
-        <power>22</power>
+        <power>10</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -80,7 +998,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>20</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -91,13 +1009,13 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <defaultProjectile>MH_Projectile_Poisonspit</defaultProjectile>
+        <warmupTime>7</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
-        <soundCast>Shot_MHFireball</soundCast>
+        <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
 		<defaultCooldownTime>5</defaultCooldownTime>
@@ -106,644 +1024,27 @@
     </verbs>
     <race>
       <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>6</baseBodySize>
-      <baseHealthScale>4.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Rathalos</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.85</wildness>
-      <trainability>Advanced</trainability>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>500</lifeExpectancy>
-      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-		</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Rath</defName>
-    <label>Rath</label>
-    <race>Rath</race>
-    <combatPower>1000</combatPower>
-    <ecoSystemWeight>3</ecoSystemWeight>
-    <lifeStages>
-	<li>
-        <labelMale>Rathalos</labelMale>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Rathalos/Rathalos</texPath>
-          <drawSize>5.0</drawSize>
-        </bodyGraphicData>
-		<labelFemale>Rathian</labelFemale>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Rathian/Rathian</texPath>
-          <drawSize>5.0</drawSize>
-        </femaleGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.4</drawSize>
-        </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.4</drawSize>
-        </femaleDessicatedBodyGraphicData>
-      </li>
-	  <li>
-        <labelMale>Rathalos</labelMale>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Rathalos/Rathalos</texPath>
-          <drawSize>8.0</drawSize>
-        </bodyGraphicData>
-		<labelFemale>Rathian</labelFemale>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Rathian/Rathian</texPath>
-          <drawSize>8.0</drawSize>
-        </femaleGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1</drawSize>
-        </femaleDessicatedBodyGraphicData>
-      </li>
-	  <li>
-        <labelMale>Rathalos</labelMale>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Rathalos/Rathalos</texPath>
-          <drawSize>13.0</drawSize>
-        </bodyGraphicData>
-		<labelFemale>Rathian</labelFemale>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Rathian/Rathian</texPath>
-          <drawSize>12.0</drawSize>
-        </femaleGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.2</drawSize>
-        </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.2</drawSize>
-        </femaleDessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-        <!-- ============================================================ -->
-  
-    <ThingDef ParentName="AnimalThingBase">
-    <defName>Bazelgeuse</defName>
-    <label>Bazelgeuse</label>
-    <description>A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.</description>
-    <statBases>
-      <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>15900</MarketValue>
-      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtBazel</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
-		<li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggBazelFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>40</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>28</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-	<verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Bazelbomb</defaultProjectile>
-        <warmupTime>4.6</warmupTime>
-        <range>13.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
-        <burstShotCount>5</burstShotCount>
-		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <soundCast>ThrowGrenade</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
-		<commonality>0.5</commonality>
-      </li>
-    </verbs>
-    <race>
-      <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>8</baseBodySize>
+      <baseHungerRate>0.6</baseHungerRate>
+      <baseBodySize>3</baseBodySize>
       <baseHealthScale>5.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Bazel</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.85</wildness>
-      <trainability>Simple</trainability>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>350</lifeExpectancy>
-      <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Bazelgeuse</defName>
-    <label>Bazelgeuse</label>
-    <race>Bazelgeuse</race>
-    <combatPower>1270</combatPower>
-    <ecoSystemWeight>4</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bazelgeuse/Bazelgeuse</texPath>
-          <drawSize>7.0</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.8</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bazelgeuse/Bazelgeuse</texPath>
-          <drawSize>8.0</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bazelgeuse/Bazelgeuse</texPath>
-          <drawSize>13.0</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-          <!-- ============================================================ -->
-  
-    <ThingDef ParentName="AnimalThingBase">
-    <defName>Legiana</defName>
-    <label>Legiana</label>
-    <description>The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.</description>
-    <statBases>
-      <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>13900</MarketValue>
-      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>30</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtLegiana</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
-	  <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggLegianaFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>40</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>18</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>18</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>5.5</baseBodySize>
-      <baseHealthScale>6.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Legiana</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.85</wildness>
-      <trainability>Simple</trainability>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>300</lifeExpectancy>
-      <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0.02</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0.01</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Legiana</defName>
-    <label>Legiana</label>
-    <race>Legiana</race>
-    <combatPower>1170</combatPower>
-    <ecoSystemWeight>3</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Legiana/Legiana</texPath>
-          <drawSize>7.0</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.9</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Legiana/Legiana</texPath>
-          <drawSize>8.0</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Legiana/Legiana</texPath>
-          <drawSize>13.0</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.3</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-  
-           <!-- ============================================================ -->
-  
-    <ThingDef ParentName="AnimalThingBase">
-    <defName>Diablos</defName>
-    <label>Diablos</label>
-    <description>Wyverns feared as desert tyrants. Extremely territorial, Diablos attack invaders with blind aggression. Highly sensitive to sound, perhaps because they frequently travel beneath the sand. Known to feed on cacti.</description>
-    <statBases>
-      <MoveSpeed>5</MoveSpeed>
-      <MarketValue>17900</MarketValue>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtDiablos</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
-		<maxFightRange>20</maxFightRange>
-	  </li>
-		<li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggDiablosFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-		<chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-		<chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <label>horns</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.6</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.6</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>MHWyvernWithHorns</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>8</baseBodySize>
-      <baseHealthScale>8.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Diablos</leatherDef>
+      <leatherDef>Leather_Pukei</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.90</wildness>
-      <trainability>Simple</trainability>
+      <wildness>0.5</wildness>
+      <trainability>Intermediate</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>400</lifeExpectancy>
-      <manhunterOnTameFailChance>0.90</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+      <lifeExpectancy>200</lifeExpectancy>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.08</TemperateSwamp>
 		<BorealForest>0</BorealForest>
 		<Tundra>0</Tundra>
 		<ColdBog>0</ColdBog>
 		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
 		<AridShrubland>0</AridShrubland>
 		<Desert>0</Desert>
 		<ExtremeDesert>0</ExtremeDesert>
@@ -770,213 +1071,19 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Diablos</defName>
-    <label>Diablos</label>
-    <race>Diablos</race>
-    <combatPower>2070</combatPower>
-    <ecoSystemWeight>3.6</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Diablos/Diablos</texPath>
-          <drawSize>7.0</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.8</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Diablos/Diablos</texPath>
-          <drawSize>8.0</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Diablos/Diablos</texPath>
-          <drawSize>13.0</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.2</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-            <!-- ============================================================ -->
-  
-    <ThingDef ParentName="AnimalThingBase">
-    <defName>Paolumu</defName>
-    <label>Paolumu</label>
-    <description>Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.</description>
-    <statBases>
-      <MoveSpeed>4.8</MoveSpeed>
-      <MarketValue>6200</MarketValue>
-      <ComfyTemperatureMin>-70</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtPaolumu</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggPaolumuFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>5</baseBodySize>
-      <baseHealthScale>6.6</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Paolumu</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.60</wildness>
-      <trainability>Advanced</trainability>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
-      <lifeExpectancy>250</lifeExpectancy>
-      <manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0.01</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0.02</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Paolumu</defName>
-    <label>Paolumu</label>
-    <race>Paolumu</race>
-    <combatPower>1000</combatPower>
+    <defName>PukeiPukei</defName>
+    <label>pukei-pukei</label>
+    <race>PukeiPukei</race>
+    <combatPower>270</combatPower>
     <ecoSystemWeight>2</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Paolumu/Paolumu</texPath>
-          <drawSize>2.0</drawSize>
+          <texPath>Things/Pawn/Animal/PukeiPukei/PukeiPukei</texPath>
+          <drawSize>3.0</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -984,12 +1091,12 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>0.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Paolumu/Paolumu</texPath>
+          <texPath>Things/Pawn/Animal/PukeiPukei/PukeiPukei</texPath>
           <drawSize>6.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -1003,382 +1110,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Paolumu/Paolumu</texPath>
-          <drawSize>10.0</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-   <ThingDef ParentName="AnimalThingBase">
-    <defName>Nargacuga</defName>
-    <label>Nargacuga</label>
-    <description>A uniquely-evolved wyvern that calls the forest its home. It hides itself in the shadows and slyly stalks its prey with terrifying speed and tenacity. Its unique tail can take down a medium-sized monster in a single swish.</description>
-    <statBases>
-      <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>7200</MarketValue>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtNargacuga</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggNargacugaFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>17</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>17</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>17</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>17</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>28</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>MHWyvern</body>
-      <baseHungerRate>1.0</baseHungerRate>
-      <baseBodySize>5</baseBodySize>
-      <baseHealthScale>6.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Nargacuga</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.60</wildness>
-      <trainability>Advanced</trainability>
-      <nuzzleMtbHours>80</nuzzleMtbHours>
-      <lifeExpectancy>250</lifeExpectancy>
-      <manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-		  <soundWounded>Pawn_Cougar_Injured</soundWounded>
-          <soundDeath>Pawn_Cougar_Death</soundDeath>
-          <soundAngry>Pawn_Cougar_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Nargacuga</defName>
-    <label>Nargacuga</label>
-    <race>Nargacuga</race>
-    <combatPower>1100</combatPower>
-    <ecoSystemWeight>2</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Nargacuga/Nargacuga</texPath>
-          <drawSize>2.0</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.6</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Nargacuga/Nargacuga</texPath>
-          <drawSize>6.0</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Nargacuga/Nargacuga</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Nargacuga/Nargacuga</texPath>
-          <drawSize>10.0</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-  <ThingDef ParentName="AnimalThingBase">
-    <defName>Tigrex</defName>
-    <label>Tigrex</label>
-    <description>A uniquely-evolved wyvern that calls the forest its home. It hides itself in the shadows and slyly stalks its prey with terrifying speed and tenacity. Its unique tail can take down a medium-sized monster in a single swish.</description>
-    <statBases>
-      <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>7800</MarketValue>
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
-	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-    </statBases>
-	<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Things/Art/ArtTigrex</ImageToShowInInfoCard>
-
-			</li>
-	</modExtensions>
-	<comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggTigrexFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
-      </li>
-    </comps>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>19</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>19</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>22</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-	  <li>
-        <label>tail</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>32</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>MHWyvern</body>
-      <baseHungerRate>1.4</baseHungerRate>
-      <baseBodySize>5</baseBodySize>
-      <baseHealthScale>6.6</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
-	  <predator>true</predator>
-      <leatherDef>Leather_Tigrex</leatherDef>
-      <gestationPeriodDays>55</gestationPeriodDays>
-      <wildness>0.60</wildness>
-      <trainability>Advanced</trainability>
-      <nuzzleMtbHours>80</nuzzleMtbHours>
-      <lifeExpectancy>250</lifeExpectancy>
-      <manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
-	  <wildBiomes>
-		<TemperateForest>0</TemperateForest>
-		<TemperateSwamp>0</TemperateSwamp>
-		<BorealForest>0</BorealForest>
-		<Tundra>0</Tundra>
-		<ColdBog>0</ColdBog>
-		<IceSheet>0</IceSheet>
-		<TropicalRainforest>0</TropicalRainforest>
-		<TropicalSwamp>0</TropicalSwamp>
-		<AridShrubland>0</AridShrubland>
-		<Desert>0</Desert>
-		<ExtremeDesert>0</ExtremeDesert>
-	  </wildBiomes>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>3.0</minAge>
-		  <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-	</tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Tigrex</defName>
-    <label>Tigrex</label>
-    <race>Tigrex</race>
-    <combatPower>1100</combatPower>
-    <ecoSystemWeight>2</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tigrex/Tigrex</texPath>
-          <drawSize>2.0</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>0.6</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tigrex/Tigrex</texPath>
-          <drawSize>6.0</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tigrex/Tigrex</texPath>
+          <texPath>Things/Pawn/Animal/PukeiPukei/PukeiPukei</texPath>
           <drawSize>11.0</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
@@ -1387,11 +1119,188 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MHBonepile</texPath>
-          <drawSize>3.8</drawSize>
+          <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
   
-</Defs>
+  
+  
+<ThingDef ParentName="AnimalThingBase">
+    <defName>YianKutKu</defName>
+    <label>Yian-Kut-Ku</label>
+    <description>A bird wyvern with a huge beak and large ears that splay open when it is angered. Quick on its feet, and known to be territorial. It's known for its love of Konchu, and has been observed digging them up out of the ground to swallow them whole.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>4400</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
 
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtKutku</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggPukeiFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RearLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RearRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+	  <li>
+        <label>tail</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHWyvern</body>
+      <baseHungerRate>0.6</baseHungerRate>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>5.6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Yian</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Intermediate</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>200</lifeExpectancy>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0.1</TemperateForest>
+		<TemperateSwamp>0.08</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0.1</TropicalRainforest>
+		<TropicalSwamp>0.1</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>YianKutKu</defName>
+    <label>Yian-Kut-Ku</label>
+    <race>YianKutKu</race>
+    <combatPower>270</combatPower>
+    <ecoSystemWeight>2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/YianKutKu/YianKutKu</texPath>
+          <drawSize>8.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+</Defs>
+  

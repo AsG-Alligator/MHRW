@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="MoteBase">
+	<defName>MH_WindMote</defName>
+	<graphicData>
+		<texPath>Things/Motes/DustRing</texPath>
+		<drawSize>1</drawSize>
+		<color>(32, 32, 32)</color>
+	</graphicData>
+	<altitudeLayer>MetaOverlays</altitudeLayer>
+	<mote>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>0.5</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+	</mote>
+</ThingDef>
+
+<ThingDef ParentName="MoteBase">
+    <defName>MH_ParalisisMote</defName>
+    <graphicData>
+      <texPath>Things/Motes/ParalisisIcon</texPath>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.08</fadeInTime>
+      <solidTime>1.4</solidTime>
+      <fadeOutTime>1.5</fadeOutTime>
+    </mote>
+</ThingDef>
+
+<ThingDef ParentName="MoteBase">
+<defName>MH_ParalisisSparkMote</defName>
+	<graphicData>
+		<texPath>Things/Motes/Electricity</texPath>
+		<drawSize>1</drawSize>
+		<color>(242, 240, 121)</color>
+	</graphicData>
+	<altitudeLayer>MetaOverlays</altitudeLayer>
+	<mote>
+		<fadeInTime>0.01</fadeInTime>
+		<fadeOutTime>0.1</fadeOutTime>
+	</mote>
+</ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>MH_SmokeFast</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>0.1</solidTime>
+      <fadeOutTime>0.7</fadeOutTime>
+      <growthRate>0.005</growthRate>
+    </mote>
+  </ThingDef>
+
+
+</Defs>

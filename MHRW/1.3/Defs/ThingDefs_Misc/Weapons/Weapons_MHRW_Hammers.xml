@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> HAMMERS <-->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer</defName>
+		<label>Hammer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHHammer</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Bone</defName>
+		<label>Bone Bludgeon</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Bone</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Diablos</defName>
+		<label>Diablos Shatterer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Diablos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Diablos</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Diablos>50</Leather_Diablos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Pukei</defName>
+		<label>Blooming Hammer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Pukei-Pukei materials. Applies poison on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Pukei</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Pukei>50</Leather_Pukei>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHPoisonBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_KutKu</defName>
+		<label>Kut-Ku Jaw</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Yian Kut-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/KutKu</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Yian>50</Leather_Yian>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Legia</defName>
+		<label>Cocytus</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Legiana materials. Ice element - applies hypothermia on hit..</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Cocytus</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Legiana>50</Leather_Legiana>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHIceBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHIceBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHIceBlunt</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHIceBlunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Hammer_Rathalos</defName>
+		<label>Huracan Hammer</label>
+		<description>A massive hammer capable of crushing monsters and people alike. Due to its absurd size this weapon will slow your colonists down when equipped. \n\n Made from Rathalos materials. Fire element - burn damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammer/Rathalos</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,0,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<Leather_Rathalos>50</Leather_Rathalos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>overhead smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHBurnBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>upswing</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHBurnBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>big bang smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHBurnBlunt</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+			<li>
+				<label>charged smash</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>MHFlameBlunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

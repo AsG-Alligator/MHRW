@@ -493,6 +493,27 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
+    <defName>EggVaalFertilized</defName>
+    <label>Vaal Hazak egg</label>
+    <description>A fertilized Vaal Hazak egg. If all goes well, it should hatch into a baby Vaal Hazak. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>2050.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>90</hatcherDaystoHatch>
+				<hatcherPawn>VaalHazak</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
     <defName>EggLavasiothFertilized</defName>
     <label>Lavasioth egg</label>
     <description>A fertilized Lavasioth egg. If all goes well, it should hatch into a baby Lavasioth. It can be eaten raw, but it's much better cooked.</description>

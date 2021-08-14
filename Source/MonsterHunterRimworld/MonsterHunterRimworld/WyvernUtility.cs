@@ -21,6 +21,7 @@ namespace MonsterHunterRimworld
             if (pawnKindDef == MHRWDefOf.Nergigante) return true;
             if (pawnKindDef == MHRWDefOf.Kirin) return true;
             if (pawnKindDef == MHRWDefOf.Velkhana) return true;
+            if (pawnKindDef == MHRWDefOf.VaalHazak) return true;
             return false;
         }
 
@@ -108,6 +109,7 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Nergigante;
             yield return MHRWDefOf.Kirin;
             yield return MHRWDefOf.Velkhana;
+            yield return MHRWDefOf.VaalHazak;
             yield break;
         }
 
@@ -148,7 +150,7 @@ namespace MonsterHunterRimworld
             }
             else if (wyvernType.Equals("ELDERDRAGON"))
             {
-                switch (Rand.RangeInclusive(1, 5))
+                switch (Rand.RangeInclusive(1, 7))
                 {
                     case 1:
                         return MHRWDefOf.KushalaDaora;
@@ -162,6 +164,8 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Kirin;
                     case 6:
                         return MHRWDefOf.Velkhana;
+                    case 7:
+                        return MHRWDefOf.VaalHazak;
                 }
             }
             else if (wyvernType.Equals("FANGEDWYVERN"))

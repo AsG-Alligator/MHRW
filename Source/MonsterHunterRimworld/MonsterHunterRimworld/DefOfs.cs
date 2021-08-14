@@ -35,6 +35,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Nergigante;
         public static PawnKindDef Kirin;
         public static PawnKindDef Velkhana;
+        public static PawnKindDef VaalHazak;
         #endregion
 
         #region "Fanged Wyvern"

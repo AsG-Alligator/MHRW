@@ -342,7 +342,7 @@
       <leatherDef>Leather_Bazel</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.85</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>350</lifeExpectancy>
       <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
@@ -535,7 +535,7 @@
       <leatherDef>Leather_Legiana</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.85</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>300</lifeExpectancy>
       <manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
@@ -730,7 +730,7 @@
       <leatherDef>Leather_Diablos</leatherDef>
       <gestationPeriodDays>55</gestationPeriodDays>
       <wildness>0.90</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>400</lifeExpectancy>
       <manhunterOnTameFailChance>0.90</manhunterOnTameFailChance>

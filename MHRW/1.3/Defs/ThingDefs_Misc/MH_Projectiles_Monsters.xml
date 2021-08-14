@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Fireball</defName>
+    <label>fireball</label>
+    <graphicData>
+      <texPath>Things/Projectile/MH_Fireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.1</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+</ThingDef>
+  
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Fireball_Big</defName>
+    <label>fireball</label>
+    <graphicData>
+      <texPath>Things/Projectile/MH_Fireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>4</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+</ThingDef>
+  
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Icespit</defName>
+    <label>ice spit</label>
+	<!-- Legiana ice spit, frostbite damage -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Icespit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>0.5</drawSize>
+    </graphicData>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Frostbite</damageDef>
+	  <damageAmountBase>10</damageAmountBase>
+    </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Paraspit</defName>
+    <label>paralisis spit</label>
+	<!-- Paralisis spit (girros, gendrome),chance to apply paralisis hediff on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Paraspit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>MHParalisisBlunt</damageDef>
+	  <damageAmountBase>10</damageAmountBase>
+    </projectile>
+</ThingDef>
+
+<ThingDef Class="MonsterHunterRimworld.ThingDef_PoisonBurst" ParentName="BaseBullet">
+    <defName>MH_Projectile_Poisonspit</defName>
+	<thingClass>MonsterHunterRimworld.Projectile_PoisonBurst</thingClass>
+    <label>poison spit</label>
+	<!-- Poison spit (pukei),poison explosion, toxic buildup on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Poisonspit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>MHPoisonBurst</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.1</explosionRadius>
+	  <preExplosionSpawnThingDef>Filth_MHPoison</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+    </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Mudspit</defName>
+    <label>mud spit</label>
+	<!-- Mud spit (barroth, jyura) low damage, apply waterblight hediff on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Mudspit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.1</explosionRadius>
+	  <preExplosionSpawnThingDef>Filth_MHMud</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+    </projectile>
+</ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>MH_Projectile_Bazelbomb</defName>
+    <label>explosive scale</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/MH_Bazelbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.7</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius >1.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+  
+   <ThingDef Class="MonsterHunterRimworld.ThingDef_LightningBullet" ParentName="BaseBullet">
+    <defName>MH_Projectile_Thunderspawn</defName>
+    <label>thunder</label>
+	 <!-- Kirin thunder projectile (spawn thunderstrike on impact point) -->
+    <graphicData>
+      <texPath>Things/Projectile/InvisibleProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+	<thingClass>MonsterHunterRimworld.Projectile_LightningBullet</thingClass>
+  </ThingDef>
+  
+  
+<ThingDef Class="MonsterHunterRimworld.ThingDef_TornadoSpawner" ParentName="BaseBullet">
+	<thingClass>MonsterHunterRimworld.Projectile_TornadoSpawner</thingClass>
+    <defName>MH_Projectile_Tornadospawn</defName>
+    <label>tornado blast</label>
+	 <!-- Kushala tornado projectile (spawn tornado on impact point), needs particle effect along path -->
+    <graphicData>
+      <texPath>Things/Projectile/InvisibleProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_Windblast</defName>
+    <label>wind blast</label>
+	 <!-- Wind blast projectile (paolumu/kushala) stun on impact, minimal damage, needs particle effect along path-->
+    <graphicData>
+      <texPath>Things/Projectile/InvisibleProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+</ThingDef>
+
+
+</Defs>

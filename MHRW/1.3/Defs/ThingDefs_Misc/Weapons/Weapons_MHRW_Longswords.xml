@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> LONGSWORDS <-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Longsword</defName>
+		<label>Longsword</label>
+		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHLongsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>260</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>vertical slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Longsword_Rathalos</defName>
+		<label>Wyvern Blade</label>
+		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down. \n\n This one was made with Rathalos materials. Deals fire damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LS/LSRathalos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>260</Steel>
+			<Leather_Rathalos>50</Leather_Rathalos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>vertical slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHFlameCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Longsword_Tobi</defName>
+		<label>Pulsar Shotel</label>
+		<description>The blade of this weapon is over 2 meters long. It can slash an unarmored person in half with ease. Due to its length handling this weapon is tricky and will slow the wearer down. \n\n This one was made with Tobi-Kadachi materials. Deals thunder damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LS/LSTobi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0.4)</eastOffset>
+				<westOffset>(-0.3,0,0.4)</westOffset>
+				<southOffset>(0.3,0,0.4)</southOffset>
+				<northOffset>(0.3,0,0.4)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>260</Steel>
+			<Leather_TobiKadachi>50</Leather_TobiKadachi>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>vertical slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+
+</Defs>
