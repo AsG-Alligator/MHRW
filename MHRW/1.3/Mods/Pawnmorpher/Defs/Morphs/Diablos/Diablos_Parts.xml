@@ -1,0 +1,263 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="DiablosPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>DiablosMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosSnout</defName>
+		<label>Diablos snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into a Diablos snout, with two big tusks on either side of the jaw.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.06</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosHorns</defName>
+		<description>A pair of gargantuan Diablos horns formed on [PAWN_nameDef]'s head.</description>
+		<label>Diablos horns</label>
+		<parts>
+			<li>Skull</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosCrest</defName>
+		<description>[PAWN_nameDef]'s skull has grown thick, and formed a large, dense crest towards the back, providing a ton of extra, natural protection to their head.</description>
+		<label>armored crest</label>
+		<parts>
+			<li>Torso</li>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+				</statOffsets>	
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosTail</defName>
+		<label>Diablos tail</label>
+		<description>A huge Diablos tail grows from the base of [PAWN_nameDef]'s spine. It's end is adorned with two massive spiky growths turning the appendage into a massive club.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosWing</defName>
+		<label>Diablos wing</label>
+		<description>A Diablos wing.</description>
+		<parts>
+			<li>Arm</li>
+		</parts>
+		<classInfluence>DiablosMorph</classInfluence>
+		<mutationTale>ArmBecomsWing</mutationTale>
+		<mutationMemory>EtherDiablosWingMemory</mutationMemory>
+		<categories>
+			<li>Major</li>
+		</categories>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>unfamiliar</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Diablos wing. A membrane spans between their body and fingers.</description>
+				<partEfficiencyOffset>-0.85</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Diablos wing. A membrane spans between their body and fingers.</description>
+				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Diablos wing. A membrane spans between their body and fingers. They have managed to adapt to this handicap.</description>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
+				<mutationDependency>
+					<hediff>EtherDiablosWingTip</hediff>
+					<mtbDays>3</mtbDays>
+					<chance>5</chance>
+					<partsToAffect>
+						<li>Hand</li>
+					</partsToAffect>
+					<countToAffect>2</countToAffect>
+					<memory>EtherDiablosWingTipMemory</memory>
+					<tale>HandsBecomeWingTips</tale>
+				</mutationDependency>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.20</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="DiablosPart">
+		<defName>EtherDiablosWingTip</defName>
+		<label>Diablos wingtalons</label>
+		<description>[PAWN_nameDef]'s fingers have elongated, with a membrane connecting them, creating a wing of a wyvern.</description>
+		<classInfluence>DiablosMorph</classInfluence>
+		<parts>
+			<li>Hand</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>-0.4</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef] has adapted to their new predicament.</description>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<!-- still not quite as good as hands-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart">
+		<defName>EtherDiablosPlates</defName>
+		<label>bone plates</label>
+		<description>[PAWN_nameDef]'s limb has grown thick bone armor around it giving them significant increase in protection, but making movement harder.</description>
+		<classInfluence>BarrothMorph</classInfluence>
+		<parts>
+			<li>Torso</li>
+			<li>Head</li>
+			<li>Ear</li>
+			<li>Arm</li>
+			<li>Hand</li>
+			<li>Leg</li>
+			<li>Foot</li>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<mutationLogRulePack>ScaleGrowthLogPack</mutationLogRulePack>
+		<categories>
+			<li>Minor</li>
+		</categories>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.33</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>rough skin</labelOverride>
+				<description>The skin on this limb has turned rough and noticably stiffer.</description>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>bone protrusions</labelOverride>
+				<description>There are multiple spots on the skin where hard boney protrusions have started emerging.</description>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>bone plates (loose)</labelOverride>
+				<description>Armor plates cover the limb, still leaving some gaps inbetween.</description>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.03</MoveSpeed>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>bone plates (interlocking)</labelOverride>
+				<description>Armor plates have started growing over each other, interlocking and overlapping. This makes movement noticably harder.</description>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.1</ComfyTemperatureMax>
+					<MoveSpeed>-0.04</MoveSpeed>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>bone plates</labelOverride>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.2</ComfyTemperatureMax>
+					<MoveSpeed>-0.05</MoveSpeed>
+					<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

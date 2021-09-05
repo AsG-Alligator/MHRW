@@ -523,15 +523,16 @@
   
   <!-- Monster Projectile damage-->
   
-  <DamageDef>
+  <DamageDef ParentName="Bomb">
     <defName>MHPoisonBurst</defName>
     <label>poison burst</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Blunt</impactSoundType>
-    <defaultDamage>5</defaultDamage>
+    <defaultDamage>3</defaultDamage>
     <defaultStoppingPower>0.1</defaultStoppingPower>
     <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
@@ -541,7 +542,95 @@
     <explosionColorEdge>(0.8, 0.77, 0.9)</explosionColorEdge>
     <soundExplosion>Explosion_PoisonBurst</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>ToxicBuildup</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
   </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHParaBurst</defName>
+    <label>paralisis burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(234, 255, 3)</explosionColorCenter>
+    <explosionColorEdge>(211, 250, 70)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>MHParalisis</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHIceBurst</defName>
+    <label>ice burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Frostbite</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(171, 246, 255)</explosionColorCenter>
+    <explosionColorEdge>(0, 229, 255)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>Frostbite</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHMudBurst</defName>
+    <label>mud burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(82, 64, 53)</explosionColorCenter>
+    <explosionColorEdge>(130, 124, 98)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>Waterblight</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
   
   <DamageDef>
     <defName>MHSilentExplosion</defName>

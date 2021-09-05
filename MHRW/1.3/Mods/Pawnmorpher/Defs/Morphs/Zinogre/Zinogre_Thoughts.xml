@@ -1,0 +1,98 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZinogreSnout</defName>
+        <stages>
+            <li>
+                <label>Zinogre face</label>
+                <description>Why is everything so pointy?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre face</label>
+                <description>Makes me wanna howl!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre face</label>
+                <description>Wolf-dragon face? What the hell am I turning into?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZinogreHorns</defName>
+        <stages>
+            <li>
+                <label>Zinogre horns</label>
+                <description>It is distracting to see them above all the time.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre horns</label>
+                <description>Fancy!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre horns</label>
+                <description>Horns?! Why?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZinogreTail</defName>
+        <stages>
+            <li>
+                <label>Zinogre tail</label>
+                <description>This thing is pretty damn heavy...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre tail</label>
+                <description>Whoa... This thing is awesome!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre tail</label>
+                <description>What kind of tail is this?! Get it off!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZinogreEar</defName>
+        <stages>
+            <li>
+                <label>Zinogre ears</label>
+                <description>These new ears look strange, but at least I can hear well enough.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre ears</label>
+                <description>Cool pointy ears. I love them!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zinogre ears</label>
+                <description>I can hear you laughing there. This is not funny!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

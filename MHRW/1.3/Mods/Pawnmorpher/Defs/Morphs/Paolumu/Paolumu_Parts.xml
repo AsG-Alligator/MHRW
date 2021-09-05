@@ -1,0 +1,172 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="PaolumuPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>PaolumuMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
+		<defName>EtherPaolumuSnout</defName>
+		<label>Paolumu snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into a pink Paolumu snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.06</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
+		<defName>EtherPaolumuHood</defName>
+		<description>[PAWN_nameDef]'s neck has formed an internal pouch with elastic skin on the outside, that is connected to their respiratory system.</description>
+		<label>Paolumu neck pouch</label>
+		<parts>
+			<li>Neck</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->	
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
+		<defName>EtherPaolumuTail</defName>
+		<label>Paolumu tail</label>
+		<description>A strong flat Paolumu tail. Very similar to a beaver's tail, if beavers had scales that is.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
+		<defName>EtherPaolumuWing</defName>
+		<label>Paolumu wing</label>
+		<description>A Paolumu wing.</description>
+		<parts>
+			<li>Arm</li>
+		</parts>
+		<classInfluence>PaolumuMorph</classInfluence>
+		<mutationTale>ArmBecomsWing</mutationTale>
+		<mutationMemory>EtherPaolumuWingMemory</mutationMemory>
+		<categories>
+			<li>Major</li>
+		</categories>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>unfamiliar</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Paolumu wing. A membrane spans between their body and fingers.</description>
+				<partEfficiencyOffset>-0.85</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Paolumu wing. A membrane spans between their body and fingers.</description>
+				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Paolumu wing. A membrane spans between their body and fingers. They have managed to adapt to this handicap.</description>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
+				<mutationDependency>
+					<hediff>EtherPaolumuWingTip</hediff>
+					<mtbDays>3</mtbDays>
+					<chance>5</chance>
+					<partsToAffect>
+						<li>Hand</li>
+					</partsToAffect>
+					<countToAffect>2</countToAffect>
+					<memory>EtherPaolumuWingTipMemory</memory>
+					<tale>HandsBecomeWingTips</tale>
+				</mutationDependency>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.20</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
+		<defName>EtherPaolumuWingTip</defName>
+		<label>Paolumu wingtalons</label>
+		<description>[PAWN_nameDef]'s fingers have elongated, with a membrane connecting them, creating a wing of a wyvern.</description>
+		<classInfluence>PaolumuMorph</classInfluence>
+		<parts>
+			<li>Hand</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>-0.4</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef] has adapted to their new predicament.</description>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<!-- still not quite as good as hands-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TeostraPart">
+		<defName>EtherPaolumuEar</defName>
+		<label>Paolumu ear</label>
+		<description>[PAWN_nameDef]'s ears have morphed into bat-like Paolumu ears. They're very slightly better at hearing than a human's ears.</description>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+		</stages>
+		<parts>
+			<li>Ear</li>
+		</parts>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+</Defs>

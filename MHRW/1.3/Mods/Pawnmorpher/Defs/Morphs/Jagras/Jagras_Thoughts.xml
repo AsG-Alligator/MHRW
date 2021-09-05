@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherJagrasSnout</defName>
+        <stages>
+            <li>
+                <label>Jagras face</label>
+                <description>It's so dry and rough... And whats with the pattern around the eyes?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Jagras face</label>
+                <description>Big mouth for big eatin'.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Jagras face</label>
+                <description>Ew! I have to eat with this gross, scaly thing!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherJagrasDreads</defName>
+        <stages>
+            <li>
+                <label>dreadlocks</label>
+                <description>Not really my style.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>dreadlocks</label>
+                <description>I was long overdue for new hairdo.</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>dreadlocks</label>
+                <description>This is... Suprisingly normal? Wait, whats that sticking out from the hair?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherJagrasTail</defName>
+        <stages>
+            <li>
+                <label>Jagras tail</label>
+                <description>This thing gets stuck in doors often, but at least it helps with my balance a bit.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Jagras tail</label>
+                <description>I can use this to whip people like a real iguana! Maybe it will help me swim too...</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Jagras tail</label>
+                <description>Do lizard tails regrow if I were to get this thing removed?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

@@ -1,0 +1,125 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="MizutsunePart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>MizutsuneMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
+		<defName>EtherMizutsuneSnout</defName>
+		<label>Mizutsune snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into an adorable Mizutsune snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.06</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
+		<defName>EtherMizutsuneFrills</defName>
+		<description>[PAWN_nameDef]'s head is now covered wih many colorful frills.</description>
+		<label>Mizutsune frills</label>
+		<parts>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
+		<defName>EtherMizutsuneTail</defName>
+		<label>Mizutsune tail</label>
+		<description>A Mizutsune tail, with thick purple fur covering its underside.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
+		<defName>EtherElongatedSpine</defName>
+		<label>elongated spine</label>
+		<description>A spine, much longer than normal human's.</description>
+		<parts>
+			<li>Lung</li>
+		</parts>
+		<maxSeverity>1</maxSeverity>
+		<categories>
+			<li>Major</li>
+		</categories>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<description>[PAWN_nameDef]'s is growing longer.</description>
+				<labelOverride>growing</labelOverride>
+				<minSeverity>0.04</minSeverity>
+				<painOffset>0.2</painOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<description>[PAWN_nameDef]'s spine has grown much longer than that of a normal human, making them significantly more slender.</description>
+				<minSeverity>0.8</minSeverity>
+			</li>
+		</stages>
+		<classInfluence>Powerful</classInfluence>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>1</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

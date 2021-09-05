@@ -1,0 +1,187 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="KulvePart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>KulveMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KulvePart">
+		<defName>EtherKulveSnout</defName>
+		<label>Kulve Taroth snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into a glorious gilded Kulve Taroth snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.02</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>+0.20</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KulvePart">
+		<defName>EtherKulveHorns</defName>
+		<description>[PAWN_nameDef]'s head is now crowned by a pair of gigantic opalizing horns, with streaks of gold decorating various crevaces.</description>
+		<label>Kulve Taroth horns</label>
+		<parts>
+			<li>Skull</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<SocialImpact>+0.20</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KulvePart">
+		<defName>EtherKulveTail</defName>
+		<label>Kulve Taroth tail</label>
+		<description>A Kulve Taroth tail, impressively decorated with gold and gems.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="RathalosPart">
+		<defName>EtherKulveCrest</defName>
+		<description>A massive solid-gold crest spans [PAWN_nameDef]'s back.</description>
+		<label>golden crest</label>
+		<parts>
+			<li>Torso</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart">
+		<defName>EtherGildedScales</defName>
+		<label>gilded scales</label>
+		<description>[PAWN_nameDef]'s skin is now covered with tightly knit pattern of scales, with streaks of gold decorating the gaps between the scales.</description>
+		<classInfluence>KulveMorph</classInfluence>
+		<parts>
+			<li>Torso</li>
+			<li>Head</li>
+			<li>Ear</li>
+			<li>Arm</li>
+			<li>Hand</li>
+			<li>Leg</li>
+			<li>Foot</li>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<mutationLogRulePack>ScaleGrowthLogPack</mutationLogRulePack>
+		<categories>
+			<li>Minor</li>
+		</categories>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.33</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>tight skin</labelOverride>
+				<description>The skin on this limb is somewhat thicker and rather tight.</description>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scattered scales</labelOverride>
+				<description>The skin is peppered with small scales that overlap and interlock. Some specks of gold appear in certain spots.</description>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scale patches</labelOverride>
+				<description>Small portions of this limb are covered with patches of gold and scales.</description>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<SocialImpact>+0.02</SocialImpact>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scale clusters</labelOverride>
+				<description>Large portions of this limb are covered with scales, with gold seeping in feom between the scales almost everywhere.</description>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.1</ComfyTemperatureMax>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<SocialImpact>+0.03</SocialImpact>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>gilded scales</labelOverride>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.2</ComfyTemperatureMax>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<SocialImpact>+0.05</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

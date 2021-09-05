@@ -1,0 +1,17 @@
+<Defs>
+	<ThingDef ParentName="InjectorBase">
+		<defName>ZinogreTransformer</defName>
+		<label>mutasyringe, Zinogre</label>
+		<description>A mutagenic injector filled with mechanites and Zinogre DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
+					<hediffDefs>
+						<li>PawnmorphZinogreTF</li>
+					</hediffDefs>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>	
+	</ThingDef>
+</Defs>

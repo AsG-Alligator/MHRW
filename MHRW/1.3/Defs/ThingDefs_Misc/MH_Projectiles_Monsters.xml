@@ -42,8 +42,9 @@
 </ThingDef>
   
 <ThingDef ParentName="BaseBullet">
-    <defName>MH_Projectile_Icespit</defName>
+    <defName>MH_Projectile_IceSpit</defName>
     <label>ice spit</label>
+	<thingClass>Projectile_Explosive</thingClass>
 	<!-- Legiana ice spit, frostbite damage -->
     <graphicData>
       <texPath>Things/Projectile/MH_Icespit</texPath>
@@ -53,14 +54,18 @@
     </graphicData>
     <projectile>
       <speed>40</speed>
-      <damageDef>Frostbite</damageDef>
-	  <damageAmountBase>10</damageAmountBase>
+      <damageDef>MHIceBurst</damageDef>
+      <!-- Use default damage from explosion def -->
+	  <damageAmountBase>3</damageAmountBase>
+      <explosionRadius>1.1</explosionRadius>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
     </projectile>
 </ThingDef>
 
 <ThingDef ParentName="BaseBullet">
-    <defName>MH_Projectile_Paraspit</defName>
+    <defName>MH_Projectile_ParaSpit</defName>
     <label>paralisis spit</label>
+	<thingClass>Projectile_Explosive</thingClass>
 	<!-- Paralisis spit (girros, gendrome),chance to apply paralisis hediff on hit -->
     <graphicData>
       <texPath>Things/Projectile/MH_Paraspit</texPath>
@@ -69,15 +74,36 @@
     </graphicData>
     <projectile>
       <speed>40</speed>
-      <damageDef>MHParalisisBlunt</damageDef>
-	  <damageAmountBase>10</damageAmountBase>
+      <damageDef>MHParaBurst</damageDef>
+      <!-- Use default damage from explosion def -->
+	  <damageAmountBase>3</damageAmountBase>
+      <explosionRadius>1.1</explosionRadius>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
     </projectile>
 </ThingDef>
 
-<ThingDef Class="MonsterHunterRimworld.ThingDef_PoisonBurst" ParentName="BaseBullet">
-    <defName>MH_Projectile_Poisonspit</defName>
-	<thingClass>MonsterHunterRimworld.Projectile_PoisonBurst</thingClass>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_IceSpitNonExplosive</defName>
+    <label>ice spit</label>
+	<thingClass>Projectile_Explosive</thingClass>
+	<!-- Paralisis spit (girros, gendrome),chance to apply paralisis hediff on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Paraspit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Frostbite</damageDef>
+	  <damageAmountBase>3</damageAmountBase>
+    </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_PoisonSpit</defName>
     <label>poison spit</label>
+	<thingClass>Projectile_Explosive</thingClass>
 	<!-- Poison spit (pukei),poison explosion, toxic buildup on hit -->
     <graphicData>
       <texPath>Things/Projectile/MH_Poisonspit</texPath>
@@ -88,14 +114,34 @@
       <speed>40</speed>
       <damageDef>MHPoisonBurst</damageDef>
       <!-- Use default damage from explosion def -->
+	  <damageAmountBase>3</damageAmountBase>
       <explosionRadius>1.1</explosionRadius>
 	  <preExplosionSpawnThingDef>Filth_MHPoison</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
     </projectile>
 </ThingDef>
 
+<ThingDef Class="MonsterHunterRimworld.ThingDef_Projectile_Motetrail" ParentName="BaseBullet">
+    <defName>MH_Projectile_WindBlast</defName>
+    <label>wind blast</label>
+	<thingClass>MonsterHunterRimworld.Projectile_Motetrail</thingClass>
+	<!-- Poison spit (pukei),poison explosion, toxic buildup on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/InvisibleProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Stun</damageDef>
+      <!-- Use default damage from explosion def -->
+	  <damageAmountBase>10</damageAmountBase>
+      <explosionRadius>2.1</explosionRadius>
+    </projectile>
+</ThingDef>
+
 <ThingDef ParentName="BaseBullet">
-    <defName>MH_Projectile_Mudspit</defName>
+    <defName>MH_Projectile_MudSpit</defName>
     <label>mud spit</label>
 	<!-- Mud spit (barroth, jyura) low damage, apply waterblight hediff on hit -->
     <graphicData>
@@ -106,7 +152,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>40</speed>
-      <damageDef>Flame</damageDef>
+      <damageDef>MHMudBurst</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.1</explosionRadius>
 	  <preExplosionSpawnThingDef>Filth_MHMud</preExplosionSpawnThingDef>
@@ -163,21 +209,6 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
-  
-<ThingDef ParentName="BaseBullet">
-    <defName>MH_Projectile_Windblast</defName>
-    <label>wind blast</label>
-	 <!-- Wind blast projectile (paolumu/kushala) stun on impact, minimal damage, needs particle effect along path-->
-    <graphicData>
-      <texPath>Things/Projectile/InvisibleProjectile</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>6</damageAmountBase>
-      <speed>55</speed>
-    </projectile>
-</ThingDef>
 
 
 </Defs>

@@ -45,7 +45,7 @@
   
 
   
-    <HediffDef ParentName="DiseaseBase">
+  <HediffDef ParentName="DiseaseBase">
     <defName>MHParalisis</defName>
     <label>paralisis</label>
     <labelNoun>paralisis</labelNoun>
@@ -72,6 +72,8 @@
       </li>
     </stages>
   </HediffDef>
+  
+  
   
   <HediffDef ParentName="DiseaseBase">
     <defName>Waterblight</defName>

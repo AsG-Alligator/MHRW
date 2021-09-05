@@ -1,0 +1,158 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="TigrexPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>TigrexMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TigrexPart">
+		<defName>EtherTigrexSnout</defName>
+		<label>Tigrex snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into an intimidating Tigrex snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TigrexPart">
+		<defName>EtherTigrexTail</defName>
+		<label>Tigrex tail</label>
+		<description>A strong, thick Tigrex tail has grown from the base of [PAWN_nameDef]'s spine.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TigrexPart">
+		<defName>EtherTigrexWing</defName>
+		<label>Tigrex wing</label>
+		<description>A Tigrex wing.</description>
+		<parts>
+			<li>Arm</li>
+		</parts>
+		<classInfluence>TigrexMorph</classInfluence>
+		<mutationTale>ArmBecomsWing</mutationTale>
+		<mutationMemory>EtherTigrexWingMemory</mutationMemory>
+		<categories>
+			<li>Major</li>
+		</categories>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>unfamiliar</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Tigrex wing. A membrane spans between their body and fingers. Their arm muscles have gotten considerably larger too.</description>
+				<partEfficiencyOffset>-0.75</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Tigrex wing. A membrane spans between their body and fingers. Their arm muscles have gotten considerably larger too.</description>
+				<partEfficiencyOffset>-0.6</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Tigrex wing. A membrane spans between their body and fingers. They have managed to adapt to this handicap.</description>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
+				<mutationDependency>
+					<hediff>EtherTigrexWingTip</hediff>
+					<mtbDays>3</mtbDays>
+					<chance>5</chance>
+					<partsToAffect>
+						<li>Hand</li>
+					</partsToAffect>
+					<countToAffect>2</countToAffect>
+					<memory>EtherTigrexWingTipMemory</memory>
+					<tale>HandsBecomeWingTips</tale>
+				</mutationDependency>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.20</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TigrexPart">
+		<defName>EtherTigrexWingTip</defName>
+		<label>wingpaw</label>
+		<description>[PAWN_nameDef]'s hand has reformed into a strange paw at the end of the wing. Their pinky finger has elongated serving as the tip of the wing, and the rest are left free for support or limited manipulation.</description>
+		<classInfluence>TigrexMorph</classInfluence>
+		<parts>
+			<li>Hand</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef] has adapted to their new predicament.</description>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<!-- still not quite as good as hands-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="TigrexPart">
+		<defName>EtherTigrexEar</defName>
+		<label>Tigrex ear</label>
+		<description>A stiff Tigrex ear, providing slightly improved hearing and an intimidating look.</description>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+		</stages>
+		<parts>
+			<li>Ear</li>
+		</parts>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

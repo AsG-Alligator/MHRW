@@ -261,6 +261,23 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_ParaSpit</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHSpit</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.15</baseHungerRate>
@@ -631,6 +648,23 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_IceSpitNonExplosive</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHSpit</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.3</baseHungerRate>
@@ -1009,7 +1043,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>MH_Projectile_Poisonspit</defaultProjectile>
+        <defaultProjectile>MH_Projectile_PoisonSpit</defaultProjectile>
         <warmupTime>7</warmupTime>
         <range>23.9</range>
         <forcedMissRadius>2</forcedMissRadius>
@@ -1198,6 +1232,23 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHSpit</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>0.6</baseHungerRate>

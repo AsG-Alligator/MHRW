@@ -1,0 +1,17 @@
+<Defs>
+	<ThingDef ParentName="InjectorBase">
+		<defName>AptonothTransformer</defName>
+		<label>mutasyringe, Aptonoth</label>
+		<description>A mutagenic injector filled with mechanites and Aptonoth DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
+					<hediffDefs>
+						<li>PawnmorphAptonothTF</li>
+					</hediffDefs>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>	
+	</ThingDef>
+</Defs>

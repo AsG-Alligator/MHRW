@@ -66,5 +66,12 @@ namespace MonsterHunterRimworld
         #region "Motes"
         public static ThingDef MH_SmokeFast;
         #endregion
+
+        #region "Leathers"
+        public static ThingDef Leather_Rathalos;
+        public static ThingDef Leather_Rathian;
+        public static ThingDef Leather_Teostra;
+        public static ThingDef Leather_Lunastra;
+        #endregion
     }
 }

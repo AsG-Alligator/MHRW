@@ -1,0 +1,130 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="LunastraPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>LunastraMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraSnout</defName>
+		<label>Lunastra snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into a Lunastra snout, giving them a majestic, menacing look.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>17</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraHorns</defName>
+		<description>A pair of large, wide horns protrude from [PAWN_nameDef]'s head.</description>
+		<label>Lunastra horns</label>
+		<parts>
+			<li>Skull</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraWings</defName>
+		<description>A pair of large wings have grown on [PAWN_nameDef]'s back. They are covered by fine, thick fuzz on the top side.</description>
+		<label>Lunastra wings</label>
+		<parts>
+			<li>Torso</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraTail</defName>
+		<label>Lunastra tail</label>
+		<description>A strong, armored tail extends from the base of [PAWN_nameDef]'s spine.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraMane</defName>
+		<description>A huge, majestic mane decorates [PAWN_nameDef]'s head.</description>
+		<label>Lunastra mane</label>
+		<parts>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<ComfyTemperatureMin>5</ComfyTemperatureMin>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="LunastraPart">
+		<defName>EtherLunastraEar</defName>
+		<label>Lunastra ear</label>
+		<description>[PAWN_nameDef]'s ears have morphed into pointy Lunastra ears, with thick sideburns to complete the look. They're very slightly better at hearing than a human's ears.</description>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+		</stages>
+		<parts>
+			<li>Ear</li>
+		</parts>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

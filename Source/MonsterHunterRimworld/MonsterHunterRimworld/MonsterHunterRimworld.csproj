@@ -59,10 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MHGenderedLeatherOverride.cs" />
     <Compile Include="CompProperties_VaalHazak.cs" />
     <Compile Include="CompProperties_Velkhana.cs" />
     <Compile Include="CompVaalHazak.cs" />
     <Compile Include="CompVelkhana.cs" />
+    <Compile Include="Projectile_Motetrail.cs" />
     <Compile Include="Projectile_PoisonBurst.cs" />
     <Compile Include="CompKirin.cs" />
     <Compile Include="CompDodogama.cs" />

@@ -7,7 +7,8 @@
     <ThingDef ParentName="AnimalThingBase">
     <defName>Rath</defName>
     <label>Rath</label>
-    <description>A large fire-breathing flying wyvern and poison talons.</description>
+    <description>King (and queen) of the skies. A large fire-breathing wyvern with poison talons.</description>
+	<thingClass>MonsterHunterRimworld.MHGenderedLeatherOverride</thingClass>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>10900</MarketValue>
@@ -525,6 +526,23 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_IceSpit</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHSpit</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>
@@ -1098,6 +1116,23 @@
         <chanceFactor>0.5</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_WindBlast</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHFireball</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHWyvern</body>
       <baseHungerRate>1.0</baseHungerRate>

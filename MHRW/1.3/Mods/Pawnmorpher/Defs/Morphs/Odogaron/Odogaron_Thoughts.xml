@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherOdogaronSnout</defName>
+        <stages>
+            <li>
+                <label>Odogaron face</label>
+                <description>I look like a really screwed up dog.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Odogaron face</label>
+                <description>These teeth are made for killin',</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Odogaron face</label>
+                <description>What the hell? I look hideous!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherOdogaronTail</defName>
+        <stages>
+            <li>
+                <label>Odogaron tail</label>
+                <description>Why do I have a tail, and why is it so ugly?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Odogaron tail</label>
+                <description>I feel like wagging it sometimes, but I probably shouldnt given its size.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Odogaron tail</label>
+                <description>This thing is hideous!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherOdogaronSkin</defName>
+        <stages>
+            <li>
+                <label>warped hide</label>
+                <description>I think I need a really good skin lotion....</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>warped hide</label>
+                <description>Okay, I admit the aesthetics of this could have been better.</description>
+                <visible>true</visible>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+            <li>
+                <label>warped hide</label>
+                <description>What the hell happened to my skin?! It looks like its melting!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

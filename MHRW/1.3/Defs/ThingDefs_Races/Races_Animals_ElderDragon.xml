@@ -81,6 +81,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
+				<label>cast tornado</label>
 				<defaultProjectile>MH_Projectile_Tornadospawn</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<range>23.9</range>
@@ -91,6 +92,21 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<defaultCooldownTime>5</defaultCooldownTime>
+			</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MH_Projectile_WindBlast</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>23.9</range>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Shot_MHFireball</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<defaultCooldownTime>5</defaultCooldownTime>
+				<commonality>0.5</commonality>
 			</li>
 		</verbs>
 		<race>
@@ -201,6 +217,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Tesuka</defName>
 		<label>Tesuka</label>
+		<thingClass>MonsterHunterRimworld.MHGenderedLeatherOverride</thingClass>
 		<description>Brutal elder dragons wreathed in flames that spit blazing fire. Their appearance varies depending on gender. Male Teostra being red and female Lunastra being blue. Tesuka are of such a fierce and deadly nature that the guild closely monitors their movements. Brings immense heat with its presence.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
@@ -1194,6 +1211,23 @@
 				<chanceFactor>0.7</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MH_Projectile_IceSpit</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>Shot_MHSpit</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<defaultCooldownTime>5</defaultCooldownTime>
+		<commonality>0.5</commonality>
+      </li>
+    </verbs>
 		<race>
 			<body>MHElder</body>
 			<baseHungerRate>1.2</baseHungerRate>

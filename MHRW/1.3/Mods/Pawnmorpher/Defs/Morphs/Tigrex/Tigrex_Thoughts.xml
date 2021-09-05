@@ -1,0 +1,122 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTigrexSnout</defName>
+        <stages>
+            <li>
+                <label>Tigrex face</label>
+                <description>These jaws are terrifyingly strong... Also is it just me or did my voice get deeper?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex face</label>
+                <description>Must... refrain... from... roaring...</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex face</label>
+                <description>AAARRGGHH!!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTigrexEar</defName>
+        <stages>
+            <li>
+                <label>Tigrex ears</label>
+                <description>These get in the way of putting on headgear...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex ears</label>
+                <description>I can hear everything!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex ears</label>
+                <description>Get these off of me!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTigrexTail</defName>
+        <stages>
+            <li>
+                <label>Tigrex tail</label>
+                <description>This thing scares me... I'm 90% sure I could break a tree if I swung this at one...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex tail</label>
+                <description>Strong, powerful tail, awesome!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex tail</label>
+                <description>Once I find whoever did this to me I'm gonna see how much damage this can do to a human.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTigrexWingMemory</defName>
+        <stages>
+            <li>
+                <label>Tigrex wings</label>
+                <description>How am I supposed to do anything with massive wings?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex wings</label>
+                <description>Dragon wings! Wait, these are my arms so technically... wyvern wings I guess? ... Wings!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex wings</label>
+                <description>No! My arms!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTigrexWingTipMemory</defName>
+        <stages>
+            <li>
+                <label>Tigrex wingpaws</label>
+                <description>I guess it could have been worse. I can at least still grab things.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex wingpaws</label>
+                <description>Adorable dragon wing-paws.</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tigrex wingpaws</label>
+                <description>What happened to my hands?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

@@ -1,0 +1,17 @@
+<Defs>
+	<ThingDef ParentName="InjectorBase">
+		<defName>RathianTransformer</defName>
+		<label>mutasyringe, Rathian</label>
+		<description>A mutagenic injector filled with mechanites and Rathian DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
+					<hediffDefs>
+						<li>PawnmorphRathianTF</li>
+					</hediffDefs>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>	
+	</ThingDef>
+</Defs>

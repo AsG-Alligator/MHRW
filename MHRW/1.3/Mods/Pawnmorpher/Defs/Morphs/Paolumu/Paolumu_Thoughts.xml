@@ -1,0 +1,122 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPaolumuSnout</defName>
+        <stages>
+            <li>
+                <label>Paolumu face</label>
+                <description>I look like a weird pink bat.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu face</label>
+                <description>Haha! I look so cute now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu face</label>
+                <description>I look so goddamn stupid.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPaolumuTail</defName>
+        <stages>
+            <li>
+                <label>Paolumu tail</label>
+                <description>A beaver tail? A really weird beaver tail.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu tail</label>
+                <description>I enjoy slamming the ground with this thing too much.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu tail</label>
+                <description>What the hell is this stupid thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPaolumuHood</defName>
+        <stages>
+            <li>
+                <label>Paolumu pouch</label>
+                <description>I've accidentally had this thing inflate on me mid conversation. Embarassing.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu pouch</label>
+                <description>I can make myself my own pillow!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu feathers</label>
+                <description>Wait what is... Argh! My neck! Cant... move...!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPaolumuWingMemory</defName>
+        <stages>
+            <li>
+                <label>Paolumu wings</label>
+                <description>How am I supposed to do anything with massive wings?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu wings</label>
+                <description>Dragon wings! Wait, these are my arms so technically... wyvern wings I guess? ... Wings!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu wings</label>
+                <description>No! My arms!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPaolumuWingTipMemory</defName>
+        <stages>
+            <li>
+                <label>Paolumu wingtalons</label>
+                <description>This is too weird, I dont like this one bit.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu wingtalons</label>
+                <description>This will make doing literally anything a bit hard, but who cares!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Paolumu wingtalons</label>
+                <description>I look like a freaky man-bat or something, please make this stop.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

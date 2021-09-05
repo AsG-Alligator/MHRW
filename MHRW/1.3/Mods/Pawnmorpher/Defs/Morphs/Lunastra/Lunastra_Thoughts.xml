@@ -1,0 +1,122 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherLunastraSnout</defName>
+        <stages>
+            <li>
+                <label>Lunastra snout</label>
+                <description>I can't talk properly with thefe.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra snout</label>
+                <description>*Growl*</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra snout</label>
+                <description>Thefe massive fangf make me look so ffftupid.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherLunastraHorns</defName>
+        <stages>
+            <li>
+                <label>Lunastra horns</label>
+                <description>I can barely fit through doorways with these.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra horns</label>
+                <description>These are gorgeous!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra horns</label>
+                <description>Goddamnit, why horns?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherLunastraTail</defName>
+        <stages>
+            <li>
+                <label>Lunastra tail</label>
+                <description>I keep knocking chairs over with it. Also speaking of chairs I have to sit sideways on them.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra tail</label>
+                <description>It's like a lion tail on steroids! I love the tuft of fur at the end!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra tail</label>
+                <description>Gah! Stupid tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherLunastraWings</defName>
+        <stages>
+            <li>
+                <label>Lunastra wings</label>
+                <description>What's all that weight back there?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra wings</label>
+                <description>The fuzz on these is so soft....</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra wings</label>
+                <description>Great, more stuff to get caught on stuff with...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherLunastraMane</defName>
+        <stages>
+            <li>
+                <label>Lunastra mane</label>
+                <description>This... is a lot of hair. It's weirdly dusty too...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra mane</label>
+                <description>It's so soft and warm.</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Lunastra mane</label>
+                <description>I need to cut my hair again... Wait, why do I smell gunpoweder?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

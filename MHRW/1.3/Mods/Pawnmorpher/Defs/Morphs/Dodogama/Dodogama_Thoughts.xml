@@ -1,0 +1,50 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDodogamaSnout</defName>
+        <stages>
+            <li>
+                <label>Dodogama face</label>
+                <description>Great, now I got a massive underbite...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Dodogama face</label>
+                <description>Adorable!</description>
+                <visible>true</visible>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>Dodogama face</label>
+                <description>I have a goddamn bucket excavator for a face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDodogamaTail</defName>
+        <stages>
+            <li>
+                <label>Dodogama tail</label>
+                <description>Why do I have a tail?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Dodogama tail</label>
+                <description>Nice and simple tail. I love this silly thing.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Dodogama tail</label>
+                <description>Why do I have a tail?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

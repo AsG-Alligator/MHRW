@@ -1,0 +1,17 @@
+<Defs>
+	<ThingDef ParentName="InjectorBase">
+		<defName>PaolumuTransformer</defName>
+		<label>mutasyringe, Paolumu</label>
+		<description>A mutagenic injector filled with mechanites and Paolumu DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
+					<hediffDefs>
+						<li>PawnmorphPaolumuTF</li>
+					</hediffDefs>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>	
+	</ThingDef>
+</Defs>

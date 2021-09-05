@@ -29,7 +29,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>MH_Projectile_Poisonspit</defaultProjectile>
+				<defaultProjectile>MH_Projectile_WindBlast</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<range>23.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>

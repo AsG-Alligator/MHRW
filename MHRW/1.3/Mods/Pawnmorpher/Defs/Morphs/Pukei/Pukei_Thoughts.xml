@@ -1,0 +1,146 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiSnout</defName>
+        <stages>
+            <li>
+                <label>Pukei face</label>
+                <description>It makes it a bit hard to see.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei face</label>
+                <description>Haha! I look so funny now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei face</label>
+                <description>I look so goddamn stupid.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiTongue</defName>
+        <stages>
+            <li>
+                <label>Pukei tongue</label>
+                <description>I can hardly breathe with this in my throat.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei tongue</label>
+                <description>Sticky tongue! Like a chameleon!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei tongue</label>
+                <description>Ghk.. What the fuck?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiTail</defName>
+        <stages>
+            <li>
+                <label>Pukei tail</label>
+                <description>Why do I have a party blower attached to my bum?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei tail</label>
+                <description>I love this thing!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei tail</label>
+                <description>What the hell is this stupid thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiHood</defName>
+        <stages>
+            <li>
+                <label>Pukei feathers</label>
+                <description>Whats with all the feathers?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei feathers</label>
+                <description>Fancy feathers!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei feathers</label>
+                <description>Goddamn stupid feathers...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiWingMemory</defName>
+        <stages>
+            <li>
+                <label>Pukei wings</label>
+                <description>How am I supposed to do anything with massive wings?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei wings</label>
+                <description>Dragon wings! Wait, these are my arms so technically... wyvern wings I guess? ... Wings!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei wings</label>
+                <description>No! My arms!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherPukeiWingTipMemory</defName>
+        <stages>
+            <li>
+                <label>Pukei wingtalons</label>
+                <description>This is too weird, I dont like this one bit.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei wingtalons</label>
+                <description>This will make doing literally anything a bit hard, but who cares!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Pukei wingtalons</label>
+                <description>I look like a freaky man-bat or something, please make this stop.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

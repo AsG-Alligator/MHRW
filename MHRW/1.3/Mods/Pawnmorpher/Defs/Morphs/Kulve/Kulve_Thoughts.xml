@@ -1,0 +1,122 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKulveSnout</defName>
+        <stages>
+            <li>
+                <label>Kulve Taroth face</label>
+                <description>Light keeps glinting off of the gold right in my eyes...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve Taroth face</label>
+                <description>So pretty!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve Taroth face</label>
+                <description>My face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKulveHorns</defName>
+        <stages>
+            <li>
+                <label>Kulve Taroth horns</label>
+                <description>These are absolutely massive... I barely fit in doorways.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve Taroth horns</label>
+                <description>It's like a massive, glorious crown!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve Taroth horns</label>
+                <description>These things couldnt be any bigger, could they?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKulveCrest</defName>
+        <stages>
+            <li>
+                <label>golden crest</label>
+                <description>All that weight back there makes it really hard to move... I dont care if it's all gold...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>golden crest</label>
+                <description>All I need is a golden mantle now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>golden crest</label>
+                <description>I'm not gonna turn into a golden statue right? Right?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKulveTail</defName>
+        <stages>
+            <li>
+                <label>Kulve tail</label>
+                <description>This thing is pretty damn heavy...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve tail</label>
+                <description>Shiny gold tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kulve tail</label>
+                <description>What kind of tail is this?! Get it off!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherGildedScales</defName>
+        <stages>
+            <li>
+                <label>gilded scales</label>
+                <description>There's gold everywhere! It's so uncomfortable!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>gilded scales</label>
+                <description>I looove goooooold!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>gilded scales</label>
+                <description>Its so itchyyyyyyy....</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

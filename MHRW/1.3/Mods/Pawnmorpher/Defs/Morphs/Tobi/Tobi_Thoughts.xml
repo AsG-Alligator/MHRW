@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTobiSnout</defName>
+        <stages>
+            <li>
+                <label>Tobi-Kadachi face</label>
+                <description>Weird sssnake face...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi face</label>
+                <description>I look kinda adorable!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi face</label>
+                <description>Whet the hell happened to my face?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTobiTail</defName>
+        <stages>
+            <li>
+                <label>Tobi-Kadachi tail</label>
+                <description>This thing is massive... Getting stuck everywhere.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi tail</label>
+                <description>This is so cool!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi tail</label>
+                <description>How the hell am I supposed to sit with this thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherTobiFlap</defName>
+        <stages>
+            <li>
+                <label>Tobi-Kadachi membrane</label>
+                <description>Wearing clothes with this is real strange.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi membrane</label>
+                <description>It's like a built-in wingsuit!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Tobi-Kadachi membrane</label>
+                <description>What the hell is this?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
