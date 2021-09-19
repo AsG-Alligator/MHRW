@@ -1,0 +1,94 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="KestodonPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>KestodonMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KestodonPart">
+		<defName>EtherKestodonSnout</defName>
+		<label>Kestodon snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into an armored beak-like Kestodon snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.06</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KestodonPart">
+		<defName>EtherKestodonCrest</defName>
+		<description>[PAWN_nameDef]'s skull has reshaped itself to form a thick, armored Kestodon crest on the top of their head.</description>
+		<label>armored crest</label>
+		<parts>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="KestodonPart">
+		<defName>EtherKestodonTail</defName>
+		<label>Kestodon tail</label>
+		<description>An armored Kestodon tail.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+</Defs>

@@ -68,6 +68,7 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Zinogre;
             yield return MHRWDefOf.Mizutsune;
             yield return MHRWDefOf.Glavenus;
+            yield return MHRWDefOf.Zamtrios;
             yield break;
         }
 

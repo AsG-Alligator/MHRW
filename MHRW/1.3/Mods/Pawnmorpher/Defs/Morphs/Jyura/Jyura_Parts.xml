@@ -1,0 +1,143 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="JyuraPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>JyuraMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraSnout</defName>
+		<label>Jyura snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into a fishy Jyura snout.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.06</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraCrest</defName>
+		<description>A pair of small fins grew out on either side [PAWN_nameDef]'s head, with a third, larger one forming on the top of their head.</description>
+		<label>head fins</label>
+		<parts>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->	
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraFins</defName>
+		<description>Two pairs of large finned appendages emerge from [PAWN_nameDef]'s back.</description>
+		<label>back fins</label>
+		<parts>
+			<li>Torso</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->	
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraTail</defName>
+		<label>Jyura tail</label>
+		<description>A large fish-like tail has grown from [PAWN_nameDef]'s backside.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<!--Needs Stats-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraFinHand</defName>
+		<label>fin-hand</label>
+		<description>[PAWN_nameDef]'s hands look like large fish fins now. Naturally this makes it pretty hard to manipulate stuff.</description>
+		<classInfluence>JyuraMorph</classInfluence>
+		<parts>
+			<li>Hand</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>-0.4</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef] has managed to adapt to their new appendages, though it will still hinder their manipilation somewhat.</description>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<!-- still not quite as good as hands-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>	
+	<Pawnmorph.Hediffs.MutationDef ParentName="JyuraPart">
+		<defName>EtherJyuraFinFoot</defName>
+		<label>foot-fin</label>
+		<description>[PAWN_nameDef]'s feet have reshaped into a strange combination of a reptile foot, and a fish fin.</description>
+		<classInfluence>JyuraMorph</classInfluence>
+		<parts>
+			<li>Foot</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>-0.4</partEfficiencyOffset>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>adapted</label>
+				<description>[PAWN_nameDef] has managed to adapt to their new appendage.</description>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<!-- still not quite as good as hands-->
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>	
+</Defs>

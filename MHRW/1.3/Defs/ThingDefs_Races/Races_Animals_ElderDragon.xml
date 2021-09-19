@@ -774,7 +774,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase" Abstract="True">
 		<defName>KulveTaroth</defName>
 		<label>Kulve Taroth</label>
 		<description>Kulve Taroth is a very large lizard-like dragon covered in a beautiful golden mantle. This mantle covers her entire body, with large blocky scales on her back and a long trailing section down the length of her massive tail. Kulve Taroth's main feature is her massive spiraling horns. These horns resemble lapis lazuli when the gold plating is removed. Without the mantle, Kulve Taroth's scales are gold and black with emerald-like patches.</description>
@@ -898,7 +898,7 @@
 		</race>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase" Abstract="True">
 		<defName>KulveTaroth</defName>
 		<label>Kulve Taroth</label>
 		<race>KulveTaroth</race>
@@ -952,14 +952,15 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>KulveTarothNaked</defName>
 		<label>Kulve Taroth</label>
-		<description>Kulve Taroth is a very large lizard-like dragon covered in a beautiful golden mantle. This mantle covers her entire body, with large blocky scales on her back and a long trailing section down the length of her massive tail. Kulve Taroth's main feature is her massive spiraling horns. These horns resemble lapis lazuli when the gold plating is removed. Without the mantle, Kulve Taroth's scales are gold and black with emerald-like patches. This one has dropped its mantle already.</description>
+		<description>Kulve Taroth is a very large lizard-like dragon covered in a beautiful golden mantle. This mantle covers her entire body, with large blocky scales on her back and a long trailing section down the length of her massive tail. Kulve Taroth's main feature is her massive spiraling horns. These horns resemble lapis lazuli when the gold plating is removed. Without the mantle, Kulve Taroth's scales are gold and black with emerald-like patches.</description>
 		<statBases>
 			<MoveSpeed>8</MoveSpeed>
 			<MarketValue>100000</MarketValue>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<ComfyTemperatureMax>280</ComfyTemperatureMax>
 			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<Flammability>0</Flammability>
 		</statBases>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -979,6 +980,17 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_FixedGender">
 				<gender>Female</gender>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_KulveMantle">
+				<graphicData>
+				<texPath>Things/Pawn/Animal/KulveTaroth/KulveTarothMantle</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>18</drawSize>
+				<drawOffsetNorth>(0, 0.01, 0)</drawOffsetNorth>
+				<drawOffsetSouth>(0, 0.01, 0)</drawOffsetSouth>
+				<drawOffsetEast>(0, 0.01, 0)</drawOffsetEast>
+				<drawOffsetWest>(0, 0.01, 0)</drawOffsetWest>
+				</graphicData>
 			</li>
 		</comps>
 		<tools>

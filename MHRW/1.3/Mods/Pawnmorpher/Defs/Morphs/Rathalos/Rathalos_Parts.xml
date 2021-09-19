@@ -98,6 +98,21 @@
 				<!--Needs Stats-->
 			</li>
 		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>MHPoisonCut</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
+						<chanceFactor>0.4</chanceFactor>
+					</li>
+				</tools>
+			</li>
+		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="RathalosPart">
 		<defName>EtherRathalosWing</defName>

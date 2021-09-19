@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZamtriosSnout</defName>
+        <stages>
+            <li>
+                <label>Zamtrios face</label>
+                <description>These teeth are scary...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zamtrios face</label>
+                <description>Shark face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zamtrios face</label>
+                <description>My face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZamtriosCrest</defName>
+        <stages>
+            <li>
+                <label>dorsal fin</label>
+                <description>Great, now I have to cut a hole in the back of my shirts.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>dorsal fin</label>
+                <description>Fins? Fun!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>dorsal fin</label>
+                <description>I dont want to turn into a stupid fish!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherZamtriosTail</defName>
+        <stages>
+            <li>
+                <label>Zamtrios tail</label>
+                <description>Not quite what I would expect for a shark...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zamtrios tail</label>
+                <description>Strange, but still cool!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Zamtrios tail</label>
+                <description>What kind of tail is this?! Get it off!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

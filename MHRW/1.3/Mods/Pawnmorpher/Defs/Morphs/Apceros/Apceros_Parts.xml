@@ -1,0 +1,123 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="ApcerosPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>ApcerosMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="ApcerosPart">
+		<defName>EtherApcerosSnout</defName>
+		<label>Apceros snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into an Apceros snout, perfect for eating plants.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.40</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="ApcerosPart">
+		<defName>EtherApcerosCrest</defName>
+		<description>[PAWN_nameDef]'s skull has reformed to include a flat, thick crest on the top of their head.</description>
+		<label>Apceros crest</label>
+		<parts>
+			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="ApcerosPart">
+		<defName>EtherApcerosShell</defName>
+		<description>A thick shell covers the back of [PAWN_nameDef]'s torso. The extra weight makes movement slower, but significantly boosts protection.</description>
+		<label>Apceros shell</label>
+		<parts>
+			<li>Torso</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+					<MoveSpeed>-0.8</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="ApcerosPart">
+		<defName>EtherApcerosTail</defName>
+		<label>Apceros tail</label>
+		<description>A strong tail equipped with multiple sharp spikes, covered in thick scutes for extra protection.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Tail</linkedBodyPartsGroup>
+						<chanceFactor>0.4</chanceFactor>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>

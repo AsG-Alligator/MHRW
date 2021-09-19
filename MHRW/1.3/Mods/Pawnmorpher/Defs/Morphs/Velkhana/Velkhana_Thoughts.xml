@@ -11,7 +11,7 @@
             </li>
             <li>
                 <label>Velkhana snout</label>
-                <description></description>
+                <description>Stone-cold look!</description>
                 <visible>true</visible>
                 <baseMoodEffect>3</baseMoodEffect>
             </li>
@@ -29,7 +29,7 @@
         <stages>
             <li>
                 <label>Velkhana horns</label>
-                <description>Goodbye hats!</description>
+                <description>Goodbye hats.</description>
                 <visible>true</visible>
                 <baseMoodEffect>-1</baseMoodEffect>
             </li>

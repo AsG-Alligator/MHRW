@@ -177,6 +177,22 @@
     </projectile>
   </ThingDef>
   
+  <ThingDef ParentName="BaseBullet">
+    <defName>MH_Projectile_MizuBubble</defName>
+    <label>bubble</label>
+	<!-- Paralisis spit (girros, gendrome),chance to apply paralisis hediff on hit -->
+    <graphicData>
+      <texPath>Things/Projectile/MH_Bubble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>20</speed>
+      <damageDef>Stun</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+    </projectile>
+</ThingDef>
+  
    <ThingDef Class="MonsterHunterRimworld.ThingDef_LightningBullet" ParentName="BaseBullet">
     <defName>MH_Projectile_Thunderspawn</defName>
     <label>thunder</label>
@@ -210,5 +226,20 @@
     </projectile>
   </ThingDef>
 
+  <ThingDef Class="MonsterHunterRimworld.ThingDef_FlashProjectile" ParentName="BaseBullet">
+    <defName>TzitziFlash</defName>
+    <label>flash</label>
+    <thingClass>MonsterHunterRimworld.FlashProjectile</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.1</drawSize>
+    </graphicData>
+    <projectile>
+	  <damageDef>Stun</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <speed>20</speed>
+    </projectile>
+  </ThingDef>
 
 </Defs>

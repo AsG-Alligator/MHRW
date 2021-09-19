@@ -596,12 +596,6 @@
     <explosionColorEdge>(0, 229, 255)</explosionColorEdge>
     <soundExplosion>Explosion_PoisonBurst</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
-	<additionalHediffs>
-		<li>
-			<hediff>Frostbite</hediff>
-			<severityPerDamageDealt>0.08</severityPerDamageDealt>
-		</li>
-	</additionalHediffs>
   </DamageDef>
   
   <DamageDef ParentName="Bomb">
@@ -650,6 +644,36 @@
     <explosionColorEdge>(0.1, 0.1, 0.1)</explosionColorEdge>
     <soundExplosion>Explosion_Silent</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MHFlashStun</defName>
+    <label>flash</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+	<harmsHealth>false</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>0</minDamageToFragment>
+    <defaultDamage>0</defaultDamage>
+    <defaultStoppingPower>0</defaultStoppingPower>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+    <plantDamageFactor>0</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(0.6, 0.6, 0.6)</explosionColorCenter>
+    <explosionColorEdge>(0.7, 0.7, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <combatLogRules>Damage_Stun</combatLogRules>
   </DamageDef>
   
 <!--

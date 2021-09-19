@@ -101,4 +101,34 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+		<durationDays>1</durationDays>
+		<defName>EtherWyvernEye</defName>
+		<stages>
+			<li>
+				<label>wyvern eyes</label>
+				<description>These are unsettling to see in the mirror.</description>
+				<visible>true</visible>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>Holy crap, I can see everything at night.</description>
+				<visible>true</visible>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>What the hell are these eyes?</description>
+				<visible>true</visible>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>Improved eyesight is always welcome.</description>
+				<visible>true</visible>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

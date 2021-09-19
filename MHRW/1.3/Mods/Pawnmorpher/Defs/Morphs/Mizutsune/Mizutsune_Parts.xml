@@ -97,7 +97,7 @@
 		<label>elongated spine</label>
 		<description>A spine, much longer than normal human's.</description>
 		<parts>
-			<li>Lung</li>
+			<li>Spine</li>
 		</parts>
 		<maxSeverity>1</maxSeverity>
 		<categories>

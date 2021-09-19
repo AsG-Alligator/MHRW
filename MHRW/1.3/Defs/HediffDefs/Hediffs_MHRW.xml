@@ -76,6 +76,24 @@
   
   
   <HediffDef ParentName="DiseaseBase">
+    <defName>KulveMantle</defName>
+    <label>golden mantle</label>
+    <labelNoun>golden mantle</labelNoun>
+	<defaultLabelColor>(212, 193, 23)</defaultLabelColor>
+    <description>A massive mantle of semi-solid gold. It provides excellent protection to the creature, but slows it down severely. Kulve Taroth will drop the mantle if sufficiently enraged.</description>
+	<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+		<statOffsets>
+			<MoveSpeed>-5.0</MoveSpeed>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
     <defName>Waterblight</defName>
     <label>waterblight</label>
     <labelNoun>waterblight</labelNoun>

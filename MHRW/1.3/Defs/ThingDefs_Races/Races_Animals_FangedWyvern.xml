@@ -949,6 +949,22 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MH_Projectile_MizuBubble</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Hive_Spawn</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<defaultCooldownTime>5</defaultCooldownTime>
+				<commonality>0.5</commonality>
+			</li>
+		</verbs>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseHungerRate>1.1</baseHungerRate>
@@ -1071,6 +1087,17 @@
 				<eggLayIntervalDays>60</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="MonsterHunterRimworld.CompProperties_MHRenderWhileAiming">
+				<graphicData>
+				<texPath>Things/Pawn/Animal/Zinogre/Charged</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>9</drawSize>
+				<drawOffsetNorth>(0, 0.1, 0)</drawOffsetNorth>
+				<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+				<drawOffsetEast>(0, 0.1, 0)</drawOffsetEast>
+				<drawOffsetWest>(0, 0.1, 0)</drawOffsetWest>
+				</graphicData>
 			</li>
 		</comps>
 		<tools>
@@ -1215,6 +1242,170 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Zinogre/Zinogre</texPath>
 					<drawSize>9</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+  	<ThingDef ParentName="AnimalThingBase">
+		<defName>Zamtrios</defName>
+		<label>Zamtrios</label>
+		<description>Zamtrios is a large, quadrupedal monster with grey-blue skin and yellow fins. It is superficially shark-like in appearance, with a long, pointed snout and a mouth filled with multiple rows of sharp teeth. Zamtrios is sometimes seen encased in an ice-like armor, which forms many spines and horns all over its body.</description>
+		<statBases>
+			<MoveSpeed>6.0</MoveSpeed>
+			<MarketValue>4800</MarketValue>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		</statBases>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtZamtrios</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>EggZamtriosFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>60</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseHungerRate>0.85</baseHungerRate>
+			<baseBodySize>6</baseBodySize>
+			<baseHealthScale>5.6</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<predator>true</predator>
+			<leatherDef>Leather_Zamtrios</leatherDef>
+			<gestationPeriodDays>55</gestationPeriodDays>
+			<wildness>0.85</wildness>
+			<trainability>Advanced</trainability>
+			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<lifeExpectancy>120</lifeExpectancy>
+			<manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1.0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>3.0</minAge>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Zamtrios</defName>
+		<label>Zamtrios</label>
+		<race>Zamtrios</race>
+		<combatPower>600</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zamtrios/Zamtrios</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zamtrios/Zamtrios</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MHBonepile</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zamtrios/Zamtrios</texPath>
+					<drawSize>8</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>

@@ -92,7 +92,7 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
-	<Pawnmorph.Hediffs.MutationDef ParentName="RathalosPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="KulvePart">
 		<defName>EtherKulveCrest</defName>
 		<description>A massive solid-gold crest spans [PAWN_nameDef]'s back.</description>
 		<label>golden crest</label>

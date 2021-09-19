@@ -46,6 +46,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Odogaron;
         public static PawnKindDef Zinogre;
         public static PawnKindDef Mizutsune;
+        public static PawnKindDef Zamtrios;
         #endregion
 
 
@@ -72,6 +73,14 @@ namespace MonsterHunterRimworld
         public static ThingDef Leather_Rathian;
         public static ThingDef Leather_Teostra;
         public static ThingDef Leather_Lunastra;
+        #endregion
+
+        #region "DamagDefs"
+        public static DamageDef MHFlashStun;
+        #endregion
+
+        #region "HediffDefs"
+        public static HediffDef KulveMantle;
         #endregion
     }
 }

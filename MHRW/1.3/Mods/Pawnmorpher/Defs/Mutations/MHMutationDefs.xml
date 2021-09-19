@@ -166,6 +166,7 @@
 		<defName>EtherWyvernEye</defName>
 		<label>wyvern eye</label>
 		<description>[PAWN_nameDef]'s eyes became those of a wyvern.</description>
+		<classInfluence>MHMonsters</classInfluence>
 		<parts>
 			<li>Eye</li>
 		</parts>

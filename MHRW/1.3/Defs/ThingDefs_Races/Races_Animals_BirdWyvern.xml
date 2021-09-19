@@ -792,6 +792,12 @@
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
     </statBases>
+	<damageMultipliers>
+        <li>
+            <damageDef>Stun</damageDef>
+            <multiplier>0</multiplier>
+        </li>
+    </damageMultipliers>
 	<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
 
@@ -808,6 +814,17 @@
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>1</eggCountRange>
       </li>
+	  <li Class="MonsterHunterRimworld.CompProperties_MHRenderWhileAiming">
+		<graphicData>
+			<texPath>Things/Pawn/Animal/TzitziYaKu/FlashFlaps</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>8</drawSize>
+			<drawOffsetNorth>(0, 0.1, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.1, 0)</drawOffsetEast>
+			<drawOffsetWest>(0, 0.1, 0)</drawOffsetWest>
+		</graphicData>
+	  </li>
     </comps>
     <tools>
       <li>
@@ -849,6 +866,18 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TzitziFlash</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>4.2</range>
+        <muzzleFlashScale>1</muzzleFlashScale>
+		<defaultCooldownTime>3</defaultCooldownTime>
+		<commonality>1</commonality>
+      </li>
+    </verbs>
     <race>
       <body>MHBruteDrome</body>
       <baseHungerRate>0.5</baseHungerRate>

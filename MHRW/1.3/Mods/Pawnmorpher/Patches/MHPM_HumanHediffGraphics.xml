@@ -44,7 +44,24 @@
 					<EtherVelkhanaSnout>Parts/Velkhana/Velkhana_Face</EtherVelkhanaSnout>
 					<EtherDodogamaSnout>Parts/Dodogama/Dodogama_Face</EtherDodogamaSnout>
 					<EtherPaolumuSnout>Parts/Paolumu/Paolumu_Face</EtherPaolumuSnout>
+					<EtherKestodonSnout>Parts/Kestodon/Kestodon_Face</EtherKestodonSnout>
+					<EtherApcerosSnout>Parts/Apceros/Apceros_Face</EtherApcerosSnout>
+					<EtherTzitziSnout>Parts/Tzitzi/Tzitzi_Face</EtherTzitziSnout>
+					<EtherGendromeSnout>Parts/Gendrome/Gendrome_Face</EtherGendromeSnout>
+					<EtherJyuraSnout>Parts/Jyura/Jyura_Face</EtherJyuraSnout>
+					<EtherZamtriosSnout>Parts/Zamtrios/Zamtrios_Face</EtherZamtriosSnout>
 				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>0.01</layerOffset>
+					</south>
+					<north>
+						<layerOffset>0.01</layerOffset>
+					</north>
+					<east>
+						<layerOffset>0.01</layerOffset>
+					</east>
+				</offsets>	
 			</li>
 			<li>
 				<!-- Body-extending tails -->
@@ -85,6 +102,12 @@
 					<EtherPukeiTail>Parts/Pukei/Pukei_Tail</EtherPukeiTail>
 					<EtherDodogamaTail>Parts/Dodogama/Dodogama_Tail</EtherDodogamaTail>
 					<EtherPaolumuTail>Parts/Paolumu/Paolumu_Tail</EtherPaolumuTail>
+					<EtherKestodonTail>Parts/Kestodon/Kestodon_Tail</EtherKestodonTail>
+					<EtherApcerosTail>Parts/Apceros/Apceros_Tail</EtherApcerosTail>
+					<EtherTzitziTail>Parts/Tzitzi/Tzitzi_Tail</EtherTzitziTail>
+					<EtherGendromeTail>Parts/Gendrome/Gendrome_Tail</EtherGendromeTail>
+					<EtherJyuraTail>Parts/Jyura/Jyura_Tail</EtherJyuraTail>
+					<EtherZamtriosTail>Parts/Zamtrios/Zamtrios_Tail</EtherZamtriosTail>
 				</hediffGraphics>
 				<offsets>
 					<south/>
@@ -130,7 +153,20 @@
 					<EtherGlavenusHorns>Parts/Glavenus/Glavenus_Horns</EtherGlavenusHorns>
 					<EtherNergiHorns>Parts/Nergi/Nergi_Horns</EtherNergiHorns>
 					<EtherVelkhanaHorns>Parts/Velkhana/Velkhana_Crest</EtherVelkhanaHorns>
-				</hediffGraphics>			
+					<EtherApcerosCrest>Parts/Apceros/Apceros_Crest</EtherApcerosCrest>
+					<EtherGendromeCrest>Parts/Gendrome/Gendrome_Crest</EtherGendromeCrest>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>0.15</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.3</layerOffset>
+					</north>
+					<east>
+						<layerOffset>0.0</layerOffset>
+					</east>
+				</offsets>					
 			</li>
 			<li>
 				<!-- Crests -->
@@ -155,22 +191,57 @@
 					<EtherLunastraMane>Parts/Lunastra/Lunastra_Mane</EtherLunastraMane>
 					<EtherBarrothCrest>Parts/Barroth/Barroth_Crest</EtherBarrothCrest>
 					<EtherDiablosCrest>Parts/Diablos/Diablos_Crest</EtherDiablosCrest>
-					<EtherKulveCrest>Parts/Kulve/Kulve_Crest</EtherKulveCrest>
-					<EtherNergiSpikes>Parts/Nergi/Nergi_Crest</EtherNergiSpikes>
+					<EtherNergiSpikes>Parts/Nergi/Nergi_Spikes</EtherNergiSpikes>
 					<EtherAptonothCrest>Parts/Aptonoth/Aptonoth_Crest</EtherAptonothCrest>
-					<EtherPukeiHood>Parts/Pukei/Pukei_Crest</EtherPukeiHood>
+					<EtherJyuraCrest>Parts/Jyura/Jyura_Crest</EtherJyuraCrest>
+					<EtherPukeiHood>Parts/Pukei/Pukei_Hood</EtherPukeiHood>
+					<EtherTzitziFlaps>Parts/Tzitzi/Tzitzi_Horns</EtherTzitziFlaps>
+					<EtherKestodonCrest>Parts/Kestodon/Kestodon_Crest</EtherKestodonCrest>
 				</hediffGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-0.2</layerOffset>
+						<layerOffset>-0.01</layerOffset>
 					</south>
 					<north>
-						<layerOffset>-2.5</layerOffset>
+						<layerOffset>-1.15</layerOffset>
 					</north>
 					<east>
-						<layerOffset>-0.2</layerOffset>
+						<layerOffset>-0.01</layerOffset>
 					</east>
 				</offsets>				
+			</li>
+			<li>
+				<!-- Crests w/ offsets -->
+				<debug>false</debug>
+				<path>Parts/None/None</path>
+				<bodyPart>Torso</bodyPart>
+				<alignWithHead>true</alignWithHead>
+				<inFrontOfBody>false</inFrontOfBody>
+				<shaderType>CutoutSkin</shaderType>
+				<hediffGraphics>
+					<EtherZamtriosCrest>Parts/Zamtrios/Zamtrios_Fin</EtherZamtriosCrest>
+				</hediffGraphics>
+				<offsets>
+					<south/>
+					<north>
+						<bodyTypes>
+							<Male>(0,-0.25)</Male>
+							<Female>(0,-0.25)</Female>
+							<Thin>(0,-0.25)</Thin>
+							<Fat>(0,-0.25)</Fat>
+							<Hulk>(0,-0.25)</Hulk>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Male>(0.1,-0.24)</Male>
+							<Female>(0.1,-0.24)</Female>
+							<Thin>(0.1,-0.24)</Thin>
+							<Hulk>(0.3,-0.24)</Hulk>
+							<Fat>(0.3,-0.24)</Fat>
+						</bodyTypes>
+					</east>
+				</offsets>
 			</li>
 			<li>
 				<!-- Hoods -->
@@ -196,6 +267,29 @@
 					</north>
 					<east>
 						<layerOffset>-0.2</layerOffset>
+					</east>
+				</offsets>				
+			</li>
+			<li>
+				<!-- Shells -->
+				<debug>false</debug>
+				<path>Parts/None/None</path>
+				<bodyPart>Torso</bodyPart>
+				<inFrontOfBody>true</inFrontOfBody>
+				<shaderType>CutoutSkin</shaderType>
+				<hediffGraphics>
+					<EtherApcerosShell>Parts/Apceros/Apceros_Shell</EtherApcerosShell>
+					<EtherKulveCrest>Parts/Kulve/Kulve_Crest</EtherKulveCrest>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-1.2</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-2.2</layerOffset>
+					</north>
+					<east>
+						<layerOffset>0.05</layerOffset>
 					</east>
 				</offsets>				
 			</li>
@@ -319,7 +413,7 @@
 						<layerOffset>-0.5</layerOffset>
 					</south>
 					<east>
-						<layerOffset>0.5</layerOffset>
+						<layerOffset>0.01</layerOffset>
 						<bodyTypes>
 							<Male>(0.18,-0.02)</Male>
 							<Female>(0.18,-0.02)</Female>
@@ -350,7 +444,9 @@
 						<layerOffset>-1.25</layerOffset>
 					</south>
 					<north/>
-					<east/>
+					<east>
+						<layerOffset>0.3</layerOffset>
+					</east>
 				</offsets>
 			</li>			
 			</value>

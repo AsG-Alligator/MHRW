@@ -59,11 +59,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompInitialManhunter.cs" />
+    <Compile Include="CompKulve.cs" />
+    <Compile Include="FlashProjectile.cs" />
     <Compile Include="MHGenderedLeatherOverride.cs" />
     <Compile Include="CompProperties_VaalHazak.cs" />
     <Compile Include="CompProperties_Velkhana.cs" />
     <Compile Include="CompVaalHazak.cs" />
     <Compile Include="CompVelkhana.cs" />
+    <Compile Include="MHRenderWhileAiming.cs" />
     <Compile Include="Projectile_Motetrail.cs" />
     <Compile Include="Projectile_PoisonBurst.cs" />
     <Compile Include="CompKirin.cs" />
