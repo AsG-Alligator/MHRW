@@ -42,6 +42,10 @@
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="EquipmentToolbox">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Equipment Toolbox\1.3\Assemblies\EquipmentToolbox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -59,8 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompHuntingSong.cs" />
     <Compile Include="CompInitialManhunter.cs" />
     <Compile Include="CompKulve.cs" />
+    <Compile Include="CompProperties_HuntingSong.cs" />
     <Compile Include="FlashProjectile.cs" />
     <Compile Include="MHGenderedLeatherOverride.cs" />
     <Compile Include="CompProperties_VaalHazak.cs" />
@@ -68,6 +74,7 @@
     <Compile Include="CompVaalHazak.cs" />
     <Compile Include="CompVelkhana.cs" />
     <Compile Include="MHRenderWhileAiming.cs" />
+    <Compile Include="PostBlockEffecter.cs" />
     <Compile Include="Projectile_Motetrail.cs" />
     <Compile Include="Projectile_PoisonBurst.cs" />
     <Compile Include="CompKirin.cs" />

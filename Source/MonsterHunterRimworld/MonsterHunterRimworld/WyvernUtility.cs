@@ -69,6 +69,9 @@ namespace MonsterHunterRimworld
             yield return MHRWDefOf.Mizutsune;
             yield return MHRWDefOf.Glavenus;
             yield return MHRWDefOf.Zamtrios;
+            yield return MHRWDefOf.Nargacuga;
+            yield return MHRWDefOf.Tigrex;
+            yield return MHRWDefOf.Plesioth;
             yield break;
         }
 
@@ -135,18 +138,28 @@ namespace MonsterHunterRimworld
             }
             else if (wyvernType.Equals("BRUTEWYVERN"))
             {
-                switch (Rand.RangeInclusive(1, 5))
+                switch (Rand.RangeInclusive(1, 4))
                 {
                     case 1:
                         return MHRWDefOf.Barroth;
                     case 2:
                         return MHRWDefOf.Deviljho;
                     case 3:
-                        return MHRWDefOf.Jyuratodus;
-                    case 4:
-                        return MHRWDefOf.Lavasioth;
-                    case 5:
                         return MHRWDefOf.Anjanath;
+                    case 4:
+                        return MHRWDefOf.Glavenus;
+                }
+            }
+            else if (wyvernType.Equals("PISCINEWYVERN"))
+            {
+                switch (Rand.RangeInclusive(1, 3))
+                {
+                    case 1:
+                        return MHRWDefOf.Jyuratodus;
+                    case 2:
+                        return MHRWDefOf.Lavasioth;
+                    case 3:
+                        return MHRWDefOf.Plesioth;
                 }
             }
             else if (wyvernType.Equals("ELDERDRAGON"))
@@ -171,7 +184,7 @@ namespace MonsterHunterRimworld
             }
             else if (wyvernType.Equals("FANGEDWYVERN"))
             {
-                switch (Rand.RangeInclusive(1, 5))
+                switch (Rand.RangeInclusive(1, 7))
                 {
                     case 1:
                         return MHRWDefOf.TobiKadachi;
@@ -183,11 +196,15 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Dodogama;
                     case 5:
                         return MHRWDefOf.Odogaron;
+                    case 6:
+                        return MHRWDefOf.Zinogre;
+                    case 7:
+                        return MHRWDefOf.Zamtrios;
                 }
             }
-            else if (wyvernType.Equals("FYLINGWYVERN"))
+            else if (wyvernType.Equals("FLYINGWYVERN"))
             {
-                switch (Rand.RangeInclusive(1, 6))
+                switch (Rand.RangeInclusive(1, 8))
                 {
                     case 1:
                         return MHRWDefOf.Rath;
@@ -201,6 +218,10 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Diablos;
                     case 6:
                         return MHRWDefOf.Paolumu;
+                    case 7:
+                        return MHRWDefOf.Nargacuga;
+                    case 8:
+                        return MHRWDefOf.Tigrex;
                 }
             }
             else if (wyvernType.Equals("SMALLMONSTER"))

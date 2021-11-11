@@ -23,10 +23,14 @@ namespace MonsterHunterRimworld
         #region "Brute Wyvern"
         public static PawnKindDef Barroth;
         public static PawnKindDef Deviljho;
-        public static PawnKindDef Jyuratodus;
-        public static PawnKindDef Lavasioth;
         public static PawnKindDef Anjanath;
         public static PawnKindDef Glavenus;
+        #endregion
+
+        #region "Piscine Wyvern"
+        public static PawnKindDef Jyuratodus;
+        public static PawnKindDef Lavasioth;
+        public static PawnKindDef Plesioth;
         #endregion
 
         #region "Elder Dragon"
@@ -56,6 +60,8 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Legiana;
         public static PawnKindDef Diablos;
         public static PawnKindDef Paolumu;
+        public static PawnKindDef Nargacuga;
+        public static PawnKindDef Tigrex;
         #endregion
 
         #region "Small Monster"
