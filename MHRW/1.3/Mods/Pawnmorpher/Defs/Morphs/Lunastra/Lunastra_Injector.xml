@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="ElderInjectorBase">
 		<defName>LunastraTransformer</defName>
 		<label>mutasyringe, Lunastra</label>
 		<description>A mutagenic injector filled with mechanites and Lunastra DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

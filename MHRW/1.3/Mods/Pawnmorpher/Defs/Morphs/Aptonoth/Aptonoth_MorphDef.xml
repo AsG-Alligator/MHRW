@@ -7,14 +7,13 @@
 		<classification>MHDrakes</classification>
 		<categories>
 			<li>Arid</li>
-			<li>Reptile</li>
+			<li>Monster</li>
 		</categories>
 		<fullTransformation>PawnmorphAptonothTF</fullTransformation>
 		<partialTransformation>PawnmorphAptonothTFPartial</partialTransformation>
 		<raceSettings>
 			<graphicsSettings>
 				<skinColorOverride>(77, 87, 58)</skinColorOverride>
-				<hairColorOverride>(0,0,0,0)</hairColorOverride>
 			</graphicsSettings>
 		</raceSettings>
 		<transformSettings>

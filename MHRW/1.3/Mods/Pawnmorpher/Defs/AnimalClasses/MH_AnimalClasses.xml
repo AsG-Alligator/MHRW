@@ -23,4 +23,14 @@
         <parent>MHMonsters</parent>
     </Pawnmorph.AnimalClassDef>
 	
+	<Pawnmorph.MorphCategoryDef>
+		<defName>Monster</defName>
+
+	</Pawnmorph.MorphCategoryDef>
+	
+	<Pawnmorph.MorphCategoryDef>
+		<defName>ElderDragon</defName>
+
+	</Pawnmorph.MorphCategoryDef>
+	
 </Defs>

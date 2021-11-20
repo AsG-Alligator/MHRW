@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="ElderInjectorBase">
 		<defName>KulveTransformer</defName>
 		<label>mutasyringe, Kulve Taroth</label>
 		<description>A mutagenic injector filled with mechanites and Kulve Taroth DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

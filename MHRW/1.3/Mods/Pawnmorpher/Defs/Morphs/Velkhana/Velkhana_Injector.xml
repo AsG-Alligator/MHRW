@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="ElderInjectorBase">
 		<defName>VelkhanaTransformer</defName>
 		<label>mutasyringe, Velkhana</label>
 		<description>A mutagenic injector filled with mechanites and Velkhana DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

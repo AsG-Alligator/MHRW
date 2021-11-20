@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>KuluTransformer</defName>
 		<label>mutasyringe, Kulu-Ya-Ku</label>
 		<description>A mutagenic injector filled with mechanites and Kulu-Ya-Ku DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

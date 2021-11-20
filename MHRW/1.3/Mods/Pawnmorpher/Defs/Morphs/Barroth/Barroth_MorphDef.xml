@@ -6,9 +6,8 @@
 		<race>Barroth</race>
 		<classification>MHWyverns</classification>
 		<categories>
-			<li>Arid</li>
-			<li>Reptile</li>
 			<li>Powerful</li>
+			<li>Monster</li>
 		</categories>
 		<fullTransformation>PawnmorphBarrothTF</fullTransformation>
 		<partialTransformation>PawnmorphBarrothTFPartial</partialTransformation>

@@ -6,8 +6,8 @@
 		<race>Deviljho</race>
 		<classification>MHDrakes</classification>
 		<categories>
-			<li>Reptile</li>
 			<li>Powerful</li>
+			<li>Monster</li>
 		</categories>
 		<fullTransformation>PawnmorphDeviljhoTF</fullTransformation>
 		<partialTransformation>PawnmorphDeviljhoTFPartial</partialTransformation>

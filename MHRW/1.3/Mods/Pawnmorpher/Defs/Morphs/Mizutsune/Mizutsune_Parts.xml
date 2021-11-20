@@ -29,10 +29,6 @@
 				<label>adapted</label>
 				<capMods>
 					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.06</offset>
-					</li>
-					<li>
 						<capacity>Eating</capacity>
 						<offset>0.10</offset>
 					</li>

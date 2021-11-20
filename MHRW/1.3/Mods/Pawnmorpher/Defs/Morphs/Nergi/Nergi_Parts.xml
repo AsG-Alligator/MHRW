@@ -104,7 +104,7 @@
 		<label>Nergigante thorns</label>
 		<parts>
 			<li>Head</li>
-			<li>Torso</li>
+			<li>Neck</li>
 		</parts>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.MutationStage">

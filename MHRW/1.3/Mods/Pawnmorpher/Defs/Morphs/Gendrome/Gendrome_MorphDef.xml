@@ -7,7 +7,7 @@
 		<classification>MHRaptors</classification>
 		<categories>
 			<li>Arid</li>
-			<li>Reptile</li>
+			<li>Monster</li>
 		</categories>
 		<fullTransformation>PawnmorphGendromeTF</fullTransformation>
 		<partialTransformation>PawnmorphGendromeTFPartial</partialTransformation>

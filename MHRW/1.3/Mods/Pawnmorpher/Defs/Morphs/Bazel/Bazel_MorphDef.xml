@@ -6,8 +6,8 @@
 		<race>Bazelgeuse</race>
 		<classification>MHWyverns</classification>
 		<categories>
-			<li>Reptile</li>
 			<li>Powerful</li>
+			<li>Monster</li>
 		</categories>
 		<fullTransformation>PawnmorphBazelTF</fullTransformation>
 		<partialTransformation>PawnmorphBazelTFPartial</partialTransformation>

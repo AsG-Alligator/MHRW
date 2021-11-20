@@ -4,7 +4,7 @@
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="ZamtriosPart">
 		<defName>EtherZamtriosSnout</defName>
-		<label>Zamtrios Taroth snout</label>
+		<label>Zamtrios snout</label>
 		<description>The lower part of [PAWN_nameDef]'s face has reformed into a sharky Zamtrios snout.</description>
 		<initialSeverity>0</initialSeverity>
 		<parts>
@@ -63,7 +63,7 @@
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="ZamtriosPart">
 		<defName>EtherZamtriosTail</defName>
-		<label>Zamtrios Taroth tail</label>
+		<label>Zamtrios tail</label>
 		<description>A flat fin-like Zamtrios tail.</description>
 		<parts>
 			<li>Tail</li>
@@ -82,7 +82,7 @@
 		<description>A large dorsal fin protrudes from [PAWN_nameDef]'s back.</description>
 		<label>dorsal fin</label>
 		<parts>
-			<li>Torso</li>
+			<li>Spine</li>
 		</parts>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.MutationStage">

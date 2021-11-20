@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>LegianaTransformer</defName>
 		<label>mutasyringe, Legiana</label>
 		<description>A mutagenic injector filled with mechanites and Legiana DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

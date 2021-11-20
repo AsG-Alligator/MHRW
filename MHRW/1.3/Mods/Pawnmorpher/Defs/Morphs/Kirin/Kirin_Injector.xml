@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="ElderInjectorBase">
 		<defName>KirinTransformer</defName>
 		<label>mutasyringe, Kirin</label>
 		<description>A mutagenic injector filled with mechanites and Kirin DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

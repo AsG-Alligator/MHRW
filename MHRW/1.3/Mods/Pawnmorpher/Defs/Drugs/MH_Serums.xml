@@ -1,0 +1,101 @@
+<Defs>
+	<ThingDef ParentName="MonsterSerumBase">
+		<defName>RandomMonsterTransformer</defName>
+		<label>mutaserum, monstrous</label>
+		<description>A serum filled with mechanites and animal DNA that causes powerful, monstrous mutations. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionEffects.AddMorphCategoryTfHediff">
+					<fullTf>true</fullTf>
+					<morphCategory>Monster</morphCategory>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>MHMonsterSerums</researchPrerequisite>
+			<recipeUsers>
+				<li>MutagenLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<MechaniteSlurry>6</MechaniteSlurry>
+			<Mutanite>2</Mutanite>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="MonsterSerumBase">
+		<defName>RandomElderDragonTransformer</defName>
+		<label>mutaserum, elder dragon</label>
+		<description>A serum filled with mechanites and animal DNA that causes powerful, elder dragon mutations. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionEffects.AddMorphCategoryTfHediff">
+					<fullTf>true</fullTf>
+					<morphCategory>ElderDragon</morphCategory>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>MHElderSerums</researchPrerequisite>
+			<recipeUsers>
+				<li>MutagenLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<MechaniteSlurry>10</MechaniteSlurry>
+			<Mutanite>5</Mutanite>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef Abstract="True" ParentName="TransformerBase" Name="MonsterSerumBase">
+		<graphicData>
+			<texPath>Things/Item/Drug/SerumRed</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Abstract="True" ParentName="InjectorBase" Name="MonsterInjectorBase">
+		<recipeMaker>
+			<researchPrerequisite>MHMonsterSerums</researchPrerequisite>
+			<recipeUsers>
+				<li>PM_InjectorLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffProps>
+			<commonality>0.001</commonality>
+		</stuffProps>
+		<costList>
+			<MechaniteSlurry>6</MechaniteSlurry>
+			<Mutanite>2</Mutanite>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef Abstract="True" ParentName="InjectorBase" Name="ElderInjectorBase">
+		<recipeMaker>
+			<researchPrerequisite>MHElderSerums</researchPrerequisite>
+			<recipeUsers>
+				<li>PM_InjectorLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffProps>
+			<commonality>0</commonality>
+		</stuffProps>
+		<costList>
+			<MechaniteSlurry>10</MechaniteSlurry>
+			<Mutanite>5</Mutanite>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+	</ThingDef>
+</Defs>

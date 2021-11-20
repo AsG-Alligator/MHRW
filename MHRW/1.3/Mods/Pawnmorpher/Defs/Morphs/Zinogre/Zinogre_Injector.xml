@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>ZinogreTransformer</defName>
 		<label>mutasyringe, Zinogre</label>
 		<description>A mutagenic injector filled with mechanites and Zinogre DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

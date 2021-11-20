@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>GirrosTransformer</defName>
 		<label>mutasyringe, Girros</label>
 		<description>A mutagenic injector filled with mechanites and Girros DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

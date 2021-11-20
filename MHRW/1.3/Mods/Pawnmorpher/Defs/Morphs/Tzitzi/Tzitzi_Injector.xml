@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>TzitziTransformer</defName>
 		<label>mutasyringe, Tzitzi-Ya-Ku</label>
 		<description>A mutagenic injector filled with mechanites and Tzitzi-Ya-Ku DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

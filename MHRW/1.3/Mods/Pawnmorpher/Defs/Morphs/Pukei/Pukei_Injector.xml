@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>PukeiTransformer</defName>
 		<label>mutasyringe, Pukei-Pukei</label>
 		<description>A mutagenic injector filled with mechanites and Pukei-Pukei DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

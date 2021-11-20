@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>BarrothTransformer</defName>
 		<label>mutasyringe, Barroth</label>
 		<description>A mutagenic injector filled with mechanites and Barroth DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

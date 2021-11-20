@@ -1,0 +1,17 @@
+<Defs>
+	<ThingDef ParentName="MonsterInjectorBase">
+		<defName>SharkTransformer</defName>
+		<label>mutasyringe, Shark</label>
+		<description>A modified Zamtrios injector, causing a more classic shark-like morph appearance. A full transformation will still result in a Zamtrios.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
+					<hediffDefs>
+						<li>PawnmorphSharkTF</li>
+					</hediffDefs>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>	
+	</ThingDef>
+</Defs>

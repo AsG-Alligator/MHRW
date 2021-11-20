@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>TobiTransformer</defName>
 		<label>mutasyringe, Tobi-Kadachi</label>
 		<description>A mutagenic injector filled with mechanites and Tobi-Kadachi DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

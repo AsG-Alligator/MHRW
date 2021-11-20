@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="ElderInjectorBase">
 		<defName>NergiTransformer</defName>
 		<label>mutasyringe, Nergigante</label>
 		<description>A mutagenic injector filled with mechanites and Nergigante DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

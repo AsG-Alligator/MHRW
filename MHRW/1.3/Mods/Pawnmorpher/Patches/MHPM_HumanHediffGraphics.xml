@@ -50,6 +50,8 @@
 					<EtherGendromeSnout>Parts/Gendrome/Gendrome_Face</EtherGendromeSnout>
 					<EtherJyuraSnout>Parts/Jyura/Jyura_Face</EtherJyuraSnout>
 					<EtherZamtriosSnout>Parts/Zamtrios/Zamtrios_Face</EtherZamtriosSnout>
+					<EtherSharkSnout>Parts/Zamtrios/Zamtrios_Face</EtherSharkSnout>
+					<EtherPlesiothSnout>Parts/Plesioth/Plesioth_Face</EtherPlesiothSnout>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -108,6 +110,8 @@
 					<EtherGendromeTail>Parts/Gendrome/Gendrome_Tail</EtherGendromeTail>
 					<EtherJyuraTail>Parts/Jyura/Jyura_Tail</EtherJyuraTail>
 					<EtherZamtriosTail>Parts/Zamtrios/Zamtrios_Tail</EtherZamtriosTail>
+					<EtherSharkTail>Parts/Zamtrios/Shark_Tail</EtherSharkTail>
+					<EtherPlesiothTail>Parts/Plesioth/Plesioth_Tail</EtherPlesiothTail>
 				</hediffGraphics>
 				<offsets>
 					<south/>
@@ -154,7 +158,6 @@
 					<EtherNergiHorns>Parts/Nergi/Nergi_Horns</EtherNergiHorns>
 					<EtherVelkhanaHorns>Parts/Velkhana/Velkhana_Crest</EtherVelkhanaHorns>
 					<EtherApcerosCrest>Parts/Apceros/Apceros_Crest</EtherApcerosCrest>
-					<EtherGendromeCrest>Parts/Gendrome/Gendrome_Crest</EtherGendromeCrest>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -197,6 +200,8 @@
 					<EtherPukeiHood>Parts/Pukei/Pukei_Hood</EtherPukeiHood>
 					<EtherTzitziFlaps>Parts/Tzitzi/Tzitzi_Horns</EtherTzitziFlaps>
 					<EtherKestodonCrest>Parts/Kestodon/Kestodon_Crest</EtherKestodonCrest>
+					<EtherGendromeCrest>Parts/Gendrome/Gendrome_Crest</EtherGendromeCrest>
+					<EtherPlesiothCrest>Parts/Plesioth/Plesioth_Crest</EtherPlesiothCrest>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -214,12 +219,14 @@
 				<!-- Crests w/ offsets -->
 				<debug>false</debug>
 				<path>Parts/None/None</path>
-				<bodyPart>Torso</bodyPart>
+				<bodyPart>Spine</bodyPart>
 				<alignWithHead>true</alignWithHead>
 				<inFrontOfBody>false</inFrontOfBody>
 				<shaderType>CutoutSkin</shaderType>
 				<hediffGraphics>
 					<EtherZamtriosCrest>Parts/Zamtrios/Zamtrios_Fin</EtherZamtriosCrest>
+					<EtherSharkCrest>Parts/Zamtrios/Shark_Fin</EtherSharkCrest>
+					<EtherPlesiothFins>Parts/Plesioth/Plesioth_Spine</EtherPlesiothFins>
 				</hediffGraphics>
 				<offsets>
 					<south/>
@@ -404,6 +411,7 @@
 					<EtherTigrexWing>Parts/Tigrex/Tigrex_Wings</EtherTigrexWing>
 					<EtherPaolumuWing>Parts/Paolumu/Paolumu_Wings</EtherPaolumuWing>
 					<EtherPukeiWing>Parts/Pukei/Pukei_Wings</EtherPukeiWing>
+					<EtherPlesiothWing>Parts/Plesioth/Plesioth_Wings</EtherPlesiothWing>
 				</hediffGraphics>
 				<offsets>
 					<north>
@@ -413,7 +421,7 @@
 						<layerOffset>-0.5</layerOffset>
 					</south>
 					<east>
-						<layerOffset>0.01</layerOffset>
+						<layerOffset>0.06</layerOffset>
 						<bodyTypes>
 							<Male>(0.18,-0.02)</Male>
 							<Female>(0.18,-0.02)</Female>

@@ -155,7 +155,7 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
-	<Pawnmorph.Hediffs.MutationDef ParentName="TeostraPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="PaolumuPart">
 		<defName>EtherPaolumuEar</defName>
 		<label>Paolumu ear</label>
 		<description>[PAWN_nameDef]'s ears have morphed into bat-like Paolumu ears. They're very slightly better at hearing than a human's ears.</description>

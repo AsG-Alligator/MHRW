@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="MonsterInjectorBase">
 		<defName>GlavenusTransformer</defName>
 		<label>mutasyringe, Glavenus</label>
 		<description>A mutagenic injector filled with mechanites and Glavenus DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
