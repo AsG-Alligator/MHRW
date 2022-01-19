@@ -43,6 +43,26 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
+    <defName>EggKutKuFertilized</defName>
+    <label>Yian Kut-Ku egg</label>
+    <description>A Yian Kut-Ku egg. If all goes well, it should hatch into a baby Yian Kut-Ku. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggMedium</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>YianKutKu</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
     <defName>EggApcerosFertilized</defName>
     <label>apceros egg</label>
     <description>An apceros egg. If all goes well, it should hatch into a baby apceros. It can be eaten raw, but it's much better cooked.</description>
@@ -557,8 +577,8 @@
 
 	<ThingDef ParentName="EggFertBase">
     <defName>EggMizutsuneFertilized</defName>
-    <label>Legiana egg</label>
-    <description>A fertilized Mizutsune egg. If all goes well, it should hatch into a baby Legiana. It can be eaten raw, but it's much better cooked.</description>
+    <label>Mizutsune egg</label>
+    <description>A fertilized Mizutsune egg. If all goes well, it should hatch into a baby Mizutsune. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
 	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
       <color>(230,230,230)</color>
@@ -572,6 +592,27 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>40</hatcherDaystoHatch>
 				<hatcherPawn>Mizutsune</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggPlesiothFertilized</defName>
+    <label>Plesioth egg</label>
+    <description>A fertilized Plesioth egg. If all goes well, it should hatch into a baby Plesioth. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Misc/MonsterEggBig</texPath>
+      <color>(230,230,230)</color>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>550.0</MarketValue>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40</hatcherDaystoHatch>
+				<hatcherPawn>Plesioth</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

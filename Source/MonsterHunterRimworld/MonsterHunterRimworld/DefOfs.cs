@@ -87,6 +87,11 @@ namespace MonsterHunterRimworld
 
         #region "HediffDefs"
         public static HediffDef KulveMantle;
+        public static HediffDef DelexSand;
+        #endregion
+
+        #region "TerrainDefs"
+        public static TerrainDef SoftSand;
         #endregion
     }
 }

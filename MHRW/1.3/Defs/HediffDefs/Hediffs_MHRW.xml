@@ -93,6 +93,22 @@
     </stages>
   </HediffDef>
   
+   <HediffDef ParentName="DiseaseBase">
+    <defName>DelexSand</defName>
+    <label>sandglide</label>
+    <labelNoun>sandglide</labelNoun>
+	<defaultLabelColor>(212, 193, 23)</defaultLabelColor>
+    <description>This creature is currently "swimming" through loose sand. This allows them to move at a much faster speed than usual.</description>
+	<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+		<statOffsets>
+			<MoveSpeed>5.0</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
   <HediffDef ParentName="DiseaseBase">
     <defName>Waterblight</defName>
     <label>waterblight</label>

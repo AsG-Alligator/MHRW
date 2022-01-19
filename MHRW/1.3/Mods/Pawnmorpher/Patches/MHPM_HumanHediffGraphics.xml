@@ -251,6 +251,48 @@
 				</offsets>
 			</li>
 			<li>
+				<!-- Crests w/ offsets (torso) -->
+				<debug>false</debug>
+				<path>Parts/None/None</path>
+				<bodyPart>Torso</bodyPart>
+				<alignWithHead>true</alignWithHead>
+				<inFrontOfBody>false</inFrontOfBody>
+				<shaderType>CutoutSkin</shaderType>
+				<hediffGraphics>
+					<EtherMizutsuneBackFrills>Parts/Mizutsune/Mizutsune_Spine</EtherMizutsuneBackFrills>
+					<EtherGlavenusSpikes>Parts/Glavenus/Glavenus_Spine</EtherGlavenusSpikes>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Male>(0,-1.25)</Male>
+							<Female>(0,-1.25)</Female>
+							<Thin>(0,-1.25)</Thin>
+							<Fat>(0,-1.25)</Fat>
+							<Hulk>(0,-1.25)</Hulk>
+						</bodyTypes>
+					</south>
+					<north>
+						<bodyTypes>
+							<Male>(0,-0.25)</Male>
+							<Female>(0,-0.25)</Female>
+							<Thin>(0,-0.25)</Thin>
+							<Fat>(0,-0.25)</Fat>
+							<Hulk>(0,-0.25)</Hulk>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Male>(0.1,-0.24)</Male>
+							<Female>(0.1,-0.24)</Female>
+							<Thin>(0.1,-0.24)</Thin>
+							<Hulk>(0.3,-0.24)</Hulk>
+							<Fat>(0.3,-0.24)</Fat>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+			<li>
 				<!-- Hoods -->
 				<debug>false</debug>
 				<path>Parts/None/None</path>

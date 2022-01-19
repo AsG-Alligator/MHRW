@@ -22,11 +22,18 @@
         <displayName>Vanilla Expanded Framework</displayName>
         <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
     </li>
+	<li>
+        <packageId>carnysenpai.equipmenttoolbox</packageId>
+        <displayName>Equipment Toolbox</displayName>
+        <steamWorkshopUrl>TBA</steamWorkshopUrl>
+    </li>
 	</modDependencies>
 	<loadAfter>
 		<li>tachyonite.pawnmorpherpublic</li>
 		<li>tachyonite.pawnmorpherpublic_copy</li>
 		<li>tachyonite.pawnmorpher</li>
 		<li>tachyonite.pawnmorpher_copy</li>
+		<li>carnysenpai.equipmenttoolbox</li>
+		<li>carnysenpai.equipmenttoolbox_copy</li>
 	</loadAfter>
 </ModMetaData>

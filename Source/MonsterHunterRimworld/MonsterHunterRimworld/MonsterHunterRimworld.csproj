@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompDelex.cs" />
     <Compile Include="CompHuntingSong.cs" />
     <Compile Include="CompInitialManhunter.cs" />
     <Compile Include="CompKulve.cs" />

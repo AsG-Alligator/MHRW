@@ -59,10 +59,25 @@
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
 		<defName>EtherMizutsuneFrills</defName>
-		<description>[PAWN_nameDef]'s head is now covered wih many colorful frills.</description>
+		<description>[PAWN_nameDef]'s head is now covered with many colorful frills.</description>
 		<label>Mizutsune frills</label>
 		<parts>
 			<li>Head</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="MizutsunePart">
+		<defName>EtherMizutsuneBackFrills</defName>
+		<description>[PAWN_nameDef]'s back is covered in large colorful frills.</description>
+		<label>Mizutsune frills</label>
+		<parts>
+			<li>Torso</li>
 		</parts>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.MutationStage">

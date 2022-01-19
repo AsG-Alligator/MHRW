@@ -19,12 +19,95 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL/Shield_GL</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
@@ -135,12 +218,95 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Rathian/Rathian</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
@@ -252,12 +418,95 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
@@ -370,12 +619,95 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Bazel/Bazel</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
@@ -488,12 +820,95 @@
 				<southOffset>(0.3,0.8,0)</southOffset>
 				<northOffset>(0.3,0,0)</northOffset>
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Zinogre/Zinogre</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
 			<researchPrerequisite>MHLanceTier3</researchPrerequisite>

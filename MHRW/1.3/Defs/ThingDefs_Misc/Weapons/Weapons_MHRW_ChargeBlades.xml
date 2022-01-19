@@ -18,23 +18,126 @@
 				<southOffset>(0.1,1,0.1)</southOffset>
 				<northOffset>(0.1,0,0.1)</northOffset>
 			</li>
+			<!--
 			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
-				<!--TransformLabel></TransformLabel-->
 				<TransformDesc>Transforms into axe form</TransformDesc>
 				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</TransformIcon>
 				<transformSound>saxe_switch1</transformSound>
 				<transformInto>MH_ChargebladeAxe</transformInto>
-				<!--transformSecondaryProduct></transformSecondaryProduct-->
 				<transformTime>0.5</transformTime>
-				<!--usesAmmunition></usesAmmunition-->
-				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>-->
+			<li Class="EquipmentToolbox.CompProperties_Transformable">
+				<abilityLabel>Axe Mode</abilityLabel>
+				<abilityDesc>Transforms into axe form</abilityDesc>
+				<abilityIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</abilityIcon>
+				<abilityIconAngle>0.0</abilityIconAngle>
+				<abilityIconOffset>(0.0, 0.0)</abilityIconOffset>
+				<abilityColor>(1.0, 1.0, 1.0)</abilityColor>
+				<!--hotKey>Misc4</hotKey-->
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<canBeReloaded>true</canBeReloaded>
+				<spawnWithFullAmmo>true</spawnWithFullAmmo>
+				<chargeNoun>phial</chargeNoun>
+				<reloadTime>1.0</reloadTime>
+				<soundReload>Interact_Rifle</soundReload>
+				<transformInto>MH_ChargebladeAxe</transformInto>
+				<transformTime>0.5</transformTime>
+				<transformSound>saxe_switch1</transformSound>
+				<canAiUse>true</canAiUse>
+				<shouldAiAlwaysUseWhenUnDrafted>false</shouldAiAlwaysUseWhenUnDrafted>
+				<uniqueCompID>1</uniqueCompID>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB/Shield_CB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
 			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>120</Steel>
@@ -109,16 +212,34 @@
 				<southOffset>(0.4,1,0.2)</southOffset>
 				<northOffset>(0.4,0,0.2)</northOffset>
 			</li>
-			<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
-				<!--TransformLabel></TransformLabel-->
+			<!--<li Class="MonsterHunterRimworld.CompProperties_WeaponTransform">
 				<TransformDesc>Transforms into sword form</TransformDesc>
 				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade</TransformIcon>
 				<transformSound>saxe_switch1</transformSound>
 				<transformInto>MH_Chargeblade</transformInto>
-				<!--transformSecondaryProduct></transformSecondaryProduct-->
 				<transformTime>0.5</transformTime>
-				<!--usesAmmunition></usesAmmunition-->
-				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>-->
+			<li Class="EquipmentToolbox.CompProperties_Transformable">
+				<abilityLabel>Sword Mode</abilityLabel>
+				<abilityDesc>Transforms into sword form</abilityDesc>
+				<abilityIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade</abilityIcon>
+				<abilityIconAngle>45.0</abilityIconAngle>
+				<abilityIconOffset>(0.0, 0.0)</abilityIconOffset>
+				<abilityColor>(1.0, 1.0, 1.0)</abilityColor>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<canBeReloaded>true</canBeReloaded>
+				<spawnWithFullAmmo>true</spawnWithFullAmmo>
+				<chargeNoun>phial</chargeNoun>
+				<reloadTime>1.0</reloadTime>
+				<soundReload>Interact_Rifle</soundReload>
+				<transformInto>MH_Chargeblade</transformInto>
+				<transformTime>0.5</transformTime>
+				<transformSound>saxe_switch1</transformSound>
+				<canAiUse>true</canAiUse>
+				<shouldAiAlwaysUseWhenUnDrafted>false</shouldAiAlwaysUseWhenUnDrafted>
+				<uniqueCompID>1</uniqueCompID>
 			</li>
 		</comps>
 		<techLevel>Medieval</techLevel>
@@ -190,12 +311,95 @@
 				<!--usesAmmunition></usesAmmunition-->
 				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Rathalos/Rathalos</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>120</Steel>
@@ -352,12 +556,95 @@
 				<!--usesAmmunition></usesAmmunition-->
 				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
 			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Diablos/Diablos</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MonsterHunterRimworld.PostBlockEffecter</postBlockClass>
+			</li>
 		</comps>
-		<modExtensions>
-                <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-				</li>
-        </modExtensions>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<Steel>120</Steel>

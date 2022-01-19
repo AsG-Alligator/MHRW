@@ -1948,6 +1948,175 @@
   </PawnKindDef>
   
   <ThingDef ParentName="AnimalThingBase">
+    <defName>Delex</defName>
+    <label>Delex</label>
+    <description>Carnivorous monsters that inhabit deserts. Delex travel in schools of around five. When near large monsters on a hunt, they attempt to surround the prey and scavenge food. Known to flee if other Delex are injured. They can move much faster on sand than on hard ground.</description>
+    <statBases>
+      <MoveSpeed>1.3</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtDelex</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <!--<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggDelexFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>-->
+	  <li Class="MonsterHunterRimworld.CompProperties_Delex" />
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseHungerRate>0.1</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <predator>true</predator>
+      <leatherDef>Leather_Light</leatherDef>
+      <gestationPeriodDays>25</gestationPeriodDays>
+      <wildness>0.5</wildness>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>40</lifeExpectancy>
+      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.69</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0.2</Desert>
+		<ExtremeDesert>0.2</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Delex</defName>
+    <label>Delex</label>
+    <race>Delex</race>
+    <combatPower>400</combatPower>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
+	<wildGroupSize>
+        <min>4</min>
+        <max>6</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Delex/Delex</texPath>
+          <drawSize>0.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Delex/Delex</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Delex/Delex</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="AnimalThingBase">
     <defName>Bullfango</defName>
     <label>Bullfango</label>
     <description>Bullfangos are a fairly large quadrupedal boar-like species of Fanged Beast.  \n Mainly covered in brown fur, they have whitish underbellies along with darker grayish tufts on their heads and backs. \n Jutting out from their backs are two rows of boney spikes. Their heads feature a pair of small pointy ears, cyan eyes with round pupils, a long pointed snout, and a pair of large tusks that stretch out forward and curve upwards at the tip.</description>
