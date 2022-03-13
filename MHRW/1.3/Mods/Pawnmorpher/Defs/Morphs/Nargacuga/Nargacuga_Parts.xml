@@ -161,7 +161,7 @@
 	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart">
 		<defName>EtherScaleFurSkin</defName>
 		<label>fur and scales</label>
-		<description>[PAWN_nameDef]'s skin has grown thick fur. Upon closer inspection one can notice a covering of scales under the hair.</description>
+		<description>[PAWN_nameDef]'s skin has grown thick fur, with their belly revealing an underlying layer of large reptillian scales.</description>
 		<classInfluence>NargacugaMorph</classInfluence>
 		<parts>
 			<li>Torso</li>

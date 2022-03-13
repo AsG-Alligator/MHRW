@@ -55,13 +55,13 @@
 				</hediffGraphics>
 				<offsets>
 					<south>
-						<layerOffset>0.01</layerOffset>
+						<layerOffset>-0.01</layerOffset>
 					</south>
 					<north>
-						<layerOffset>0.01</layerOffset>
+						<layerOffset>-0.01</layerOffset>
 					</north>
 					<east>
-						<layerOffset>0.01</layerOffset>
+						<layerOffset>-0.01</layerOffset>
 					</east>
 				</offsets>	
 			</li>

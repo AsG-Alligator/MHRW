@@ -131,7 +131,7 @@
 				<minSeverity>0.2</minSeverity>
 				<statOffsets>
 					<MoveSpeed>-0.02</MoveSpeed>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.012</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li Class="Pawnmorph.Hediffs.MutationStage">
@@ -140,7 +140,7 @@
 				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<MoveSpeed>-0.03</MoveSpeed>
-					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.013</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li Class="Pawnmorph.Hediffs.MutationStage">
@@ -150,7 +150,7 @@
 				<statOffsets>
 					<ComfyTemperatureMax>0.1</ComfyTemperatureMax>
 					<MoveSpeed>-0.04</MoveSpeed>
-					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.014</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li Class="Pawnmorph.Hediffs.MutationStage">
@@ -159,7 +159,7 @@
 				<statOffsets>
 					<ComfyTemperatureMax>0.2</ComfyTemperatureMax>
 					<MoveSpeed>-0.05</MoveSpeed>
-					<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 		</stages>

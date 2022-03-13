@@ -9,6 +9,7 @@
 					<fullTf>true</fullTf>
 					<morphCategory>Monster</morphCategory>
 					<severity>1.00</severity>
+					<allowRestricted>true</allowRestricted>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -23,6 +24,10 @@
 			<Mutanite>2</Mutanite>
 			<Neutroamine>10</Neutroamine>
 		</costList>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
 	</ThingDef>
 	
 	<ThingDef ParentName="MonsterSerumBase">
@@ -35,6 +40,7 @@
 					<fullTf>true</fullTf>
 					<morphCategory>ElderDragon</morphCategory>
 					<severity>1.00</severity>
+					<allowRestricted>true</allowRestricted>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -49,6 +55,10 @@
 			<Mutanite>5</Mutanite>
 			<Neutroamine>10</Neutroamine>
 		</costList>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
 	</ThingDef>
 	
 	<ThingDef Abstract="True" ParentName="TransformerBase" Name="MonsterSerumBase">
