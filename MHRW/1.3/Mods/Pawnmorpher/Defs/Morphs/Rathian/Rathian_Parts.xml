@@ -126,8 +126,15 @@
 			<li Class="Pawnmorph.Hediffs.MutationStage">
 				<minSeverity>1.5</minSeverity>
 				<label>adapted</label>
+				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
 				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Rathian wing. A membrane spans between their body and fingers. They have managed to adapt to this handicap.</description>
 			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>2.5</minSeverity>
+				<label>paragon</label>
+				<description>Against all odds [PAWN_nameDef]'s arm has regained most of its flexibility, despite still present wing membrane attached to it.</description>
+			</li>
+		</stages>
 		</stages>
 		<comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
@@ -167,7 +174,18 @@
 				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
 				<!-- still not quite as good as hands-->
 			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>2.5</minSeverity>
+				<label>paragon</label>
+				<description>[PAWN_nameDef]'s has somehow regained manipulative fingers on their wings' "wrist", not unlike ones of a bat or a pterosaur. Regaining their manipulation despite the bulk of the rest of the wing.</description>
+				<partEfficiencyOffset>0</partEfficiencyOffset>
+			</li>
 		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.20</severityPerDay>
+			</li>
+		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="RathianPart">
 		<defName>EtherRathianEar</defName>

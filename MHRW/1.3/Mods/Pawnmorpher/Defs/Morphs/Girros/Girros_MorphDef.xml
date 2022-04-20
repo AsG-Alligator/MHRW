@@ -2,8 +2,8 @@
 	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
 		<defName>GirrosMorph</defName>
 		<label>girrosmorph</label>
-		<description>A scaly reptile morph with traits similar to that of a Girros.</description>
-		<race>Girros</race>
+		<description>A scaly reptile morph with traits similar to that of a Great Girros.</description>
+		<race>GreatGirros</race>
 		<classification>MHDrakes</classification>
 		<categories>
 			<li>Powerful</li>

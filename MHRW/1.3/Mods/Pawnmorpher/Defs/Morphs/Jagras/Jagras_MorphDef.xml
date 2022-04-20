@@ -2,8 +2,8 @@
 	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
 		<defName>JagrasMorph</defName>
 		<label>jagrasmorph</label>
-		<description>A scaly reptile morph with traits similar to that of a Jagras.</description>
-		<race>Jagras</race>
+		<description>A scaly reptile morph with traits similar to that of a Great Jagras.</description>
+		<race>GreatJagras</race>
 		<classification>MHDrakes</classification>
 		<categories>
 			<li>Powerful</li>

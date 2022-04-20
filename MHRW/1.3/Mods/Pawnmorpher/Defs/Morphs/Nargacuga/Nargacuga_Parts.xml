@@ -102,7 +102,13 @@
 			<li Class="Pawnmorph.Hediffs.MutationStage">
 				<minSeverity>1.5</minSeverity>
 				<label>adapted</label>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
 				<description>[PAWN_nameDef]'s arm has contorted into the shape of a Nargacuga wing. A membrane spans between their body and fingers. They have managed to adapt to this handicap.</description>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>2.5</minSeverity>
+				<label>paragon</label>
+				<description>Against all odds [PAWN_nameDef]'s arm has regained most of its flexibility, despite still present wing membrane attached to it.</description>
 			</li>
 		</stages>
 		<comps>
@@ -127,7 +133,7 @@
 	<Pawnmorph.Hediffs.MutationDef ParentName="NargacugaPart">
 		<defName>EtherNargacugaWingTip</defName>
 		<label>wingpaw</label>
-		<description>[PAWN_nameDef]'s hand has reformed int a strange paw at the end of the wing, with pair of bone blades extending from the wrist that serve as the remainder of the wing. It offers more dexterity then normal wingtips.</description>
+		<description>[PAWN_nameDef]'s hand has reformed int a strange three-fingered paw at the end of the wing, with pair of bone blades extending from the wrist that serve as the remainder of the wing. It offers more dexterity then normal wingtips.</description>
 		<classInfluence>NargacugaMorph</classInfluence>
 		<parts>
 			<li>Hand</li>
@@ -143,7 +149,18 @@
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<!-- still not quite as good as hands-->
 			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>2.5</minSeverity>
+				<label>paragon</label>
+				<description>The wing paw on [PAWN_nameDef]'s arm has become more flexible, with an extra finger reappearing giving back full range of manipulation to them.</description>
+				<partEfficiencyOffset>0</partEfficiencyOffset>
+			</li>
 		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.20</severityPerDay>
+			</li>
+		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="NargacugaPart">
 		<defName>EtherNargacugaEar</defName>

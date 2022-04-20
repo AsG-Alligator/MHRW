@@ -1666,6 +1666,7 @@
       <trainability>Intermediate</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>60</lifeExpectancy>
+	  <packAnimal>true</packAnimal>
       <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 	  <wildBiomes>

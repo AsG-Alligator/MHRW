@@ -8,7 +8,7 @@
 				<path>Parts/None/None</path>
 				<bodyPart>Jaw</bodyPart>
 				<alignWithHead>true</alignWithHead>
-				<inFrontOfBody>true</inFrontOfBody>
+				<inFrontOfBody>false</inFrontOfBody>
 				<shaderType>CutoutSkin</shaderType>
 				<hiddenUnderApparelFor>
 					<li>FullHead</li>
@@ -55,13 +55,13 @@
 				</hediffGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-0.01</layerOffset>
+						<layerOffset>-0.328</layerOffset>
 					</south>
 					<north>
 						<layerOffset>-0.01</layerOffset>
 					</north>
 					<east>
-						<layerOffset>-0.01</layerOffset>
+						<layerOffset>-0.328</layerOffset>
 					</east>
 				</offsets>	
 			</li>
@@ -132,6 +132,7 @@
 							<Hulk>(0.38,-0.45)</Hulk>
 							<Fat>(0.46,-0.27)</Fat>
 						</bodyTypes>
+						<layerOffset>-0.1</layerOffset>
 					</east>
 				</offsets>
 			</li>
@@ -169,6 +170,9 @@
 					<east>
 						<layerOffset>0.0</layerOffset>
 					</east>
+					<west>
+						<layerOffset>0.0</layerOffset>
+					</west>
 				</offsets>					
 			</li>
 			<li>
@@ -377,12 +381,16 @@
 					<EtherPaolumuEar>Parts/Paolumu/Paolumu_Ear_Left</EtherPaolumuEar>
 				</hediffGraphics>
 				<offsets>
-					<south/>
+					<south>
+						<layerOffset>0.4</layerOffset>
+					</south>
 					<north/>
 					<east>
-						<layerOffset>2.2</layerOffset>
+						<layerOffset>0.4</layerOffset>
 					</east>
-					<west/>
+					<west>
+						<layerOffset>0.4</layerOffset>
+					</west>
 				</offsets>
 			</li>	
 			<li>
@@ -416,12 +424,16 @@
 					<EtherPaolumuEar>Parts/Paolumu/Paolumu_Ear_Right</EtherPaolumuEar>
 				</hediffGraphics>
 				<offsets>
-					<south/>
+					<south>
+						<layerOffset>0.4</layerOffset>
+					</south>
 					<north/>
+					<east>
+						<layerOffset>0.4</layerOffset>
+					</east>
 					<west>
-						<layerOffset>-2.2</layerOffset>
+						<layerOffset>0.4</layerOffset>
 					</west>
-					<east/>
 				</offsets>
 			</li>
 			<li>
@@ -495,7 +507,7 @@
 					</south>
 					<north/>
 					<east>
-						<layerOffset>0.3</layerOffset>
+						<layerOffset>-0.2</layerOffset>
 					</east>
 				</offsets>
 			</li>			
