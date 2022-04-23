@@ -199,11 +199,11 @@
 				<description>[PAWN_nameDef]'s has somehow regained manipulative fingers on their wings' "wrist", not unlike ones of a bat or a pterosaur. Regaining their manipulation despite the bulk of the rest of the wing.</description>
 				<partEfficiencyOffset>0</partEfficiencyOffset>
 			</li>
-			<comps>
+		</stages>
+		<comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
 				<severityPerDay>0.20</severityPerDay>
 			</li>
 		</comps>
-		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
 </Defs>

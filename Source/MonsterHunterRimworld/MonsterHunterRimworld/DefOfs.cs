@@ -7,7 +7,7 @@ namespace MonsterHunterRimworld
     public static class MHRWDefOf
     {
         #region "Basics"
-        public static JobDef MHRW_TransformWeapon;
+        //public static JobDef MHRW_TransformWeapon;
         public static JobDef MHRW_EatRocks;
         #endregion
 

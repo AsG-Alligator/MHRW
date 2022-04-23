@@ -64,10 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompDelex.cs" />
-    <Compile Include="CompHuntingSong.cs" />
     <Compile Include="CompInitialManhunter.cs" />
     <Compile Include="CompKulve.cs" />
-    <Compile Include="CompProperties_HuntingSong.cs" />
     <Compile Include="FlashProjectile.cs" />
     <Compile Include="MHGenderedLeatherOverride.cs" />
     <Compile Include="CompProperties_VaalHazak.cs" />

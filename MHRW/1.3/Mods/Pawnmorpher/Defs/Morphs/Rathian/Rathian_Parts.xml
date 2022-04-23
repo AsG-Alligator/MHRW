@@ -135,7 +135,6 @@
 				<description>Against all odds [PAWN_nameDef]'s arm has regained most of its flexibility, despite still present wing membrane attached to it.</description>
 			</li>
 		</stages>
-		</stages>
 		<comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
 				<mutationDependency>
