@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHRW_Weapons", "MHRW_Weapons\MHRW_Weapons.csproj", "{304E765F-FAD8-4D07-985D-45ACAFD1DD2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{304E765F-FAD8-4D07-985D-45ACAFD1DD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304E765F-FAD8-4D07-985D-45ACAFD1DD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304E765F-FAD8-4D07-985D-45ACAFD1DD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304E765F-FAD8-4D07-985D-45ACAFD1DD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F23564F5-0C66-413D-941E-0A95834638FE}
+	EndGlobalSection
+EndGlobal

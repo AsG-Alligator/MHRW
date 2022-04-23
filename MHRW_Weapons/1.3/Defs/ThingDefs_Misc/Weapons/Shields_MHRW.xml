@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef Name="MHRW_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeHitChance>-2</MeleeHitChance>
+            <MeleeDodgeChance>-5</MeleeDodgeChance>
+        </equippedStatOffsets>
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		<bodyPartGroups>
+			<li>LeftHand</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		</apparel>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!-- SNS -->
+
+    <ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BaseSnS</defName>
+        <label>hunter shield</label>
+        <description>A small steel shield made for use with the hunter sword.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS/Shield_SnS</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS/Shield_SnS</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_RathianSnS</defName>
+        <label>Rathian small shield</label>
+        <description>A small steel shield made for use with the hunter sword. This one was forged with Rathian materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Rathian/Rathian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>60</Steel>
+			<Leather_Rathian>30</Leather_Rathian>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Rathian/Rathian</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_GirrosSnS</defName>
+        <label>Girros small shield</label>
+        <description>A small steel shield made for use with the hunter sword. This one was forged with Great Girros materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Girros/Girros</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>60</Steel>
+			<Leather_GreatGirros>30</Leather_GreatGirros>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Girros/Girros</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_NergiSnS</defName>
+        <label>Nergigante small shield</label>
+        <description>A small steel shield made for use with the hunter sword. This one was forged with Nergigante materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Nergi/Nergi</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>60</Steel>
+			<Leather_Nergigante>30</Leather_Nergigante>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>550</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Nergi/Nergi</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<!-- CB -->
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BaseCB</defName>
+        <label>chargeblade shield</label>
+        <description>A medium steel shield made for use with the charge blade.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB/Shield_CB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB/Shield_CB</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_DiablosCB</defName>
+        <label>Diablos chargeblade shield</label>
+        <description>A medium steel shield made for use with the charge blade. This one was forged with Diablos materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Diablos/Diablos</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+			<Leather_Diablos>35</Leather_Diablos>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Diablos/Diablos</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_RathalosCB</defName>
+        <label>Rathalos chargeblade shield</label>
+        <description>A medium steel shield made for use with the charge blade. This one was forged with Rathalos materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Rathalos/Rathalos</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+			<Leather_Rathalos>35</Leather_Rathalos>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Rathalos/Rathalos</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	<!-- LC -->
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BaseL</defName>
+        <label>lance shield</label>
+        <description>A large steel shield made for use with the lance.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L/Shield_L</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L/Shield_L</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_PukeiL</defName>
+        <label>Pukei-Pukei lance shield</label>
+        <description>A large steel shield made for use with the lance. This one was made with Pukei-Pukei materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_Pukei/Pukei</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Pukei>30</Leather_Pukei>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>550</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_Pukei/Pukei</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BarrothL</defName>
+        <label>Barroth lance shield</label>
+        <description>A large steel shield made for use with the lance. This one was made with Barroth materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_Barroth/Barroth</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Barroth>30</Leather_Barroth>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.33</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_Barroth/Barroth</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_KutKuL</defName>
+        <label>Yian Kut-Ku lance shield</label>
+        <description>A large steel shield made for use with the lance. This one was made with KutKu materials.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_KutKu/KutKu</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Yian>30</Leather_Yian>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.33</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_KutKu/KutKu</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<!-- GL -->
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BaseGL</defName>
+        <label>gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL/Shield_GL</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL/Shield_GL</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_BazelGL</defName>
+        <label>Bazelgeuse gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance. This one was forged with Bazelgeuse parts.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Bazel/Bazel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Bazel>40</Leather_Bazel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Bazel/Bazel</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_JyuraGL</defName>
+        <label>Jyuratodus gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance. This one was forged with Jyuratodus parts.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Jyuratodus>40</Leather_Jyuratodus>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_RathianGL</defName>
+        <label>Rathian gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance. This one was forged with Rathian parts.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Rathian/Rathian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Rathian>40</Leather_Rathian>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Rathian/Rathian</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="MHRW_BaseShield">
+        <defName>MH_Shield_ZinogreGL</defName>
+        <label>Zinogre gunlance shield</label>
+        <description>A large steel shield made for use with the gunlance. This one was forged with Zinogre parts.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Zinogre/Zinogre</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Zinogre>40</Leather_Zinogre>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>MedievalBasic</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Zinogre/Zinogre</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	</Defs>

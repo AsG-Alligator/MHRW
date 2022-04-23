@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.3>
+		<li>/</li>
+		<li>Common</li>
+		<li>1.3</li>
+		<li IfModActive="tachyonite.pawnmorpherpublic">1.3/Mods/Pawnmorpher</li>	
+		<li IfModActive="tachyonite.pawnmorpherpublic_copy">1.3/Mods/Pawnmorpher</li>
+		<li IfModActive="tachyonite.pawnmorpher">1.3/Mods/Pawnmorpher</li>	
+		<li IfModActive="tachyonite.pawnmorpher_copy">1.3/Mods/Pawnmorpher</li>
+	</v1.3>
+</loadFolders>

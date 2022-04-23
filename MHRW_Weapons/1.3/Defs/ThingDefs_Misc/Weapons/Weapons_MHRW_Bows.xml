@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> BOWS <-->
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow</defName>
+		<label>Bow</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowNormalOre</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowNormalOre</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow_Rathian</defName>
+		<label>Princess Arrow</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Rathian materials. Fires poison-tipped arrows.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Rathian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Rathian>50</Leather_Rathian>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowRathian</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowRathian</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>MHPoisonArrow</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow_Tobi</defName>
+		<label>Kadachi Strikebow</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Tobi-Kadachi materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Tobi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_TobiKadachi>50</Leather_TobiKadachi>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowTobiKadachi</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowTobiKadachi</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MH_Bow_Kushala</defName>
+		<label>Daora's Sagittarii</label>
+		<description>An upscaled version of the classic longbow. Fires massive arrows tipped in special coating. \n\n This one has been made with Kushala Daora materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Bow/Bow_Kushala</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0)</eastOffset>
+				<westOffset>(-0.1,0,0)</westOffset>
+				<southOffset>(0,0,0)</southOffset>
+				<northOffset>(0,0,0)</northOffset>
+			</li>
+		</comps>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Kushala>50</Leather_Kushala>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_MHBowKushala</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSpecialTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_MHBowKushala</defName>
+		<label>hunter bow arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/MH_Arrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+
+</Defs>

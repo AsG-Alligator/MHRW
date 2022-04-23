@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> GUNLANCES <-->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance</defName>
+		<label>Gunlance</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n Shelling type: Normal 1</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MHGunlance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL/Shield_GL</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>140</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellOre</defaultProjectile>
+				<warmupTime>0.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellOre</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Rathian</defName>
+		<label>Princess Panoply</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Rathian materials. \n\n Shelling type: Normal 5</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLRathian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Rathian/Rathian</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Rathian>50</Leather_Rathian>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellRathian</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>MHPoisonStab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellRathian</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Jyura</defName>
+		<label>Jyura Buster</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Jyuratodus materials. \n\n Shelling type: Wide 2</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLJyura</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Jyura/Jyura</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Jyuratodus>50</Leather_Jyuratodus>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellJyura</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellJyura</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>70</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<explosionRadius>1.2</explosionRadius>
+		</projectile>
+	</ThingDef>
+
+		
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Bazel</defName>
+		<label>Bazel Buster</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Bazelgeuse materials. \n\n Shelling type: Wide</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLBazel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Bazel/Bazel</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Bazel>50</Leather_Bazel>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellBazel</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<forcedMissRadius>0.1</forcedMissRadius>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MHGunlanceShellBazel</defName>
+    <label>gunlance shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>1.2</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>MH_Gunlance_Zinogre</defName>
+		<label>Usurper's Roar</label>
+		<description>An amalgamation of a huge lance and a short-ranged firearm. Comes equipped with a massive shield that blocks nearly all attacks, but slows the wearer down. \n\n This one has been forged with Zinogre materials. \n\n Shelling type: Normal</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/GL/GLZinogre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,-0.1,0)</westOffset>
+				<southOffset>(0.3,0.8,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_GL_Zinogre/Zinogre</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Zinogre>50</Leather_Zinogre>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MHGunlanceShellZinogre</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Shot_Gunlance</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>lateral thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>risng slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead smash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MHGunlanceShellZinogre</defName>
+		<label>gunlance shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+
+</Defs>

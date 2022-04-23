@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--> LANCES <-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance</defName>
+		<label>Lance</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L/Shield_L</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance_Pukei</defName>
+		<label>Datura Pike</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Pukei-Pukei materials. Applies poison on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Lance/Pukei</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Lance/Shields/Pukei</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Pukei>50</Leather_Pukei>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>MHPoisonStab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>MHPoisonStab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>MHPoisonStab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance_Barroth</defName>
+		<label>Barroth Stinger</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Barroth materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Lance/Barroth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Lance/Shields/Barroth</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Barroth>50</Leather_Barroth>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Lance_KutKu</defName>
+		<label>Kut-Ku Stabber</label>
+		<description>A massive lance with an equally massive shield, allowing the user to block pretty much anything coming their way. There is a cost to that defense - equipping this weapon will slow the user down considerably. \n\n This one has been made with Yian Kut-Ku materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Lance/KutKu</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.3,0,0)</eastOffset>
+				<westOffset>(-0.3,0,0)</westOffset>
+				<southOffset>(0.3,1,0)</southOffset>
+				<northOffset>(0.3,0,0)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_L_KutKu/KutKu</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.10)</li>
+						<li>(3, 0.15)</li>
+						<li>(4, 0.20)</li>
+						<li>(5, 0.25)</li>
+						<li>(6, 0.30)</li>
+						<li>(7, 0.35)</li>
+						<li>(8, 0.40)</li>
+						<li>(9, 0.45)</li>
+						<li>(10, 0.50)</li>
+						<li>(11, 0.55)</li>
+						<li>(12, 0.60)</li>
+						<li>(13, 0.65)</li>
+						<li>(14, 0.70)</li>
+						<li>(15, 0.75)</li>
+						<li>(16, 0.80)</li>
+						<li>(17, 0.82)</li>
+						<li>(18, 0.85)</li>
+						<li>(19, 0.87)</li>
+						<li>(20, 0.90)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Leather_Yian>50</Leather_Yian>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>high thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>counter-thrust</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>wide sweep</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHLanceTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

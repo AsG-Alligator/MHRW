@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<!--> SWITCHAXES <-->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe</defName>
+		<label>Switch Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSwitchaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHSwitchsword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword</defName>
+		<label>Switch Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSwitchsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHSwitchaxe</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe_TierTwo</defName>
+		<label>Improved Steel Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SASteelTier2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SASteelTier2_sword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword_TierTwo</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>220</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword_TierTwo</defName>
+		<label>Improved Steel Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SASteelTier2_sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SASteelTier2</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe_TierTwo</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe_TierThree</defName>
+		<label>Chrome Machina</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SASteelTier3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SASteelTier3_sword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword_TierThree</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>240</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword_TierThree</defName>
+		<label>Switch Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SASteelTier3_sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SASteelTier3</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe_TierThree</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe_Rathian</defName>
+		<label>Dragonmaiden Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Rathain parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SARathian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SARathian_sword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword_Rathian</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>220</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Rathian>50</Leather_Rathian>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword_Rathian</defName>
+		<label>Dragonmaiden Axe</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Rathian parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SARathian_sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SARathian</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe_Rathian</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Switchaxe_Barroth</defName>
+		<label>Barroth Grinder</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Barroth parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SABarroth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SABarroth_sword</TransformIcon>
+				<transformSound>saxe_switch2</transformSound>
+				<transformInto>MH_Switchsword_Barroth</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>220</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Barroth>50</Leather_Barroth>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>wild swing</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>fade slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_Switchsword_Barroth</defName>
+		<label>Barroth Grinder</label>
+		<description>A curious mechanical monstrosity, capable of transforming between an axe and a sword mode. Axe mode allows for faster movement, but lower damage attacks, while sword mode slows the wearer more but increases the attack power. \n\n This one has been made with Barroth parts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SA/SABarroth_sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,0,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/SA/SABarroth</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Switchaxe_Barroth</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>double slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+
+
+</Defs>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Monster Hunter RimWorld Weapons</name>
+	<author>AsG_Alligator</author>
+	<packageId>AsGAlligator.MHRW_Weapons</packageId>
+	<url>n/a</url>
+	<description>Monster Hunter weapons pack to go with the base mod.</description>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+	<li>
+        <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+        <displayName>Vanilla Expanded Framework</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+    </li>
+	<li>
+        <packageId>AsGAlligator.MHRW</packageId>
+        <displayName>Monster Hunter RimWorld</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2798478679</steamWorkshopUrl>
+    </li>
+	<li>
+        <packageId>carnysenpai.equipmenttoolbox</packageId>
+        <displayName>Equipment Toolbox</displayName>
+        <steamWorkshopUrl>TBA</steamWorkshopUrl>
+    </li>
+	</modDependencies>
+	<loadAfter>
+		<li>tachyonite.pawnmorpherpublic</li>
+		<li>tachyonite.pawnmorpherpublic_copy</li>
+		<li>tachyonite.pawnmorpher</li>
+		<li>tachyonite.pawnmorpher_copy</li>
+		<li>carnysenpai.equipmenttoolbox</li>
+		<li>carnysenpai.equipmenttoolbox_copy</li>
+		<li>AsGAlligator.MHRW</li>
+		<li>AsGAlligator.MHRW_copy</li>
+	</loadAfter>
+</ModMetaData>

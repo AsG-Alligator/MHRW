@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> HUNTING HORNS <-->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MH_Huntinghorn</defName>
+		<label>Hunting Horn</label>
+		<description>A massive blunt weapon AND a huge musical instrument at the same time! The hunting horn can play songs to provide your fellow colonists with buffs.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHHuntinghorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.25,0,0.2)</eastOffset>
+				<westOffset>(-0.25,0,0.2)</westOffset>
+				<southOffset>(0.25,0,0.2)</southOffset>
+				<northOffset>(0.25,0,0.2)</northOffset>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>MHBluntTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>forward slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>right slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slam</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+</Defs>

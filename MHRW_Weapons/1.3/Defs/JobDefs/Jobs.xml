@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>MHRW_TransformWeapon</defName>
+		<driverClass>MHRW_Weapons.JobDriverTransformWeapon</driverClass>
+		<reportString>transforming weapon.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+</Defs>

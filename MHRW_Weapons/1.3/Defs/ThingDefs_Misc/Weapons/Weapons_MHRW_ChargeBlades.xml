@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> CHARGEBLADES <-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade</defName>
+		<label>Charge Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHChargeblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,1,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<!--
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe</transformInto>
+				<transformTime>0.5</transformTime>
+			</li>-->
+			<li Class="EquipmentToolbox.CompProperties_Transformable">
+				<abilityLabel>Axe Mode</abilityLabel>
+				<abilityDesc>Transforms into axe form</abilityDesc>
+				<abilityIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</abilityIcon>
+				<abilityIconAngle>0.0</abilityIconAngle>
+				<abilityIconOffset>(0.0, 0.0)</abilityIconOffset>
+				<abilityColor>(1.0, 1.0, 1.0)</abilityColor>
+				<!--hotKey>Misc4</hotKey-->
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<canBeReloaded>true</canBeReloaded>
+				<spawnWithFullAmmo>true</spawnWithFullAmmo>
+				<chargeNoun>phial</chargeNoun>
+				<reloadTime>1.0</reloadTime>
+				<soundReload>Interact_Rifle</soundReload>
+				<transformInto>MH_ChargebladeAxe</transformInto>
+				<transformTime>0.5</transformTime>
+				<transformSound>saxe_switch1</transformSound>
+				<canAiUse>true</canAiUse>
+				<shouldAiAlwaysUseWhenUnDrafted>false</shouldAiAlwaysUseWhenUnDrafted>
+				<uniqueCompID>1</uniqueCompID>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB/Shield_CB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe</defName>
+		<label>Charge Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHChargeblade_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,1,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<!--<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade</transformInto>
+				<transformTime>0.5</transformTime>
+			</li>-->
+			<li Class="EquipmentToolbox.CompProperties_Transformable">
+				<abilityLabel>Sword Mode</abilityLabel>
+				<abilityDesc>Transforms into sword form</abilityDesc>
+				<abilityIcon>Things/Item/Equipment/WeaponMelee/MHChargeblade</abilityIcon>
+				<abilityIconAngle>45.0</abilityIconAngle>
+				<abilityIconOffset>(0.0, 0.0)</abilityIconOffset>
+				<abilityColor>(1.0, 1.0, 1.0)</abilityColor>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<canBeReloaded>true</canBeReloaded>
+				<spawnWithFullAmmo>true</spawnWithFullAmmo>
+				<chargeNoun>phial</chargeNoun>
+				<reloadTime>1.0</reloadTime>
+				<soundReload>Interact_Rifle</soundReload>
+				<transformInto>MH_Chargeblade</transformInto>
+				<transformTime>0.5</transformTime>
+				<transformSound>saxe_switch1</transformSound>
+				<canAiUse>true</canAiUse>
+				<shouldAiAlwaysUseWhenUnDrafted>false</shouldAiAlwaysUseWhenUnDrafted>
+				<uniqueCompID>1</uniqueCompID>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade_Rathalos</defName>
+		<label>Axelion Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down. This one was forged with Rathalos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBRathalos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,1,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBRathalos_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe_Rathalos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Rathalos/Rathalos</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Rathalos>40</Leather_Rathalos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe_Rathalos</defName>
+		<label>Axelion Blade</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBRathalos_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,1,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBRathalos</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade_Rathalos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>MHBurnCut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_Chargeblade_Diablos</defName>
+		<label>Diablos Tyrannis</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down. This one was forged with Diablos materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBDiablos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0,0.1)</eastOffset>
+				<westOffset>(-0.1,0,0.1)</westOffset>
+				<southOffset>(0.1,1,0.1)</southOffset>
+				<northOffset>(0.1,0,0.1)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into axe form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBDiablos_axemode</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_ChargebladeAxe_Diablos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_CB_Diablos/Diablos</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Leather_Diablos>40</Leather_Diablos>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>roundslash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>shield thrust</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>charged double slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHMechanicalTier3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeaponMHRWNotCraftable">
+		<defName>MH_ChargebladeAxe_Diablos</defName>
+		<label>Diablos Tyrannis</label>
+		<description>A mechanically complex weapon, capable of discharging phials causing explosions in front of the user. It comes with a large shield that allows the user to block most attacks coming their way. It's size will slow the wearer down.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CB/CBDiablos_axemode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.5,0,0.2)</eastOffset>
+				<westOffset>(-0.5,0,0.2)</westOffset>
+				<southOffset>(0.4,1,0.2)</southOffset>
+				<northOffset>(0.4,0,0.2)</northOffset>
+			</li>
+			<li Class="MHRW_Weapons.CompProperties_WeaponTransform">
+				<!--TransformLabel></TransformLabel-->
+				<TransformDesc>Transforms into sword form</TransformDesc>
+				<TransformIcon>Things/Item/Equipment/WeaponMelee/CB/CBDiablos</TransformIcon>
+				<transformSound>saxe_switch1</transformSound>
+				<transformInto>MH_Chargeblade_Diablos</transformInto>
+				<!--transformSecondaryProduct></transformSecondaryProduct-->
+				<transformTime>0.5</transformTime>
+				<!--usesAmmunition></usesAmmunition-->
+				<!--needSpecialItemEquipped></needSpecialItemEquipped-->
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>dash slam</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>rising slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.9</cooldownTime>
+			</li>
+			<li>
+				<label>overhead slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

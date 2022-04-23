@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--> SWORD AND SHIELDS <-->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield</defName>
+		<label>Hunter Sword</label>
+		<description>A more reasonably-sized hunter weapon. The bread and butter of a beginner hunter!</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MHSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS/Shield_SnS</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Rathian</defName>
+		<label>Princess Rapier</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n\n This one has been made with Rathian materials. Applies poison on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSRathian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Rathian/Rathian</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Rathian>30</Leather_Rathian>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHPoisonCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Girros</defName>
+		<label>Malady's Tabar</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n\n This one has been made with Girros materials. Applies paralisis on hit.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSGirros</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Girros/Girros</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_GreatGirros>30</Leather_GreatGirros>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>MHParalisisCut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MH_SwordandShield_Nergi</defName>
+		<label>Eradication Vanguard</label>
+		<description>A more reasonably-sized hunter weapon. It has a shield that one can use to block attacks. The bread and butter of a beginner hunter! \n\n This one has been made with Nergigante materials.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SnS/SnSNergi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<eastOffset>(0.1,0.2,0.1)</eastOffset>
+				<westOffset>(-0.1,-0.2,0.1)</westOffset>
+				<southOffset>(0,0.8,0.1)</southOffset>
+				<northOffset>(0,0,0.1)</northOffset>
+			</li>
+			<li Class="EquipmentToolbox.CompProperties_Shield">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/Shields/Shield_SnS_Nergi/Nergi</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
+					<drawOffsetNorth>(0, -0.017, 0)</drawOffsetNorth>
+					<drawOffsetEast>(0, -0.017, -0.2)</drawOffsetEast>
+					<drawOffsetSouth>(0, 0.03, 0)</drawOffsetSouth>
+					<drawOffsetWest>(0, 0.3, -0.2)</drawOffsetWest>
+				</graphicData>
+				<curveSkillBasedMeleeBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedMeleeBlockChance>
+				<curveSkillBasedRangedBlockChance>
+					<points>
+						<li>(0, 0.00)</li>
+						<li>(1, 0.05)</li>
+						<li>(2, 0.08)</li>
+						<li>(3, 0.12)</li>
+						<li>(4, 0.15)</li>
+						<li>(5, 0.17)</li>
+						<li>(6, 0.20)</li>
+						<li>(7, 0.26)</li>
+						<li>(8, 0.30)</li>
+						<li>(9, 0.37)</li>
+						<li>(10, 0.35)</li>
+						<li>(11, 0.40)</li>
+						<li>(12, 0.43)</li>
+						<li>(13, 0.47)</li>
+						<li>(14, 0.50)</li>
+						<li>(15, 0.53)</li>
+						<li>(16, 0.57)</li>
+						<li>(17, 0.60)</li>
+						<li>(18, 0.63)</li>
+						<li>(19, 0.67)</li>
+						<li>(20, 0.70)</li>
+					</points>
+				</curveSkillBasedRangedBlockChance>
+				<curveQualityBasedMeleeBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedMeleeBlockChance>
+				<curveQualityBasedRangedBlockChance>
+					<points>
+						<li>(1, 0.20)</li>
+						<li>(2, 0.30)</li>
+						<li>(3, 0.40)</li>
+						<li>(4, 0.50)</li>
+						<li>(5, 0.60)</li>
+						<li>(6, 0.70)</li>
+						<li>(7, 0.80)</li>
+					</points>
+				</curveQualityBasedRangedBlockChance>
+				<canBlockMelee>true</canBlockMelee>
+				<canBlockRanged>true</canBlockRanged>
+				<blockAngleRange>110.0</blockAngleRange>
+				<postBlockClass>MHRW_Weapons.PostBlockEffecter</postBlockClass>
+			</li>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Leather_Nergigante>30</Leather_Nergigante>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.9</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>lateral slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>chop</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>side slash</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>shield bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>MHSwordTier4</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>MHSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+
+
+</Defs>

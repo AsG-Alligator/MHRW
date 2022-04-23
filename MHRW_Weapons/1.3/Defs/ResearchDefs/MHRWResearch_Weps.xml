@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--====== swords ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHSwordTier1</defName>
+    <label>Swords (tier 1)</label>
+    <description>Research how to forge tier 1 greatswords, swords and shields, dual blades and longswords.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>MHSwordTier2</defName>
+    <label>Swords (tier 2)</label>
+    <description>Research how to forge more powerful tier 2 sword weapons.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>MHSwordTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSwordTier3</defName>
+    <label>Swords (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 sword weapons.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>MHSwordTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSwordTier4</defName>
+    <label>Swords (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 sword weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>MHSwordTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+     <!--====== blunt weapons ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHBluntTier1</defName>
+    <label>Blunt weapons (tier 1)</label>
+    <description>Research how to forge tier 1 hammers and hunting horns.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHBluntTier2</defName>
+    <label>Blunt weapons (tier 2)</label>
+    <description>Research how to forge more powerful tier 2 blunt weapons.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.0</researchViewY>
+	<prerequisites>
+      <li>MHBluntTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHBluntTier3</defName>
+    <label>Blunt weapons (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 blunt weapons.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2</researchViewY>
+	<prerequisites>
+      <li>MHBluntTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHBluntTier4</defName>
+    <label>Blunt weapons (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 blunt weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2</researchViewY>
+	<prerequisites>
+      <li>MHBluntTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+       <!--====== mechanical weapons ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHMechanicalTier1</defName>
+    <label>Mechanical weapons (tier 1)</label>
+    <description>Research how to forge tier 1 charge blades and switch axes.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>MHMechanicalTier2</defName>
+    <label>Mechanical weapons (tier 2)</label>
+    <description>Research how to forge more powerful tier 2 mechanical weapons.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3</researchViewY>
+	<prerequisites>
+      <li>MHMechanicalTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHMechanicalTier3</defName>
+    <label>Mechanical weapons (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 mechanical weapons.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3</researchViewY>
+	<prerequisites>
+      <li>MHMechanicalTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHMechanicalTier4</defName>
+    <label>Mechanical weapons (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 mechanical weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3</researchViewY>
+	<prerequisites>
+      <li>MHMechanicalTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+         <!--====== special ranged weapons ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHSpecialTier1</defName>
+    <label>Special ranged weapons (tier 1)</label>
+    <description>Research how to forge tier 1 insect glaives and bows.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSpecialTier2</defName>
+    <label>Special ranged weapons (tier 2)</label>
+    <description>Research how to forge more powerful tier 2 special ranged weapons.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4</researchViewY>
+	<prerequisites>
+      <li>MHSpecialTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSpecialTier3</defName>
+    <label>Special ranged weapons (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 special ranged weapons.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4</researchViewY>
+	<prerequisites>
+      <li>MHSpecialTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSpecialTier4</defName>
+    <label>Special ranged weapons (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 special ranged weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4</researchViewY>
+	<prerequisites>
+      <li>MHSpecialTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+           <!--====== lances ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHLanceTier1</defName>
+    <label>Lances (tier 1)</label>
+    <description>Research how to forge tier 1 lances and gunlances.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHLanceTier2</defName>
+    <label>Lances (tier 2)</label>
+    <description>Research how to forge more powerul tier 2 lances and gunlances.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5</researchViewY>
+	<prerequisites>
+      <li>MHLanceTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHLanceTier3</defName>
+    <label>Lances (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 lances and gunlances.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4</researchViewX>
+    <researchViewY>5</researchViewY>
+	<prerequisites>
+      <li>MHLanceTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHLanceTier4</defName>
+    <label>Lances (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 lances and gunlances.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5</researchViewY>
+	<prerequisites>
+      <li>MHLanceTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+             <!--====== bowguns ======-->
+
+  
+  <ResearchProjectDef>
+    <defName>MHBowgunTier1</defName>
+    <label>Bowguns (tier 1)</label>
+    <description>Research how to forge tier 1 light and heavy bowguns.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>MHBowgunTier2</defName>
+    <label>Bowguns (tier 2)</label>
+    <description>Research how to forge more powerful tier 2 light and heavy bowguns.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3</researchViewX>
+    <researchViewY>6</researchViewY>
+	<prerequisites>
+      <li>MHBowgunTier1</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHBowgunTier3</defName>
+    <label>Bowguns (tier 3)</label>
+    <description>Research how to forge even more powerful tier 3 light and heavy bowguns.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>4</researchViewX>
+    <researchViewY>6</researchViewY>
+	<prerequisites>
+      <li>MHBowgunTier2</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHBowgunTier4</defName>
+    <label>Bowguns (tier 4)</label>
+    <description>Research how to forge the most powerful tier 4 light and heavy bowguns.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>6</researchViewY>
+	<prerequisites>
+      <li>MHBowgunTier3</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <!--====== bowguns ======-->
+
+
+  </Defs>
