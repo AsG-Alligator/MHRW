@@ -1,0 +1,134 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherWyvernHand</defName>
+        <stages>
+            <li>
+                <label>clawed hands</label>
+                <description>These make handling things hard.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>clawed hands</label>
+                <description>Slice and dice!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>clawed hands</label>
+                <description>I keep scratching myself with these by accident.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+	</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherWyvernFoot</defName>
+        <stages>
+            <li>
+                <label>clawed feet</label>
+                <description>How am I supposed to wear shoes over these?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>clawed feet</label>
+                <description>I'm enjoying the extra traction these give me.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>clawed feet</label>
+                <description>Even my feed are monstrous. Disgusting.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+	</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDromeFoot</defName>
+        <stages>
+            <li>
+                <label>raptor feet</label>
+                <description>Why is my toe bent upwards, and why do I have a combat knife growing out of it.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>raptor feet</label>
+                <description>I'm gonna gut whoever messes with me with a single kick!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>raptor feet</label>
+                <description>Why are my feet mangled?! This is awful!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+	</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+		<durationDays>1</durationDays>
+		<defName>EtherMHDigitigradeLeg</defName>
+		<stages>
+			<li>
+				<label>Animal legs</label>
+				<description>Are they bent a different way, or is that my heel?</description>
+				<visible>true</visible>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Animal legs</label>
+				<description>I can be so much faster like this! Once I get used to it.</description>
+				<visible>true</visible>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Animal legs</label>
+				<description>My knee's bending backwards now! What? That's my heel, not my knee? Even worse!</description>
+				<visible>true</visible>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Animal legs</label>
+				<description>Just a bit further, and I won't be able to stand up! How about that?</description>
+				<visible>true</visible>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+		<durationDays>1</durationDays>
+		<defName>EtherWyvernEye</defName>
+		<stages>
+			<li>
+				<label>wyvern eyes</label>
+				<description>These are unsettling to see in the mirror.</description>
+				<visible>true</visible>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>Holy crap, I can see everything at night.</description>
+				<visible>true</visible>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>What the hell are these eyes?</description>
+				<visible>true</visible>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wyvern eyes</label>
+				<description>Improved eyesight is always welcome.</description>
+				<visible>true</visible>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

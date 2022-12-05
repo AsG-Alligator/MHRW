@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKestodonSnout</defName>
+        <stages>
+            <li>
+                <label>Kestodon face</label>
+                <description>It makes it so hard to talk...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon face</label>
+                <description>Cute herbivore dino face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon face</label>
+                <description>Dumb dino face...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKestodonCrest</defName>
+        <stages>
+            <li>
+                <label>Kestodon crest</label>
+                <description>I didn't think people calling me thick-headed would turn out right...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon crest</label>
+                <description>Ha! A natural helmet!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon crest</label>
+                <description>My neck hurts from having to carry this damn thing on my head.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKestodonTail</defName>
+        <stages>
+            <li>
+                <label>Kestodon tail</label>
+                <description>I keep knocking stuff and people over with it.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon tail</label>
+                <description>Ha! Armored tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kestodon tail</label>
+                <description>Take this stupid thing off of me right now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

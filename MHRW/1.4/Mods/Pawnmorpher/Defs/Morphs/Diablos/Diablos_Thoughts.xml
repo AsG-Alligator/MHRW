@@ -1,0 +1,170 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosSnout</defName>
+        <stages>
+            <li>
+                <label>Diablos face</label>
+                <description>I look atrocious...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos face</label>
+                <description>Why do I want to munch on some cacti right about now?</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos face</label>
+                <description>No! My face! I look hideous!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosHorns</defName>
+        <stages>
+            <li>
+                <label>Diablos horns</label>
+                <description>Holy crap, these are massive!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos horns</label>
+                <description>Chaaaarge!!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos horns</label>
+                <description>Oh my lord, these add so much weight onto my poor head. When will this horror end?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosTail</defName>
+        <stages>
+            <li>
+                <label>Diablos tail</label>
+                <description>I need to be careful not to hit anyone with this. Anyone I like at least.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos tail</label>
+                <description>I am going to turn some dumb raider into paste with this!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos tail</label>
+                <description>Whoever did this to me is going to have this swung into their face.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosCrest</defName>
+        <stages>
+            <li>
+                <label>armored crest</label>
+                <description>This is so much extra weight, but hey, I'll take extra bullet protection any day.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>armored crest</label>
+                <description>All-natural armor! Wait, is it all-natural if its a fantastical creature?</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>armored crest</label>
+                <description>I feel like a damn dog with one of those cone collars on...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosWingMemory</defName>
+        <stages>
+            <li>
+                <label>Diablos wings</label>
+                <description>How am I supposed to do anything with massive wings?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos wings</label>
+                <description>Dragon wings! Wait, these are my arms so technically... wyvern wings I guess? ... Wings!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos wings</label>
+                <description>No! My arms!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosWingTipMemory</defName>
+        <stages>
+            <li>
+                <label>Diablos wingtalons</label>
+                <description>This is too weird, I dont like this one bit.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos wingtalons</label>
+                <description>This will make doing literally anything a bit hard, but who cares!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Diablos wingtalons</label>
+                <description>I look like a freaky man-bat or something, please make this stop.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDiablosPlates</defName>
+        <stages>
+            <li>
+                <label>bone plating</label>
+                <description>This is so much extra weight, and it makes moving so muc harder.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>bone plating</label>
+                <description>Come on! Hit me! I dare you!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>bone plating</label>
+                <description>My skin! It's so heavy and stiff I can barely move! And it's sooo itchy, aaargh!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

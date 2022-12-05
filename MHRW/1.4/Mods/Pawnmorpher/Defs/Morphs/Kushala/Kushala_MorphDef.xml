@@ -1,0 +1,25 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>KushalaMorph</defName>
+		<label>kushalamorph</label>
+		<description>An elder dragon morph of the Kushala Daora sort.</description>
+		<race>KushalaDaora</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>ElderDragon</li>
+		</categories>
+		<fullTransformation>PawnmorphKushalaTF</fullTransformation>
+		<partialTransformation>PawnmorphKushalaTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(96,81,81)</skinColorOverride>
+				<hairColorOverride>(0,0,0,0)</hairColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>KushalaTransformationMemory</transformationMemory>
+			<revertedMemory>KushalaRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

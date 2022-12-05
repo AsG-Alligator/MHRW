@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>TobiMorph</defName>
+		<label>kadachimorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Tobi-Kadachi.</description>
+		<race>TobiKadachi</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphTobiTF</fullTransformation>
+		<partialTransformation>PawnmorphTobiTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(103, 119, 123)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>TobiTransformationMemory</transformationMemory>
+			<revertedMemory>TobiRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

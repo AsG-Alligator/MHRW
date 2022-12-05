@@ -1,0 +1,122 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKushalaSnout</defName>
+        <stages>
+            <li>
+                <label>Kushala snout</label>
+                <description>I dont appreciate the constant metallic taste in my mouth.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala snout</label>
+                <description>ROOAAR!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala snout</label>
+                <description>I feel like I have a metal bucket stuck to my face.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKushalaHorns</defName>
+        <stages>
+            <li>
+                <label>Kushala horns</label>
+                <description>These look like they would draw lightning during storms. Gotta remember to stay indoors.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala horns</label>
+                <description>These look pretty damn metal!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala horns</label>
+                <description>Goddamnit, why horns?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKushalaTail</defName>
+        <stages>
+            <li>
+                <label>Kushala tail</label>
+                <description>It's pretty stiff and heavy.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala tail</label>
+                <description>Dragon tail for a dragon me.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala tail</label>
+                <description>Gah! Stupid tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKushalaWings</defName>
+        <stages>
+            <li>
+                <label>Kushala wings</label>
+                <description>What's all that weight back there?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala wings</label>
+                <description>It's a shame I can't fly with these, but boy do they look awesome!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kushala wings</label>
+                <description>Great, more stuff to get caught on stuff with...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherSteelSkin</defName>
+        <stages>
+            <li>
+                <label>Steel skin</label>
+                <description>Is this... Metal?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Steel skin</label>
+                <description>This makes me feel like a walking tank.</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Steel skin</label>
+                <description>My skin is all stiff and heavy and I can barely move because of it.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

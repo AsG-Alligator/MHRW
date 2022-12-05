@@ -1,0 +1,34 @@
+<Defs>
+	<Pawnmorph.AnimalClassDef>
+        <defName>MHMonsters</defName>
+        <label>monsters</label>
+        <parent>Reptile</parent>
+    </Pawnmorph.AnimalClassDef>
+	
+	<Pawnmorph.AnimalClassDef>
+        <defName>MHWyverns</defName>
+        <label>winged wyverns</label>
+        <parent>MHMonsters</parent>
+    </Pawnmorph.AnimalClassDef>
+	
+	<Pawnmorph.AnimalClassDef>
+        <defName>MHDrakes</defName>
+        <label>quadruped wyverns</label>
+        <parent>MHMonsters</parent>
+    </Pawnmorph.AnimalClassDef>
+	
+	<Pawnmorph.AnimalClassDef>
+        <defName>MHRaptors</defName>
+        <label>bird wyverns</label>
+        <parent>MHMonsters</parent>
+    </Pawnmorph.AnimalClassDef>
+	
+	<Pawnmorph.MorphCategoryDef>
+		<defName>Monster</defName>
+	</Pawnmorph.MorphCategoryDef>
+	
+	<Pawnmorph.MorphCategoryDef>
+		<defName>ElderDragon</defName>
+	</Pawnmorph.MorphCategoryDef>
+	
+</Defs>

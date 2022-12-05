@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<JobDef>
+		<defName>MHRW_TransformWeapon</defName>
+		<driverClass>MonsterHunterRimworld.JobDriverTransformWeapon</driverClass>
+		<reportString>transforming weapon.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+	</JobDef>-->
+	
+	<JobDef>
+		<defName>MHRW_EatRocks</defName>
+		<driverClass>MonsterHunterRimworld.JobDriverEatRocks</driverClass>
+		<reportString>eating rocks.</reportString>
+		<casualInterruptible>true</casualInterruptible>
+		<suspendable>true</suspendable>
+	</JobDef>
+
+</Defs>

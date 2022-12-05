@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>KuluMorph</defName>
+		<label>kulumorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Kulu.</description>
+		<race>KuluYaKu</race>
+		<classification>MHRaptors</classification>
+		<categories>
+			<li>Arid</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphKuluTF</fullTransformation>
+		<partialTransformation>PawnmorphKuluTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(234, 211, 194)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>KuluTransformationMemory</transformationMemory>
+			<revertedMemory>KuluRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

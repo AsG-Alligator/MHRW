@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>TeostraMorph</defName>
+		<label>teostramorph</label>
+		<description>An elder dragon morph of the Teostra sort.</description>
+		<race>Tesuka</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>ElderDragon</li>
+		</categories>
+		<fullTransformation>PawnmorphTeostraTF</fullTransformation>
+		<partialTransformation>PawnmorphTeostraTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(131, 42, 47)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>TeostraTransformationMemory</transformationMemory>
+			<revertedMemory>TeostraRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

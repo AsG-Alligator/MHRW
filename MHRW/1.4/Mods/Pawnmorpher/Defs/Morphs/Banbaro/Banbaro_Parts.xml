@@ -1,0 +1,237 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="BanbaroPart" ParentName="PawnmorphPart" Abstract="true">
+		<classInfluence>BanbaroMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+	<Pawnmorph.Hediffs.MutationDef ParentName="BanbaroPart">
+		<defName>EtherBanbaroSnout</defName>
+		<label>Banbaro snout</label>
+		<description>The lower part of [PAWN_nameDef]'s face has reformed into an Banbaro snout, somewhat resembling one of a moose, but with more reptillian features and a whole lot of thick white fur around their neck.</description>
+		<initialSeverity>0</initialSeverity>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>new</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.02</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.45</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>2.6</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="BanbaroPart">
+		<defName>EtherBanbaroTail</defName>
+		<label>Banbaro tail</label>
+		<description>A large fluffy Banbaro tail.</description>
+		<parts>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+						<PM_BodySize>0.5</PM_BodySize>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="BanbaroPart">
+		<defName>EtherBanbaroHorns</defName>
+		<description>A pair of giant Banbaro horns formed on [PAWN_nameDef]'s head.</description>
+		<label>Banbaro horns</label>
+		<parts>
+			<li>Skull</li>
+		</parts>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<statOffsets>
+						<PM_BodySize>0.15</PM_BodySize>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="BanbaroPart">
+		<defName>EtherBanbaroHoof</defName>
+		<label>heeled hoof</label>
+		<description>[PAWN_nameDef]'s feet have formed into a stranged three-toed hoof-like structure that's somthing inbetween classic ungulate hoof and a theropod foot.</description>
+		<parts>
+			<li>Foot</li>
+		</parts>
+		<classInfluence>MHMonsters</classInfluence>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<label>unfamiliar</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>hooves</label>
+						<labelUsedInLogging>False</labelUsedInLogging>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+		<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart">
+		<defName>EtherBanbaroSkin</defName>
+		<label>thick fur and scales</label>
+		<description>[PAWN_nameDef]'s skin has grown thick long and warm fur, with their belly revealing an underlying layer of reptillian scales.</description>
+		<classInfluence>BanbaroMorph</classInfluence>
+		<parts>
+			<li>Torso</li>
+			<li>Head</li>
+			<li>Ear</li>
+			<li>Arm</li>
+			<li>Hand</li>
+			<li>Leg</li>
+			<li>Foot</li>
+			<li>Tail</li>
+			<li>MorphTail</li>
+		</parts>
+		<mutationLogRulePack>ScaleGrowthLogPack</mutationLogRulePack>
+		<categories>
+			<li>Minor</li>
+		</categories>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.33</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>tight skin</labelOverride>
+				<description>The skin on this limb is somewhat thicker and rather tight.</description>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scale patches</labelOverride>
+				<description>The skin is peppered with patches of small interlocking scales.</description>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scales with fuzz</labelOverride>
+				<description>A patches of short hair start growing inbetween the scales.</description>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-0.03</MoveSpeed>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ComfyTemperatureMin>0.05</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scales with fur</labelOverride>
+				<description>Pretty much all of the skin is covered in scales, and a large portion of it has fur growing on top of them.</description>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.1</ComfyTemperatureMax>
+					<ComfyTemperatureMin>0.2</ComfyTemperatureMin>
+					<MoveSpeed>-0.04</MoveSpeed>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>scales with thick fur</labelOverride>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>0.2</ComfyTemperatureMax>
+					<ComfyTemperatureMin>0.25</ComfyTemperatureMin>
+					<MoveSpeed>-0.05</MoveSpeed>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="BanbaroPart">
+		<defName>EtherBanbaroEar</defName>
+		<label>Banbaro ear</label>
+		<description>A cervine-like Banbaro ear.</description>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+		</stages>
+		<parts>
+			<li>Ear</li>
+		</parts>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+</Defs>
+

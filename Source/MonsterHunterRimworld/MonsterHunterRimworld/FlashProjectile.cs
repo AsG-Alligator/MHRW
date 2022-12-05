@@ -16,7 +16,7 @@ namespace MonsterHunterRimworld
 
         public override void Tick()
         {
-            GenExplosion.DoExplosion(this.Position, this.Map, 4.5f, DamageDefOf.Stun, this, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false, null, null);
+            GenExplosion.DoExplosion(this.Position, this.Map, 4.5f, DamageDefOf.Stun, this, -1, -1f, null, null, null, null, null, 0f, 1, GasType.Unused, false, null, 0f, 1, 0f, false, null, null);
             this.Destroy();
         }
     }

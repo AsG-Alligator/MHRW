@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>NergiMorph</defName>
+		<label>nergimorph</label>
+		<description>An elder dragon morph of the Nergi sort.</description>
+		<race>Nergigante</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>ElderDragon</li>
+		</categories>
+		<fullTransformation>PawnmorphNergiTF</fullTransformation>
+		<partialTransformation>PawnmorphNergiTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(50, 48, 45)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>NergiTransformationMemory</transformationMemory>
+			<revertedMemory>NergiRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

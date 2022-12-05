@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>ApcerosMorph</defName>
+		<label>apcemorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Apceros.</description>
+		<race>Apceros</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Arid</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphApcerosTF</fullTransformation>
+		<partialTransformation>PawnmorphApcerosTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(95, 59,40)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>ApcerosTransformationMemory</transformationMemory>
+			<revertedMemory>ApcerosRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

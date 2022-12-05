@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <HediffDef>
+    <defName>AteHunterMeal</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>buffed with a hunter meal</label>
+	<description>A buff provided by eating a hunter meal. Increases ones abilities in various ways.</description>
+    <labelNoun>hunter meal buff</labelNoun>
+    <defaultLabelColor>(0.8,1,0.8)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.8</painFactor>
+          <restFallFactor>0.5</restFallFactor>
+          <capMods>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.1</offset>
+            </li>
+			<li>
+              <capacity>Sight</capacity>
+              <offset>0.1</offset>
+            </li>
+			<li>
+              <capacity>Consciousness</capacity>
+              <offset>0.1</offset>
+            </li>
+			<li>
+              <capacity>Manipulation</capacity>
+              <offset>0.1</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>MHParalisis</defName>
+    <label>paralisis</label>
+    <labelNoun>paralisis</labelNoun>
+    <description>Paralisis caused by venom.</description>
+	<maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1000~1500</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+	   <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+		<minSeverity>0.9</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.05</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>KulveMantle</defName>
+    <label>golden mantle</label>
+    <labelNoun>golden mantle</labelNoun>
+	<defaultLabelColor>(212, 193, 23)</defaultLabelColor>
+    <description>A massive mantle of semi-solid gold. It provides excellent protection to the creature, but slows it down severely. Kulve Taroth will drop the mantle if sufficiently enraged.</description>
+	<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+		<statOffsets>
+			<MoveSpeed>-5.0</MoveSpeed>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+   <HediffDef ParentName="DiseaseBase">
+    <defName>DelexSand</defName>
+    <label>sandglide</label>
+    <labelNoun>sandglide</labelNoun>
+	<defaultLabelColor>(212, 193, 23)</defaultLabelColor>
+    <description>This creature is currently "swimming" through loose sand. This allows them to move at a much faster speed than usual.</description>
+	<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+		<statOffsets>
+			<MoveSpeed>5.0</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Waterblight</defName>
+    <label>waterblight</label>
+    <labelNoun>waterblight</labelNoun>
+	<defaultLabelColor>(0.55,0.3,0.5)</defaultLabelColor>
+    <description>Waterblight slowing the target down.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+ <!-- Hunting Horn Hediffs -->
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHHealthRecovery</defName>
+    <label>health recovery</label>
+    <labelNoun>health recovery</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Health recovery song, restoring small amount of hitpoints on body parts.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+			<!-- TODO health recovery-->
+            <capacity>Moving</capacity>
+            <offset>-0.0</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHDefenseUp</defName>
+    <label>defense up</label>
+    <labelNoun>defense up</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Defense up song, reducing recieved pain and increasing toughness.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statOffsets>
+			<ArmorRating_Blunt>+0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>+0.4</ArmorRating_Sharp>
+		</statOffsets>
+		<painFactor>0.5</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHPoisonNegated</defName>
+    <label>poison negated</label>
+    <labelNoun>poison negated</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Poison negation song, removing buildup of toxins in ones bloodstream.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	  <!-- TODO toxic removal-->
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.0</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHBlightNegated</defName>
+    <label>blights negated</label>
+    <labelNoun>blights negated</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Blight negation song, giving immunity to being set on fire, and increasing ones resistance to heat and cold.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statOffsets>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Flammability>-1.0</Flammability>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHSpeedUp</defName>
+    <label>movement speed up</label>
+    <labelNoun>movement speed increase</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Movement speed up song, increasing ones movement speed.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>+0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHStaminaUp</defName>
+    <label>stamina up</label>
+    <labelNoun>stamina increase</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Stamina up song, restoring some of ones strength and reducing the need to sleep.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	  	  <!-- TODO rest recovery-->
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>+0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+</HediffDef>
+
+<HediffDef ParentName="DiseaseBase">
+    <defName>MHStunNegated</defName>
+    <label>stun negated</label>
+    <labelNoun>stun negated</labelNoun>
+	<defaultLabelColor>(0.25,0.65,0.38)</defaultLabelColor>
+    <description>Stun negated song, giving immunity to stun effects.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	  	  <!-- TODO stun negation-->
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>+0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+</HediffDef>
+
+
+
+  <ThoughtDef>
+    <defName>AteHunterMeal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AteHunterMeal</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>ate hunter meal</label>
+        <description>Man, that food was so good! I feel like I could move mountains!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>HuntingHornMood</defName>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>enjoyed some music</label>
+        <description>Hunting horns sound so pleasing.</description>
+        <baseMoodEffect>+5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

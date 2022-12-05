@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>GlavenusMorph</defName>
+		<label>glavemorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Glavenus.</description>
+		<race>Glavenus</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphGlavenusTF</fullTransformation>
+		<partialTransformation>PawnmorphGlavenusTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(94,37,49)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>GlavenusTransformationMemory</transformationMemory>
+			<revertedMemory>GlavenusRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

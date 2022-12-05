@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>KirinMorph</defName>
+		<label>kirinmorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Kirin.</description>
+		<race>Kirin</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>ElderDragon</li>
+		</categories>
+		<fullTransformation>PawnmorphKirinTF</fullTransformation>
+		<partialTransformation>PawnmorphKirinTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(170, 185, 184)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>KirinTransformationMemory</transformationMemory>
+			<revertedMemory>KirinRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

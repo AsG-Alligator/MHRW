@@ -80,15 +80,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_MudSpit</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>2</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>1.3</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -460,15 +460,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_MudSpit</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>1.5</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -854,15 +854,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHFireball</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2.5</defaultCooldownTime>
       </li>
     </verbs>
     <race>
@@ -1063,15 +1063,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHFireball</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -1273,7 +1273,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>7</warmupTime>
+        <warmupTime>2.0</warmupTime>
         <range>23.9</range>
         <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>1</burstShotCount>
@@ -1281,7 +1281,7 @@
         <soundCast>Shot_MHFireball</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2.5</defaultCooldownTime>
 		<commonality>0.1</commonality>
       </li>
     </verbs>
@@ -1388,6 +1388,167 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MHBonepile</texPath>
           <drawSize>3.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Banbaro</defName>
+    <label>Banbaro</label>
+    <description>Banbaro is a large and heavy-set Brute Wyvern. Most of its body is covered in stout white fur, with portions on its head, legs, and arms being covered in gray scales. Its giant horns are its defining characteristic. These stout, pinkish horns end in broad, moose-like antlers</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>6000</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>30</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+    </statBases>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Things/Art/ArtBanbaro</ImageToShowInInfoCard>
+
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="MonsterHunterRimworld.CompProperties_TurfWar">
+		<maxFightRange>20</maxFightRange>
+	  </li>
+	<li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggBanbaroFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>40</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MHBruteDrome</body>
+      <baseHungerRate>1.0</baseHungerRate>
+      <baseBodySize>7.5</baseBodySize>
+      <baseHealthScale>8.6</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Banbaro</leatherDef>
+      <gestationPeriodDays>55</gestationPeriodDays>
+      <wildness>0.70</wildness>
+      <trainability>Intermediate</trainability>
+      <nuzzleMtbHours>100</nuzzleMtbHours>
+      <lifeExpectancy>300</lifeExpectancy>
+      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+	  <wildBiomes>
+		<TemperateForest>0</TemperateForest>
+		<TemperateSwamp>0</TemperateSwamp>
+		<BorealForest>0</BorealForest>
+		<Tundra>0</Tundra>
+		<ColdBog>0</ColdBog>
+		<IceSheet>0</IceSheet>
+		<TropicalRainforest>0</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0</AridShrubland>
+		<Desert>0</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+	  </wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Banbaro</defName>
+    <label>Banbaro</label>
+    <race>Banbaro</race>
+    <combatPower>1700</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Banbaro/Banbaro</texPath>
+          <drawSize>7.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>0.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Banbaro/Banbaro</texPath>
+          <drawSize>8.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Banbaro/Banbaro</texPath>
+          <drawSize>14.0</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/MHBonepile</texPath>
+          <drawSize>3.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<IncidentDef>
+		<defName>SmallMonsterAppear</defName>
+		<label>small monster appear</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MonsterHunterRimworld.IncidentWorker_SmallMonsterAppear</workerClass>
+		<baseChance>3</baseChance>
+	</IncidentDef>-->
+
+	<IncidentDef>
+		<defName>LargeMonsterAppear</defName>
+		<label>large monster appears</label>
+		<category>ThreatSmall</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MonsterHunterRimworld.IncidentWorker_LargeMonsterAppear</workerClass>
+		<baseChance>8</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>ElderDragonAppear</defName>
+		<label>elder dragon appears</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MonsterHunterRimworld.IncidentWorker_ElderDragonAppear</workerClass>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+</Defs>

@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>VelkhanaMorph</defName>
+		<label>velkhamorph</label>
+		<description>An elder dragon morph of the Velkhana sort.</description>
+		<race>Velkhana</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>ElderDragon</li>
+		</categories>
+		<fullTransformation>PawnmorphVelkhanaTF</fullTransformation>
+		<partialTransformation>PawnmorphVelkhanaTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(118,133,146)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>VelkhanaTransformationMemory</transformationMemory>
+			<revertedMemory>VelkhanaRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

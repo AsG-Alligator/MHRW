@@ -1,0 +1,98 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherGlavenusSnout</defName>
+        <stages>
+            <li>
+                <label>Glavenus face</label>
+                <description>These teeth are scary.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus face</label>
+                <description>Menacing!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus face</label>
+                <description>I look like a dinosaur pug, minus the big eyes.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherGlavenusTail</defName>
+        <stages>
+            <li>
+                <label>Glavenus tail</label>
+                <description>I keep leaving gashes in the floor because of this thing.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus tail</label>
+                <description>Schwing!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus tail</label>
+                <description>I think I shredded my bedsheets about a dozen times by now with this thing.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherGlavenusHorns</defName>
+        <stages>
+            <li>
+                <label>Glavenus horns</label>
+                <description>So many horns...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus horns</label>
+                <description>Hell yeah! Monstrous horns!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus horns</label>
+                <description>I'm a mutated freak!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherGlavenusSpikes</defName>
+        <stages>
+            <li>
+                <label>Glavenus backspikes</label>
+                <description>How the hell am I supposed to put clothes on now?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus backspikes</label>
+                <description>Spikes!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Glavenus backspikes</label>
+                <description>Please make this stop!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

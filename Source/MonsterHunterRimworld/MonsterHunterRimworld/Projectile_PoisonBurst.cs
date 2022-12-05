@@ -30,7 +30,7 @@ namespace MonsterHunterRimworld
             }
         }
 
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             applyHediffToPawnsInArea(this.Map, GenRadial.RadialCellsAround(this.Position, this.def.projectile.explosionRadius, true).ToHashSet(), HediffDefOf.ToxicBuildup, null);
             base.Impact(hitThing); 

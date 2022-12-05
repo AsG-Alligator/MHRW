@@ -1,0 +1,98 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBarrothSnout</defName>
+        <stages>
+            <li>
+                <label>Barroth face</label>
+                <description>It makes it so hard to talk...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth face</label>
+                <description>It makes me look mean. Grrrrr....</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth face</label>
+                <description>What the hell? I look hideous!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBarrothCrest</defName>
+        <stages>
+            <li>
+                <label>Barroth crest</label>
+                <description>This massive, bulbous thing is so ugly... Wait, did I just make a train whistle sound?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth crest</label>
+                <description>Anyone up for a headbutting contest?</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth crest</label>
+                <description>Why the hell is my nose on the top of my head?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBarrothTail</defName>
+        <stages>
+            <li>
+                <label>Barroth tail</label>
+                <description>I keep knocking stuff and people over with it. Also it is really heavy.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth tail</label>
+                <description>Ha! Armored tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Barroth tail</label>
+                <description>It is so damn heavy... Take it off... I beg you...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBarrothPlates</defName>
+        <stages>
+            <li>
+                <label>bone armor</label>
+                <description>This is so heavy, but hey, I'll take extra bullet protection any day.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>bone armor</label>
+                <description>I'm a walking tank!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>bone armor</label>
+                <description>I can barely move with this bulk. Help.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

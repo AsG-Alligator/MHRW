@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>JyuraMorph</defName>
+		<label>jyuramorph</label>
+		<description>A wyvern-shaped morph with Jyura features.</description>
+		<race>Jyuratodus</race>
+		<classification>MHWyverns</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphJyuraTF</fullTransformation>
+		<partialTransformation>PawnmorphJyuraTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(121,121,92)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>JyuraTransformationMemory</transformationMemory>
+			<revertedMemory>JyuraRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

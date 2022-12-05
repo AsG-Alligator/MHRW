@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+        <defName>MHRWTab</defName>
+        <label>Monster Hunter RimWorld</label>
+    </ResearchTabDef>
+
+  
+  <ResearchProjectDef>
+    <defName>MHIntro</defName>
+    <label>research wyverian history</label>
+    <description>Research old wyverian texts for any information on the history of hunting monsters.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MHSmithy</defName>
+    <label>hunter smithy</label>
+    <description>Research how to construct a smithy for crafting hunter weapons.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+      <li>MHIntro</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+  
+    <!--====== swords ======-->
+  
+  <ResearchProjectDef>
+    <defName>MHSiegeTier1</defName>
+    <label>Light Siege Weapons</label>
+    <description>Research how to build light siege weapons.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>7</researchViewY>
+	<prerequisites>
+      <li>MHSmithy</li>
+    </prerequisites>
+	<tab>MHRWTab</tab>
+  </ResearchProjectDef>
+
+</Defs>

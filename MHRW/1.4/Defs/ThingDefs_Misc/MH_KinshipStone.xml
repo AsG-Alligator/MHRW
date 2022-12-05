@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>MH_KinshipStone</defName>
+		<label>kinship stone</label>
+		<description>A delightfully decorated piece of jewellery that is said to have the power to tame monsters. It is worn on ones hand, and increases the taming chance of animals.</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/KinshipStone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.01</generateCommonality>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.15</Mass>
+            <EquipDelay>2.0</EquipDelay>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.5</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		</apparel>
+    </ThingDef>
+</Defs>

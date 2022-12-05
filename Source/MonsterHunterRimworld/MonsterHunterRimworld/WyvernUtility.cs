@@ -40,7 +40,7 @@ namespace MonsterHunterRimworld
             List<PawnKindDef> possibleLargeMonster = GetLargeWyvernDefList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < map.mapTemperature.OutdoorTemp && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > map.mapTemperature.OutdoorTemp);
             if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
             {
-                possibleLargeMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+                possibleLargeMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicResistance, 1f) < 1f);
             }
             if (possibleLargeMonster.Count > 0) return possibleLargeMonster.RandomElement();
             return null;
@@ -80,7 +80,7 @@ namespace MonsterHunterRimworld
             List<PawnKindDef> possibleSmallMonster = GetSmallMonsterList().ToList().FindAll(w => w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMin, 0f) < map.mapTemperature.OutdoorTemp && w.race.statBases.GetStatValueFromList(StatDefOf.ComfyTemperatureMax, 0f) > map.mapTemperature.OutdoorTemp);
             if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
             {
-                possibleSmallMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+                possibleSmallMonster.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicResistance, 1f) < 1f);
             }
             if (possibleSmallMonster.Count > 0) return possibleSmallMonster.RandomElement();
             return null;
@@ -99,7 +99,7 @@ namespace MonsterHunterRimworld
             List<PawnKindDef> possibleElderDragon = GetElderDragonList().ToList();
             if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
             {
-                possibleElderDragon.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicSensitivity, 1f) > 0f);
+                possibleElderDragon.RemoveAll(p => p.race.statBases.GetStatValueFromList(StatDefOf.ToxicResistance, 1f) < 1f);
             }
             if (possibleElderDragon.Count > 0) return possibleElderDragon.RandomElement();
             return null;
@@ -148,6 +148,8 @@ namespace MonsterHunterRimworld
                         return MHRWDefOf.Anjanath;
                     case 4:
                         return MHRWDefOf.Glavenus;
+                    case 5:
+                        return MHRWDefOf.Banbaro;
                 }
             }
             else if (wyvernType.Equals("PISCINEWYVERN"))

@@ -25,6 +25,7 @@ namespace MonsterHunterRimworld
         public static PawnKindDef Deviljho;
         public static PawnKindDef Anjanath;
         public static PawnKindDef Glavenus;
+        public static PawnKindDef Banbaro;
         #endregion
 
         #region "Piscine Wyvern"

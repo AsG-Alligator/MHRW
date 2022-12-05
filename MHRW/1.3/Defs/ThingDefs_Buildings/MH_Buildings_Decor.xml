@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase" Name="MHRugBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+	<designationCategory>Furniture</designationCategory>
+	<building>    
+			<isEdifice>false</isEdifice>
+	</building>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <statBases>
+      <Flammability>1.0</Flammability>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>MHIntro</li>
+    </researchPrerequisites>
+	<clearBuildingArea>false</clearBuildingArea>
+	<saveCompressible>false</saveCompressible>
+  </ThingDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>MonsterRugs</defName>
+    <label>monster rugs</label>
+  </DesignatorDropdownGroupDef>
+
+
+  
+  
+  <!--================================ Rugs (Small)======================================-->
+
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugSmall_Jaggi</defName>
+    <label>Jaggi rug</label>
+    <description>A small size rug made of Jaggi leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Jaggi</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <rotatable>true</rotatable>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Jaggi>40</Leather_Jaggi>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugSmall_Giadrome</defName>
+    <label>Giadrome rug</label>
+    <description>A small size rug made of Giadrome leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Giadrome</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <rotatable>true</rotatable>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Giadrome>40</Leather_Giadrome>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugSmall_Gendrome</defName>
+    <label>Gendrome rug</label>
+    <description>A small size rug made of Gendrome leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Gendrome</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <rotatable>true</rotatable>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Gendrome>40</Leather_Gendrome>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugSmall_Velocidrome</defName>
+    <label>Velocidrome rug</label>
+    <description>A small size rug made of Velocidrome leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Velocidrome</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <rotatable>true</rotatable>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Velocidrome>40</Leather_Velocidrome>
+    </costList>
+  </ThingDef>
+  
+  
+    <!--================================ Rugs (Medium)======================================-->
+
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Aptonoth</defName>
+    <label>Aptonoth rug</label>
+    <description>A medium-sized rug made of Aptonoth leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Aptonoth</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <rotatable>true</rotatable>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>22</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Aptonoth>60</Leather_Aptonoth>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Gastodon</defName>
+    <label>Gastodon rug</label>
+    <description>A medium-sized rug made of Gastodon leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Gastodon</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>20</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Gastodon>60</Leather_Gastodon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_KuluYaKu</defName>
+    <label>Kulu Ya-Ku rug</label>
+    <description>A medium-sized rug made of Kulu Ya-Ku leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_KuluYaKu</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>25</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_KuluYaKu>60</Leather_KuluYaKu>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_TzitziYaKu</defName>
+    <label>Tzitzi Ya-Ku rug</label>
+    <description>A medium-sized rug made of Tzitzi Ya-Ku leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_TzitziYaKu</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>25</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_TzitziYaKu>60</Leather_TzitziYaKu>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Kestodon</defName>
+    <label>Kestodon rug</label>
+    <description>A medium-sized rug made of Kestodon leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Kestodon</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>25</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Kestodon>60</Leather_Kestodon>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Kirin</defName>
+    <label>Kirin rug</label>
+    <description>A medium-sized rug made of Kirin leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Kirin</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>260</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Kirin>60</Leather_Kirin>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Shamos</defName>
+    <label>Shamos rug</label>
+    <description>A medium-sized rug made of Shamos leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Shamos</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>20</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Shamos>60</Leather_Shamos>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Jagras</defName>
+    <label>Jagras rug</label>
+    <description>A medium-sized rug made of Jagras leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Jagras</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>45</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Jagras>60</Leather_Jagras>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugMedium_Girros</defName>
+    <label>Girros rug</label>
+    <description>A medium-sized rug made of Girros leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Girros</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+	<size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>45</Beauty>
+    </statBases>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+    <costList>
+      <Leather_Girros>60</Leather_Girros>
+    </costList>
+  </ThingDef>
+ 
+  
+  <!--================================ Rugs (Large) ======================================-->
+
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Anjanath</defName>
+    <label>Anjanath rug</label>
+    <description>A large size floor covering made of Anjanath leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Anjanath</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Anjanath>100</Leather_Anjanath>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Bazelgeuse</defName>
+    <label>Bazelgeuse rug</label>
+    <description>A large size floor covering made of Bazelgeuse leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Bazelgeuse</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Bazel>100</Leather_Bazel>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Deviljho</defName>
+    <label>Deviljho rug</label>
+    <description>A large size floor covering made of Deviljho leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Deviljho</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Deviljho>100</Leather_Deviljho>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Diablos</defName>
+    <label>Diablos rug</label>
+    <description>A large size floor covering made of Diablos leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Diablos</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Diablos>100</Leather_Diablos>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Dodogama</defName>
+    <label>Dodogama rug</label>
+    <description>A large size floor covering made of Dodogama leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Dodogama</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>100</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Dodogama>100</Leather_Dodogama>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Glavenus</defName>
+    <label>Glavenus rug</label>
+    <description>A large size floor covering made of Glavenus leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Glavenus</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>175</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Glavenus>100</Leather_Glavenus>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_KulveTaroth</defName>
+    <label>Kulve Taroth rug</label>
+    <description>A large size floor covering made of Kulve Taroth leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_KulveTaroth</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>800</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Kulve>100</Leather_Kulve>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_KushalaDaora</defName>
+    <label>Kushala Daora rug</label>
+    <description>A large size floor covering made of Kushala Daora leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_KushalaDaora</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>320</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Kushala>100</Leather_Kushala>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Lavasioth</defName>
+    <label>Lavasioth rug</label>
+    <description>A large size floor covering made of Lavasioth leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Lavasioth</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>80</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>26</heatPushMaxTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Lavasioth>100</Leather_Lavasioth>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Legiana</defName>
+    <label>Legiana rug</label>
+    <description>A large size floor covering made of Legiana leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Legiana</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>130</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-1</heatPerSecond>
+        <heatPushMinTemperature>18</heatPushMinTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Legiana>100</Leather_Legiana>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Lunastra</defName>
+    <label>Lunastra rug</label>
+    <description>A large size floor covering made of Lunastra leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Lunastra</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>320</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>26</heatPushMaxTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Lunastra>100</Leather_Lunastra>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>  
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Teostra</defName>
+    <label>Teostra rug</label>
+    <description>A large size floor covering made of Teostra leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Teostra</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>320</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>26</heatPushMaxTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Teostra>100</Leather_Teostra>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Mizutsune</defName>
+    <label>Mizutsune rug</label>
+    <description>A large size floor covering made of Mizutsune leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Mizutsune</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+	  <Cleanliness>1.2</Cleanliness>
+    </statBases>
+    <costList>
+      <Leather_Mizutsune>100</Leather_Mizutsune>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Nargacuga</defName>
+    <label>Nargacuga rug</label>
+    <description>A large size floor covering made of Nargacuga leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Nargacuga</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>130</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Nargacuga>100</Leather_Nargacuga>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Nergigante</defName>
+    <label>Nergigante rug</label>
+    <description>A large size floor covering made of Nergigante leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Nergigante</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>210</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Nergigante>100</Leather_Nergigante>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Odogaron</defName>
+    <label>Odogaron rug</label>
+    <description>A large size floor covering made of Odogaron leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Odogaron</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>100</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Odogaron>100</Leather_Odogaron>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Paolumu</defName>
+    <label>Paolumu rug</label>
+    <description>A large size floor covering made of Paolumu leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Paolumu</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Paolumu>100</Leather_Paolumu>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Plesioth</defName>
+    <label>Plesioth rug</label>
+    <description>A large size floor covering made of Plesioth leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Plesioth</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Plesioth>100</Leather_Plesioth>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef> 
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Pukei</defName>
+    <label>Pukei-Pukei rug</label>
+    <description>A large size floor covering made of Pukei-Pukei leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Pukei</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>130</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Pukei>100</Leather_Pukei>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Rathalos</defName>
+    <label>Rathalos rug</label>
+    <description>A large size floor covering made of Rathalos leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Rathalos</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Rathalos>100</Leather_Rathalos>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>  
+  
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Rathian</defName>
+    <label>Rathian rug</label>
+    <description>A large size floor covering made of Rathian leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Rathian</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+	  <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Rathian>100</Leather_Rathian>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Tigrex</defName>
+    <label>Tigrex rug</label>
+    <description>A large size floor covering made of Tigrex leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Tigrex</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Tigrex>100</Leather_Tigrex>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_TobiKadachi</defName>
+    <label>Tobi-Kadachi rug</label>
+    <description>A large size floor covering made of Tobi-Kadachi leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_TobiKadachi</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_TobiKadachi>100</Leather_TobiKadachi>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_VaalHazak</defName>
+    <label>Vaal Hazak rug</label>
+    <description>A large size floor covering made of Vaal Hazak leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_VaalHazak</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>200</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Vaal>100</Leather_Vaal>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+    <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Velkhana</defName>
+    <label>Velkhana rug</label>
+    <description>A large size floor covering made of Velkhana leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Velkhana</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>250</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-2</heatPerSecond>
+        <heatPushMinTemperature>16</heatPushMinTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Velkhana>100</Leather_Velkhana>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_YianKutKu</defName>
+    <label>Yian Kut-Ku rug</label>
+    <description>A large size floor covering made of Yian Kut-Ku leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_YianKutKu</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>100</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Yian>100</Leather_Yian>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Zamtrios</defName>
+    <label>Zamtrios rug</label>
+    <description>A large size floor covering made of Zamtrios leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Zamtrios</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-1</heatPerSecond>
+        <heatPushMinTemperature>18</heatPushMinTemperature>
+      </li>
+	</comps>
+    <costList>
+      <Leather_Zamtrios>100</Leather_Zamtrios>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  <ThingDef ParentName="MHRugBase">
+    <defName>MH_RugLarge_Zinogre</defName>
+    <label>Zinogre rug</label>
+    <description>A large size floor covering made of Zinogre leather.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Rugs/Rug_Zinogre</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <fillPercent>0.05</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>170</Beauty>
+    </statBases>
+    <costList>
+      <Leather_Zinogre>100</Leather_Zinogre>
+    </costList>
+	<designatorDropdown>MonsterRugs</designatorDropdown>
+  </ThingDef>
+  
+  
+ </Defs>

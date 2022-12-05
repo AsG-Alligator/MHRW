@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName="FueledStove"]/recipes</xpath>
+	<value>
+        <li>CookMeat</li>
+		<li>CookMealHunter</li>
+    </value>
+	</Operation>
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName="ElectricStove"]/recipes</xpath>
+	<value>
+        <li>CookMeat</li>
+		<li>CookMealHunter</li>
+    </value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MHLeathers</categoryDef>
+        <thingDefCountRange>0~3</thingDefCountRange>
+        <totalPriceRange>100~500</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MHLeathers</categoryDef>
+        <thingDefCountRange>1~7</thingDefCountRange>
+        <totalPriceRange>400~1500</totalPriceRange>
+      </li>
+    </value>
+  </Operation> 
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MHLeathers</categoryDef>
+        <thingDefCountRange>1~7</thingDefCountRange>
+        <totalPriceRange>400~1500</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MHLeathers</categoryDef>
+        <thingDefCountRange>0~3</thingDefCountRange>
+        <totalPriceRange>100~400</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MHLeathers</categoryDef>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>250~800</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  
+</Patch>

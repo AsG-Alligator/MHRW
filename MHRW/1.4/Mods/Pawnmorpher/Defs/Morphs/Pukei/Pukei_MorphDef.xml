@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>PukeiMorph</defName>
+		<label>pukeimorph</label>
+		<description>A wyvern-shaped morph with Pukei-Pukei features.</description>
+		<race>PukeiPukei</race>
+		<classification>MHWyverns</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphPukeiTF</fullTransformation>
+		<partialTransformation>PawnmorphPukeiTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(48, 70, 32)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>PukeiTransformationMemory</transformationMemory>
+			<revertedMemory>PukeiRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

@@ -1,0 +1,127 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBanbaroSnout</defName>
+        <stages>
+            <li>
+                <label>Banbaro face</label>
+                <description>I look like a wrong moose.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro face</label>
+                <description>Adorable snout and loads of fluffy fur. What's not to love?</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro face</label>
+                <description>I can't tell if I'm supposed to be a moose or a lizard and that weirds me out even more.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBanbaroTail</defName>
+        <stages>
+            <li>
+                <label>Banbaro tail</label>
+                <description>This thing couldn't be any bigger could it?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro tail</label>
+                <description>So big and fluffy!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro tail</label>
+                <description>How the hell am I supposed to sit with this thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBanbaroHoof</defName>
+        <stages>
+            <li>
+                <label>heeled hooves</label>
+                <description>My... Hooves? Paws? What are those supposed to be?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>heeled hooves</label>
+                <description>I love these. I can break a tree trunk with a single kick!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>heeled hooves</label>
+                <description>What the hell are those supposed to be?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBanbaroHorns</defName>
+        <stages>
+            <li>
+                <label>Banbaro horns</label>
+                <description>I feel like my neck is going to give in from the weight of these.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro horns</label>
+                <description>I'm gonna uproot some trees with these!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Banbaro horns</label>
+                <description>How the bloody hell am I supposed to fit through doors now?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherBanbaroSkin</defName>
+        <stages>
+            <li>
+                <label>fur and scales</label>
+                <description>I need to find a place to cool down.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>fur and scales</label>
+                <description>Glorious thick fur. It's so soft!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>fur and scales</label>
+                <description>Not just thick fur but also scales? Give me a break!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	
+</Defs>

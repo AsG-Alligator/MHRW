@@ -1,0 +1,50 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDeviljhoSnout</defName>
+        <stages>
+            <li>
+                <label>Deviljho face</label>
+                <description>These teeth are scary. Also I constantly keep drolling, yuck.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Deviljho face</label>
+                <description>This look can kill.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Deviljho face</label>
+                <description>Why do I have teeth on my chin?! What the fu-</description>
+                <visible>true</visible>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherDeviljhoTail</defName>
+        <stages>
+            <li>
+                <label>Deviljho tail</label>
+                <description>It feels like I have a punching bag attached to my butt.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Deviljho tail</label>
+                <description>Nice, thick, strong tail. What's not to love?</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Deviljho tail</label>
+                <description>How the hell am I supposed to sit with this thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

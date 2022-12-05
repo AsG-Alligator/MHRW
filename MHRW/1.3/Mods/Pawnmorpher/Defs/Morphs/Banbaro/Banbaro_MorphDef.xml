@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>BanbaroMorph</defName>
+		<label>banbaromorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Banbaro.</description>
+		<race>Banbaro</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphBanbaroTF</fullTransformation>
+		<partialTransformation>PawnmorphBanbaroTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(102, 94, 79)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>BanbaroTransformationMemory</transformationMemory>
+			<revertedMemory>BanbaroRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

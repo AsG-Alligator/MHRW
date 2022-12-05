@@ -52,7 +52,9 @@ namespace MonsterHunterRimworld
                 ThinkResult thinkResult = jobFlee.TryIssueJobPackage(wildlifeAnimal, new JobIssueParams() { maxDistToSquadFlag = 500});
                 wildlifeAnimal.jobs.TryTakeOrderedJob(thinkResult.Job);
             }
-            Find.LetterStack.ReceiveLetter("LetterLabelElderDragonAppear".Translate(), "LetterTextElderDragonAppear".Translate(newElderDragon.Label.CapitalizeFirst()), LetterDefOf.ThreatSmall, new TargetInfo(intVec, map, false), null, null);
+            string letterText = "LetterText" + elderDragon.ToString() + "Appear";
+
+            Find.LetterStack.ReceiveLetter("LetterLabelElderDragonAppear".Translate(), letterText.ToString().Translate(newElderDragon.Label.CapitalizeFirst()), LetterDefOf.ThreatSmall, new TargetInfo(intVec, map, false), null, null);
             return true;
         }
     }

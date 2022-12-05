@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>ZamtriosMorph</defName>
+		<label>zamtriosmorph</label>
+		<description>A scaly shark-shaped morph with traits similar to that of a Zamtrios.</description>
+		<race>Zamtrios</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphZamtriosTF</fullTransformation>
+		<partialTransformation>PawnmorphZamtriosTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(67,92,91)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>ZamtriosTransformationMemory</transformationMemory>
+			<revertedMemory>ZamtriosRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DamageDef ParentName="Scratch">
+    <defName>MHParalisisBite</defName>
+    <label>paralisis bite</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.08</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisBite</defName>
+    <label>paralisis bite</label>
+  </ToolCapacityDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisBite</defName>
+    <requiredCapacity>MHParalisisBite</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisBite</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  
+ <!--> Weapon damage defs <--> 
+  <!-- POISON -->
+  
+   <DamageDef ParentName="CutBase">
+    <defName>MHPoisonCut</defName>
+    <label>poison cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ToolCapacityDef>
+    <defName>MHPoisonCut</defName>
+    <label>poison cut</label>
+  </ToolCapacityDef>
+  
+   <ManeuverDef>
+    <defName>MHPoisonSlash</defName>
+    <requiredCapacity>MHPoisonCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHPoisonCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <DamageDef>
+    <defName>MHPoisonStab</defName>
+    <label>stab</label>
+    <workerClass>DamageWorker_Stab</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stabbed to death.</deathMessage>
+    <hediff>Stab</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+	<additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <ToolCapacityDef>
+    <defName>MHPoisonStab</defName>
+    <label>poison stab</label>
+  </ToolCapacityDef>
+  
+   <ManeuverDef>
+    <defName>MHPoisonStab</defName>
+    <requiredCapacity>MHPoisonStab</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHPoisonStab</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+
+   <DamageDef ParentName="BluntBase">
+    <defName>MHPoisonBlunt</defName>
+    <label>poison bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+   <ManeuverDef>
+    <defName>MHPoisonSmash</defName>
+    <requiredCapacity>MHPoisonBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHPoisonBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHPoisonBlunt</defName>
+    <label>poison smash</label>
+  </ToolCapacityDef>
+  
+  
+  <DamageDef>
+    <defName>MHPoisonBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+	<additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Arrow">
+    <defName>MHPoisonArrow</defName>
+    <hediff>Stab</hediff>
+	<additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  
+   <!-- PARALISIS -->
+  
+  
+  <DamageDef ParentName="CutBase">
+    <defName>MHParalisisCut</defName>
+    <label>paralizing cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisSlash</defName>
+    <requiredCapacity>MHParalisisCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisCut</defName>
+    <label>paralizing cut</label>
+  </ToolCapacityDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>MHParalisisBlunt</defName>
+    <label>paralizing bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHParalisisSmash</defName>
+    <requiredCapacity>MHParalisisBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHParalisisBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHParalisisBlunt</defName>
+    <label>paralizing smash</label>
+  </ToolCapacityDef>
+  
+  
+  <DamageDef>
+    <defName>MHParalisisBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+	<additionalHediffs>
+      <li>
+        <hediff>MHParalisis</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <!-- WATER -->
+  
+  <DamageDef ParentName="CutBase">
+    <defName>MHWaterCut</defName>
+    <label>cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Waterblight</hediff>
+        <severityPerDamageDealt>0.1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHWaterSlash</defName>
+    <requiredCapacity>MHWaterCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHWaterCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHWaterCut</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>MHWaterBlunt</defName>
+    <label>bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Waterblight</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHWaterSmash</defName>
+    <requiredCapacity>MHWaterBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHWaterBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHWaterBlunt</defName>
+    <label>smash</label>
+  </ToolCapacityDef>
+  
+  
+  <DamageDef>
+    <defName>MHWaterBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+	<additionalHediffs>
+      <li>
+        <hediff>Waterblight</hediff>
+        <severityPerDamageDealt>0.1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+ <!-- ICE -->
+  
+  <DamageDef ParentName="CutBase">
+    <defName>MHIceCut</defName>
+    <label>cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Hypothermia</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHIceSlash</defName>
+    <requiredCapacity>MHIceCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHIceCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHIceCut</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>MHIceBlunt</defName>
+    <label>bash</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Hypothermia</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <ManeuverDef>
+    <defName>MHIceSmash</defName>
+    <requiredCapacity>MHIceBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MHIceBlunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHIceBlunt</defName>
+    <label>smash</label>
+  </ToolCapacityDef>
+  
+  
+  <DamageDef>
+    <defName>MHIceBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+	<additionalHediffs>
+      <li>
+        <hediff>Hypothermia</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <!-- FIRE -->
+	
+	
+	<ToolCapacityDef>
+		<defName>MHBurnBlunt</defName>
+		<label>fire smash</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>MHFlameBlunt</defName>
+		<label>fire smash</label>
+	</ToolCapacityDef>
+  
+  
+   <ManeuverDef>
+    <defName>MHFlameSmash</defName>
+    <requiredCapacity>MHFlameBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Flame</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ManeuverDef>
+    <defName>MHBurnSmash</defName>
+    <requiredCapacity>MHBurnBlunt</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Burn</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+
+  <ManeuverDef>
+    <defName>MHBurnSlash</defName>
+    <requiredCapacity>MHBurnCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Burn</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHBurnCut</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  
+   <ManeuverDef>
+    <defName>MHFlameSlash</defName>
+    <requiredCapacity>MHFlameCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Flame</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ToolCapacityDef>
+    <defName>MHFlameCut</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  
+  
+  
+  
+  <!-- Monster Projectile damage-->
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHPoisonBurst</defName>
+    <label>poison burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(0.67, 0.61, 0.84)</explosionColorCenter>
+    <explosionColorEdge>(0.8, 0.77, 0.9)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>ToxicBuildup</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHParaBurst</defName>
+    <label>paralisis burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(234, 255, 3)</explosionColorCenter>
+    <explosionColorEdge>(211, 250, 70)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>MHParalisis</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHIceBurst</defName>
+    <label>ice burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Frostbite</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(171, 246, 255)</explosionColorCenter>
+    <explosionColorEdge>(0, 229, 255)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>MHMudBurst</defName>
+    <label>mud burst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+	<hediff>Bruise</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(82, 64, 53)</explosionColorCenter>
+    <explosionColorEdge>(130, 124, 98)</explosionColorEdge>
+    <soundExplosion>Explosion_PoisonBurst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+		<li>
+			<hediff>Waterblight</hediff>
+			<severityPerDamageDealt>0.08</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  
+  <DamageDef>
+    <defName>MHSilentExplosion</defName>
+    <label>puff</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <defaultDamage>0</defaultDamage>
+    <defaultStoppingPower>0</defaultStoppingPower>
+    <plantDamageFactor>0</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(0.1, 0.1, 0.1)</explosionColorCenter>
+    <explosionColorEdge>(0.1, 0.1, 0.1)</explosionColorEdge>
+    <soundExplosion>Explosion_Silent</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  <DamageDef>
+    <defName>MHFlashStun</defName>
+    <label>flash</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+	<harmsHealth>false</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>0</minDamageToFragment>
+    <defaultDamage>0</defaultDamage>
+    <defaultStoppingPower>0</defaultStoppingPower>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+    <plantDamageFactor>0</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(0.6, 0.6, 0.6)</explosionColorCenter>
+    <explosionColorEdge>(0.7, 0.7, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <combatLogRules>Damage_Stun</combatLogRules>
+  </DamageDef>
+  
+<!--
+  <DamageDef ParentName="StunBase">
+    <defName>MHPoisonBurst</defName>
+    <label>poison burst</label>
+	<externalViolence>true</externalViolence>
+    <harmsHealth>false</harmsHealth>
+    <impactSoundType>Electric</impactSoundType>
+    <defaultDamage>50</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCellFleck>Fleck_BlastEMP</explosionCellFleck>
+    <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+    <explosionInteriorFleck>Fleck_ElectricalSpark</explosionInteriorFleck>
+    <soundExplosion>Explosion_EMP</soundExplosion>
+    <combatLogRules>Damage_EMP</combatLogRules>
+  </DamageDef>
+ --> 
+</Defs>

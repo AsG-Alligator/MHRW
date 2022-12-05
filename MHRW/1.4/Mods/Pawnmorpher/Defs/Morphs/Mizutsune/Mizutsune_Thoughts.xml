@@ -1,0 +1,75 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherMizutsuneSnout</defName>
+        <stages>
+            <li>
+                <label>Mizutsune face</label>
+                <description>I look kinda like a fox, but covered in scales?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune face</label>
+                <description>Cute snout!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune face</label>
+                <description>I feel like I ate a bar of soap. Makes me want to puke.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherMizutsuneFrills</defName>
+        <stages>
+            <li>
+                <label>Mizutsune frills</label>
+                <description>What is all this stuff?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune frills</label>
+                <description>Fancy!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune frills</label>
+                <description>Could I not get any more weird stuff growing on my head?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherMizutsuneTail</defName>
+        <stages>
+            <li>
+                <label>Mizutsune tail</label>
+                <description>This tail is so strange.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune tail</label>
+                <description>It's like a paintbrush!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Mizutsune tail</label>
+                <description>Why do I have a mop for a tail? Why do I have a tail to begin with?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+</Defs>

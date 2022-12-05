@@ -266,15 +266,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_ParaSpit</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>1.5</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>1.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -653,15 +653,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_IceSpitNonExplosive</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>1.5</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>5</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>1.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -1073,15 +1073,15 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_PoisonSpit</defaultProjectile>
-        <warmupTime>3</warmupTime>
+        <warmupTime>1.3</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>2</forcedMissRadius>
+        <forcedMissRadius>1.3</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>1.5</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>
@@ -1266,7 +1266,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MH_Projectile_Fireball</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>1.5</warmupTime>
         <range>23.9</range>
         <forcedMissRadius>5</forcedMissRadius>
         <burstShotCount>3</burstShotCount>
@@ -1274,7 +1274,7 @@
         <soundCast>Shot_MHSpit</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-		<defaultCooldownTime>5</defaultCooldownTime>
+		<defaultCooldownTime>2</defaultCooldownTime>
 		<commonality>0.5</commonality>
       </li>
     </verbs>

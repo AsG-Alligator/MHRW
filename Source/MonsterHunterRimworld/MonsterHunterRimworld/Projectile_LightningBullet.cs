@@ -13,7 +13,7 @@ namespace MonsterHunterRimworld
             }
         }
 
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             IntVec3 strikeLocation = base.Position;
             Find.CurrentMap.weatherManager.eventHandler.AddEvent(new WeatherEvent_LightningStrike(this.Map, strikeLocation));

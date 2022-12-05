@@ -9,6 +9,12 @@
 	<LetterTextLargeMonsterAppearWithGroup>A wild {0} has wandered into the area. It is accompanied by a group of {1}.</LetterTextLargeMonsterAppearWithGroup>
 	<LetterLabelElderDragonAppear>Elder dragon</LetterLabelElderDragonAppear>
 	<LetterTextElderDragonAppear>{0}, an elder dragon, has wandered into the area. It scared away most of the other wildlife.</LetterTextElderDragonAppear>
-	<TurfWarLabel>Turf war</TurfWarLabel>
+	<LetterTextKushalaDaoraAppear>An elder dragon - {0} has wandered into the area. It brings endless thunderstorms with its presence. Defeat it, or wait until it leaves for the weather to clear.</LetterTextKushalaDaoraAppear>
+	<LetterTextTesukaAppear>An elder dragon - {0} has wandered into the area. It's presence raises the ambient temperature in the area, creating a heatwave that will last until the monster leaves, or is defeated.</LetterTextTesukaAppear>
+	<LetterTextNergiganteAppear>An elder dragon - {0} has wandered into the area. Better hope it does not take up one of your colonists as its next meal.</LetterTextNergiganteAppear>
+	<LetterTextKirinAppear>An elder dragon - {0} has wandered into the area. It wields control of lightning, so if you choose to fight it, make sure you are prepared to be thunderstruck.</LetterTextKirinAppear>
+	<LetterTextVelkhanaAppear>An elder dragon - {0} has wandered into the area. It's presence causes the area temperature to drop significantly, creating a cold snap. This will last until the dragon is defeated, or it leaves the area on its own volition.</LetterTextVelkhanaAppear>
+	<LetterTextVaalHazakAppear>An elder dragon - {0} has wandered into the area. Decay follows wherever this dragon wanders. A toxic fallout will blanket the area as long as the creature is present.</LetterTextVaalHazakAppear>
+	<TurfWarLabel>A turf war is occuring!</TurfWarLabel>
 
 </LanguageData>

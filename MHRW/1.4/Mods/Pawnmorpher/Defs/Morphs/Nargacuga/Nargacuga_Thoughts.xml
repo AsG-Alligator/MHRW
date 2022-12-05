@@ -1,0 +1,146 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherNargacugaSnout</defName>
+        <stages>
+            <li>
+                <label>Nargacuga face</label>
+                <description>It's like a beak but not quite. It is really strange and makes talking hard.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga face</label>
+                <description>Grrrrau... Hehe.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga face</label>
+                <description>No! My face!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherNargacugaEar</defName>
+        <stages>
+            <li>
+                <label>Nargacuga ears</label>
+                <description>These are too sensitive for my liking.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga ears</label>
+                <description>I can hear everything!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga ears</label>
+                <description>Get these off of me!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherNargacugaTail</defName>
+        <stages>
+            <li>
+                <label>Nargacuga tail</label>
+                <description>I need to be careful not to hit anyone with this. Anyone I like at least.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga tail</label>
+                <description>Sleek and strong tail, awesome!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga tail</label>
+                <description>Spikes? Why does it have to be spikes?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherNargacugaWingMemory</defName>
+        <stages>
+            <li>
+                <label>Nargacuga wings</label>
+                <description>How am I supposed to do anything with massive wings?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga wings</label>
+                <description>Dragon wings! Wait, these are my arms so technically... wyvern wings I guess? ... Wings!!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga wings</label>
+                <description>No! My arms!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherNargacugaWingTipMemory</defName>
+        <stages>
+            <li>
+                <label>Nargacuga wingpaws</label>
+                <description>These blades on my wrist get in the way a lot, but it could have been worse...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga wingpaws</label>
+                <description>Adorable dragon wing-paws.</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Nargacuga wingpaws</label>
+                <description>I look like a freaky man-bat or something. At least I still can grab stuff...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherScaleFurSkin</defName>
+        <stages>
+            <li>
+                <label>scales and fur</label>
+                <description>People are not supposed to have fur... Or scales... And definitely not both.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>scales and fur</label>
+                <description>This fur is so nice and soft, and the scales underneith are a very nice armor layer.</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>scales and fur</label>
+                <description>Fur AND scales? What else?! Feathers? No?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

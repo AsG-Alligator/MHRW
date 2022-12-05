@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>  
+
+	<SitePartDef Name="MHRW_MonsterEncounterCoreBase" Abstract="True">
+
+		<label>monster sighting</label>
+		<description>The place where a monster is roaming.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<approachOrderString>Attack {0}</approachOrderString>
+		<approachingReportString>Attacking {0}</approachingReportString>
+		<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+		<wantsThreatPoints>true</wantsThreatPoints>
+
+	</SitePartDef>
+
+	<SitePartDef ParentName="MHRW_MonsterEncounterCoreBase">
+		<defName>MHRW_Rathalos_Encounter</defName>
+		<expandingIconTexture>World/WorldObjects/Sites/GenericSite</expandingIconTexture>
+		<tags Inherit="False">
+			<li>MHRW_Rathalos_Encounter</li>
+		</tags>
+	</SitePartDef>
+	
+	<GenStepDef>
+		<defName>MHRW_Rathalos_Encounter_Gen</defName>
+		<linkWithSite>MHRW_Rathalos_Encounter</linkWithSite>
+		<order>805</order>
+		<genStep Class="MonsterHunterRimworld.GenStep_MonsterEncounter_Rathalos">
+		</genStep>
+	</GenStepDef>
+	
+	<RuleDef>
+    <defName>WMH_SpawnHuntingMonsters</defName>
+    <symbol>WMH_SpawnHuntingMonstersSymbol</symbol>
+    <resolvers>
+      <li Class="MonsterHunterRimworld.SymbolResolver_SpawnHuntingMonsters">
+        <minRectSize>(8, 8)</minRectSize>
+      </li>
+    </resolvers>
+	</RuleDef>
+	
+	
+</Defs>

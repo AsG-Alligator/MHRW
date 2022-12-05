@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+	<defName>DoBillsBBQSpit</defName>
+	<label>cook meals at BBQ spit</label>
+	<giverClass>WorkGiver_DoBill</giverClass>
+	<workType>Cooking</workType>
+	<priorityInType>10</priorityInType>
+	<fixedBillGiverDefs>
+	<li>BBQSpit</li>
+	</fixedBillGiverDefs>
+	<verb>cook</verb>
+	<gerund>cooking at</gerund>
+	<requiredCapacities>
+	<li>Manipulation</li>
+	</requiredCapacities>
+	<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

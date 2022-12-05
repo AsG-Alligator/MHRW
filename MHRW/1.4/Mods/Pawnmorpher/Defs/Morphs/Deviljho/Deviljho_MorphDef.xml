@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>DeviljhoMorph</defName>
+		<label>deviljhomorph</label>
+		<description>A scaly reptile morph with traits similar to that of a Deviljho.</description>
+		<race>Deviljho</race>
+		<classification>MHDrakes</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphDeviljhoTF</fullTransformation>
+		<partialTransformation>PawnmorphDeviljhoTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(49, 50, 34)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>DeviljhoTransformationMemory</transformationMemory>
+			<revertedMemory>DeviljhoRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

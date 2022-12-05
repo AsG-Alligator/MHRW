@@ -13,7 +13,7 @@ namespace MonsterHunterRimworld
             }
         }
 
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             IntVec3 position = base.Position;
             GenSpawn.Spawn(ThingMaker.MakeThing(ThingDefOf.Tornado, null), position, base.Map, WipeMode.Vanish);

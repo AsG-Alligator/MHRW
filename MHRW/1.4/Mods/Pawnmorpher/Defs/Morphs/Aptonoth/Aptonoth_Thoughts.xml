@@ -1,0 +1,74 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherAptonothSnout</defName>
+        <stages>
+            <li>
+                <label>Aptonoth face</label>
+                <description>I don't like how all the grass around suddenly looks tasty to me...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth face</label>
+                <description>I sure would like some fresh fruit salad right about now.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth face</label>
+                <description>I look like a damn cow or something.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherAptonothCrest</defName>
+        <stages>
+            <li>
+                <label>Aptonoth crest</label>
+                <description>Well, this will complicate wearing hats.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth crest</label>
+                <description>This is my hat now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth crest</label>
+                <description>I keep hitting tops of doorframes with this. This is so annoying.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherAptonothTail</defName>
+        <stages>
+            <li>
+                <label>Aptonoth tail</label>
+                <description>I keep bumping into stuff with it.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth tail</label>
+                <description>It helps with my balance a lot. I really like that pattern too.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Aptonoth tail</label>
+                <description>Gah! Stupid tail!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

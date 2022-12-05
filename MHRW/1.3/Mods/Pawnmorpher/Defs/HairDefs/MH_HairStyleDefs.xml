@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <HairDef>
+    <defName>HairTeostraMane</defName>
+    <label>teostra mane</label>
+    <styleGender>Male</styleGender>
+    <texPath>Parts/Teostra/Teostra_Mane</texPath>
+    <category>Tribal</category>
+    <styleTags>
+      <styleTags>
+      <li>Urban</li>
+      <li>Punk</li>
+      <li>Rural</li>
+      <li>Tribal</li>
+      <li>Soldier</li>
+      <li>HairShort</li>
+    </styleTags>
+    </styleTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>HairLunastraMane</defName>
+    <label>lunastra mane</label>
+    <styleGender>Female</styleGender>
+    <texPath>Parts/Lunastra/Lunastra_Mane</texPath>
+    <category>Tribal</category>
+    <styleTags>
+      <styleTags>
+      <li>Urban</li>
+      <li>Punk</li>
+      <li>Rural</li>
+      <li>Tribal</li>
+      <li>Soldier</li>
+      <li>HairShort</li>
+    </styleTags>
+    </styleTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>HairJagrasDreads</defName>
+    <label>jagras dreads</label>
+    <styleGender>Any</styleGender>
+    <texPath>Parts/Jagras/Jagras_Dreads</texPath>
+    <category>Tribal</category>
+    <styleTags>
+      <styleTags>
+      <li>Urban</li>
+      <li>Punk</li>
+      <li>Rural</li>
+      <li>Tribal</li>
+      <li>Soldier</li>
+      <li>HairShort</li>
+    </styleTags>
+    </styleTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>HairKirinMane</defName>
+    <label>kirin mane</label>
+    <styleGender>Male</styleGender>
+    <texPath>Parts/Kirin/Kirin_Mane</texPath>
+    <category>Tribal</category>
+    <styleTags>
+      <styleTags>
+      <li>Urban</li>
+      <li>Punk</li>
+      <li>Rural</li>
+      <li>Tribal</li>
+      <li>Soldier</li>
+      <li>HairShort</li>
+    </styleTags>
+    </styleTags>
+  </HairDef>
+  
+</Defs>

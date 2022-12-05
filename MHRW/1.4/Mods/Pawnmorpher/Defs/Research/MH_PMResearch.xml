@@ -1,0 +1,37 @@
+<Defs>
+	<ResearchProjectDef>
+		<defName>MHMonsterSerums</defName>
+		<label>Monstrous injectors</label>
+		<description>A natural progression from powerful serums - allows you to produce serums and injectors of monsters.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Pawnmorpher</tab>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>PowerfulInjectors</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MHElderSerums</defName>
+		<label>Elder dragon injectors</label>
+		<description>Raw power of elder dragons, contained in a tiny syringe.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Pawnmorpher</tab>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>MHMonsterSerums</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>

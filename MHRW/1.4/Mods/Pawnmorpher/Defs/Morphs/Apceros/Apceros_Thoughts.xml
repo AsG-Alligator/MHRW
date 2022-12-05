@@ -1,0 +1,98 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherApcerosSnout</defName>
+        <stages>
+            <li>
+                <label>Apceros face</label>
+                <description>I don't like how all the grass around suddenly looks tasty to me...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros face</label>
+                <description>I sure would like some fresh fruit salad right about now.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros face</label>
+                <description>I look like a stupid dino.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+		<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherApcerosCrest</defName>
+        <stages>
+            <li>
+                <label>Apceros crest</label>
+                <description>Well, this will complicate wearing hats.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros crest</label>
+                <description>This is my hat now!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros crest</label>
+                <description>I keep hitting tops of doorframes with this. This is so annoying.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherApcerosTail</defName>
+        <stages>
+            <li>
+                <label>Apceros tail</label>
+                <description>I keep bumping into stuff with it.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros tail</label>
+                <description>This thing looks like it would be very good for smacking things I don't like.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros tail</label>
+                <description>I'm going to remodel your face with this if you don't turn me back.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherApcerosShell</defName>
+        <stages>
+            <li>
+                <label>Apceros shell</label>
+                <description>I appreciate the extra protection, but this thing is heavy as hell...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros shell</label>
+                <description>It helps with my balance a lot. I really like that pattern too.</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Apceros shell</label>
+                <description>What the, shell?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

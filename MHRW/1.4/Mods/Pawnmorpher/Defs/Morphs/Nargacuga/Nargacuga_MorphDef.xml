@@ -1,0 +1,24 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="SensitiveFoodMorph">
+		<defName>NargacugaMorph</defName>
+		<label>nargamorph</label>
+		<description>A wyvern-shaped morph with Nargacuga features.</description>
+		<race>Nargacuga</race>
+		<classification>MHWyverns</classification>
+		<categories>
+			<li>Powerful</li>
+			<li>Monster</li>
+		</categories>
+		<fullTransformation>PawnmorphNargacugaTF</fullTransformation>
+		<partialTransformation>PawnmorphNargacugaTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(60, 67, 74)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>NargacugaTransformationMemory</transformationMemory>
+			<revertedMemory>NargacugaRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

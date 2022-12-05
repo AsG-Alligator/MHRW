@@ -1,0 +1,99 @@
+﻿<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKirinSnout</defName>
+        <stages>
+            <li>
+                <label>Kirin face</label>
+                <description>Scaled horse snout? The hell?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin face</label>
+                <description>This bushy white fur beard is real cool!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin face</label>
+                <description>What kind of hellish horse am I turning into?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+		</ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKirinHorns</defName>
+        <stages>
+            <li>
+                <label>Kirin horn</label>
+                <description>Wha..? A unicorn horn?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin horn</label>
+                <description>Zzzap!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin horn</label>
+                <description>What the hell is this?! Am I a joke to you?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	<ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKirinMane</defName>
+        <stages>
+            <li>
+                <label>Kirin mane</label>
+                <description>All this hair makes me look like an anime protagonist...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin mane</label>
+                <description>Lovely, huge mane!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin mane</label>
+                <description>I did not ask for a hairstyle change...</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>EtherKirinTail</defName>
+        <stages>
+            <li>
+                <label>Kirin tail</label>
+                <description>This tail is like a malformed horse tail.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin tail</label>
+                <description>Bushy!</description>
+                <visible>true</visible>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>Kirin tail</label>
+                <description>Why do I have a feather duster for a tail? Why do I have a tail to begin with?!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+</Defs>
